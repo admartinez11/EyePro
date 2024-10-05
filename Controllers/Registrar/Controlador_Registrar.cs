@@ -2,6 +2,7 @@
 using OpticaMultivisual.Models.DAO;
 using OpticaMultivisual.Models.DTO;
 using OpticaMultivisual.Views;
+using OpticaMultivisual.Views.Consultas;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -258,6 +259,7 @@ namespace AdministrarClientes.Controlador
                 ObjVistaR.btnActualizar.Enabled = true;
             }
         }
+        
     }
 }
 

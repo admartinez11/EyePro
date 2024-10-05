@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AdministrarClientes.View.RegistroCliente;
+using OpticaMultivisual.Views.Consultas;
 
 
 
@@ -25,6 +26,7 @@ namespace OpticaMultivisual.Controllers
             ObjVista.btnNuevoCli.Click += new EventHandler(AgregarCliente);
             ObjVista.btnEliminarCli.Click += new EventHandler(EliminarCliente);
             ObjVista.btnActCli.Click += new EventHandler(ActualizarCliente);
+            ObjVista.btnAgregarCon.Click += new EventHandler(AgregarConsulta);
         }
         public void CargarInfo(object sender, EventArgs e)
         {
@@ -41,7 +43,7 @@ namespace OpticaMultivisual.Controllers
         {
             DAORegistro Objadminregistro = new DAORegistro();
             DataSet ds = Objadminregistro.BuscarClientes(ObjVista.txtBuscar.Text.Trim());
-            ObjVista.dgvInfoClientes.DataSource = ds.Tables["ViewClientes"];
+            ObjVista.dgvInfoClientes.DataSource = ds.Tables["Cliente"];
         }
         public void AgregarCliente(object sender, EventArgs e)
         {
@@ -87,6 +89,16 @@ namespace OpticaMultivisual.Controllers
             openForm.ShowDialog();
             ActualizarDatos();
         }
+        public void AgregarConsulta(object sender, EventArgs e)
+        {
+            int pos = ObjVista.dgvInfoClientes.CurrentRow.Index;
+            string dui = ObjVista.dgvInfoClientes[0, pos].Value.ToString().Trim(); // Dejar el DUI como string
 
+            int accion = 1; // Este valor de "accion" debería ser el adecuado para tu caso.
+
+            AñadirConsulta openForm = new AñadirConsulta(accion, dui);
+            openForm.ShowDialog();
+            ActualizarDatos();
+        }
     }
 }

@@ -28,6 +28,11 @@ namespace OpticaMultivisual.Views.Consultas
             ControladorVerConsulta controladorConsulta = new ControladorVerConsulta(this, accion, cli_DUI, vis_ID, con_fecha, con_obser, emp_ID, con_ID, con_hora, est_ID);
 
         }
+        public AñadirConsulta(int accion, string cli_DUI)
+        {
+            InitializeComponent();
+            ControladorVerConsulta controladorAdCon = new ControladorVerConsulta(this, accion, cli_DUI);
+        }
 
         private void txtConID_TextChanged(object sender, EventArgs e)
         {
