@@ -40,9 +40,8 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.chkRememberMe = new Bunifu.UI.WinForms.BunifuCheckBox();
@@ -57,16 +56,17 @@
             this.LblPassword = new System.Windows.Forms.Label();
             this.LblForgotpass = new System.Windows.Forms.LinkLabel();
             this.Lblregistration = new System.Windows.Forms.LinkLabel();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.BtnExit = new System.Windows.Forms.ToolStripButton();
             this.BtnTest = new System.Windows.Forms.ToolStripButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tableLayoutPanel3.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -102,6 +102,16 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1342, 644);
             this.tableLayoutPanel2.TabIndex = 5;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::OpticaMultivisual.Properties.Resources.Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(263, 129);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 3;
@@ -118,30 +128,6 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.34043F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(740, 470);
             this.tableLayoutPanel3.TabIndex = 2;
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(227)))), ((int)(((byte)(255)))));
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.BtnExit,
-            this.BtnTest});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1348, 29);
-            this.toolStrip1.TabIndex = 3;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::OpticaMultivisual.Properties.Resources.Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(263, 129);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // bunifuPanel1
             // 
@@ -230,7 +216,7 @@
             this.chkRememberMe.OnUncheck.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(236)))), ((int)(((byte)(255)))));
             this.chkRememberMe.Size = new System.Drawing.Size(25, 25);
             this.chkRememberMe.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
-            this.chkRememberMe.TabIndex = 18;
+            this.chkRememberMe.TabIndex = 2;
             this.chkRememberMe.ThreeState = false;
             this.chkRememberMe.ToolTipText = "Llena las credenciales del usuario y la contraseña si esta marcado";
             // 
@@ -399,7 +385,7 @@
             this.BtnStart.OnPressedState.IconLeftImage = null;
             this.BtnStart.OnPressedState.IconRightImage = null;
             this.BtnStart.Size = new System.Drawing.Size(140, 38);
-            this.BtnStart.TabIndex = 2;
+            this.BtnStart.TabIndex = 3;
             this.BtnStart.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnStart.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnStart.TextMarginLeft = 0;
@@ -612,7 +598,7 @@
             this.LblForgotpass.Location = new System.Drawing.Point(255, 302);
             this.LblForgotpass.Name = "LblForgotpass";
             this.LblForgotpass.Size = new System.Drawing.Size(169, 20);
-            this.LblForgotpass.TabIndex = 3;
+            this.LblForgotpass.TabIndex = 4;
             this.LblForgotpass.TabStop = true;
             this.LblForgotpass.Text = "¿Olvido su contraseña?";
             // 
@@ -626,9 +612,23 @@
             this.Lblregistration.Location = new System.Drawing.Point(49, 334);
             this.Lblregistration.Name = "Lblregistration";
             this.Lblregistration.Size = new System.Drawing.Size(88, 20);
-            this.Lblregistration.TabIndex = 4;
+            this.Lblregistration.TabIndex = 5;
             this.Lblregistration.TabStop = true;
             this.Lblregistration.Text = "Registrarse";
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(227)))), ((int)(((byte)(255)))));
+            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.BtnExit,
+            this.BtnTest});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(1348, 29);
+            this.toolStrip1.TabIndex = 3;
+            this.toolStrip1.Text = "toolStrip1";
             // 
             // BtnExit
             // 
@@ -665,14 +665,14 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tableLayoutPanel3.ResumeLayout(false);
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
