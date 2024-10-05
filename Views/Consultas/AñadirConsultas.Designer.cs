@@ -39,6 +39,10 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
@@ -59,9 +63,9 @@
             this.cmbEstado = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.cmbDUI = new Bunifu.UI.WinForms.BunifuDropdown();
             this.cmbVisita = new Bunifu.UI.WinForms.BunifuDropdown();
             this.cmbEmpleado = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.cmbDUI = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
@@ -619,9 +623,9 @@
             this.tableLayoutPanel2.Controls.Add(this.cmbEstado, 3, 1);
             this.tableLayoutPanel2.Controls.Add(this.label2, 4, 1);
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.cmbDUI, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.cmbVisita, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.cmbEmpleado, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.cmbDUI, 0, 1);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(45, 86);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -739,51 +743,6 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Consulta";
             // 
-            // cmbDUI
-            // 
-            this.cmbDUI.BackColor = System.Drawing.Color.Transparent;
-            this.cmbDUI.BackgroundColor = System.Drawing.Color.White;
-            this.cmbDUI.BorderColor = System.Drawing.Color.Silver;
-            this.cmbDUI.BorderRadius = 15;
-            this.cmbDUI.Color = System.Drawing.Color.Silver;
-            this.cmbDUI.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.cmbDUI.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cmbDUI.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.cmbDUI.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cmbDUI.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cmbDUI.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
-            this.cmbDUI.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbDUI.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
-            this.cmbDUI.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbDUI.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.cmbDUI.FillDropDown = true;
-            this.cmbDUI.FillIndicator = false;
-            this.cmbDUI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbDUI.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.cmbDUI.ForeColor = System.Drawing.Color.Black;
-            this.cmbDUI.FormattingEnabled = true;
-            this.cmbDUI.Icon = null;
-            this.cmbDUI.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.cmbDUI.IndicatorColor = System.Drawing.Color.DarkGray;
-            this.cmbDUI.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.cmbDUI.IndicatorThickness = 2;
-            this.cmbDUI.IsDropdownOpened = false;
-            this.cmbDUI.ItemBackColor = System.Drawing.Color.White;
-            this.cmbDUI.ItemBorderColor = System.Drawing.Color.White;
-            this.cmbDUI.ItemForeColor = System.Drawing.Color.Black;
-            this.cmbDUI.ItemHeight = 26;
-            this.cmbDUI.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
-            this.cmbDUI.ItemHighLightForeColor = System.Drawing.Color.White;
-            this.cmbDUI.ItemTopMargin = 3;
-            this.cmbDUI.Location = new System.Drawing.Point(4, 34);
-            this.cmbDUI.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbDUI.Name = "cmbDUI";
-            this.cmbDUI.Size = new System.Drawing.Size(152, 32);
-            this.cmbDUI.TabIndex = 12;
-            this.cmbDUI.Text = null;
-            this.cmbDUI.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.cmbDUI.TextLeftMargin = 5;
-            // 
             // cmbVisita
             // 
             this.cmbVisita.BackColor = System.Drawing.Color.Transparent;
@@ -874,6 +833,82 @@
             this.cmbEmpleado.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.cmbEmpleado.TextLeftMargin = 5;
             // 
+            // cmbDUI
+            // 
+            this.cmbDUI.AcceptsReturn = false;
+            this.cmbDUI.AcceptsTab = false;
+            this.cmbDUI.AnimationSpeed = 200;
+            this.cmbDUI.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.cmbDUI.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.cmbDUI.AutoSizeHeight = true;
+            this.cmbDUI.BackColor = System.Drawing.Color.Transparent;
+            this.cmbDUI.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmbDUI.BackgroundImage")));
+            this.cmbDUI.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.cmbDUI.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.cmbDUI.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.cmbDUI.BorderColorIdle = System.Drawing.Color.Silver;
+            this.cmbDUI.BorderRadius = 1;
+            this.cmbDUI.BorderThickness = 1;
+            this.cmbDUI.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
+            this.cmbDUI.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.cmbDUI.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.cmbDUI.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.cmbDUI.DefaultText = "";
+            this.cmbDUI.FillColor = System.Drawing.Color.White;
+            this.cmbDUI.HideSelection = true;
+            this.cmbDUI.IconLeft = null;
+            this.cmbDUI.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.cmbDUI.IconPadding = 10;
+            this.cmbDUI.IconRight = null;
+            this.cmbDUI.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.cmbDUI.Lines = new string[0];
+            this.cmbDUI.Location = new System.Drawing.Point(3, 33);
+            this.cmbDUI.MaxLength = 10;
+            this.cmbDUI.MinimumSize = new System.Drawing.Size(1, 1);
+            this.cmbDUI.Modified = false;
+            this.cmbDUI.Multiline = false;
+            this.cmbDUI.Name = "cmbDUI";
+            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties9.FillColor = System.Drawing.Color.Empty;
+            stateProperties9.ForeColor = System.Drawing.Color.Empty;
+            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.cmbDUI.OnActiveState = stateProperties9;
+            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.cmbDUI.OnDisabledState = stateProperties10;
+            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties11.FillColor = System.Drawing.Color.Empty;
+            stateProperties11.ForeColor = System.Drawing.Color.Empty;
+            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.cmbDUI.OnHoverState = stateProperties11;
+            stateProperties12.BorderColor = System.Drawing.Color.Silver;
+            stateProperties12.FillColor = System.Drawing.Color.White;
+            stateProperties12.ForeColor = System.Drawing.Color.Empty;
+            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.cmbDUI.OnIdleState = stateProperties12;
+            this.cmbDUI.Padding = new System.Windows.Forms.Padding(3);
+            this.cmbDUI.PasswordChar = '\0';
+            this.cmbDUI.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.cmbDUI.PlaceholderText = "";
+            this.cmbDUI.ReadOnly = false;
+            this.cmbDUI.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.cmbDUI.SelectedText = "";
+            this.cmbDUI.SelectionLength = 0;
+            this.cmbDUI.SelectionStart = 0;
+            this.cmbDUI.ShortcutsEnabled = true;
+            this.cmbDUI.Size = new System.Drawing.Size(155, 43);
+            this.cmbDUI.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.cmbDUI.TabIndex = 15;
+            this.cmbDUI.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.cmbDUI.TextMarginBottom = 0;
+            this.cmbDUI.TextMarginLeft = 3;
+            this.cmbDUI.TextMarginTop = 1;
+            this.cmbDUI.TextPlaceholder = "";
+            this.cmbDUI.UseSystemPasswordChar = false;
+            this.cmbDUI.WordWrap = true;
+            // 
             // bunifuPictureBox1
             // 
             this.bunifuPictureBox1.AllowFocused = false;
@@ -939,9 +974,9 @@
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.DateTimePicker DTPHoraConsulta;
         private System.Windows.Forms.Label label5;
-        public Bunifu.UI.WinForms.BunifuCheckBox cmbEstado;
-        public Bunifu.UI.WinForms.BunifuDropdown cmbDUI;
         public Bunifu.UI.WinForms.BunifuDropdown cmbVisita;
         public Bunifu.UI.WinForms.BunifuDropdown cmbEmpleado;
+        public Bunifu.UI.WinForms.BunifuTextBox cmbDUI;
+        public Bunifu.UI.WinForms.BunifuCheckBox cmbEstado;
     }
 }
