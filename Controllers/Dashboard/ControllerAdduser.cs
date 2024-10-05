@@ -507,16 +507,16 @@ namespace OpticaMultivisual.Controllers.Dashboard
                 return false;
             }
 
-            // Verificar si el DUI ya está registrado
-            bool existeDui = daoAdminEmp.VerificarDuiExistente(ObjAddUser.mskDocument.Text.Trim());
-            if (existeDui)
-            {
-                MessageBox.Show("El DUI ingresado ya está asociado a otro usuario. Por favor, verifique e ingrese un DUI diferente.",
-                                "Error de validación",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error);
-                return false; // Detener el proceso si el DUI ya existe
-            }
+            //// Verificar si el DUI ya está registrado
+            //bool existeDui = daoAdminEmp.VerificarDuiExistente(ObjAddUser.mskDocument.Text.Trim());
+            //if (existeDui)
+            //{
+            //    MessageBox.Show("El DUI ingresado ya está asociado a otro usuario. Por favor, verifique e ingrese un DUI diferente.",
+            //                    "Error de validación",
+            //                    MessageBoxButtons.OK,
+            //                    MessageBoxIcon.Error);
+            //    return false; // Detener el proceso si el DUI ya existe
+            //}
 
             // Verificar si el correo ya está registrado
             bool existeCorreo = daoAdminEmp.VerificarCorreoExistente(ObjAddUser.txtEmail.Text.Trim());
