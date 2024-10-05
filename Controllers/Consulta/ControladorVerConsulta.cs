@@ -350,5 +350,77 @@ namespace OpticaMultivisual.Controllers.Consulta
                 ObjAañadirConsulta.btnActualizar.Enabled = true;
             }
         }
+        public ControladorVerConsulta(AñadirConsulta Vista, int p_accion, string cli_DUI)
+        {
+            ObjAañadirConsulta = Vista;
+            ObjAañadirConsulta.Load += new EventHandler(CargaInicio);
+            this.accion = p_accion;
+            verificarAccion();
+            CargarValoresCon(cli_DUI);
+            ObjAañadirConsulta.btnAgendar.Click += new EventHandler(ActualizarRegistroCon);
+        }
+        public void CargarValoresCon(string cli_DUI)
+        {
+            try
+            {
+                // Asignar el valor directamente al TextBox (txtDuiCon)
+                ObjAañadirConsulta.cmbDUI.Text = cli_DUI;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: EPV005 - No se pudieron cargar los datos",
+                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+        public void ActualizarRegistroCon(object sender, EventArgs e)
+        {
+            try
+            {
+                // Asegúrate de que el TextBox del DUI no esté vacío
+                if (string.IsNullOrWhiteSpace(ObjAañadirConsulta.cmbDUI.Text.Trim()))
+                {
+                    MessageBox.Show("El campo DUI no puede estar vacío.", "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Crear una nueva instancia de DAOConsulta con los valores correctos
+                DAOConsulta Consulta = new DAOConsulta
+                {
+                    Cli_DUI = ObjAañadirConsulta.cmbDUI.Text.Trim(),  // Asignar el DUI desde el TextBox
+                    Con_fecha = DateTime.Parse(ObjAañadirConsulta.DTPfechaconsulta.Text.Trim()),
+                    Con_obser = ObjAañadirConsulta.txtObservaciones.Text.Trim(),
+                    Vis_ID = ObjAañadirConsulta.cmbVisita.SelectedValue.ToString().Trim(),
+                    Emp_ID = ObjAañadirConsulta.cmbEmpleado.SelectedValue.ToString().Trim(),
+                    Con_hora = DateTime.Parse(ObjAañadirConsulta.DTPHoraConsulta.Text.Trim())
+                };
+
+                Consulta.Est_ID = ObjAañadirConsulta.cmbEstado.Checked;
+
+                // Registrar la consulta en la base de datos
+                int valorRetornado = Consulta.RegistrarCliente();
+
+                // Verificar el resultado de la inserción
+                if (valorRetornado == 1)
+                {
+                    MessageBox.Show("Los datos han sido registrados exitosamente",
+                                    "Proceso completado",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Information);
+                    ObjAañadirConsulta.Close();
+                }
+                else
+                {
+                    MessageBox.Show("EPV006 - No se pudieron registrar los datos",
+                                    "Proceso interrumpido",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error inesperado: " + ex.Message,
+                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
