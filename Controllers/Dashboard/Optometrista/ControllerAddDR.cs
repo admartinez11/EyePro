@@ -18,7 +18,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.Optometrista
     {
         ViewAddDR ObjAddDR;
         private int accion;
-        //pruebaaaa
+        //pruebaaaa22222222
 
         public ControllerAddDR(ViewAddDR Vista, int accion, int DR_ID, string con_ID, string OD_esfera, string OD_cilindro, string OD_eje, string OD_prisma, string OD_adicion, string OD_AO, string OD_AP, string OD_DP, string OI_esfera, string OI_cilindro, string OI_eje, string OI_prisma, string OI_adicion, string OI_AO, string OI_AP, string OI_DP)
         {
