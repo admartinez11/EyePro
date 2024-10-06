@@ -28,7 +28,7 @@ namespace OpticaMultivisual.Controllers.Consulta
         }
         void CargaInicio(object sender, EventArgs e)
         {
-            LlenarComboDui();
+            //LlenarComboDui();
             LlenarComboVisita();
             LlenarComboEmpleados();
             //AñadirConsulta_Load();
@@ -51,15 +51,15 @@ namespace OpticaMultivisual.Controllers.Consulta
         //    ObjAañadirConsulta.cmbEmpleado.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
         //    ObjAañadirConsulta.cmbEmpleado.AutoCompleteSource = AutoCompleteSource.ListItems;
         //}
-        void LlenarComboDui()
-        {
-            DAOConsulta DaoDui = new DAOConsulta();
-            DataSet dataSet = DaoDui.ObtenerDUI();
-            ObjAañadirConsulta.cmbDUI.DataSource = dataSet.Tables["Cliente"];
-            ObjAañadirConsulta.cmbDUI.DisplayMember = "cli_dui";
-            ObjAañadirConsulta.cmbDUI.ValueMember = "cli_dui";
+        //void LlenarComboDui()
+        //{
+        //    DAOConsulta DaoDui = new DAOConsulta();
+        //    DataSet dataSet = DaoDui.ObtenerDUI();
+        //    ObjAañadirConsulta.cmbDUI.DataSource = dataSet.Tables["Cliente"];
+        //    ObjAañadirConsulta.cmbDUI.DisplayMember = "cli_dui";
+        //    ObjAañadirConsulta.cmbDUI.ValueMember = "cli_dui";
 
-        }
+        //}
         void LlenarComboVisita()
         {
             DAOConsulta DaoDui = new DAOConsulta();
@@ -85,7 +85,7 @@ namespace OpticaMultivisual.Controllers.Consulta
                 {
                     Con_fecha = DateTime.Parse(ObjAañadirConsulta.DTPfechaconsulta.Text.Trim()),
                     Con_obser = ObjAañadirConsulta.txtObservaciones.Text.Trim(),
-                    Cli_DUI = ObjAañadirConsulta.cmbDUI.SelectedValue.ToString().Trim(),
+                    Cli_DUI = ObjAañadirConsulta.cmbDUI.Text.Trim(),
                     Vis_ID = ObjAañadirConsulta.cmbVisita.SelectedValue.ToString().Trim(),
                     Emp_ID = ObjAañadirConsulta.cmbEmpleado.SelectedValue.ToString().Trim(),
                     Con_hora = DateTime.Parse(ObjAañadirConsulta.DTPHoraConsulta.Text.Trim())
@@ -159,7 +159,7 @@ namespace OpticaMultivisual.Controllers.Consulta
                     DAOConsulta DAOActualizar = new DAOConsulta();
 
                     // Verificar si los elementos seleccionados en los ComboBox son válidos
-                    if (ObjAañadirConsulta.cmbDUI.SelectedItem == null ||
+                    if (
                         ObjAañadirConsulta.cmbVisita.SelectedItem == null ||
                         ObjAañadirConsulta.cmbEmpleado.SelectedItem == null)
                     {
@@ -169,7 +169,7 @@ namespace OpticaMultivisual.Controllers.Consulta
                     }
 
                     // Accediendo directamente a las propiedades de DataRowView para los ComboBox
-                    DAOActualizar.Cli_DUI = ((DataRowView)ObjAañadirConsulta.cmbDUI.SelectedItem)["cli_DUI"].ToString().Trim();
+                    //DAOActualizar.Cli_DUI = ((DataRowView)ObjAañadirConsulta.cmbDUI.SelectedItem)["cli_DUI"].ToString().Trim();
                     DAOActualizar.Vis_ID = ((DataRowView)ObjAañadirConsulta.cmbVisita.SelectedItem)["vis_ID"].ToString().Trim();
                     DAOActualizar.Emp_ID = ((DataRowView)ObjAañadirConsulta.cmbEmpleado.SelectedItem)["emp_ID"].ToString().Trim();
 
