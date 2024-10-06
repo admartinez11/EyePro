@@ -69,9 +69,6 @@ namespace OpticaMultivisual.Views.ScheduleAppointment
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.DTPfechacita = new Bunifu.UI.WinForms.BunifuDatePicker();
-            this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.txtCiDUI = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtCiCorreo = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -91,9 +88,11 @@ namespace OpticaMultivisual.Views.ScheduleAppointment
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.btnActualizar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnAgendar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.DTPfechacita = new Bunifu.UI.WinForms.BunifuDatePicker();
+            this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -101,6 +100,7 @@ namespace OpticaMultivisual.Views.ScheduleAppointment
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.tableLayoutPanel9.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -135,8 +135,8 @@ namespace OpticaMultivisual.Views.ScheduleAppointment
             this.bunifuPanel1.BorderRadius = 30;
             this.bunifuPanel1.BorderThickness = 1;
             this.bunifuPanel1.Controls.Add(this.tableLayoutPanel9);
-            this.bunifuPanel1.Controls.Add(this.tableLayoutPanel3);
             this.bunifuPanel1.Controls.Add(this.tableLayoutPanel8);
+            this.bunifuPanel1.Controls.Add(this.tableLayoutPanel3);
             this.bunifuPanel1.Controls.Add(this.tableLayoutPanel6);
             this.bunifuPanel1.Controls.Add(this.tableLayoutPanel4);
             this.bunifuPanel1.Controls.Add(this.tableLayoutPanel2);
@@ -146,66 +146,6 @@ namespace OpticaMultivisual.Views.ScheduleAppointment
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(920, 546);
             this.bunifuPanel1.TabIndex = 1;
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.43366F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.56635F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.tableLayoutPanel3.Controls.Add(this.DTPfechacita, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(45, 244);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(25, 2, 3, 2);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(824, 52);
-            this.tableLayoutPanel3.TabIndex = 7;
-            // 
-            // DTPfechacita
-            // 
-            this.DTPfechacita.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.DTPfechacita.BackColor = System.Drawing.Color.Transparent;
-            this.DTPfechacita.BorderColor = System.Drawing.Color.Silver;
-            this.DTPfechacita.BorderRadius = 17;
-            this.DTPfechacita.Color = System.Drawing.Color.Silver;
-            this.DTPfechacita.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
-            this.DTPfechacita.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
-            this.DTPfechacita.DisabledColor = System.Drawing.Color.Gray;
-            this.DTPfechacita.DisplayWeekNumbers = false;
-            this.DTPfechacita.DPHeight = 0;
-            this.DTPfechacita.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.DTPfechacita.FillDatePicker = false;
-            this.DTPfechacita.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DTPfechacita.ForeColor = System.Drawing.Color.White;
-            this.DTPfechacita.Icon = ((System.Drawing.Image)(resources.GetObject("DTPfechacita.Icon")));
-            this.DTPfechacita.IconColor = System.Drawing.Color.White;
-            this.DTPfechacita.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.DTPfechacita.LeftTextMargin = 5;
-            this.DTPfechacita.Location = new System.Drawing.Point(204, 2);
-            this.DTPfechacita.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.DTPfechacita.MinimumSize = new System.Drawing.Size(4, 32);
-            this.DTPfechacita.Name = "DTPfechacita";
-            this.DTPfechacita.Size = new System.Drawing.Size(343, 34);
-            this.DTPfechacita.TabIndex = 0;
-            this.DTPfechacita.Value = new System.DateTime(2024, 9, 1, 11, 29, 0, 0);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(4, 11);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 11, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(175, 28);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Fecha de la visita";
             // 
             // tableLayoutPanel8
             // 
@@ -955,7 +895,7 @@ namespace OpticaMultivisual.Views.ScheduleAppointment
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.9937888F));
             this.tableLayoutPanel9.Controls.Add(this.txtCiObs, 1, 0);
             this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel10, 1, 3);
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(45, 320);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(45, 322);
             this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 4;
@@ -964,7 +904,7 @@ namespace OpticaMultivisual.Views.ScheduleAppointment
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
             this.tableLayoutPanel9.Size = new System.Drawing.Size(831, 183);
-            this.tableLayoutPanel9.TabIndex = 10;
+            this.tableLayoutPanel9.TabIndex = 15;
             // 
             // txtCiObs
             // 
@@ -1248,6 +1188,66 @@ namespace OpticaMultivisual.Views.ScheduleAppointment
             this.btnAgendar.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnAgendar.UseDefaultRadiusAndThickness = true;
             // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.43366F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.56635F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
+            this.tableLayoutPanel3.Controls.Add(this.DTPfechacita, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(45, 246);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(25, 2, 3, 2);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(824, 52);
+            this.tableLayoutPanel3.TabIndex = 14;
+            // 
+            // DTPfechacita
+            // 
+            this.DTPfechacita.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.DTPfechacita.BackColor = System.Drawing.Color.Transparent;
+            this.DTPfechacita.BorderColor = System.Drawing.Color.Silver;
+            this.DTPfechacita.BorderRadius = 17;
+            this.DTPfechacita.Color = System.Drawing.Color.Silver;
+            this.DTPfechacita.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
+            this.DTPfechacita.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
+            this.DTPfechacita.DisabledColor = System.Drawing.Color.Gray;
+            this.DTPfechacita.DisplayWeekNumbers = false;
+            this.DTPfechacita.DPHeight = 0;
+            this.DTPfechacita.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.DTPfechacita.FillDatePicker = false;
+            this.DTPfechacita.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DTPfechacita.ForeColor = System.Drawing.Color.White;
+            this.DTPfechacita.Icon = ((System.Drawing.Image)(resources.GetObject("DTPfechacita.Icon")));
+            this.DTPfechacita.IconColor = System.Drawing.Color.White;
+            this.DTPfechacita.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
+            this.DTPfechacita.LeftTextMargin = 5;
+            this.DTPfechacita.Location = new System.Drawing.Point(204, 2);
+            this.DTPfechacita.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DTPfechacita.MinimumSize = new System.Drawing.Size(4, 32);
+            this.DTPfechacita.Name = "DTPfechacita";
+            this.DTPfechacita.Size = new System.Drawing.Size(343, 34);
+            this.DTPfechacita.TabIndex = 0;
+            this.DTPfechacita.Value = new System.DateTime(2024, 9, 1, 11, 29, 0, 0);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(4, 11);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 11, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(175, 28);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Fecha de la visita";
+            // 
             // ViewScheduleAppointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1259,8 +1259,6 @@ namespace OpticaMultivisual.Views.ScheduleAppointment
             this.Text = "ViewScheduleAppointment";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.bunifuPanel1.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
@@ -1269,6 +1267,8 @@ namespace OpticaMultivisual.Views.ScheduleAppointment
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel10.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1277,7 +1277,6 @@ namespace OpticaMultivisual.Views.ScheduleAppointment
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         public Bunifu.UI.WinForms.BunifuTextBox txtCiDUI;
         public Bunifu.UI.WinForms.BunifuTextBox txtCiCorreo;
@@ -1292,12 +1291,13 @@ namespace OpticaMultivisual.Views.ScheduleAppointment
         public Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox2;
         public Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox6;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
-        public Bunifu.UI.WinForms.BunifuDatePicker DTPfechacita;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
         public Bunifu.UI.WinForms.BunifuTextBox txtCiObs;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnActualizar;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnAgendar;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        public Bunifu.UI.WinForms.BunifuDatePicker DTPfechacita;
+        private System.Windows.Forms.Label label2;
     }
 }
