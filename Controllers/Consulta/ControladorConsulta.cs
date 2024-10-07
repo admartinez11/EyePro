@@ -113,13 +113,13 @@ namespace OpticaMultivisual.Controllers.Consulta
             AñadirConsulta openForm = new AñadirConsulta(
                 2, // accion
                 ObjverConsulta.dgvInfoConsulta[1, pos].Value.ToString(), // cli_DUI
-                ObjverConsulta.dgvInfoConsulta[2, pos].Value.ToString(), // vis_ID
-                DateTime.Parse(ObjverConsulta.dgvInfoConsulta[3, pos].Value.ToString()), // con_fechahora
-                ObjverConsulta.dgvInfoConsulta[5, pos].Value.ToString(), // con_obser
-                ObjverConsulta.dgvInfoConsulta[6, pos].Value.ToString(), // emp_ID
+                ObjverConsulta.dgvInfoConsulta[4, pos].Value.ToString(), // vis_ID
+                DateTime.Parse(ObjverConsulta.dgvInfoConsulta[5, pos].Value.ToString()), // con_fechahora
+                ObjverConsulta.dgvInfoConsulta[7, pos].Value.ToString(), // con_obser
+                ObjverConsulta.dgvInfoConsulta[8, pos].Value.ToString(), // emp_ID
                 int.Parse(ObjverConsulta.dgvInfoConsulta[0, pos].Value.ToString()),  // con_ID
-                DateTime.Parse(ObjverConsulta.dgvInfoConsulta[4, pos].Value.ToString()), // con_fechahora
-                bool.Parse(ObjverConsulta.dgvInfoConsulta[7, pos].Value.ToString()
+                DateTime.Parse(ObjverConsulta.dgvInfoConsulta[6, pos].Value.ToString()), // con_fechahora
+                bool.Parse(ObjverConsulta.dgvInfoConsulta[9, pos].Value.ToString()
 
             ));
 
