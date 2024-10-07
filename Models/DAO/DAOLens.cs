@@ -165,5 +165,29 @@ namespace OpticaMultivisual.Models.DAO
                 Command.Connection.Close();
             }
         }
+
+        public DataSet BuscarDUI(string valor)
+        {
+            try
+            {
+                Command.Connection = getConnection();
+                string query = $"SELECT * FROM dbo.Consulta AS con INNER JOIN dbo.Cliente AS cli ON CAST(con.cli_DUI AS VARCHAR) = cli.cli_dui WHERE cli.cli_dui LIKE '%{valor}%'";
+                SqlCommand cmd = new SqlCommand(query, Command.Connection);
+                cmd.ExecuteNonQuery();
+                SqlDataAdapter adp = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                //Rellenamos con el Adaptador el DataSet diciéndole de que tabla provienen los datos
+                adp.Fill(ds, "Consulta");
+                return ds;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+            finally
+            {
+                getConnection().Close();
+            }
+        }
     }
 }

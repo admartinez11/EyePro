@@ -65,7 +65,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.Optometrista
         {
             DAO_DR ObjADDDR = new DAO_DR();
             DataSet ds = ObjADDDR.BuscarDUI(ObjAddDR.txtBuscar.Text.Trim());
-            ObjAddDR.cbcon_ID.DataSource = ds.Tables["Cliente"];
+            ObjAddDR.cbcon_ID.DataSource = ds.Tables["Consulta"];
         }
 
 
