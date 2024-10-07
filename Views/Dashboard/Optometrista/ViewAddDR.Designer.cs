@@ -103,6 +103,11 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties69 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties70 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties71 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties72 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.bunifuPanel4 = new Bunifu.UI.WinForms.BunifuPanel();
@@ -153,8 +158,11 @@
             this.btnGuardar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnActualizar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.cbcon_ID = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bunifuButton23 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnBuscar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.txtBuscar = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.cbcon_ID = new Bunifu.UI.WinForms.BunifuDropdown();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -163,6 +171,7 @@
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
+            this.tableLayoutPanel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -180,6 +189,7 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel6, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel7, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel9, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -2362,8 +2372,8 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.88525F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.57377F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.86885F));
-            this.tableLayoutPanel7.Controls.Add(this.cbcon_ID, 1, 2);
             this.tableLayoutPanel7.Controls.Add(this.bunifuButton23, 1, 1);
+            this.tableLayoutPanel7.Controls.Add(this.cbcon_ID, 1, 2);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(895, 3);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
@@ -2373,50 +2383,6 @@
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(305, 97);
             this.tableLayoutPanel7.TabIndex = 8;
-            // 
-            // cbcon_ID
-            // 
-            this.cbcon_ID.BackColor = System.Drawing.Color.Transparent;
-            this.cbcon_ID.BackgroundColor = System.Drawing.Color.White;
-            this.cbcon_ID.BorderColor = System.Drawing.Color.Silver;
-            this.cbcon_ID.BorderRadius = 1;
-            this.cbcon_ID.Color = System.Drawing.Color.Silver;
-            this.cbcon_ID.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.cbcon_ID.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cbcon_ID.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.cbcon_ID.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cbcon_ID.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cbcon_ID.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
-            this.cbcon_ID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbcon_ID.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
-            this.cbcon_ID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbcon_ID.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.cbcon_ID.FillDropDown = true;
-            this.cbcon_ID.FillIndicator = false;
-            this.cbcon_ID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbcon_ID.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.cbcon_ID.ForeColor = System.Drawing.Color.Black;
-            this.cbcon_ID.FormattingEnabled = true;
-            this.cbcon_ID.Icon = null;
-            this.cbcon_ID.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.cbcon_ID.IndicatorColor = System.Drawing.Color.DarkGray;
-            this.cbcon_ID.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.cbcon_ID.IndicatorThickness = 2;
-            this.cbcon_ID.IsDropdownOpened = false;
-            this.cbcon_ID.ItemBackColor = System.Drawing.Color.White;
-            this.cbcon_ID.ItemBorderColor = System.Drawing.Color.White;
-            this.cbcon_ID.ItemForeColor = System.Drawing.Color.Black;
-            this.cbcon_ID.ItemHeight = 26;
-            this.cbcon_ID.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
-            this.cbcon_ID.ItemHighLightForeColor = System.Drawing.Color.White;
-            this.cbcon_ID.ItemTopMargin = 3;
-            this.cbcon_ID.Location = new System.Drawing.Point(84, 67);
-            this.cbcon_ID.Name = "cbcon_ID";
-            this.cbcon_ID.Size = new System.Drawing.Size(132, 32);
-            this.cbcon_ID.TabIndex = 114;
-            this.cbcon_ID.Text = null;
-            this.cbcon_ID.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.cbcon_ID.TextLeftMargin = 5;
             // 
             // bunifuButton23
             // 
@@ -2508,6 +2474,235 @@
             this.bunifuButton23.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton23.UseDefaultRadiusAndThickness = true;
             // 
+            // tableLayoutPanel9
+            // 
+            this.tableLayoutPanel9.ColumnCount = 1;
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel9.Controls.Add(this.txtBuscar, 0, 1);
+            this.tableLayoutPanel9.Controls.Add(this.btnBuscar, 0, 0);
+            this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(3, 106);
+            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
+            this.tableLayoutPanel9.RowCount = 4;
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.22222F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.22222F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.22222F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(266, 607);
+            this.tableLayoutPanel9.TabIndex = 9;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.AllowAnimations = true;
+            this.btnBuscar.AllowMouseEffects = true;
+            this.btnBuscar.AllowToggling = false;
+            this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnBuscar.AnimationSpeed = 200;
+            this.btnBuscar.AutoGenerateColors = false;
+            this.btnBuscar.AutoRoundBorders = false;
+            this.btnBuscar.AutoSizeLeftIcon = true;
+            this.btnBuscar.AutoSizeRightIcon = true;
+            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.btnBuscar.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(219)))), ((int)(((byte)(114)))));
+            this.btnBuscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBuscar.BackgroundImage")));
+            this.btnBuscar.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnBuscar.ButtonText = "Buscar DUI";
+            this.btnBuscar.ButtonTextMarginLeft = 0;
+            this.btnBuscar.ColorContrastOnClick = 45;
+            this.btnBuscar.ColorContrastOnHover = 45;
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.btnBuscar.CustomizableEdges = borderEdges7;
+            this.btnBuscar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnBuscar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnBuscar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnBuscar.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnBuscar.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
+            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.Black;
+            this.btnBuscar.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnBuscar.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnBuscar.IconMarginLeft = 11;
+            this.btnBuscar.IconPadding = 10;
+            this.btnBuscar.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscar.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnBuscar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnBuscar.IconSize = 25;
+            this.btnBuscar.IdleBorderColor = System.Drawing.Color.Silver;
+            this.btnBuscar.IdleBorderRadius = 20;
+            this.btnBuscar.IdleBorderThickness = 1;
+            this.btnBuscar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(219)))), ((int)(((byte)(114)))));
+            this.btnBuscar.IdleIconLeftImage = null;
+            this.btnBuscar.IdleIconRightImage = null;
+            this.btnBuscar.IndicateFocus = true;
+            this.btnBuscar.Location = new System.Drawing.Point(3, 53);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnBuscar.OnDisabledState.BorderRadius = 20;
+            this.btnBuscar.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnBuscar.OnDisabledState.BorderThickness = 1;
+            this.btnBuscar.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnBuscar.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnBuscar.OnDisabledState.IconLeftImage = null;
+            this.btnBuscar.OnDisabledState.IconRightImage = null;
+            this.btnBuscar.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnBuscar.onHoverState.BorderRadius = 20;
+            this.btnBuscar.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnBuscar.onHoverState.BorderThickness = 1;
+            this.btnBuscar.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnBuscar.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.onHoverState.IconLeftImage = null;
+            this.btnBuscar.onHoverState.IconRightImage = null;
+            this.btnBuscar.OnIdleState.BorderColor = System.Drawing.Color.Silver;
+            this.btnBuscar.OnIdleState.BorderRadius = 20;
+            this.btnBuscar.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnBuscar.OnIdleState.BorderThickness = 1;
+            this.btnBuscar.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(219)))), ((int)(((byte)(114)))));
+            this.btnBuscar.OnIdleState.ForeColor = System.Drawing.Color.Black;
+            this.btnBuscar.OnIdleState.IconLeftImage = null;
+            this.btnBuscar.OnIdleState.IconRightImage = null;
+            this.btnBuscar.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnBuscar.OnPressedState.BorderRadius = 20;
+            this.btnBuscar.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnBuscar.OnPressedState.BorderThickness = 1;
+            this.btnBuscar.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnBuscar.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.OnPressedState.IconLeftImage = null;
+            this.btnBuscar.OnPressedState.IconRightImage = null;
+            this.btnBuscar.Size = new System.Drawing.Size(137, 27);
+            this.btnBuscar.TabIndex = 35;
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnBuscar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnBuscar.TextMarginLeft = 0;
+            this.btnBuscar.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnBuscar.UseDefaultRadiusAndThickness = true;
+            // 
+            // txtBuscar
+            // 
+            this.txtBuscar.AcceptsReturn = false;
+            this.txtBuscar.AcceptsTab = false;
+            this.txtBuscar.AnimationSpeed = 200;
+            this.txtBuscar.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtBuscar.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtBuscar.AutoSizeHeight = true;
+            this.txtBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.txtBuscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtBuscar.BackgroundImage")));
+            this.txtBuscar.BorderColorActive = System.Drawing.Color.Silver;
+            this.txtBuscar.BorderColorDisabled = System.Drawing.Color.Silver;
+            this.txtBuscar.BorderColorHover = System.Drawing.Color.Silver;
+            this.txtBuscar.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtBuscar.BorderRadius = 20;
+            this.txtBuscar.BorderThickness = 1;
+            this.txtBuscar.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
+            this.txtBuscar.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtBuscar.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBuscar.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txtBuscar.DefaultText = "";
+            this.txtBuscar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtBuscar.FillColor = System.Drawing.Color.White;
+            this.txtBuscar.HideSelection = true;
+            this.txtBuscar.IconLeft = null;
+            this.txtBuscar.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBuscar.IconPadding = 10;
+            this.txtBuscar.IconRight = null;
+            this.txtBuscar.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBuscar.Lines = new string[0];
+            this.txtBuscar.Location = new System.Drawing.Point(3, 137);
+            this.txtBuscar.MaxLength = 32767;
+            this.txtBuscar.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtBuscar.Modified = false;
+            this.txtBuscar.Multiline = false;
+            this.txtBuscar.Name = "txtBuscar";
+            stateProperties69.BorderColor = System.Drawing.Color.Silver;
+            stateProperties69.FillColor = System.Drawing.Color.Empty;
+            stateProperties69.ForeColor = System.Drawing.Color.Empty;
+            stateProperties69.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBuscar.OnActiveState = stateProperties69;
+            stateProperties70.BorderColor = System.Drawing.Color.Silver;
+            stateProperties70.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties70.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties70.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtBuscar.OnDisabledState = stateProperties70;
+            stateProperties71.BorderColor = System.Drawing.Color.Silver;
+            stateProperties71.FillColor = System.Drawing.Color.Empty;
+            stateProperties71.ForeColor = System.Drawing.Color.Empty;
+            stateProperties71.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBuscar.OnHoverState = stateProperties71;
+            stateProperties72.BorderColor = System.Drawing.Color.Silver;
+            stateProperties72.FillColor = System.Drawing.Color.White;
+            stateProperties72.ForeColor = System.Drawing.Color.Empty;
+            stateProperties72.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBuscar.OnIdleState = stateProperties72;
+            this.txtBuscar.Padding = new System.Windows.Forms.Padding(3);
+            this.txtBuscar.PasswordChar = '\0';
+            this.txtBuscar.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtBuscar.PlaceholderText = "Buscador";
+            this.txtBuscar.ReadOnly = false;
+            this.txtBuscar.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtBuscar.SelectedText = "";
+            this.txtBuscar.SelectionLength = 0;
+            this.txtBuscar.SelectionStart = 0;
+            this.txtBuscar.ShortcutsEnabled = false;
+            this.txtBuscar.Size = new System.Drawing.Size(260, 128);
+            this.txtBuscar.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtBuscar.TabIndex = 36;
+            this.txtBuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtBuscar.TextMarginBottom = 0;
+            this.txtBuscar.TextMarginLeft = 1;
+            this.txtBuscar.TextMarginTop = 1;
+            this.txtBuscar.TextPlaceholder = "Buscador";
+            this.txtBuscar.UseSystemPasswordChar = false;
+            this.txtBuscar.WordWrap = true;
+            // 
+            // cbcon_ID
+            // 
+            this.cbcon_ID.BackColor = System.Drawing.Color.Transparent;
+            this.cbcon_ID.BackgroundColor = System.Drawing.Color.White;
+            this.cbcon_ID.BorderColor = System.Drawing.Color.Silver;
+            this.cbcon_ID.BorderRadius = 1;
+            this.cbcon_ID.Color = System.Drawing.Color.Silver;
+            this.cbcon_ID.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.cbcon_ID.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.cbcon_ID.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.cbcon_ID.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.cbcon_ID.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cbcon_ID.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
+            this.cbcon_ID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbcon_ID.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
+            this.cbcon_ID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbcon_ID.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.cbcon_ID.FillDropDown = true;
+            this.cbcon_ID.FillIndicator = false;
+            this.cbcon_ID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbcon_ID.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cbcon_ID.ForeColor = System.Drawing.Color.Black;
+            this.cbcon_ID.FormattingEnabled = true;
+            this.cbcon_ID.Icon = null;
+            this.cbcon_ID.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.cbcon_ID.IndicatorColor = System.Drawing.Color.DarkGray;
+            this.cbcon_ID.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.cbcon_ID.IndicatorThickness = 2;
+            this.cbcon_ID.IsDropdownOpened = false;
+            this.cbcon_ID.ItemBackColor = System.Drawing.Color.White;
+            this.cbcon_ID.ItemBorderColor = System.Drawing.Color.White;
+            this.cbcon_ID.ItemForeColor = System.Drawing.Color.Black;
+            this.cbcon_ID.ItemHeight = 26;
+            this.cbcon_ID.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.cbcon_ID.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.cbcon_ID.ItemTopMargin = 3;
+            this.cbcon_ID.Location = new System.Drawing.Point(84, 67);
+            this.cbcon_ID.Name = "cbcon_ID";
+            this.cbcon_ID.Size = new System.Drawing.Size(132, 32);
+            this.cbcon_ID.TabIndex = 114;
+            this.cbcon_ID.Text = null;
+            this.cbcon_ID.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.cbcon_ID.TextLeftMargin = 5;
+            // 
             // ViewAddDR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2530,6 +2725,7 @@
             this.tableLayoutPanel5.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel9.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2587,6 +2783,9 @@
         public Bunifu.UI.WinForms.BunifuTextBox txtOIAdicion;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 bunifuButton23;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
+        public Bunifu.UI.WinForms.BunifuTextBox txtBuscar;
+        public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnBuscar;
         public Bunifu.UI.WinForms.BunifuDropdown cbcon_ID;
     }
 }
