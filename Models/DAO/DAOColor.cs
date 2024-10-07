@@ -62,12 +62,12 @@ namespace OpticaMultivisual.Models.DAO
             }
         }
 
-        public DataSet BuscarTipoArticulo(string valor)
+        public DataSet BuscarColor(string valor)
         {
             try
             {
                 Command.Connection = getConnection();
-                string query = $"SELECT * FROM Color WHERE color_nombre LIKE '%{valor}%' OR color_ID LIKE '%{valor}%'";
+                string query = $"SELECT * FROM VistaColor WHERE color_nombre LIKE '%{valor}%' OR color_ID LIKE '%{valor}%'";
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
                 cmd.ExecuteNonQuery();
                 SqlDataAdapter adp = new SqlDataAdapter(cmd);

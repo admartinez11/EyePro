@@ -149,6 +149,7 @@
     <Compile Include="Controllers\Article\Color\ControllerAdminColor.cs" />
     <Compile Include="Controllers\Article\ControllerAddArticle.cs" />
     <Compile Include="Controllers\Article\ControllerAdminArticle.cs" />
+    <Compile Include="Controllers\Article\Material\ControllerADDMaterial.cs" />
     <Compile Include="Controllers\Article\Material\ControllerAdminMaterial.cs" />
     <Compile Include="Controllers\Article\Modelo\ControllerAddModelo.cs" />
     <Compile Include="Controllers\Article\Modelo\ControllerAdminModelo.cs" />
