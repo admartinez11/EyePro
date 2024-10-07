@@ -16,7 +16,7 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Material
         public ViewAdminMaterial()
         {
             InitializeComponent();
-            //ControllerAdminMaterial adminMat = new ControllerAdminMaterial();
+            ControllerAdminMaterial adminMat = new ControllerAdminMaterial(this);
         }
     }
 }

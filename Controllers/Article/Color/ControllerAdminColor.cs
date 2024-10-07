@@ -37,8 +37,8 @@ namespace OpticaMultivisual.Controllers.Article.Color
         public void BuscarColor(object sender, EventArgs e)
         {
             DAOColor ObjRegistro = new DAOColor();
-            DataSet ds = ObjRegistro.BuscarTipoArticulo(ObjVista.txtBuscar.Text.Trim());
-            ObjVista.dgvInfoColor.DataSource = ds.Tables["Color"];
+            DataSet ds = ObjRegistro.BuscarColor(ObjVista.txtBuscar.Text.Trim());
+            ObjVista.dgvInfoColor.DataSource = ds.Tables["VistaColor"];
         }
         public void AgregarColor(object sender, EventArgs e)
         {
