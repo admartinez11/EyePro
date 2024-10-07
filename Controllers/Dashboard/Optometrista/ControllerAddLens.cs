@@ -29,7 +29,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.Optometrista
             //Métodos que se ejecutan al ocurrir eventos
             ObjAddLens.btnGuardar.Click += new EventHandler(NewRegister);
             ObjAddLens.btnActualizar.Click += new EventHandler(UpdateRegister);
-
+            ObjAddLens.btnBuscar.Click += new EventHandler(SearchRegister);
         }
 
         public ControllerAddLens(ViewAddLens frmAddLens, int accion)
@@ -40,6 +40,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.Optometrista
             verificarAccion();
             ObjAddLens.btnActualizar.Click += new EventHandler(UpdateRegister);
             ObjAddLens.btnGuardar.Click += new EventHandler(NewRegister);
+            ObjAddLens.btnBuscar.Click += new EventHandler(SearchRegister);
         }
 
         void CargaInicial(object sender, EventArgs e)
@@ -54,6 +55,13 @@ namespace OpticaMultivisual.Controllers.Dashboard.Optometrista
             ObjAddLens.cbcon_ID.DataSource = ds.Tables["Consulta"];
             ObjAddLens.cbcon_ID.DisplayMember = "cli_DUI";
             ObjAddLens.cbcon_ID.ValueMember = "con_ID";
+        }
+
+        public void SearchRegister(object sender, EventArgs e)
+        {
+            DAO_DR ObjADDDR = new DAO_DR();
+            DataSet ds = ObjADDDR.BuscarDUI(ObjAddLens.txtBuscar.Text.Trim());
+            ObjAddLens.cbcon_ID.DataSource = ds.Tables["Consulta"];
         }
 
         public void verificarAccion()

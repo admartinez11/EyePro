@@ -80,7 +80,7 @@ namespace OpticaMultivisual.Models.DAO
             try
             {
                 Command.Connection = getConnection();
-                string query3 = "EXEC InsertarDR @con_ID, @OD_esfera, @OD_cilindro, @OD_eje, @OD_prisma, @OD_adicion, @OD_AO, @OD_AP, @OD_DP, @OI_esfera, @OI_cilindro, @OI_eje, @OI_prisma, @OI_adicion, @OI_AO, @OI_AP, @OI_DP";
+                string query3 = "INSERT INTO DRefractivo(con_ID, OD_esfera, OD_cilindro, OD_eje,  OD_prisma, OD_adicion, OD_AO, OD_AP, OD_DP, OI_esfera, OI_cilindro, OI_eje, OI_prisma, OI_adicion, OI_AO, OI_AP, OI_DP) VALUES (@con_ID, @OD_esfera, @OD_cilindro, @OD_eje, @OD_prisma, @OD_adicion, @OD_AO, @OD_AP, @OD_DP, @OI_esfera, @OI_cilindro, @OI_eje, @OI_prisma, @OI_adicion, @OI_AO, @OI_AP, @OI_DP)";
                 SqlCommand cmd = new SqlCommand(query3, Command.Connection);
 
                 cmd.Parameters.AddWithValue("@con_ID", con_ID1);
@@ -185,13 +185,13 @@ namespace OpticaMultivisual.Models.DAO
             try
             {
                 Command.Connection = getConnection();
-                string query = $"SELECT * FROM Cliente WHERE cli_dui LIKE '%{valor}%'";
+                string query = $"SELECT * FROM dbo.Consulta AS con INNER JOIN dbo.Cliente AS cli ON CAST(con.cli_DUI AS VARCHAR) = cli.cli_dui WHERE cli.cli_dui LIKE '%{valor}%'";
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
                 cmd.ExecuteNonQuery();
                 SqlDataAdapter adp = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 //Rellenamos con el Adaptador el DataSet diciéndole de que tabla provienen los datos
-                adp.Fill(ds, "Cliente");
+                adp.Fill(ds, "Consulta");
                 return ds;
             }
             catch (Exception)
