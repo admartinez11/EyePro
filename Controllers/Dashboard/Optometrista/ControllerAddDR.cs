@@ -32,6 +32,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.Optometrista
             //Métodos que se ejecutan al ocurrir eventos
             ObjAddDR.btnGuardar.Click += new EventHandler(NewRegister);
             ObjAddDR.btnActualizar.Click += new EventHandler(UpdateRegister);
+            ObjAddDR.btnBuscar.Click += new EventHandler(SearchRegister);
 
         }
 
@@ -41,6 +42,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.Optometrista
             this.accion = accion;
             frmAddDR.Load += new EventHandler(CargaInicial);
             verificarAccion();
+            ObjAddDR.btnBuscar.Click += new EventHandler(SearchRegister);
             ObjAddDR.btnActualizar.Click += new EventHandler(UpdateRegister);
             ObjAddDR.btnGuardar.Click += new EventHandler(NewRegister);
         }
@@ -58,6 +60,14 @@ namespace OpticaMultivisual.Controllers.Dashboard.Optometrista
             ObjAddDR.cbcon_ID.DisplayMember = "cli_DUI";
             ObjAddDR.cbcon_ID.ValueMember = "con_ID";
         }
+
+        public void SearchRegister(object sender, EventArgs e)
+        {
+            DAO_DR ObjADDDR = new DAO_DR();
+            DataSet ds = ObjADDDR.BuscarDUI(ObjAddDR.txtBuscar.Text.Trim());
+            ObjAddDR.cbcon_ID.DataSource = ds.Tables["Cliente"];
+        }
+
 
         public void verificarAccion()
         {
