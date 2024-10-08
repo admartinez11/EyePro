@@ -23,7 +23,7 @@ namespace OpticaMultivisual.Views.Dashboard.PedidoDet
         }
 
         //Constructor utilizado para la actualización de datos
-        public ViewAddPedidoDet(int accion, int pd_ID, int con_ID, DateTime pd_fpedido, DateTime pd_fprogramada, string art_codigo, int art_cant, string pd_obser, int pd_recetalab)
+        public ViewAddPedidoDet(int accion, int pd_ID, string con_ID, DateTime pd_fpedido, DateTime pd_fprogramada, string art_codigo, int art_cant, string pd_obser, int pd_recetalab)
         {
             InitializeComponent();
             ControllerAddPD objAddLens = new ControllerAddPD(this, accion, pd_ID, con_ID, pd_fpedido, pd_fprogramada, art_codigo, art_cant, pd_obser, pd_recetalab);

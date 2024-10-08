@@ -79,26 +79,66 @@ namespace OpticaMultivisual.Models.DAO
             try
             {
                 Command.Connection = getConnection();
-                //Definir instrucción de lo que se quiere hacer
-                string query = "SELECT con_ID FROM Consulta";
-                //Creando un objeto de tipo comando donde recibe la instrucción y la conexión
+                // Definir instrucción de lo que se quiere hacer
+                string query = @"
+                    SELECT DISTINCT p.con_ID, 
+                    CONCAT(p.con_ID, ' - ', cli.cli_dui) AS DUICompleto 
+                    FROM ViewPedidoDet p"; ;
+
+                // Creando un objeto de tipo comando donde recibe la instrucción y la conexión
                 SqlCommand cmdSelect = new SqlCommand(query, Command.Connection);
-                cmdSelect.ExecuteNonQuery();
+
+                // Llenando el DataSet con SqlDataAdapter
                 SqlDataAdapter adp = new SqlDataAdapter(cmdSelect);
                 DataSet ds = new DataSet();
-                adp.Fill(ds, "Consulta");
+                adp.Fill(ds, "ViewPedidoDet");
+
+                // Retornar el DataSet
                 return ds;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("EPV005 - No se pudieron cargar los datos", "Error de ejecución", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"EPV005 - No se pudieron cargar los datos. Error: {ex.Message}", "Error de ejecución", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }
             finally
             {
+                // Asegurarse de cerrar la conexión
                 Command.Connection.Close();
             }
+        }
 
+        public int ObtenerSoloIDPorConcatenacion(string clienteDUIConcatenado)
+        {
+            int idConsulta = -1;
+            try
+            {
+                // Extraemos el ID de la consulta desde el valor concatenado "con_ID - DUI"
+                string[] partes = clienteDUIConcatenado.Split('-');
+                if (partes.Length > 0)
+                {
+                    string idConsultaString = partes[0].Trim(); // Extraemos el ID de la consulta
+
+                    // Verificamos si el valor extraído es un número entero válido
+                    if (int.TryParse(idConsultaString, out idConsulta))
+                    {
+                        return idConsulta; // Devolvemos el ID de la consulta (con_ID)
+                    }
+                    else
+                    {
+                        MessageBox.Show("El ID extraído no es un número válido.", "Error de formato", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("El formato del DUI concatenado no es válido.", "Error de formato", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message}", "Error de ejecución", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return idConsulta; // Devolvemos -1 si no se encuentra un ID válido
         }
 
         public int InsertarPedido()
@@ -182,6 +222,54 @@ namespace OpticaMultivisual.Models.DAO
             finally
             {
                 Command.Connection.Close();
+            }
+        }
+
+        public DataSet BuscarDUI(string valor)
+        {
+            try
+            {
+                Command.Connection = getConnection();
+                string query = $"SELECT * FROM dbo.Consulta AS con INNER JOIN dbo.Cliente AS cli ON CAST(con.cli_DUI AS VARCHAR) = cli.cli_dui WHERE cli.cli_dui LIKE '%{valor}%'";
+                SqlCommand cmd = new SqlCommand(query, Command.Connection);
+                cmd.ExecuteNonQuery();
+                SqlDataAdapter adp = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                //Rellenamos con el Adaptador el DataSet diciéndole de que tabla provienen los datos
+                adp.Fill(ds, "Consulta");
+                return ds;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+            finally
+            {
+                getConnection().Close();
+            }
+        }
+
+        public DataSet BuscarDUI2(string valor)
+        {
+            try
+            {
+                Command.Connection = getConnection();
+                string query = $@"SELECT * FROM ViewPedidoDet WHERE [Cliente DUI] LIKE '%{valor}%'";
+                SqlCommand cmd = new SqlCommand(query, Command.Connection);
+                cmd.ExecuteNonQuery();
+                SqlDataAdapter adp = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                //Rellenamos con el Adaptador el DataSet diciéndole de que tabla provienen los datos
+                adp.Fill(ds, "ViewPedidoDet");
+                return ds;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+            finally
+            {
+                getConnection().Close();
             }
         }
     }
