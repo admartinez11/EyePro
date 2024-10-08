@@ -46,7 +46,7 @@
             this.dgvPD = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.btnActualizar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
-            this.btnAgregarCliente = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.btnAgregar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnEliminar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.btnBuscar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
@@ -70,13 +70,12 @@
             this.tableLayoutPanel1.Controls.Add(this.bunifuPanel1, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.603667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.35684F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.039493F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1371, 709);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1028, 576);
             this.tableLayoutPanel1.TabIndex = 17;
             // 
             // bunifuPanel1
@@ -92,10 +91,11 @@
             this.bunifuPanel1.BorderThickness = 1;
             this.bunifuPanel1.Controls.Add(this.tableLayoutPanel2);
             this.bunifuPanel1.Controls.Add(this.tableLayoutPanel6);
-            this.bunifuPanel1.Location = new System.Drawing.Point(144, 64);
+            this.bunifuPanel1.Location = new System.Drawing.Point(107, 51);
+            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(1084, 585);
+            this.bunifuPanel1.Size = new System.Drawing.Size(813, 476);
             this.bunifuPanel1.TabIndex = 1;
             // 
             // tableLayoutPanel2
@@ -109,12 +109,13 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 99.04875F));
             this.tableLayoutPanel2.Controls.Add(this.dgvPD, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel10, 1, 1);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(38, 104);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(28, 84);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.33704F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.66295F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(992, 449);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(744, 366);
             this.tableLayoutPanel2.TabIndex = 9;
             // 
             // dgvPD
@@ -139,8 +140,8 @@
             this.dgvPD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPD.EnableHeadersVisualStyles = false;
             this.dgvPD.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
-            this.dgvPD.Location = new System.Drawing.Point(12, 2);
-            this.dgvPD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvPD.Location = new System.Drawing.Point(9, 2);
+            this.dgvPD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvPD.Name = "dgvPD";
             this.dgvPD.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -159,7 +160,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvPD.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPD.Size = new System.Drawing.Size(977, 361);
+            this.dgvPD.Size = new System.Drawing.Size(733, 293);
             this.dgvPD.TabIndex = 53;
             // 
             // tableLayoutPanel10
@@ -173,16 +174,16 @@
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.20205F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.4578F));
             this.tableLayoutPanel10.Controls.Add(this.btnActualizar, 1, 0);
-            this.tableLayoutPanel10.Controls.Add(this.btnAgregarCliente, 2, 0);
+            this.tableLayoutPanel10.Controls.Add(this.btnAgregar, 2, 0);
             this.tableLayoutPanel10.Controls.Add(this.btnEliminar, 0, 0);
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(59, 385);
-            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(50, 20, 3, 3);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(45, 313);
+            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(38, 16, 2, 2);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 2;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.18519F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.81481F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(930, 61);
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(697, 51);
             this.tableLayoutPanel10.TabIndex = 8;
             // 
             // btnActualizar
@@ -228,14 +229,13 @@
             this.btnActualizar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnActualizar.IconSize = 25;
             this.btnActualizar.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
-            this.btnActualizar.IdleBorderRadius = 30;
+            this.btnActualizar.IdleBorderRadius = 24;
             this.btnActualizar.IdleBorderThickness = 1;
             this.btnActualizar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
             this.btnActualizar.IdleIconLeftImage = null;
             this.btnActualizar.IdleIconRightImage = null;
             this.btnActualizar.IndicateFocus = false;
-            this.btnActualizar.Location = new System.Drawing.Point(351, 4);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnActualizar.Location = new System.Drawing.Point(263, 3);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnActualizar.OnDisabledState.BorderRadius = 20;
@@ -269,7 +269,7 @@
             this.btnActualizar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnActualizar.OnPressedState.IconLeftImage = null;
             this.btnActualizar.OnPressedState.IconRightImage = null;
-            this.btnActualizar.Size = new System.Drawing.Size(282, 32);
+            this.btnActualizar.Size = new System.Drawing.Size(211, 26);
             this.btnActualizar.TabIndex = 34;
             this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnActualizar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -277,97 +277,96 @@
             this.btnActualizar.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnActualizar.UseDefaultRadiusAndThickness = true;
             // 
-            // btnAgregarCliente
+            // btnAgregar
             // 
-            this.btnAgregarCliente.AllowAnimations = true;
-            this.btnAgregarCliente.AllowMouseEffects = true;
-            this.btnAgregarCliente.AllowToggling = false;
-            this.btnAgregarCliente.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnAgregar.AllowAnimations = true;
+            this.btnAgregar.AllowMouseEffects = true;
+            this.btnAgregar.AllowToggling = false;
+            this.btnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAgregarCliente.AnimationSpeed = 200;
-            this.btnAgregarCliente.AutoGenerateColors = false;
-            this.btnAgregarCliente.AutoRoundBorders = true;
-            this.btnAgregarCliente.AutoSizeLeftIcon = true;
-            this.btnAgregarCliente.AutoSizeRightIcon = true;
-            this.btnAgregarCliente.BackColor = System.Drawing.Color.Transparent;
-            this.btnAgregarCliente.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
-            this.btnAgregarCliente.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregarCliente.BackgroundImage")));
-            this.btnAgregarCliente.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnAgregarCliente.ButtonText = "Agregar";
-            this.btnAgregarCliente.ButtonTextMarginLeft = 0;
-            this.btnAgregarCliente.ColorContrastOnClick = 45;
-            this.btnAgregarCliente.ColorContrastOnHover = 45;
-            this.btnAgregarCliente.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnAgregar.AnimationSpeed = 200;
+            this.btnAgregar.AutoGenerateColors = false;
+            this.btnAgregar.AutoRoundBorders = true;
+            this.btnAgregar.AutoSizeLeftIcon = true;
+            this.btnAgregar.AutoSizeRightIcon = true;
+            this.btnAgregar.BackColor = System.Drawing.Color.Transparent;
+            this.btnAgregar.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
+            this.btnAgregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregar.BackgroundImage")));
+            this.btnAgregar.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnAgregar.ButtonText = "Agregar";
+            this.btnAgregar.ButtonTextMarginLeft = 0;
+            this.btnAgregar.ColorContrastOnClick = 45;
+            this.btnAgregar.ColorContrastOnHover = 45;
+            this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Default;
             borderEdges2.BottomLeft = true;
             borderEdges2.BottomRight = true;
             borderEdges2.TopLeft = true;
             borderEdges2.TopRight = true;
-            this.btnAgregarCliente.CustomizableEdges = borderEdges2;
-            this.btnAgregarCliente.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnAgregarCliente.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnAgregarCliente.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnAgregarCliente.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnAgregarCliente.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
-            this.btnAgregarCliente.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarCliente.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarCliente.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarCliente.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btnAgregarCliente.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.btnAgregarCliente.IconMarginLeft = 11;
-            this.btnAgregarCliente.IconPadding = 10;
-            this.btnAgregarCliente.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAgregarCliente.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btnAgregarCliente.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btnAgregarCliente.IconSize = 25;
-            this.btnAgregarCliente.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
-            this.btnAgregarCliente.IdleBorderRadius = 30;
-            this.btnAgregarCliente.IdleBorderThickness = 1;
-            this.btnAgregarCliente.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
-            this.btnAgregarCliente.IdleIconLeftImage = null;
-            this.btnAgregarCliente.IdleIconRightImage = null;
-            this.btnAgregarCliente.IndicateFocus = false;
-            this.btnAgregarCliente.Location = new System.Drawing.Point(641, 4);
-            this.btnAgregarCliente.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAgregarCliente.Name = "btnAgregarCliente";
-            this.btnAgregarCliente.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnAgregarCliente.OnDisabledState.BorderRadius = 20;
-            this.btnAgregarCliente.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnAgregarCliente.OnDisabledState.BorderThickness = 1;
-            this.btnAgregarCliente.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnAgregarCliente.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnAgregarCliente.OnDisabledState.IconLeftImage = null;
-            this.btnAgregarCliente.OnDisabledState.IconRightImage = null;
-            this.btnAgregarCliente.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btnAgregarCliente.onHoverState.BorderRadius = 20;
-            this.btnAgregarCliente.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnAgregarCliente.onHoverState.BorderThickness = 1;
-            this.btnAgregarCliente.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btnAgregarCliente.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarCliente.onHoverState.IconLeftImage = null;
-            this.btnAgregarCliente.onHoverState.IconRightImage = null;
-            this.btnAgregarCliente.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
-            this.btnAgregarCliente.OnIdleState.BorderRadius = 20;
-            this.btnAgregarCliente.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnAgregarCliente.OnIdleState.BorderThickness = 1;
-            this.btnAgregarCliente.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
-            this.btnAgregarCliente.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarCliente.OnIdleState.IconLeftImage = null;
-            this.btnAgregarCliente.OnIdleState.IconRightImage = null;
-            this.btnAgregarCliente.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btnAgregarCliente.OnPressedState.BorderRadius = 20;
-            this.btnAgregarCliente.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnAgregarCliente.OnPressedState.BorderThickness = 1;
-            this.btnAgregarCliente.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btnAgregarCliente.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarCliente.OnPressedState.IconLeftImage = null;
-            this.btnAgregarCliente.OnPressedState.IconRightImage = null;
-            this.btnAgregarCliente.Size = new System.Drawing.Size(285, 32);
-            this.btnAgregarCliente.TabIndex = 35;
-            this.btnAgregarCliente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnAgregarCliente.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnAgregarCliente.TextMarginLeft = 0;
-            this.btnAgregarCliente.TextPadding = new System.Windows.Forms.Padding(0);
-            this.btnAgregarCliente.UseDefaultRadiusAndThickness = true;
+            this.btnAgregar.CustomizableEdges = borderEdges2;
+            this.btnAgregar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnAgregar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnAgregar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnAgregar.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnAgregar.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
+            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregar.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnAgregar.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnAgregar.IconMarginLeft = 11;
+            this.btnAgregar.IconPadding = 10;
+            this.btnAgregar.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregar.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnAgregar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnAgregar.IconSize = 25;
+            this.btnAgregar.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
+            this.btnAgregar.IdleBorderRadius = 24;
+            this.btnAgregar.IdleBorderThickness = 1;
+            this.btnAgregar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
+            this.btnAgregar.IdleIconLeftImage = null;
+            this.btnAgregar.IdleIconRightImage = null;
+            this.btnAgregar.IndicateFocus = false;
+            this.btnAgregar.Location = new System.Drawing.Point(480, 3);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnAgregar.OnDisabledState.BorderRadius = 20;
+            this.btnAgregar.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnAgregar.OnDisabledState.BorderThickness = 1;
+            this.btnAgregar.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnAgregar.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnAgregar.OnDisabledState.IconLeftImage = null;
+            this.btnAgregar.OnDisabledState.IconRightImage = null;
+            this.btnAgregar.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnAgregar.onHoverState.BorderRadius = 20;
+            this.btnAgregar.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnAgregar.onHoverState.BorderThickness = 1;
+            this.btnAgregar.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnAgregar.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar.onHoverState.IconLeftImage = null;
+            this.btnAgregar.onHoverState.IconRightImage = null;
+            this.btnAgregar.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
+            this.btnAgregar.OnIdleState.BorderRadius = 20;
+            this.btnAgregar.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnAgregar.OnIdleState.BorderThickness = 1;
+            this.btnAgregar.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
+            this.btnAgregar.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar.OnIdleState.IconLeftImage = null;
+            this.btnAgregar.OnIdleState.IconRightImage = null;
+            this.btnAgregar.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnAgregar.OnPressedState.BorderRadius = 20;
+            this.btnAgregar.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnAgregar.OnPressedState.BorderThickness = 1;
+            this.btnAgregar.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnAgregar.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar.OnPressedState.IconLeftImage = null;
+            this.btnAgregar.OnPressedState.IconRightImage = null;
+            this.btnAgregar.Size = new System.Drawing.Size(214, 26);
+            this.btnAgregar.TabIndex = 35;
+            this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAgregar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnAgregar.TextMarginLeft = 0;
+            this.btnAgregar.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnAgregar.UseDefaultRadiusAndThickness = true;
             // 
             // btnEliminar
             // 
@@ -412,14 +411,14 @@
             this.btnEliminar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnEliminar.IconSize = 25;
             this.btnEliminar.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
-            this.btnEliminar.IdleBorderRadius = 30;
+            this.btnEliminar.IdleBorderRadius = 24;
             this.btnEliminar.IdleBorderThickness = 1;
             this.btnEliminar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
             this.btnEliminar.IdleIconLeftImage = null;
             this.btnEliminar.IdleIconRightImage = null;
             this.btnEliminar.IndicateFocus = false;
-            this.btnEliminar.Location = new System.Drawing.Point(60, 4);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(60, 4, 10, 4);
+            this.btnEliminar.Location = new System.Drawing.Point(45, 3);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(45, 3, 8, 3);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEliminar.OnDisabledState.BorderRadius = 20;
@@ -453,7 +452,7 @@
             this.btnEliminar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.OnPressedState.IconLeftImage = null;
             this.btnEliminar.OnPressedState.IconRightImage = null;
-            this.btnEliminar.Size = new System.Drawing.Size(277, 32);
+            this.btnEliminar.Size = new System.Drawing.Size(207, 26);
             this.btnEliminar.TabIndex = 36;
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEliminar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -473,13 +472,14 @@
             this.tableLayoutPanel6.Controls.Add(this.btnBuscar, 2, 1);
             this.tableLayoutPanel6.Controls.Add(this.label1, 0, 1);
             this.tableLayoutPanel6.Controls.Add(this.txtBuscar, 1, 1);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(46, 18);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(34, 15);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 3;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.38461F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.76923F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.30769F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(988, 63);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(741, 51);
             this.tableLayoutPanel6.TabIndex = 7;
             // 
             // btnBuscar
@@ -525,14 +525,14 @@
             this.btnBuscar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnBuscar.IconSize = 25;
             this.btnBuscar.IdleBorderColor = System.Drawing.Color.Silver;
-            this.btnBuscar.IdleBorderRadius = 27;
+            this.btnBuscar.IdleBorderRadius = 22;
             this.btnBuscar.IdleBorderThickness = 1;
             this.btnBuscar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(219)))), ((int)(((byte)(114)))));
             this.btnBuscar.IdleIconLeftImage = null;
             this.btnBuscar.IdleIconRightImage = null;
             this.btnBuscar.IndicateFocus = true;
-            this.btnBuscar.Location = new System.Drawing.Point(861, 12);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 4);
+            this.btnBuscar.Location = new System.Drawing.Point(646, 9);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 3);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnBuscar.OnDisabledState.BorderRadius = 20;
@@ -566,7 +566,7 @@
             this.btnBuscar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnBuscar.OnPressedState.IconLeftImage = null;
             this.btnBuscar.OnPressedState.IconRightImage = null;
-            this.btnBuscar.Size = new System.Drawing.Size(123, 29);
+            this.btnBuscar.Size = new System.Drawing.Size(92, 24);
             this.btnBuscar.TabIndex = 120;
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnBuscar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -580,9 +580,10 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 9);
+            this.label1.Location = new System.Drawing.Point(2, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(472, 45);
+            this.label1.Size = new System.Drawing.Size(355, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Pedido Detalle";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -618,8 +619,8 @@
             this.txtBuscar.IconRight = null;
             this.txtBuscar.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBuscar.Lines = new string[0];
-            this.txtBuscar.Location = new System.Drawing.Point(481, 12);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(3, 3, 4, 4);
+            this.txtBuscar.Location = new System.Drawing.Point(361, 9);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 3, 3);
             this.txtBuscar.MaxLength = 32767;
             this.txtBuscar.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBuscar.Modified = false;
@@ -645,7 +646,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtBuscar.OnIdleState = stateProperties4;
-            this.txtBuscar.Padding = new System.Windows.Forms.Padding(4);
+            this.txtBuscar.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.txtBuscar.PasswordChar = '\0';
             this.txtBuscar.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtBuscar.PlaceholderText = "Buscar por DUI";
@@ -655,7 +656,7 @@
             this.txtBuscar.SelectionLength = 0;
             this.txtBuscar.SelectionStart = 0;
             this.txtBuscar.ShortcutsEnabled = false;
-            this.txtBuscar.Size = new System.Drawing.Size(372, 35);
+            this.txtBuscar.Size = new System.Drawing.Size(279, 28);
             this.txtBuscar.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtBuscar.TabIndex = 57;
             this.txtBuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -668,12 +669,11 @@
             // 
             // ViewPedidoDet
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1371, 709);
+            this.ClientSize = new System.Drawing.Size(1028, 576);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MinimumSize = new System.Drawing.Size(1362, 715);
+            this.MinimumSize = new System.Drawing.Size(1026, 588);
             this.Name = "ViewPedidoDet";
             this.Text = "ViewPedidoDet";
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -695,7 +695,7 @@
         public System.Windows.Forms.DataGridView dgvPD;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnActualizar;
-        public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnAgregarCliente;
+        public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnAgregar;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnEliminar;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnBuscar;

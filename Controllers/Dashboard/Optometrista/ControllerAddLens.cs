@@ -59,8 +59,8 @@ namespace OpticaMultivisual.Controllers.Dashboard.Optometrista
 
         public void SearchRegister(object sender, EventArgs e)
         {
-            DAO_DR ObjADDDR = new DAO_DR();
-            DataSet ds = ObjADDDR.BuscarDUI(ObjAddLens.txtBuscar.Text.Trim());
+            DAOLens ObjADDLENS = new DAOLens();
+            DataSet ds = ObjADDLENS.BuscarDUI(ObjAddLens.txtBuscar.Text.Trim());
             ObjAddLens.cbcon_ID.DataSource = ds.Tables["Consulta"];
         }
 

@@ -189,5 +189,30 @@ namespace OpticaMultivisual.Models.DAO
                 getConnection().Close();
             }
         }
+
+        public DataSet BuscarDUI2(string valor)
+        {
+            try
+            {
+                Command.Connection = getConnection();
+                string query = $@"SELECT * FROM ViewLensometria WHERE [Cliente DUI] LIKE '%{valor}%'";
+                SqlCommand cmd = new SqlCommand(query, Command.Connection);
+                cmd.ExecuteNonQuery();
+                SqlDataAdapter adp = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                //Rellenamos con el Adaptador el DataSet diciéndole de que tabla provienen los datos
+                adp.Fill(ds, "ViewLensometria");
+                return ds;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+            finally
+            {
+                getConnection().Close();
+            }
+        }
+
     }
 }
