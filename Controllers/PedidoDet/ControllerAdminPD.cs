@@ -25,6 +25,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
             //Evento click de botón
             ObjAdminPD.btnAgregar.Click += new EventHandler(NewPD);
             ObjAdminPD.btnActualizar.Click += new EventHandler(UpdatePD);
+            ObjAdminPD.btnBuscar.Click += new EventHandler(SearchRegister);
         }
 
         public void LoadData(object sender, EventArgs e)
@@ -59,6 +60,14 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
             this.accion = accion;
             ObjAdminPD.Load += new EventHandler(LoadData);
             ObjAdminPD.btnEliminar.Click += new EventHandler(DeleteRegister);
+            ObjAdminPD.btnBuscar.Click += new EventHandler(SearchRegister);
+        }
+
+        public void SearchRegister(object sender, EventArgs e)
+        {
+            DAOPedidoDet ObjADDPD = new DAOPedidoDet();
+            DataSet ds = ObjADDPD.BuscarDUI2(ObjAdminPD.txtBuscar.Text.Trim());
+            ObjAdminPD.dgvPD.DataSource = ds.Tables["ViewPedidoDet"];
         }
 
         public void DeleteRegister(object sender, EventArgs e)
@@ -85,12 +94,13 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
         private void UpdatePD(object sender, EventArgs e)
         {
             int pos = ObjAdminPD.dgvPD.CurrentRow.Index;
-            int pd_ID, art_cant, pd_recetalab, con_ID;
-            string art_codigo, pd_obser;
+            int pd_ID, art_cant, pd_recetalab;
+            string con_ID, art_codigo, pd_obser;
             DateTime pd_fpedido, pd_fprogramada;
 
             pd_ID = int.Parse(ObjAdminPD.dgvPD[0, pos].Value.ToString());
-            con_ID = int.Parse(ObjAdminPD.dgvPD[1, pos].Value.ToString());
+            con_ID = ObjAdminPD.dgvPD[1, pos].Value.ToString();
+            MessageBox.Show($"{con_ID}");
             pd_fpedido = DateTime.Parse(ObjAdminPD.dgvPD[2, pos].Value.ToString());
             pd_fprogramada = DateTime.Parse(ObjAdminPD.dgvPD[3, pos].Value.ToString());
             art_codigo = ObjAdminPD.dgvPD[4, pos].Value.ToString();
