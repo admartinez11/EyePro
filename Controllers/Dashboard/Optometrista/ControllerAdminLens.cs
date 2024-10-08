@@ -22,6 +22,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.Optometrista
             //Evento click de botón
             ObjAdminLens.btnAgregar.Click += new EventHandler(NewLens);
             ObjAdminLens.btnEditar.Click += new EventHandler(UpdateLens);
+            ObjAdminLens.btnBuscar.Click += new EventHandler(SearchRegister);
         }
 
         public void LoadData(object sender, EventArgs e)
@@ -57,7 +58,16 @@ namespace OpticaMultivisual.Controllers.Dashboard.Optometrista
             this.accion = accion;
             ObjAdminLens.Load += new EventHandler(LoadData);
             ObjAdminLens.btnEliminar.Click += new EventHandler(DeleteRegister);
+            ObjAdminLens.btnBuscar.Click += new EventHandler(SearchRegister);
         }
+
+        public void SearchRegister(object sender, EventArgs e)
+        {
+            DAOLens ObjADDLENS = new DAOLens();
+            DataSet ds = ObjADDLENS.BuscarDUI2(ObjAdminLens.txtBuscar.Text.Trim());
+            ObjAdminLens.dgvLens.DataSource = ds.Tables["ViewLensometria"];
+        }
+
 
         public void DeleteRegister(object sender, EventArgs e)
         {

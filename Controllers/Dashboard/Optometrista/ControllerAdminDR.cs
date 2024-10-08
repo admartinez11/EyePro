@@ -24,6 +24,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.Optometrista
             ObjAdminDR.btnAgregar.Click += new EventHandler(NewDR);
             ObjAdminDR.btnEditar.Click += new EventHandler(UpdateDR);
             ObjAdminDR.btnSiguiente.Click += new EventHandler(Next);
+            ObjAdminDR.btnBuscar.Click += new EventHandler(SearchRegister);
         }
 
         public void Next(object sender, EventArgs e)
@@ -65,8 +66,15 @@ namespace OpticaMultivisual.Controllers.Dashboard.Optometrista
             this.accion = accion;
             ObjAdminDR.Load += new EventHandler(LoadData);
             ObjAdminDR.btnEliminar.Click += new EventHandler(DeleteRegister);
-
+            ObjAdminDR.btnBuscar.Click += new EventHandler(SearchRegister);
         }
+
+        public void SearchRegister(object sender, EventArgs e)
+        {
+            DAO_DR ObjADDDR = new DAO_DR();
+            DataSet ds = ObjADDDR.BuscarDUI2(ObjAdminDR.txtBuscar.Text.Trim());
+            ObjAdminDR.dgvDR.DataSource = ds.Tables["ViewDR"];
+        } 
 
         public void DeleteRegister(object sender, EventArgs e)
         {
