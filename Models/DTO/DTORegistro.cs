@@ -19,6 +19,7 @@ namespace AdministrarClientes.Modelo.DTO
         private string profesion;
         private string dUI;
         private string padecimientos;
+        private bool menor;
 
 
         public string Nombre { get => nombre; set => nombre = value; }
@@ -30,7 +31,7 @@ namespace AdministrarClientes.Modelo.DTO
         public string Profesion { get => profesion; set => profesion = value; }
         public string DUI { get => dUI; set => dUI = value; }
         public string Padecimientos { get => padecimientos; set => padecimientos = value; }
-
+        public bool Menor { get => menor; set => menor = value; }
     }
 }
 

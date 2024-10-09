@@ -1,4 +1,5 @@
-﻿using OpticaMultivisual.Models.DAO;
+﻿using AdministrarClientes.View.RegistroCliente;
+using OpticaMultivisual.Models.DAO;
 using OpticaMultivisual.Views.ScheduleAppointment;
 using System;
 using System.Collections.Generic;
@@ -22,6 +23,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.ScheduleAppointment
             ObjVista.btnNuevoVis.Click += new EventHandler(AgregarVisita);
             ObjVista.btnEliminarVis.Click += new EventHandler(EliminarVisita);
             ObjVista.btnActVis.Click += new EventHandler(ActualizarVisita);
+            ObjVista.btnCliente.Click += new EventHandler(AñadirCliente);
         }
 
         public void CargarInfo(object sender, EventArgs e)
@@ -77,6 +79,20 @@ namespace OpticaMultivisual.Controllers.Dashboard.ScheduleAppointment
             ObjVista.dgvInfoVisita[4, pos].Value.ToString(),   // Teléfono
             ObjVista.dgvInfoVisita[5, pos].Value.ToString(),   // Correo
             ObjVista.dgvInfoVisita[6, pos].Value.ToString(),   // Observaciones
+            ObjVista.dgvInfoVisita[7, pos].Value.ToString() // DUI
+            );
+
+            openForm.ShowDialog();
+            ActualizarDatos();
+        }
+        public void AñadirCliente(object sender, EventArgs e)
+        {
+            int pos = ObjVista.dgvInfoVisita.CurrentRow.Index;
+            RegistroClientes openForm = new RegistroClientes(1,
+            ObjVista.dgvInfoVisita[2, pos].Value.ToString(),        // Nombre
+            ObjVista.dgvInfoVisita[3, pos].Value.ToString(),     // Apellido
+            ObjVista.dgvInfoVisita[4, pos].Value.ToString(),   // Teléfono
+            ObjVista.dgvInfoVisita[5, pos].Value.ToString(),   // Correo
             ObjVista.dgvInfoVisita[7, pos].Value.ToString() // DUI
             );
 
