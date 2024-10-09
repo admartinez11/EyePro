@@ -16,6 +16,7 @@ namespace OpticaMultivisual.Models.DTO
         private string emp_ID;
         private int con_ID;
         private bool est_ID;
+        
 
         public string Cli_DUI { get => cli_DUI; set => cli_DUI = value; }
         public string Vis_ID { get => vis_ID; set => vis_ID = value; }

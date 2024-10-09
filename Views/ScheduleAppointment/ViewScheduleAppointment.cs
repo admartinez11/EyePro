@@ -32,5 +32,6 @@ namespace OpticaMultivisual.Views.ScheduleAppointment
             // La vista al recibir los datos de un controlador externo los reenvia a su propio controlador.
             ControllerScheduleAppointment objAddUser = new ControllerScheduleAppointment(this, accion, Vis_fcita, Vis_nombre, Vis_apellido, Vis_tel, Vis_correo, Vis_dui, vis_obser);
         }
+        
     }
 }

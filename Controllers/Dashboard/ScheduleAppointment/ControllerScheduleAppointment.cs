@@ -15,6 +15,7 @@ using static OpticaMultivisual.Models.DAO.DAOScheduleAppointment;
 using OpticaMultivisual.Models.DTO;
 using OpticaMultivisual.Models.DAO;
 using System.Text.RegularExpressions;
+using OpticaMultivisual.Views.Consultas;
 
 namespace OpticaMultivisual.Controllers.ScheduleAppointment
 {
@@ -286,5 +287,6 @@ namespace OpticaMultivisual.Controllers.ScheduleAppointment
                 ObjVistaR.btnActualizar.Enabled = true;
             }
         }
+        
     }
 }
