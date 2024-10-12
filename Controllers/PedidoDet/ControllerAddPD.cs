@@ -65,8 +65,8 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
         {
             DAOPedidoDet daoCon = new DAOPedidoDet();
             DataSet ds = daoCon.ObtenerConsulta();
-            ObjAddPD.cbcon_ID.DataSource = ds.Tables["ViewPedidoDet"];
-            ObjAddPD.cbcon_ID.DisplayMember = "DUICompleto"; // Mostrar la concatenación de con_ID y cli_DUI
+            ObjAddPD.cbcon_ID.DataSource = ds.Tables["Consulta"];
+            ObjAddPD.cbcon_ID.DisplayMember = "cli_DUI"; // Mostrar la concatenación de con_ID y cli_DUI
             ObjAddPD.cbcon_ID.ValueMember = "con_ID"; // Valor del con_ID real
         }
 

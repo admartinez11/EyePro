@@ -80,10 +80,7 @@ namespace OpticaMultivisual.Models.DAO
             {
                 Command.Connection = getConnection();
                 // Definir instrucción de lo que se quiere hacer
-                string query = @"
-                    SELECT DISTINCT p.con_ID, 
-                    CONCAT(p.con_ID, ' - ', cli.cli_dui) AS DUICompleto 
-                    FROM ViewPedidoDet p"; ;
+                string query = "SELECT con_ID, cli_dui FROM Consulta";
 
                 // Creando un objeto de tipo comando donde recibe la instrucción y la conexión
                 SqlCommand cmdSelect = new SqlCommand(query, Command.Connection);
@@ -91,7 +88,7 @@ namespace OpticaMultivisual.Models.DAO
                 // Llenando el DataSet con SqlDataAdapter
                 SqlDataAdapter adp = new SqlDataAdapter(cmdSelect);
                 DataSet ds = new DataSet();
-                adp.Fill(ds, "ViewPedidoDet");
+                adp.Fill(ds, "Consulta");
 
                 // Retornar el DataSet
                 return ds;
