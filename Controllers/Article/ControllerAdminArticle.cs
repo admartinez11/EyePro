@@ -32,6 +32,7 @@ namespace OpticaMultivisual.Controllers.Article
             ObjVista.administrarModeloToolStripMenuItem.Click += new EventHandler(AdminModelo);
             ObjVista.administrarTipoToolStripMenuItem.Click += new EventHandler(AdminTipoArt);
             ObjVista.administrarMaterialesToolStripMenuItem.Click += new EventHandler(AdminMaterial);
+            ObjVista.administrarMaterialTipoArtToolStripMenuItem.Click += new EventHandler(AdminMaterial);
         }
         public void AdminColor(object sender, EventArgs e)
         {

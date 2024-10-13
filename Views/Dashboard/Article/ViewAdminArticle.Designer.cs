@@ -65,6 +65,7 @@
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.txtBuscar = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btnBuscar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.administrarMaterialTipoArtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -261,32 +262,33 @@
             this.administrarTipoToolStripMenuItem,
             this.administrarModeloToolStripMenuItem,
             this.administrarColorToolStripMenuItem,
-            this.administrarMaterialesToolStripMenuItem});
+            this.administrarMaterialesToolStripMenuItem,
+            this.administrarMaterialTipoArtToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(246, 128);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(265, 152);
             // 
             // administrarTipoToolStripMenuItem
             // 
             this.administrarTipoToolStripMenuItem.Name = "administrarTipoToolStripMenuItem";
-            this.administrarTipoToolStripMenuItem.Size = new System.Drawing.Size(245, 24);
+            this.administrarTipoToolStripMenuItem.Size = new System.Drawing.Size(264, 24);
             this.administrarTipoToolStripMenuItem.Text = "Administrar Tipo Articulo";
             // 
             // administrarModeloToolStripMenuItem
             // 
             this.administrarModeloToolStripMenuItem.Name = "administrarModeloToolStripMenuItem";
-            this.administrarModeloToolStripMenuItem.Size = new System.Drawing.Size(245, 24);
+            this.administrarModeloToolStripMenuItem.Size = new System.Drawing.Size(264, 24);
             this.administrarModeloToolStripMenuItem.Text = "Administrar Modelo";
             // 
             // administrarColorToolStripMenuItem
             // 
             this.administrarColorToolStripMenuItem.Name = "administrarColorToolStripMenuItem";
-            this.administrarColorToolStripMenuItem.Size = new System.Drawing.Size(245, 24);
+            this.administrarColorToolStripMenuItem.Size = new System.Drawing.Size(264, 24);
             this.administrarColorToolStripMenuItem.Text = "Administrar Color";
             // 
             // administrarMaterialesToolStripMenuItem
             // 
             this.administrarMaterialesToolStripMenuItem.Name = "administrarMaterialesToolStripMenuItem";
-            this.administrarMaterialesToolStripMenuItem.Size = new System.Drawing.Size(245, 24);
+            this.administrarMaterialesToolStripMenuItem.Size = new System.Drawing.Size(264, 24);
             this.administrarMaterialesToolStripMenuItem.Text = "Administrar Materiales";
             // 
             // tableLayoutPanel4
@@ -876,6 +878,12 @@
             this.btnBuscar.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnBuscar.UseDefaultRadiusAndThickness = true;
             // 
+            // administrarMaterialTipoArtToolStripMenuItem
+            // 
+            this.administrarMaterialTipoArtToolStripMenuItem.Name = "administrarMaterialTipoArtToolStripMenuItem";
+            this.administrarMaterialTipoArtToolStripMenuItem.Size = new System.Drawing.Size(264, 24);
+            this.administrarMaterialTipoArtToolStripMenuItem.Text = "Administrar MaterialTipoArt";
+            // 
             // ViewAdminArticle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -929,5 +937,6 @@
         public System.Windows.Forms.ToolStripMenuItem administrarModeloToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem administrarColorToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem administrarMaterialesToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem administrarMaterialTipoArtToolStripMenuItem;
     }
 }

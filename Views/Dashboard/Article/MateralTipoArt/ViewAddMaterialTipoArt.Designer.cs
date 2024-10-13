@@ -1,6 +1,6 @@
-﻿namespace OpticaMultivisual.Views.Dashboard.Article.Material
+﻿namespace OpticaMultivisual.Views.Dashboard.Article.MateralTipoArt
 {
-    partial class ViewAdminMaterial
+    partial class ViewAddMaterialTipoArt
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewAdminMaterial));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewAddMaterialTipoArt));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
@@ -89,7 +89,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 96.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.5F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1365, 748);
-            this.tableLayoutPanel1.TabIndex = 12;
+            this.tableLayoutPanel1.TabIndex = 13;
             // 
             // tableLayoutPanel2
             // 
@@ -280,7 +280,7 @@
             this.btnActArt.IdleIconRightImage = null;
             this.btnActArt.IndicateFocus = false;
             this.btnActArt.Location = new System.Drawing.Point(270, 4);
-            this.btnActArt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnActArt.Margin = new System.Windows.Forms.Padding(4);
             this.btnActArt.Name = "btnActArt";
             this.btnActArt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnActArt.OnDisabledState.BorderRadius = 20;
@@ -370,7 +370,7 @@
             this.btnNuevoArt.IdleIconRightImage = null;
             this.btnNuevoArt.IndicateFocus = false;
             this.btnNuevoArt.Location = new System.Drawing.Point(20, 4);
-            this.btnNuevoArt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNuevoArt.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevoArt.Name = "btnNuevoArt";
             this.btnNuevoArt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnNuevoArt.OnDisabledState.BorderRadius = 20;
@@ -460,7 +460,7 @@
             this.btnEliminarArt.IdleIconRightImage = null;
             this.btnEliminarArt.IndicateFocus = false;
             this.btnEliminarArt.Location = new System.Drawing.Point(500, 4);
-            this.btnEliminarArt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminarArt.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminarArt.Name = "btnEliminarArt";
             this.btnEliminarArt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEliminarArt.OnDisabledState.BorderRadius = 20;
@@ -615,7 +615,7 @@
             this.txtBuscar.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBuscar.Lines = new string[0];
             this.txtBuscar.Location = new System.Drawing.Point(4, 4);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscar.MaxLength = 32767;
             this.txtBuscar.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBuscar.Modified = false;
@@ -641,7 +641,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtBuscar.OnIdleState = stateProperties4;
-            this.txtBuscar.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscar.Padding = new System.Windows.Forms.Padding(4);
             this.txtBuscar.PasswordChar = '\0';
             this.txtBuscar.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtBuscar.PlaceholderText = "Buscador";
@@ -711,7 +711,7 @@
             this.btnBuscar.IdleIconRightImage = null;
             this.btnBuscar.IndicateFocus = true;
             this.btnBuscar.Location = new System.Drawing.Point(898, 6);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnBuscar.OnDisabledState.BorderRadius = 20;
@@ -753,17 +753,16 @@
             this.btnBuscar.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnBuscar.UseDefaultRadiusAndThickness = true;
             // 
-            // ViewAdminMaterial
+            // ViewAddMaterialTipoArt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1348, 702);
+            this.ClientSize = new System.Drawing.Size(1348, 701);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximumSize = new System.Drawing.Size(1919, 1078);
-            this.MinimumSize = new System.Drawing.Size(1363, 717);
-            this.Name = "ViewAdminMaterial";
-            this.Text = "ViewAdminMaterial";
+            this.MaximumSize = new System.Drawing.Size(1920, 1080);
+            this.MinimumSize = new System.Drawing.Size(1366, 748);
+            this.Name = "ViewAddMaterialTipoArt";
+            this.Text = "ViewAddMaterialTipoArt";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);

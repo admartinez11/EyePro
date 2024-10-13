@@ -250,6 +250,18 @@
     <Compile Include="Views\Dashboard\Article\Color\ViewAdminColor.Designer.cs">
       <DependentUpon>ViewAdminColor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Dashboard\Article\MateralTipoArt\AddMaterialTipoArt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dashboard\Article\MateralTipoArt\AddMaterialTipoArt.Designer.cs">
+      <DependentUpon>AddMaterialTipoArt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dashboard\Article\MateralTipoArt\ViewAddMaterialTipoArt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dashboard\Article\MateralTipoArt\ViewAddMaterialTipoArt.Designer.cs">
+      <DependentUpon>ViewAddMaterialTipoArt.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Dashboard\Article\Material\ViewAddMaterial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -476,6 +488,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Dashboard\Article\Color\ViewAdminColor.resx">
       <DependentUpon>ViewAdminColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dashboard\Article\MateralTipoArt\AddMaterialTipoArt.resx">
+      <DependentUpon>AddMaterialTipoArt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dashboard\Article\MateralTipoArt\ViewAddMaterialTipoArt.resx">
+      <DependentUpon>ViewAddMaterialTipoArt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Dashboard\Article\Material\ViewAddMaterial.resx">
       <DependentUpon>ViewAddMaterial.cs</DependentUpon>
