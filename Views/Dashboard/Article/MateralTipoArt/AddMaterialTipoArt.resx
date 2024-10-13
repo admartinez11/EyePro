@@ -120,8 +120,8 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bunifuPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAA2kAAAFFCAYAAAB2eaXCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAkzSURBVHhe7d09b1NnAIZhjx0ZGfsPIDaR2GBGscPIyMjI
+        iVBORw0KGgoAAAANSUhEUgAAA2kAAAFECAYAAAC9JXZnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAkuSURBVHhe7d09b1NnAIZhjx0ZGfsPIDaR2GBGscPIyMjI
         mDH/gJGxYyXbKCNjR8aOHTt27MjY+oRT0TQHCB92b7XXI11CEa/t+dZ7Es/MzMzMzMzsP7D58tX9xenm
         4Xy5fbpYbs4BAAD+7y77aNdJgzGd9rfjR+vbi9Xm2c7rxWr7BwAAAJ+yfrP79+zO6cX3Y1p9/XZvdmso
         wqPV9u31DwQAAOAm5svty+Hya0ytL9vlNd3J+vepDwAAAODzDJdf91brJ2Nyfd6GZyndngEAAOzBcnM+
@@ -155,13 +155,12 @@
         AACEiDQAAIAQkQYAABAi0gAAAEJEGgAAQIhIAwAACBFpAAAAISINAAAgRKQBAACEiDQAAIAQkQYAABAi
         0gAAAEJEGgAAQIhIAwAACBFpAAAAISINAAAgRKQBAACEiDQAAIAQkQYAABAi0gAAAEJEGgAAQIhIAwAA
         CBFpAAAAISINAAAgRKQBAACEiDQAAIAQkQYAABAi0gAAAEJEGgAAQIhIAwAACBFpAAAAISINAAAgRKQB
-        AACEiDQAAIAQkQYAABAi0gAAAEJEGgAAQIhIAwAACLkSaavt2bUDAAAAHM7fI+3eav1k8hAAAACHcjYm
-        2my2ON08nDgAAADAgcyX26djos1mx4/Wt6cOAQAAcBjz5av7Y6K92+Jk8+vUQQAAAPbraLV9++DBD9+N
-        efZui9XmxdRhAAAA9utotb4Y0+z9jk/Xd6cOAwAAsGcn28djml3dUG+TLwAAAGAv5svtz2OSXZ/bNAAA
-        gAP70C3aX9sd8sXWAAAABzBfbl+OKfbxzU+2P069AQAAAN/K+s21v+j4oQ0HhRoAAMC+rN/cOb24NSbY
-        zbdYbs6n3xAAAIAvMTzieOMbtKktTjcPj5bbn6beHAAAgJs5Wq1/+eQfCfmcDW82PAI5fBP21AcCAAAw
-        ZfN6vtw+HdNqPxtu13Yfdnb5OCQAAADX7brpqx5rNDMzMzMzs397s9mflszq7asqUSIAAAAASUVORK5C
-        YII=
+        AACEiDQAAIAQkQYAABAi0gAAAEJEGgAAQMiVSFttz64dAAAA4HD+Hmn3Vusnk4cAAAA4lLMx0Wazxenm
+        4cQBAAAADmS+3D4dE202O360vj11CAAAgMOYL1/dHxPt3RYnm1+nDgIAALBfR6vt2wcPfvhuzLN3W6w2
+        L6YOAwAAsF9Hq/XFmGbvd3y6vjt1GAAAgD072T4e0+zqhnqbfAEAAAB7MV9ufx6T7PrcpgEAABzYh27R
+        /trukC+2BgAAOID5cvtyTLGPb36y/XHqDQAAAPhW1m+u/UXHD204KNQAAAD2Zf3mzunFrTHBbr7FcnM+
+        /YYAAAB8ieERxxvfoE1tcbp5eLTc/jT15gAAANzM0Wr9yyf/SMjnbHiz4RHI4Zuwpz4QAACAKZvX8+X2
+        6ZhW+9lwu7b7sLPLxyEBAAC4btdNX/VYo5mZmZmZmf3bm83+BGiNh9JK+kgCAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="btnAgendarMaterial.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
