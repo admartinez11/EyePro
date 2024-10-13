@@ -27,6 +27,7 @@ namespace OpticaMultivisual.Controllers
             ObjVista.btnEliminarCli.Click += new EventHandler(EliminarCliente);
             ObjVista.btnActCli.Click += new EventHandler(ActualizarCliente);
             ObjVista.btnAgregarCon.Click += new EventHandler(AgregarConsulta);
+            ObjVista.agendarConsultaToolStripMenuItem.Click += new EventHandler(AgregarConsulta);
         }
         public void CargarInfo(object sender, EventArgs e)
         {

@@ -1,4 +1,4 @@
-﻿namespace OpticaMultivisual.Views.Consultas
+namespace OpticaMultivisual.Views.Consultas
 {
     partial class AñadirConsulta
     {
@@ -39,10 +39,6 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
@@ -67,9 +63,6 @@
             this.cmbEmpleado = new Bunifu.UI.WinForms.BunifuDropdown();
             this.cmbDUI = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.txtNombreCon = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
@@ -78,8 +71,6 @@
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
-            this.bunifuPanel2.SuspendLayout();
-            this.bunifuPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -625,14 +616,14 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.1598F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.65008F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.33743F));
-            this.tableLayoutPanel2.Controls.Add(this.bunifuPanel3, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.label5, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.label4, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.cmbEstado, 3, 1);
             this.tableLayoutPanel2.Controls.Add(this.label2, 4, 1);
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.cmbVisita, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.cmbEmpleado, 2, 1);
-            this.tableLayoutPanel2.Controls.Add(this.bunifuPanel2, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.cmbDUI, 0, 1);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(45, 86);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -763,7 +754,6 @@
             this.cmbVisita.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.cmbVisita.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.cmbVisita.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
-            this.cmbVisita.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cmbVisita.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbVisita.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
             this.cmbVisita.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -787,10 +777,10 @@
             this.cmbVisita.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.cmbVisita.ItemHighLightForeColor = System.Drawing.Color.White;
             this.cmbVisita.ItemTopMargin = 3;
-            this.cmbVisita.Location = new System.Drawing.Point(0, 0);
+            this.cmbVisita.Location = new System.Drawing.Point(165, 29);
             this.cmbVisita.Margin = new System.Windows.Forms.Padding(4);
             this.cmbVisita.Name = "cmbVisita";
-            this.cmbVisita.Size = new System.Drawing.Size(171, 32);
+            this.cmbVisita.Size = new System.Drawing.Size(183, 32);
             this.cmbVisita.TabIndex = 13;
             this.cmbVisita.Text = null;
             this.cmbVisita.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -854,7 +844,6 @@
             this.cmbDUI.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.cmbDUI.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.cmbDUI.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
-            this.cmbDUI.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cmbDUI.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbDUI.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
             this.cmbDUI.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -878,10 +867,10 @@
             this.cmbDUI.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.cmbDUI.ItemHighLightForeColor = System.Drawing.Color.White;
             this.cmbDUI.ItemTopMargin = 3;
-            this.cmbDUI.Location = new System.Drawing.Point(0, 0);
+            this.cmbDUI.Location = new System.Drawing.Point(4, 29);
             this.cmbDUI.Margin = new System.Windows.Forms.Padding(4);
             this.cmbDUI.Name = "cmbDUI";
-            this.cmbDUI.Size = new System.Drawing.Size(155, 32);
+            this.cmbDUI.Size = new System.Drawing.Size(153, 32);
             this.cmbDUI.TabIndex = 15;
             this.cmbDUI.Text = null;
             this.cmbDUI.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -903,117 +892,6 @@
             this.bunifuPictureBox1.TabIndex = 2;
             this.bunifuPictureBox1.TabStop = false;
             this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
-            // 
-            // bunifuPanel2
-            // 
-            this.bunifuPanel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPanel2.BackgroundColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
-            this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel2.BorderRadius = 3;
-            this.bunifuPanel2.BorderThickness = 1;
-            this.bunifuPanel2.Controls.Add(this.txtNombreCon);
-            this.bunifuPanel2.Controls.Add(this.cmbDUI);
-            this.bunifuPanel2.Location = new System.Drawing.Point(3, 28);
-            this.bunifuPanel2.Name = "bunifuPanel2";
-            this.bunifuPanel2.ShowBorders = true;
-            this.bunifuPanel2.Size = new System.Drawing.Size(155, 36);
-            this.bunifuPanel2.TabIndex = 15;
-            // 
-            // txtNombreCon
-            // 
-            this.txtNombreCon.AcceptsReturn = false;
-            this.txtNombreCon.AcceptsTab = false;
-            this.txtNombreCon.AnimationSpeed = 200;
-            this.txtNombreCon.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtNombreCon.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtNombreCon.AutoSizeHeight = true;
-            this.txtNombreCon.BackColor = System.Drawing.Color.Transparent;
-            this.txtNombreCon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtNombreCon.BackgroundImage")));
-            this.txtNombreCon.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtNombreCon.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtNombreCon.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtNombreCon.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtNombreCon.BorderRadius = 15;
-            this.txtNombreCon.BorderThickness = 1;
-            this.txtNombreCon.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
-            this.txtNombreCon.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtNombreCon.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNombreCon.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.txtNombreCon.DefaultText = "";
-            this.txtNombreCon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtNombreCon.FillColor = System.Drawing.Color.White;
-            this.txtNombreCon.HideSelection = true;
-            this.txtNombreCon.IconLeft = null;
-            this.txtNombreCon.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNombreCon.IconPadding = 10;
-            this.txtNombreCon.IconRight = null;
-            this.txtNombreCon.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNombreCon.Lines = new string[0];
-            this.txtNombreCon.Location = new System.Drawing.Point(0, 0);
-            this.txtNombreCon.MaxLength = 32767;
-            this.txtNombreCon.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtNombreCon.Modified = false;
-            this.txtNombreCon.Multiline = false;
-            this.txtNombreCon.Name = "txtNombreCon";
-            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties9.FillColor = System.Drawing.Color.Empty;
-            stateProperties9.ForeColor = System.Drawing.Color.Empty;
-            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNombreCon.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtNombreCon.OnDisabledState = stateProperties10;
-            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties11.FillColor = System.Drawing.Color.Empty;
-            stateProperties11.ForeColor = System.Drawing.Color.Empty;
-            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNombreCon.OnHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.Silver;
-            stateProperties12.FillColor = System.Drawing.Color.White;
-            stateProperties12.ForeColor = System.Drawing.Color.Empty;
-            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNombreCon.OnIdleState = stateProperties12;
-            this.txtNombreCon.Padding = new System.Windows.Forms.Padding(3);
-            this.txtNombreCon.PasswordChar = '\0';
-            this.txtNombreCon.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtNombreCon.PlaceholderText = "";
-            this.txtNombreCon.ReadOnly = false;
-            this.txtNombreCon.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtNombreCon.SelectedText = "";
-            this.txtNombreCon.SelectionLength = 0;
-            this.txtNombreCon.SelectionStart = 0;
-            this.txtNombreCon.ShortcutsEnabled = true;
-            this.txtNombreCon.Size = new System.Drawing.Size(155, 36);
-            this.txtNombreCon.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtNombreCon.TabIndex = 16;
-            this.txtNombreCon.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtNombreCon.TextMarginBottom = 0;
-            this.txtNombreCon.TextMarginLeft = 3;
-            this.txtNombreCon.TextMarginTop = 1;
-            this.txtNombreCon.TextPlaceholder = "";
-            this.txtNombreCon.UseSystemPasswordChar = false;
-            this.txtNombreCon.WordWrap = true;
-            this.txtNombreCon.TextChanged += new System.EventHandler(this.txtNombreCon_TextChanged);
-            // 
-            // bunifuPanel3
-            // 
-            this.bunifuPanel3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPanel3.BackgroundColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel3.BackgroundImage")));
-            this.bunifuPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel3.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel3.BorderRadius = 3;
-            this.bunifuPanel3.BorderThickness = 1;
-            this.bunifuPanel3.Controls.Add(this.cmbVisita);
-            this.bunifuPanel3.Location = new System.Drawing.Point(171, 28);
-            this.bunifuPanel3.Name = "bunifuPanel3";
-            this.bunifuPanel3.ShowBorders = true;
-            this.bunifuPanel3.Size = new System.Drawing.Size(171, 36);
-            this.bunifuPanel3.TabIndex = 16;
             // 
             // AñadirConsulta
             // 
@@ -1037,8 +915,6 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
-            this.bunifuPanel2.ResumeLayout(false);
-            this.bunifuPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1069,8 +945,5 @@
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.DateTimePicker DTPHoraConsulta;
         public Bunifu.UI.WinForms.BunifuDropdown cmbDUI;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
-        public Bunifu.UI.WinForms.BunifuTextBox txtNombreCon;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel3;
     }
 }

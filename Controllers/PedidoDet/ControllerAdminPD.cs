@@ -23,7 +23,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
             ObjAdminPD = Vista;
             ObjAdminPD.Load += new EventHandler(LoadData);
             //Evento click de botón
-            ObjAdminPD.btnAgregar.Click += new EventHandler(NewPD);
+            ObjAdminPD.btnAgregarCliente.Click += new EventHandler(NewPD);
             ObjAdminPD.btnActualizar.Click += new EventHandler(UpdatePD);
             ObjAdminPD.btnBuscar.Click += new EventHandler(SearchRegister);
         }

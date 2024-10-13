@@ -20,6 +20,10 @@ namespace AdministrarClientes.View.RegistroCliente
             Controlador_ListaRegistro Control = new Controlador_ListaRegistro(this);
         }
 
+        private void tableLayoutPanel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
 }
