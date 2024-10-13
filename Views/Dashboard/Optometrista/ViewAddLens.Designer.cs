@@ -141,7 +141,7 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 3, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -157,7 +157,7 @@
             this.panel1.Controls.Add(this.tableLayoutPanel2);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(19, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(361, 631);
             this.panel1.TabIndex = 2;
@@ -181,7 +181,7 @@
             this.tableLayoutPanel2.Controls.Add(this.label5, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.txtOIEsfera, 1, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 75);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
@@ -249,7 +249,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtOIAdicion.OnIdleState = stateProperties4;
-            this.txtOIAdicion.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.txtOIAdicion.Padding = new System.Windows.Forms.Padding(3);
             this.txtOIAdicion.PasswordChar = '\0';
             this.txtOIAdicion.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtOIAdicion.PlaceholderText = "";
@@ -326,7 +326,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtOIPrisma.OnIdleState = stateProperties8;
-            this.txtOIPrisma.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.txtOIPrisma.Padding = new System.Windows.Forms.Padding(3);
             this.txtOIPrisma.PasswordChar = '\0';
             this.txtOIPrisma.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtOIPrisma.PlaceholderText = "";
@@ -403,7 +403,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtOIEje.OnIdleState = stateProperties12;
-            this.txtOIEje.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.txtOIEje.Padding = new System.Windows.Forms.Padding(3);
             this.txtOIEje.PasswordChar = '\0';
             this.txtOIEje.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtOIEje.PlaceholderText = "";
@@ -480,7 +480,7 @@
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtOICilindro.OnIdleState = stateProperties16;
-            this.txtOICilindro.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.txtOICilindro.Padding = new System.Windows.Forms.Padding(3);
             this.txtOICilindro.PasswordChar = '\0';
             this.txtOICilindro.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtOICilindro.PlaceholderText = "";
@@ -617,7 +617,7 @@
             stateProperties20.ForeColor = System.Drawing.Color.Empty;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtOIEsfera.OnIdleState = stateProperties20;
-            this.txtOIEsfera.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.txtOIEsfera.Padding = new System.Windows.Forms.Padding(3);
             this.txtOIEsfera.PasswordChar = '\0';
             this.txtOIEsfera.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtOIEsfera.PlaceholderText = "";
@@ -645,7 +645,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(361, 76);
             this.panel3.TabIndex = 2;
@@ -674,7 +674,7 @@
             this.panel2.Controls.Add(this.tableLayoutPanel3);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Location = new System.Drawing.Point(384, 2);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(388, 631);
             this.panel2.TabIndex = 3;
@@ -698,7 +698,7 @@
             this.tableLayoutPanel3.Controls.Add(this.label16, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.label17, 0, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 75);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 5;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
@@ -767,7 +767,7 @@
             stateProperties24.ForeColor = System.Drawing.Color.Empty;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtODAdicion.OnIdleState = stateProperties24;
-            this.txtODAdicion.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.txtODAdicion.Padding = new System.Windows.Forms.Padding(3);
             this.txtODAdicion.PasswordChar = '\0';
             this.txtODAdicion.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtODAdicion.PlaceholderText = "";
@@ -844,7 +844,7 @@
             stateProperties28.ForeColor = System.Drawing.Color.Empty;
             stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtODPrisma.OnIdleState = stateProperties28;
-            this.txtODPrisma.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.txtODPrisma.Padding = new System.Windows.Forms.Padding(3);
             this.txtODPrisma.PasswordChar = '\0';
             this.txtODPrisma.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtODPrisma.PlaceholderText = "";
@@ -921,7 +921,7 @@
             stateProperties32.ForeColor = System.Drawing.Color.Empty;
             stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtODEje.OnIdleState = stateProperties32;
-            this.txtODEje.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.txtODEje.Padding = new System.Windows.Forms.Padding(3);
             this.txtODEje.PasswordChar = '\0';
             this.txtODEje.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtODEje.PlaceholderText = "";
@@ -998,7 +998,7 @@
             stateProperties36.ForeColor = System.Drawing.Color.Empty;
             stateProperties36.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtODCilindro.OnIdleState = stateProperties36;
-            this.txtODCilindro.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.txtODCilindro.Padding = new System.Windows.Forms.Padding(3);
             this.txtODCilindro.PasswordChar = '\0';
             this.txtODCilindro.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtODCilindro.PlaceholderText = "";
@@ -1075,7 +1075,7 @@
             stateProperties40.ForeColor = System.Drawing.Color.Empty;
             stateProperties40.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtODEsfera.OnIdleState = stateProperties40;
-            this.txtODEsfera.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.txtODEsfera.Padding = new System.Windows.Forms.Padding(3);
             this.txtODEsfera.PasswordChar = '\0';
             this.txtODEsfera.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtODEsfera.PlaceholderText = "";
@@ -1165,7 +1165,7 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
             this.panel4.Controls.Add(this.label18);
             this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(388, 76);
             this.panel4.TabIndex = 2;
@@ -1203,7 +1203,7 @@
             this.tableLayoutPanel4.Controls.Add(this.label2, 2, 1);
             this.tableLayoutPanel4.Controls.Add(this.txtDRid, 2, 2);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(776, 2);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 7;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.640287F));
@@ -1274,7 +1274,7 @@
             stateProperties44.ForeColor = System.Drawing.Color.Empty;
             stateProperties44.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtBuscar.OnIdleState = stateProperties44;
-            this.txtBuscar.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.txtBuscar.Padding = new System.Windows.Forms.Padding(3);
             this.txtBuscar.PasswordChar = '\0';
             this.txtBuscar.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtBuscar.PlaceholderText = "Buscar por DUI";
@@ -1698,7 +1698,7 @@
             stateProperties48.ForeColor = System.Drawing.Color.Empty;
             stateProperties48.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtDRid.OnIdleState = stateProperties48;
-            this.txtDRid.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.txtDRid.Padding = new System.Windows.Forms.Padding(3);
             this.txtDRid.PasswordChar = '\0';
             this.txtDRid.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtDRid.PlaceholderText = "";
@@ -1730,7 +1730,7 @@
             this.MinimumSize = new System.Drawing.Size(878, 457);
             this.Name = "ViewAddLens";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ViewAddLens";
+            this.Text = "Lensometría";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);

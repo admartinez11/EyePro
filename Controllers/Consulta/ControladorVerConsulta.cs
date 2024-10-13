@@ -40,7 +40,7 @@ namespace OpticaMultivisual.Controllers.Consulta
             LlenarComboVisita();
             LlenarComboEmpleados();
             //AñadirConsulta_Load();
-             ObjAañadirConsulta.cmbDUI.Visible = false;
+             ObjAañadirConsulta.txtNombreCon.Visible = false;
              ObjAañadirConsulta.txtNombreCon.Enabled = false;
         }
 
@@ -65,9 +65,9 @@ namespace OpticaMultivisual.Controllers.Consulta
         {
             DAOConsulta DaoDui = new DAOConsulta();
             DataSet dataSet = DaoDui.ObtenerDUI();
-            ObjAañadirConsulta.cmbDUI.DataSource = dataSet.Tables["Cliente"];
-            ObjAañadirConsulta.cmbDUI.DisplayMember = "cli_dui";
-            ObjAañadirConsulta.cmbDUI.ValueMember = "cli_dui";
+            ObjAañadirConsulta.txtNombreCon.DataSource = dataSet.Tables["Cliente"];
+            ObjAañadirConsulta.txtNombreCon.DisplayMember = "cli_dui";
+            ObjAañadirConsulta.txtNombreCon.ValueMember = "cli_dui";
 
         }
         void LlenarComboVisita()
@@ -95,7 +95,7 @@ namespace OpticaMultivisual.Controllers.Consulta
                 {
                     Con_fecha = DateTime.Parse(ObjAañadirConsulta.DTPfechaconsulta.Text.Trim()),
                     Con_obser = ObjAañadirConsulta.txtObservaciones.Text.Trim(),
-                    Cli_DUI = ObjAañadirConsulta.cmbDUI.Text.Trim(),
+                    Cli_DUI = ObjAañadirConsulta.txtNombreCon.Text.Trim(),
                     Vis_ID = ObjAañadirConsulta.cmbVisita.SelectedValue.ToString().Trim(),
                     Emp_ID = ObjAañadirConsulta.cmbEmpleado.SelectedValue.ToString().Trim(),
                     Con_hora = DateTime.Parse(ObjAañadirConsulta.DTPHoraConsulta.Text.Trim())
@@ -145,7 +145,7 @@ namespace OpticaMultivisual.Controllers.Consulta
             try
             {
                 ObjAañadirConsulta.txtObservaciones.Text = con_obser;
-                ObjAañadirConsulta.cmbDUI.Text = cli_DUI;
+                ObjAañadirConsulta.txtNombreCon.Text = cli_DUI;
                 ObjAañadirConsulta.cmbVisita.Text = vis_ID;
                 ObjAañadirConsulta.cmbEmpleado.Text = emp_ID;
                 ObjAañadirConsulta.DTPfechaconsulta.Value = con_fecha;
@@ -272,7 +272,7 @@ namespace OpticaMultivisual.Controllers.Consulta
         private bool VerificacionCamposLlenos()
         {
             // Validar que los campos obligatorios estén llenos
-            if (string.IsNullOrWhiteSpace(ObjAañadirConsulta.cmbDUI.Text))
+            if (string.IsNullOrWhiteSpace(ObjAañadirConsulta.txtNombreCon.Text))
             {
                 MessageBox.Show("Por favor, seleccione un DUI.", "Campo Obligatorio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;

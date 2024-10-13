@@ -402,7 +402,7 @@
             this.MaximumSize = new System.Drawing.Size(1920, 1078);
             this.MinimumSize = new System.Drawing.Size(1027, 591);
             this.Name = "ViewByQuestion";
-            this.Text = "Nombre de usuario";
+            this.Text = "Recuperación por pregunta";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

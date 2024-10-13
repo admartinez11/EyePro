@@ -661,7 +661,7 @@
             this.MinimumSize = new System.Drawing.Size(1364, 718);
             this.Name = "ViewLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ViewLogin";
+            this.Text = "Inicio de sesión ";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);

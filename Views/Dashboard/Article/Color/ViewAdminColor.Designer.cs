@@ -164,9 +164,9 @@
             this.label2.Location = new System.Drawing.Point(8, 17);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 25);
+            this.label2.Size = new System.Drawing.Size(61, 25);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Artículos";
+            this.label2.Text = "Color";
             // 
             // tableLayoutPanel4
             // 
@@ -337,7 +337,7 @@
             this.btnNuevoColor.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
             this.btnNuevoColor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNuevoColor.BackgroundImage")));
             this.btnNuevoColor.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnNuevoColor.ButtonText = "Nuevo Artículo";
+            this.btnNuevoColor.ButtonText = "Nuevo Color";
             this.btnNuevoColor.ButtonTextMarginLeft = 0;
             this.btnNuevoColor.ColorContrastOnClick = 45;
             this.btnNuevoColor.ColorContrastOnHover = 45;
@@ -426,7 +426,7 @@
             this.btnEliminarColor.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
             this.btnEliminarColor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEliminarColor.BackgroundImage")));
             this.btnEliminarColor.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnEliminarColor.ButtonText = "Eliminar Artículo";
+            this.btnEliminarColor.ButtonText = "Eliminar Color";
             this.btnEliminarColor.ButtonTextMarginLeft = 0;
             this.btnEliminarColor.ColorContrastOnClick = 45;
             this.btnEliminarColor.ColorContrastOnHover = 45;
@@ -759,7 +759,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimumSize = new System.Drawing.Size(1027, 591);
             this.Name = "ViewAdminColor";
-            this.Text = "ViewAdminColor";
+            this.Text = "Color";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
