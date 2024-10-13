@@ -519,15 +519,15 @@ namespace OpticaMultivisual.Controllers.Dashboard
             //}
 
             // Verificar si el correo ya está registrado
-            bool existeCorreo = daoAdminEmp.VerificarCorreoExistente(ObjAddUser.txtEmail.Text.Trim());
-            if (existeCorreo)
-            {
-                MessageBox.Show("El correo electrónico ingresado ya está asociado a otro usuario. Por favor, verifique e ingrese un correo electrónico diferente.",
-                                "Error de validación",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error);
-                return false; // Detener el proceso si el correo ya existe
-            }
+            //bool existeCorreo = daoAdminEmp.VerificarCorreoExistente(ObjAddUser.txtEmail.Text.Trim());
+            //if (existeCorreo)
+            //{
+            //    MessageBox.Show("El correo electrónico ingresado ya está asociado a otro usuario. Por favor, verifique e ingrese un correo electrónico diferente.",
+            //                    "Error de validación",
+            //                    MessageBoxButtons.OK,
+            //                    MessageBoxIcon.Error);
+            //    return false; // Detener el proceso si el correo ya existe
+            //}
 
             if (string.IsNullOrWhiteSpace(ObjAddUser.txtPhone.Text.Trim()))
             {

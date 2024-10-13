@@ -33,10 +33,14 @@ namespace OpticaMultivisual.Views.Consultas
             InitializeComponent();
             ControladorVerConsulta controladorAdCon = new ControladorVerConsulta(this, accion, cli_DUI);
         }
-
         private void txtConID_TextChanged(object sender, EventArgs e)
         {
             txtConID.Enabled = false;
+        }
+
+        private void txtNombreCon_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

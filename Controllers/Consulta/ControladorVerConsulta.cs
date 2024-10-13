@@ -28,10 +28,20 @@ namespace OpticaMultivisual.Controllers.Consulta
         }
         void CargaInicio(object sender, EventArgs e)
         {
+            LlenarComboDui();
+            LlenarComboVisita();
+            LlenarComboEmpleados();
+            //AñadirConsulta_Load();
+            ObjAañadirConsulta.txtNombreCon.Visible = false;
+        }
+        void CargaInicioDUI(object sender, EventArgs e)
+        {
             //LlenarComboDui();
             LlenarComboVisita();
             LlenarComboEmpleados();
             //AñadirConsulta_Load();
+             ObjAañadirConsulta.cmbDUI.Visible = false;
+             ObjAañadirConsulta.txtNombreCon.Enabled = false;
         }
 
         //private void AñadirConsulta_Load()
@@ -51,15 +61,15 @@ namespace OpticaMultivisual.Controllers.Consulta
         //    ObjAañadirConsulta.cmbEmpleado.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
         //    ObjAañadirConsulta.cmbEmpleado.AutoCompleteSource = AutoCompleteSource.ListItems;
         //}
-        //void LlenarComboDui()
-        //{
-        //    DAOConsulta DaoDui = new DAOConsulta();
-        //    DataSet dataSet = DaoDui.ObtenerDUI();
-        //    ObjAañadirConsulta.cmbDUI.DataSource = dataSet.Tables["Cliente"];
-        //    ObjAañadirConsulta.cmbDUI.DisplayMember = "cli_dui";
-        //    ObjAañadirConsulta.cmbDUI.ValueMember = "cli_dui";
+        void LlenarComboDui()
+        {
+            DAOConsulta DaoDui = new DAOConsulta();
+            DataSet dataSet = DaoDui.ObtenerDUI();
+            ObjAañadirConsulta.cmbDUI.DataSource = dataSet.Tables["Cliente"];
+            ObjAañadirConsulta.cmbDUI.DisplayMember = "cli_dui";
+            ObjAañadirConsulta.cmbDUI.ValueMember = "cli_dui";
 
-        //}
+        }
         void LlenarComboVisita()
         {
             DAOConsulta DaoDui = new DAOConsulta();
@@ -353,7 +363,7 @@ namespace OpticaMultivisual.Controllers.Consulta
         public ControladorVerConsulta(AñadirConsulta Vista, int p_accion, string cli_DUI)
         {
             ObjAañadirConsulta = Vista;
-            ObjAañadirConsulta.Load += new EventHandler(CargaInicio);
+            ObjAañadirConsulta.Load += new EventHandler(CargaInicioDUI);
             this.accion = p_accion;
             verificarAccion();
             CargarValoresCon(cli_DUI);
@@ -364,7 +374,7 @@ namespace OpticaMultivisual.Controllers.Consulta
             try
             {
                 // Asignar el valor directamente al TextBox (txtDuiCon)
-                ObjAañadirConsulta.cmbDUI.Text = cli_DUI;
+                ObjAañadirConsulta.txtNombreCon.Text = cli_DUI;
             }
             catch (Exception ex)
             {
@@ -376,8 +386,9 @@ namespace OpticaMultivisual.Controllers.Consulta
         {
             try
             {
+
                 // Asegúrate de que el TextBox del DUI no esté vacío
-                if (string.IsNullOrWhiteSpace(ObjAañadirConsulta.cmbDUI.Text.Trim()))
+                if (string.IsNullOrWhiteSpace(ObjAañadirConsulta.txtNombreCon.Text.Trim()))
                 {
                     MessageBox.Show("El campo DUI no puede estar vacío.", "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -386,12 +397,13 @@ namespace OpticaMultivisual.Controllers.Consulta
                 // Crear una nueva instancia de DAOConsulta con los valores correctos
                 DAOConsulta Consulta = new DAOConsulta
                 {
-                    Cli_DUI = ObjAañadirConsulta.cmbDUI.Text.Trim(),  // Asignar el DUI desde el TextBox
+                    Cli_DUI = ObjAañadirConsulta.txtNombreCon.Text.Trim(),  // Asignar el DUI desde el TextBox
                     Con_fecha = DateTime.Parse(ObjAañadirConsulta.DTPfechaconsulta.Text.Trim()),
                     Con_obser = ObjAañadirConsulta.txtObservaciones.Text.Trim(),
                     Vis_ID = ObjAañadirConsulta.cmbVisita.SelectedValue.ToString().Trim(),
                     Emp_ID = ObjAañadirConsulta.cmbEmpleado.SelectedValue.ToString().Trim(),
                     Con_hora = DateTime.Parse(ObjAañadirConsulta.DTPHoraConsulta.Text.Trim())
+                    
                 };
 
                 Consulta.Est_ID = ObjAañadirConsulta.cmbEstado.Checked;
@@ -422,5 +434,6 @@ namespace OpticaMultivisual.Controllers.Consulta
                                 "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        
     }
 }

@@ -75,21 +75,25 @@ namespace OpticaMultivisual.Controllers
         public void ActualizarCliente(object sender, EventArgs e)
         {
             int pos = ObjVista.dgvInfoClientes.CurrentRow.Index;
+
             RegistroClientes openForm = new RegistroClientes(2,
-            ObjVista.dgvInfoClientes[0, pos].Value.ToString(),        // DUI
-            ObjVista.dgvInfoClientes[1, pos].Value.ToString(),     // Nombre
-            ObjVista.dgvInfoClientes[2, pos].Value.ToString(),   // Apellido
-            ObjVista.dgvInfoClientes[3, pos].Value.ToString(),   // Teléfono
-            char.Parse(ObjVista.dgvInfoClientes[5, pos].Value.ToString()), // Género
-            ObjVista.dgvInfoClientes[4, pos].Value.ToString(), // Edad
-            ObjVista.dgvInfoClientes[6, pos].Value.ToString(),   // Correo_E
-            ObjVista.dgvInfoClientes[7, pos].Value.ToString(),  // Profesión
-            ObjVista.dgvInfoClientes[8, pos].Value.ToString() // Padecimientos
+                ObjVista.dgvInfoClientes[0, pos].Value.ToString(),    // DUI
+                ObjVista.dgvInfoClientes[1, pos].Value.ToString(),    // Nombre
+                ObjVista.dgvInfoClientes[2, pos].Value.ToString(),    // Apellido
+                ObjVista.dgvInfoClientes[3, pos].Value.ToString(),    // Teléfono
+                char.Parse(ObjVista.dgvInfoClientes[5, pos].Value.ToString()),  // Género
+                ObjVista.dgvInfoClientes[4, pos].Value.ToString(),    // Edad
+                ObjVista.dgvInfoClientes[6, pos].Value.ToString(),    // Correo_E
+                ObjVista.dgvInfoClientes[7, pos].Value.ToString(),    // Profesión
+                ObjVista.dgvInfoClientes[8, pos].Value.ToString(),    // Padecimientos
+                                                                      // Manejar el valor booleano de manera segura
+                bool.TryParse(ObjVista.dgvInfoClientes[9, pos].Value.ToString(), out bool menor) ? menor : false
             );
 
             openForm.ShowDialog();
             ActualizarDatos();
         }
+
         public void AgregarConsulta(object sender, EventArgs e)
         {
             int pos = ObjVista.dgvInfoClientes.CurrentRow.Index;
