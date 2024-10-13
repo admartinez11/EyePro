@@ -760,6 +760,7 @@
             this.MaximumSize = new System.Drawing.Size(1920, 1077);
             this.MinimumSize = new System.Drawing.Size(1026, 590);
             this.Name = "ViewCambiarClave";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cambiar clave";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);

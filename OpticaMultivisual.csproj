@@ -52,7 +52,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Eyeproico.ico</ApplicationIcon>
+    <ApplicationIcon>EyePro Logo.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>B99E560B74A84DE81E3AF6EFAD88623D81A025F2</ManifestCertificateThumbprint>
@@ -652,6 +652,7 @@
     <None Include="Resources\Close.png" />
     <None Include="Resources\Sever.png" />
     <None Include="Resources\Documents.png" />
+    <Content Include="EyePro Logo.ico" />
     <Content Include="Eyeproico.ico" />
     <None Include="Resources\EyePro.png" />
   </ItemGroup>

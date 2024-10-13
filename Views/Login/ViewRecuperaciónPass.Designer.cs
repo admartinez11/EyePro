@@ -59,7 +59,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 79.77778F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.555555F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(796, 446);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -71,13 +71,13 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.943662F));
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 1, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(182, 51);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(181, 50);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.075235F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.22257F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.015674F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(446, 352);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(443, 349);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // tableLayoutPanel3
@@ -96,7 +96,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(408, 314);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(405, 311);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // btnInterAdmin
@@ -147,7 +147,7 @@
             this.btnInterAdmin.IdleIconLeftImage = global::OpticaMultivisual.Properties.Resources.Admin;
             this.btnInterAdmin.IdleIconRightImage = null;
             this.btnInterAdmin.IndicateFocus = false;
-            this.btnInterAdmin.Location = new System.Drawing.Point(3, 237);
+            this.btnInterAdmin.Location = new System.Drawing.Point(3, 234);
             this.btnInterAdmin.Name = "btnInterAdmin";
             this.btnInterAdmin.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnInterAdmin.OnDisabledState.BorderRadius = 20;
@@ -181,7 +181,7 @@
             this.btnInterAdmin.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnInterAdmin.OnPressedState.IconLeftImage = null;
             this.btnInterAdmin.OnPressedState.IconRightImage = null;
-            this.btnInterAdmin.Size = new System.Drawing.Size(402, 74);
+            this.btnInterAdmin.Size = new System.Drawing.Size(399, 74);
             this.btnInterAdmin.TabIndex = 4;
             this.btnInterAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnInterAdmin.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -271,7 +271,7 @@
             this.btnAdmin.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnAdmin.OnPressedState.IconLeftImage = null;
             this.btnAdmin.OnPressedState.IconRightImage = null;
-            this.btnAdmin.Size = new System.Drawing.Size(402, 72);
+            this.btnAdmin.Size = new System.Drawing.Size(399, 71);
             this.btnAdmin.TabIndex = 1;
             this.btnAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAdmin.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -327,7 +327,7 @@
             this.BtnSecurityQ.IdleIconLeftImage = global::OpticaMultivisual.Properties.Resources.SecurityQ;
             this.BtnSecurityQ.IdleIconRightImage = null;
             this.BtnSecurityQ.IndicateFocus = false;
-            this.BtnSecurityQ.Location = new System.Drawing.Point(3, 81);
+            this.BtnSecurityQ.Location = new System.Drawing.Point(3, 80);
             this.BtnSecurityQ.Name = "BtnSecurityQ";
             this.BtnSecurityQ.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.BtnSecurityQ.OnDisabledState.BorderRadius = 20;
@@ -361,7 +361,7 @@
             this.BtnSecurityQ.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.BtnSecurityQ.OnPressedState.IconLeftImage = null;
             this.BtnSecurityQ.OnPressedState.IconRightImage = null;
-            this.BtnSecurityQ.Size = new System.Drawing.Size(402, 72);
+            this.BtnSecurityQ.Size = new System.Drawing.Size(399, 71);
             this.BtnSecurityQ.TabIndex = 2;
             this.BtnSecurityQ.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnSecurityQ.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -417,7 +417,7 @@
             this.BtnGmail.IdleIconLeftImage = global::OpticaMultivisual.Properties.Resources.Gmail;
             this.BtnGmail.IdleIconRightImage = null;
             this.BtnGmail.IndicateFocus = false;
-            this.BtnGmail.Location = new System.Drawing.Point(3, 159);
+            this.BtnGmail.Location = new System.Drawing.Point(3, 157);
             this.BtnGmail.Name = "BtnGmail";
             this.BtnGmail.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.BtnGmail.OnDisabledState.BorderRadius = 20;
@@ -451,7 +451,7 @@
             this.BtnGmail.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.BtnGmail.OnPressedState.IconLeftImage = null;
             this.BtnGmail.OnPressedState.IconRightImage = null;
-            this.BtnGmail.Size = new System.Drawing.Size(402, 72);
+            this.BtnGmail.Size = new System.Drawing.Size(399, 71);
             this.BtnGmail.TabIndex = 3;
             this.BtnGmail.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGmail.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -466,6 +466,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(816, 489);
             this.MinimumSize = new System.Drawing.Size(816, 489);
