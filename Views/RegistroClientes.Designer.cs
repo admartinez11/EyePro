@@ -154,7 +154,7 @@ namespace AdministrarClientes.View.RegistroCliente
             this.bunifuPanel1.Controls.Add(this.tableLayoutPanel4);
             this.bunifuPanel1.Controls.Add(this.tableLayoutPanel2);
             this.bunifuPanel1.Location = new System.Drawing.Point(168, 87);
-            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(690, 442);
@@ -174,7 +174,7 @@ namespace AdministrarClientes.View.RegistroCliente
             this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel10, 1, 3);
             this.tableLayoutPanel9.Controls.Add(this.checkmenor, 1, 2);
             this.tableLayoutPanel9.Location = new System.Drawing.Point(28, 256);
-            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 4;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.61062F));
@@ -215,7 +215,7 @@ namespace AdministrarClientes.View.RegistroCliente
             this.txtpadecimientos.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtpadecimientos.Lines = new string[0];
             this.txtpadecimientos.Location = new System.Drawing.Point(9, 2);
-            this.txtpadecimientos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtpadecimientos.Margin = new System.Windows.Forms.Padding(2);
             this.txtpadecimientos.MaxLength = 100;
             this.txtpadecimientos.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtpadecimientos.Modified = false;
@@ -241,7 +241,7 @@ namespace AdministrarClientes.View.RegistroCliente
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtpadecimientos.OnIdleState = stateProperties4;
-            this.txtpadecimientos.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtpadecimientos.Padding = new System.Windows.Forms.Padding(2);
             this.txtpadecimientos.PasswordChar = '\0';
             this.txtpadecimientos.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtpadecimientos.PlaceholderText = "Padecimientos";
@@ -275,7 +275,7 @@ namespace AdministrarClientes.View.RegistroCliente
             this.tableLayoutPanel10.Controls.Add(this.btnActualizar, 1, 0);
             this.tableLayoutPanel10.Controls.Add(this.btnAgregarCliente, 2, 0);
             this.tableLayoutPanel10.Location = new System.Drawing.Point(9, 118);
-            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 2;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.18519F));
@@ -483,7 +483,7 @@ namespace AdministrarClientes.View.RegistroCliente
             this.checkmenor.Cursor = System.Windows.Forms.Cursors.Default;
             this.checkmenor.CustomCheckmarkImage = null;
             this.checkmenor.Location = new System.Drawing.Point(9, 90);
-            this.checkmenor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkmenor.Margin = new System.Windows.Forms.Padding(2);
             this.checkmenor.MinimumSize = new System.Drawing.Size(13, 14);
             this.checkmenor.Name = "checkmenor";
             this.checkmenor.OnCheck.BorderColor = System.Drawing.Color.DodgerBlue;
@@ -595,7 +595,7 @@ namespace AdministrarClientes.View.RegistroCliente
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtdui.OnIdleState = stateProperties8;
-            this.txtdui.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtdui.Padding = new System.Windows.Forms.Padding(2);
             this.txtdui.PasswordChar = '\0';
             this.txtdui.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtdui.PlaceholderText = "DUI";
@@ -674,7 +674,7 @@ namespace AdministrarClientes.View.RegistroCliente
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtprofecion.OnIdleState = stateProperties12;
-            this.txtprofecion.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtprofecion.Padding = new System.Windows.Forms.Padding(2);
             this.txtprofecion.PasswordChar = '\0';
             this.txtprofecion.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtprofecion.PlaceholderText = "Profesión";
@@ -773,7 +773,7 @@ namespace AdministrarClientes.View.RegistroCliente
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtEdad.OnIdleState = stateProperties16;
-            this.txtEdad.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEdad.Padding = new System.Windows.Forms.Padding(2);
             this.txtEdad.PasswordChar = '\0';
             this.txtEdad.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtEdad.PlaceholderText = "Edad";
@@ -851,7 +851,7 @@ namespace AdministrarClientes.View.RegistroCliente
             stateProperties20.ForeColor = System.Drawing.Color.Empty;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtGenero.OnIdleState = stateProperties20;
-            this.txtGenero.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtGenero.Padding = new System.Windows.Forms.Padding(2);
             this.txtGenero.PasswordChar = '\0';
             this.txtGenero.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtGenero.PlaceholderText = "Género";
@@ -961,7 +961,7 @@ namespace AdministrarClientes.View.RegistroCliente
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel6.Controls.Add(this.label1, 0, 1);
             this.tableLayoutPanel6.Location = new System.Drawing.Point(34, 15);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 3;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.38461F));
@@ -1062,7 +1062,7 @@ namespace AdministrarClientes.View.RegistroCliente
             stateProperties28.ForeColor = System.Drawing.Color.Empty;
             stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtApellido.OnIdleState = stateProperties28;
-            this.txtApellido.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtApellido.Padding = new System.Windows.Forms.Padding(2);
             this.txtApellido.PasswordChar = '\0';
             this.txtApellido.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtApellido.PlaceholderText = "Apellido";
@@ -1218,7 +1218,7 @@ namespace AdministrarClientes.View.RegistroCliente
             stateProperties36.ForeColor = System.Drawing.Color.Empty;
             stateProperties36.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtNombre.OnIdleState = stateProperties36;
-            this.txtNombre.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Padding = new System.Windows.Forms.Padding(2);
             this.txtNombre.PasswordChar = '\0';
             this.txtNombre.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtNombre.PlaceholderText = "Nombre";
@@ -1317,7 +1317,7 @@ namespace AdministrarClientes.View.RegistroCliente
             stateProperties40.ForeColor = System.Drawing.Color.Empty;
             stateProperties40.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox3.OnIdleState = stateProperties40;
-            this.bunifuTextBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuTextBox3.Padding = new System.Windows.Forms.Padding(2);
             this.bunifuTextBox3.PasswordChar = '\0';
             this.bunifuTextBox3.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.bunifuTextBox3.PlaceholderText = "Apellido";
@@ -1395,7 +1395,7 @@ namespace AdministrarClientes.View.RegistroCliente
             stateProperties44.ForeColor = System.Drawing.Color.Empty;
             stateProperties44.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox2.OnIdleState = stateProperties44;
-            this.bunifuTextBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuTextBox2.Padding = new System.Windows.Forms.Padding(2);
             this.bunifuTextBox2.PasswordChar = '\0';
             this.bunifuTextBox2.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.bunifuTextBox2.PlaceholderText = "Nombre";
@@ -1503,7 +1503,7 @@ namespace AdministrarClientes.View.RegistroCliente
             this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
             this.bunifuPictureBox1.IsCircle = true;
             this.bunifuPictureBox1.Location = new System.Drawing.Point(9, 2);
-            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
             this.bunifuPictureBox1.Size = new System.Drawing.Size(148, 81);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1517,9 +1517,11 @@ namespace AdministrarClientes.View.RegistroCliente
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1028, 609);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1920, 1074);
             this.MinimumSize = new System.Drawing.Size(1026, 587);
             this.Name = "RegistroClientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cliente";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.bunifuPanel1.ResumeLayout(false);

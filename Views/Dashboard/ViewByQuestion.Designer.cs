@@ -402,6 +402,7 @@
             this.MaximumSize = new System.Drawing.Size(1920, 1078);
             this.MinimumSize = new System.Drawing.Size(1027, 591);
             this.Name = "ViewByQuestion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Recuperación por pregunta";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);

@@ -496,6 +496,7 @@
             this.MaximumSize = new System.Drawing.Size(1920, 1077);
             this.MinimumSize = new System.Drawing.Size(1026, 590);
             this.Name = "ViewRecoverByQuestion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Recuperar por pregunta de seguridad";
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
