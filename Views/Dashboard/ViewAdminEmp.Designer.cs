@@ -690,7 +690,7 @@
             this.MinimumSize = new System.Drawing.Size(1026, 590);
             this.Name = "ViewAdminEmp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Administración de Empleados";
+            this.Text = "Empleados";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

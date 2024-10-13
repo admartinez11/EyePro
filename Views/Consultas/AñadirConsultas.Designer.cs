@@ -29,16 +29,16 @@ namespace OpticaMultivisual.Views.Consultas
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AñadirConsulta));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties21 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
@@ -61,7 +61,7 @@ namespace OpticaMultivisual.Views.Consultas
             this.label3 = new System.Windows.Forms.Label();
             this.cmbVisita = new Bunifu.UI.WinForms.BunifuDropdown();
             this.cmbEmpleado = new Bunifu.UI.WinForms.BunifuDropdown();
-            this.cmbDUI = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.txtNombreCon = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
@@ -84,13 +84,12 @@ namespace OpticaMultivisual.Views.Consultas
             this.tableLayoutPanel1.Controls.Add(this.bunifuPictureBox1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.93491F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 58.13143F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.93366F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1349, 709);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1012, 576);
             this.tableLayoutPanel1.TabIndex = 14;
             // 
             // bunifuPanel1
@@ -108,11 +107,11 @@ namespace OpticaMultivisual.Views.Consultas
             this.bunifuPanel1.Controls.Add(this.tableLayoutPanel3);
             this.bunifuPanel1.Controls.Add(this.tableLayoutPanel6);
             this.bunifuPanel1.Controls.Add(this.tableLayoutPanel2);
-            this.bunifuPanel1.Location = new System.Drawing.Point(221, 150);
-            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuPanel1.Location = new System.Drawing.Point(166, 122);
+            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(905, 408);
+            this.bunifuPanel1.Size = new System.Drawing.Size(679, 330);
             this.bunifuPanel1.TabIndex = 1;
             // 
             // tableLayoutPanel9
@@ -127,15 +126,15 @@ namespace OpticaMultivisual.Views.Consultas
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.9937888F));
             this.tableLayoutPanel9.Controls.Add(this.txtObservaciones, 1, 0);
             this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel10, 1, 3);
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(45, 215);
-            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(34, 175);
+            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 4;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 89.28571F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.71429F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(816, 168);
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 52F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(612, 134);
             this.tableLayoutPanel9.TabIndex = 12;
             // 
             // txtObservaciones
@@ -168,34 +167,34 @@ namespace OpticaMultivisual.Views.Consultas
             this.txtObservaciones.IconRight = null;
             this.txtObservaciones.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtObservaciones.Lines = new string[0];
-            this.txtObservaciones.Location = new System.Drawing.Point(12, 2);
-            this.txtObservaciones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtObservaciones.Location = new System.Drawing.Point(8, 2);
+            this.txtObservaciones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtObservaciones.MaxLength = 100;
             this.txtObservaciones.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtObservaciones.Modified = false;
             this.txtObservaciones.Multiline = true;
             this.txtObservaciones.Name = "txtObservaciones";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtObservaciones.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtObservaciones.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtObservaciones.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtObservaciones.OnIdleState = stateProperties4;
-            this.txtObservaciones.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            stateProperties17.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties17.FillColor = System.Drawing.Color.Empty;
+            stateProperties17.ForeColor = System.Drawing.Color.Empty;
+            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtObservaciones.OnActiveState = stateProperties17;
+            stateProperties18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtObservaciones.OnDisabledState = stateProperties18;
+            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties19.FillColor = System.Drawing.Color.Empty;
+            stateProperties19.ForeColor = System.Drawing.Color.Empty;
+            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtObservaciones.OnHoverState = stateProperties19;
+            stateProperties20.BorderColor = System.Drawing.Color.Silver;
+            stateProperties20.FillColor = System.Drawing.Color.White;
+            stateProperties20.ForeColor = System.Drawing.Color.Empty;
+            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtObservaciones.OnIdleState = stateProperties20;
+            this.txtObservaciones.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtObservaciones.PasswordChar = '\0';
             this.txtObservaciones.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtObservaciones.PlaceholderText = "Observaciones";
@@ -205,7 +204,7 @@ namespace OpticaMultivisual.Views.Consultas
             this.txtObservaciones.SelectionLength = 0;
             this.txtObservaciones.SelectionStart = 0;
             this.txtObservaciones.ShortcutsEnabled = true;
-            this.txtObservaciones.Size = new System.Drawing.Size(792, 79);
+            this.txtObservaciones.Size = new System.Drawing.Size(595, 62);
             this.txtObservaciones.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtObservaciones.TabIndex = 0;
             this.txtObservaciones.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -228,14 +227,14 @@ namespace OpticaMultivisual.Views.Consultas
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.4578F));
             this.tableLayoutPanel10.Controls.Add(this.btnActualizar, 1, 0);
             this.tableLayoutPanel10.Controls.Add(this.btnAgendar, 2, 0);
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(12, 105);
-            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(8, 83);
+            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 2;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.18519F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.81481F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(792, 61);
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(595, 49);
             this.tableLayoutPanel10.TabIndex = 7;
             // 
             // btnActualizar
@@ -257,11 +256,11 @@ namespace OpticaMultivisual.Views.Consultas
             this.btnActualizar.ColorContrastOnClick = 45;
             this.btnActualizar.ColorContrastOnHover = 45;
             this.btnActualizar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnActualizar.CustomizableEdges = borderEdges1;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.btnActualizar.CustomizableEdges = borderEdges5;
             this.btnActualizar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnActualizar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnActualizar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -280,14 +279,13 @@ namespace OpticaMultivisual.Views.Consultas
             this.btnActualizar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnActualizar.IconSize = 25;
             this.btnActualizar.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
-            this.btnActualizar.IdleBorderRadius = 41;
+            this.btnActualizar.IdleBorderRadius = 33;
             this.btnActualizar.IdleBorderThickness = 1;
             this.btnActualizar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
             this.btnActualizar.IdleIconLeftImage = null;
             this.btnActualizar.IdleIconRightImage = null;
             this.btnActualizar.IndicateFocus = false;
-            this.btnActualizar.Location = new System.Drawing.Point(299, 4);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnActualizar.Location = new System.Drawing.Point(225, 3);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnActualizar.OnDisabledState.BorderRadius = 20;
@@ -321,7 +319,7 @@ namespace OpticaMultivisual.Views.Consultas
             this.btnActualizar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnActualizar.OnPressedState.IconLeftImage = null;
             this.btnActualizar.OnPressedState.IconRightImage = null;
-            this.btnActualizar.Size = new System.Drawing.Size(239, 43);
+            this.btnActualizar.Size = new System.Drawing.Size(179, 35);
             this.btnActualizar.TabIndex = 34;
             this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnActualizar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -348,11 +346,11 @@ namespace OpticaMultivisual.Views.Consultas
             this.btnAgendar.ColorContrastOnClick = 45;
             this.btnAgendar.ColorContrastOnHover = 45;
             this.btnAgendar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnAgendar.CustomizableEdges = borderEdges2;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.btnAgendar.CustomizableEdges = borderEdges6;
             this.btnAgendar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAgendar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAgendar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -371,14 +369,13 @@ namespace OpticaMultivisual.Views.Consultas
             this.btnAgendar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnAgendar.IconSize = 25;
             this.btnAgendar.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
-            this.btnAgendar.IdleBorderRadius = 41;
+            this.btnAgendar.IdleBorderRadius = 33;
             this.btnAgendar.IdleBorderThickness = 1;
             this.btnAgendar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
             this.btnAgendar.IdleIconLeftImage = null;
             this.btnAgendar.IdleIconRightImage = null;
             this.btnAgendar.IndicateFocus = false;
-            this.btnAgendar.Location = new System.Drawing.Point(546, 4);
-            this.btnAgendar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAgendar.Location = new System.Drawing.Point(410, 3);
             this.btnAgendar.Name = "btnAgendar";
             this.btnAgendar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAgendar.OnDisabledState.BorderRadius = 20;
@@ -412,7 +409,7 @@ namespace OpticaMultivisual.Views.Consultas
             this.btnAgendar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnAgendar.OnPressedState.IconLeftImage = null;
             this.btnAgendar.OnPressedState.IconRightImage = null;
-            this.btnAgendar.Size = new System.Drawing.Size(242, 43);
+            this.btnAgendar.Size = new System.Drawing.Size(182, 35);
             this.btnAgendar.TabIndex = 35;
             this.btnAgendar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAgendar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -432,12 +429,12 @@ namespace OpticaMultivisual.Views.Consultas
             this.tableLayoutPanel3.Controls.Add(this.DTPfechaconsulta, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.label6, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.DTPHoraConsulta, 2, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(45, 166);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(25, 2, 3, 2);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(34, 135);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(19, 2, 2, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(809, 45);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(607, 37);
             this.tableLayoutPanel3.TabIndex = 11;
             // 
             // DTPfechaconsulta
@@ -461,11 +458,11 @@ namespace OpticaMultivisual.Views.Consultas
             this.DTPfechaconsulta.IconColor = System.Drawing.Color.White;
             this.DTPfechaconsulta.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.DTPfechaconsulta.LeftTextMargin = 5;
-            this.DTPfechaconsulta.Location = new System.Drawing.Point(230, 2);
-            this.DTPfechaconsulta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DTPfechaconsulta.Location = new System.Drawing.Point(172, 2);
+            this.DTPfechaconsulta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DTPfechaconsulta.MinimumSize = new System.Drawing.Size(4, 32);
             this.DTPfechaconsulta.Name = "DTPfechaconsulta";
-            this.DTPfechaconsulta.Size = new System.Drawing.Size(306, 34);
+            this.DTPfechaconsulta.Size = new System.Drawing.Size(230, 32);
             this.DTPfechaconsulta.TabIndex = 0;
             this.DTPfechaconsulta.Value = new System.DateTime(2024, 9, 1, 11, 29, 0, 0);
             // 
@@ -474,10 +471,10 @@ namespace OpticaMultivisual.Views.Consultas
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(4, 11);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 11, 4, 0);
+            this.label6.Location = new System.Drawing.Point(3, 9);
+            this.label6.Margin = new System.Windows.Forms.Padding(3, 9, 3, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(209, 28);
+            this.label6.Size = new System.Drawing.Size(99, 28);
             this.label6.TabIndex = 1;
             this.label6.Text = "Fecha de la consulta:";
             // 
@@ -486,11 +483,11 @@ namespace OpticaMultivisual.Views.Consultas
             this.DTPHoraConsulta.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.DTPHoraConsulta.CustomFormat = "hh:mm:ss tt";
             this.DTPHoraConsulta.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DTPHoraConsulta.Location = new System.Drawing.Point(554, 11);
-            this.DTPHoraConsulta.Margin = new System.Windows.Forms.Padding(15, 3, 3, 3);
+            this.DTPHoraConsulta.Location = new System.Drawing.Point(415, 8);
+            this.DTPHoraConsulta.Margin = new System.Windows.Forms.Padding(11, 2, 2, 2);
             this.DTPHoraConsulta.Name = "DTPHoraConsulta";
             this.DTPHoraConsulta.ShowUpDown = true;
-            this.DTPHoraConsulta.Size = new System.Drawing.Size(153, 22);
+            this.DTPHoraConsulta.Size = new System.Drawing.Size(116, 20);
             this.DTPHoraConsulta.TabIndex = 2;
             // 
             // tableLayoutPanel6
@@ -504,14 +501,14 @@ namespace OpticaMultivisual.Views.Consultas
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel6.Controls.Add(this.label1, 0, 1);
             this.tableLayoutPanel6.Controls.Add(this.txtConID, 2, 1);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(45, 18);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(34, 15);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 3;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.38461F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.76923F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.30769F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(809, 63);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(607, 51);
             this.tableLayoutPanel6.TabIndex = 7;
             // 
             // label1
@@ -520,9 +517,10 @@ namespace OpticaMultivisual.Views.Consultas
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 9);
+            this.label1.Location = new System.Drawing.Point(2, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(253, 45);
+            this.label1.Size = new System.Drawing.Size(190, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Consulta";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -557,34 +555,34 @@ namespace OpticaMultivisual.Views.Consultas
             this.txtConID.IconRight = null;
             this.txtConID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtConID.Lines = new string[0];
-            this.txtConID.Location = new System.Drawing.Point(690, 11);
-            this.txtConID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtConID.Location = new System.Drawing.Point(518, 9);
+            this.txtConID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtConID.MaxLength = 32767;
             this.txtConID.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtConID.Modified = false;
             this.txtConID.Multiline = false;
             this.txtConID.Name = "txtConID";
-            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtConID.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtConID.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtConID.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Silver;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtConID.OnIdleState = stateProperties8;
-            this.txtConID.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            stateProperties21.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties21.FillColor = System.Drawing.Color.Empty;
+            stateProperties21.ForeColor = System.Drawing.Color.Empty;
+            stateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtConID.OnActiveState = stateProperties21;
+            stateProperties22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtConID.OnDisabledState = stateProperties22;
+            stateProperties23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties23.FillColor = System.Drawing.Color.Empty;
+            stateProperties23.ForeColor = System.Drawing.Color.Empty;
+            stateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtConID.OnHoverState = stateProperties23;
+            stateProperties24.BorderColor = System.Drawing.Color.Silver;
+            stateProperties24.FillColor = System.Drawing.Color.White;
+            stateProperties24.ForeColor = System.Drawing.Color.Empty;
+            stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtConID.OnIdleState = stateProperties24;
+            this.txtConID.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtConID.PasswordChar = '\0';
             this.txtConID.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtConID.PlaceholderText = "ID";
@@ -594,7 +592,7 @@ namespace OpticaMultivisual.Views.Consultas
             this.txtConID.SelectionLength = 0;
             this.txtConID.SelectionStart = 0;
             this.txtConID.ShortcutsEnabled = true;
-            this.txtConID.Size = new System.Drawing.Size(116, 39);
+            this.txtConID.Size = new System.Drawing.Size(87, 32);
             this.txtConID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtConID.TabIndex = 1;
             this.txtConID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -623,15 +621,15 @@ namespace OpticaMultivisual.Views.Consultas
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.cmbVisita, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.cmbEmpleado, 2, 1);
-            this.tableLayoutPanel2.Controls.Add(this.cmbDUI, 0, 1);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(45, 86);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel2.Controls.Add(this.txtNombreCon, 0, 1);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(34, 70);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.66667F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(809, 76);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(607, 62);
             this.tableLayoutPanel2.TabIndex = 6;
             // 
             // label5
@@ -640,10 +638,10 @@ namespace OpticaMultivisual.Views.Consultas
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(373, 6);
-            this.label5.Margin = new System.Windows.Forms.Padding(20, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(280, 7);
+            this.label5.Margin = new System.Windows.Forms.Padding(15, 0, 3, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 19);
+            this.label5.Size = new System.Drawing.Size(66, 13);
             this.label5.TabIndex = 11;
             this.label5.Text = "Profesional";
             // 
@@ -653,10 +651,9 @@ namespace OpticaMultivisual.Views.Consultas
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(165, 6);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(124, 7);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 19);
+            this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 10;
             this.label4.Text = "Visita";
             // 
@@ -679,9 +676,9 @@ namespace OpticaMultivisual.Views.Consultas
             this.cmbEstado.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
             this.cmbEstado.Cursor = System.Windows.Forms.Cursors.Default;
             this.cmbEstado.CustomCheckmarkImage = null;
-            this.cmbEstado.Location = new System.Drawing.Point(629, 32);
-            this.cmbEstado.Margin = new System.Windows.Forms.Padding(40, 4, 4, 4);
-            this.cmbEstado.MinimumSize = new System.Drawing.Size(23, 21);
+            this.cmbEstado.Location = new System.Drawing.Point(472, 26);
+            this.cmbEstado.Margin = new System.Windows.Forms.Padding(30, 3, 3, 3);
+            this.cmbEstado.MinimumSize = new System.Drawing.Size(17, 17);
             this.cmbEstado.Name = "cmbEstado";
             this.cmbEstado.OnCheck.BorderColor = System.Drawing.Color.PaleTurquoise;
             this.cmbEstado.OnCheck.BorderRadius = 12;
@@ -709,7 +706,7 @@ namespace OpticaMultivisual.Views.Consultas
             this.cmbEstado.OnUncheck.BorderRadius = 12;
             this.cmbEstado.OnUncheck.BorderThickness = 1;
             this.cmbEstado.OnUncheck.CheckBoxColor = System.Drawing.Color.WhiteSmoke;
-            this.cmbEstado.Size = new System.Drawing.Size(28, 28);
+            this.cmbEstado.Size = new System.Drawing.Size(21, 21);
             this.cmbEstado.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
             this.cmbEstado.TabIndex = 7;
             this.cmbEstado.ThreeState = false;
@@ -721,10 +718,9 @@ namespace OpticaMultivisual.Views.Consultas
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(671, 27);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(503, 24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 38);
+            this.label2.Size = new System.Drawing.Size(56, 26);
             this.label2.TabIndex = 8;
             this.label2.Text = "Consulta Realizada";
             // 
@@ -734,10 +730,9 @@ namespace OpticaMultivisual.Views.Consultas
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(4, 6);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(3, 7);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 19);
+            this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 9;
             this.label3.Text = "Consulta";
             // 
@@ -777,10 +772,9 @@ namespace OpticaMultivisual.Views.Consultas
             this.cmbVisita.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.cmbVisita.ItemHighLightForeColor = System.Drawing.Color.White;
             this.cmbVisita.ItemTopMargin = 3;
-            this.cmbVisita.Location = new System.Drawing.Point(165, 29);
-            this.cmbVisita.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbVisita.Location = new System.Drawing.Point(124, 23);
             this.cmbVisita.Name = "cmbVisita";
-            this.cmbVisita.Size = new System.Drawing.Size(183, 32);
+            this.cmbVisita.Size = new System.Drawing.Size(138, 32);
             this.cmbVisita.TabIndex = 13;
             this.cmbVisita.Text = null;
             this.cmbVisita.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -822,59 +816,57 @@ namespace OpticaMultivisual.Views.Consultas
             this.cmbEmpleado.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.cmbEmpleado.ItemHighLightForeColor = System.Drawing.Color.White;
             this.cmbEmpleado.ItemTopMargin = 3;
-            this.cmbEmpleado.Location = new System.Drawing.Point(357, 29);
-            this.cmbEmpleado.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbEmpleado.Location = new System.Drawing.Point(268, 23);
             this.cmbEmpleado.Name = "cmbEmpleado";
-            this.cmbEmpleado.Size = new System.Drawing.Size(227, 32);
+            this.cmbEmpleado.Size = new System.Drawing.Size(171, 32);
             this.cmbEmpleado.TabIndex = 14;
             this.cmbEmpleado.Text = null;
             this.cmbEmpleado.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.cmbEmpleado.TextLeftMargin = 5;
             // 
-            // cmbDUI
+            // txtNombreCon
             // 
-            this.cmbDUI.BackColor = System.Drawing.Color.Transparent;
-            this.cmbDUI.BackgroundColor = System.Drawing.Color.White;
-            this.cmbDUI.BorderColor = System.Drawing.Color.Silver;
-            this.cmbDUI.BorderRadius = 15;
-            this.cmbDUI.Color = System.Drawing.Color.Silver;
-            this.cmbDUI.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.cmbDUI.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cmbDUI.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.cmbDUI.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cmbDUI.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cmbDUI.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
-            this.cmbDUI.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbDUI.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
-            this.cmbDUI.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbDUI.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.cmbDUI.FillDropDown = true;
-            this.cmbDUI.FillIndicator = false;
-            this.cmbDUI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbDUI.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.cmbDUI.ForeColor = System.Drawing.Color.Black;
-            this.cmbDUI.FormattingEnabled = true;
-            this.cmbDUI.Icon = null;
-            this.cmbDUI.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.cmbDUI.IndicatorColor = System.Drawing.Color.DarkGray;
-            this.cmbDUI.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.cmbDUI.IndicatorThickness = 2;
-            this.cmbDUI.IsDropdownOpened = false;
-            this.cmbDUI.ItemBackColor = System.Drawing.Color.White;
-            this.cmbDUI.ItemBorderColor = System.Drawing.Color.White;
-            this.cmbDUI.ItemForeColor = System.Drawing.Color.Black;
-            this.cmbDUI.ItemHeight = 26;
-            this.cmbDUI.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
-            this.cmbDUI.ItemHighLightForeColor = System.Drawing.Color.White;
-            this.cmbDUI.ItemTopMargin = 3;
-            this.cmbDUI.Location = new System.Drawing.Point(4, 29);
-            this.cmbDUI.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbDUI.Name = "cmbDUI";
-            this.cmbDUI.Size = new System.Drawing.Size(153, 32);
-            this.cmbDUI.TabIndex = 15;
-            this.cmbDUI.Text = null;
-            this.cmbDUI.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.cmbDUI.TextLeftMargin = 5;
+            this.txtNombreCon.BackColor = System.Drawing.Color.Transparent;
+            this.txtNombreCon.BackgroundColor = System.Drawing.Color.White;
+            this.txtNombreCon.BorderColor = System.Drawing.Color.Silver;
+            this.txtNombreCon.BorderRadius = 15;
+            this.txtNombreCon.Color = System.Drawing.Color.Silver;
+            this.txtNombreCon.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.txtNombreCon.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.txtNombreCon.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtNombreCon.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.txtNombreCon.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtNombreCon.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
+            this.txtNombreCon.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtNombreCon.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
+            this.txtNombreCon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtNombreCon.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.txtNombreCon.FillDropDown = true;
+            this.txtNombreCon.FillIndicator = false;
+            this.txtNombreCon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtNombreCon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNombreCon.ForeColor = System.Drawing.Color.Black;
+            this.txtNombreCon.FormattingEnabled = true;
+            this.txtNombreCon.Icon = null;
+            this.txtNombreCon.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.txtNombreCon.IndicatorColor = System.Drawing.Color.DarkGray;
+            this.txtNombreCon.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.txtNombreCon.IndicatorThickness = 2;
+            this.txtNombreCon.IsDropdownOpened = false;
+            this.txtNombreCon.ItemBackColor = System.Drawing.Color.White;
+            this.txtNombreCon.ItemBorderColor = System.Drawing.Color.White;
+            this.txtNombreCon.ItemForeColor = System.Drawing.Color.Black;
+            this.txtNombreCon.ItemHeight = 26;
+            this.txtNombreCon.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.txtNombreCon.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.txtNombreCon.ItemTopMargin = 3;
+            this.txtNombreCon.Location = new System.Drawing.Point(3, 23);
+            this.txtNombreCon.Name = "txtNombreCon";
+            this.txtNombreCon.Size = new System.Drawing.Size(115, 32);
+            this.txtNombreCon.TabIndex = 15;
+            this.txtNombreCon.Text = null;
+            this.txtNombreCon.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.txtNombreCon.TextLeftMargin = 5;
             // 
             // bunifuPictureBox1
             // 
@@ -884,10 +876,10 @@ namespace OpticaMultivisual.Views.Consultas
             this.bunifuPictureBox1.BorderRadius = 0;
             this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
             this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(10, 2);
-            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(8, 2);
+            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(197, 144);
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(148, 116);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox1.TabIndex = 2;
             this.bunifuPictureBox1.TabStop = false;
@@ -895,15 +887,15 @@ namespace OpticaMultivisual.Views.Consultas
             // 
             // AñadirConsulta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1349, 709);
+            this.ClientSize = new System.Drawing.Size(1012, 576);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximumSize = new System.Drawing.Size(1920, 1080);
-            this.MinimumSize = new System.Drawing.Size(1366, 748);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximumSize = new System.Drawing.Size(1444, 885);
+            this.MinimumSize = new System.Drawing.Size(1028, 615);
             this.Name = "AñadirConsulta";
-            this.Text = "AñadirConsulta";
+            this.Text = "Consulta";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.bunifuPanel1.ResumeLayout(false);
             this.tableLayoutPanel9.ResumeLayout(false);
@@ -944,6 +936,6 @@ namespace OpticaMultivisual.Views.Consultas
         public Bunifu.UI.WinForms.BunifuDatePicker DTPfechaconsulta;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.DateTimePicker DTPHoraConsulta;
-        public Bunifu.UI.WinForms.BunifuDropdown cmbDUI;
+        public Bunifu.UI.WinForms.BunifuDropdown txtNombreCon;
     }
 }

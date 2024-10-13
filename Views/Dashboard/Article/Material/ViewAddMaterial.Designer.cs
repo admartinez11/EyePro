@@ -561,7 +561,7 @@
             this.MaximumSize = new System.Drawing.Size(1444, 885);
             this.MinimumSize = new System.Drawing.Size(1028, 615);
             this.Name = "ViewAddMaterial";
-            this.Text = "ViewAddMaterial";
+            this.Text = "Material";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.bunifuPanel1.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);

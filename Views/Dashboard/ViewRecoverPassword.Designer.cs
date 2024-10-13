@@ -389,7 +389,7 @@
             this.MinimumSize = new System.Drawing.Size(1026, 588);
             this.Name = "ViewRecoverPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Recuperar Contraseña";
+            this.Text = "Recuperar Contraseña por correo";
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.bunifuPanel1.ResumeLayout(false);

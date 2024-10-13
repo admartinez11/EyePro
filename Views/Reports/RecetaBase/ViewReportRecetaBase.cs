@@ -16,5 +16,11 @@ namespace OpticaMultivisual.Views.Reports.RecetaBase
         {
             InitializeComponent();
         }
+
+        private void ViewReportRecetaBase_Load(object sender, EventArgs e)
+        {
+
+            this.reportViewer1.RefreshReport();
+        }
     }
 }

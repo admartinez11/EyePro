@@ -71,13 +71,12 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Color
             this.tableLayoutPanel1.Controls.Add(this.bunifuPictureBox1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.96333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 73.34274F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.69394F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1349, 709);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1012, 576);
             this.tableLayoutPanel1.TabIndex = 17;
             // 
             // bunifuPanel1
@@ -94,11 +93,11 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Color
             this.bunifuPanel1.Controls.Add(this.tableLayoutPanel7);
             this.bunifuPanel1.Controls.Add(this.tableLayoutPanel3);
             this.bunifuPanel1.Controls.Add(this.tableLayoutPanel6);
-            this.bunifuPanel1.Location = new System.Drawing.Point(221, 100);
-            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuPanel1.Location = new System.Drawing.Point(166, 82);
+            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(905, 515);
+            this.bunifuPanel1.Size = new System.Drawing.Size(679, 418);
             this.bunifuPanel1.TabIndex = 1;
             // 
             // tableLayoutPanel7
@@ -108,17 +107,17 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Color
             this.tableLayoutPanel7.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel7.ColumnCount = 1;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
             this.tableLayoutPanel7.Controls.Add(this.txtColorNombre, 0, 1);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(45, 119);
-            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(34, 97);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 4;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.843444F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 76.47359F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.841484F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.841484F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(809, 64);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(607, 52);
             this.tableLayoutPanel7.TabIndex = 15;
             // 
             // txtColorNombre
@@ -151,8 +150,8 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Color
             this.txtColorNombre.IconRight = null;
             this.txtColorNombre.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtColorNombre.Lines = new string[0];
-            this.txtColorNombre.Location = new System.Drawing.Point(3, 7);
-            this.txtColorNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtColorNombre.Location = new System.Drawing.Point(2, 6);
+            this.txtColorNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtColorNombre.MaxLength = 32767;
             this.txtColorNombre.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtColorNombre.Modified = false;
@@ -178,7 +177,7 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Color
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtColorNombre.OnIdleState = stateProperties4;
-            this.txtColorNombre.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtColorNombre.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtColorNombre.PasswordChar = '\0';
             this.txtColorNombre.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtColorNombre.PlaceholderText = "Nombre";
@@ -188,7 +187,7 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Color
             this.txtColorNombre.SelectionLength = 0;
             this.txtColorNombre.SelectionStart = 0;
             this.txtColorNombre.ShortcutsEnabled = true;
-            this.txtColorNombre.Size = new System.Drawing.Size(500, 44);
+            this.txtColorNombre.Size = new System.Drawing.Size(375, 35);
             this.txtColorNombre.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtColorNombre.TabIndex = 8;
             this.txtColorNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -211,15 +210,15 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Color
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.9937888F));
             this.tableLayoutPanel3.Controls.Add(this.txtDescColor, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel5, 1, 3);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(48, 220);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(36, 179);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 4;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 89.68254F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.31746F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 7F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(803, 272);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 6F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(602, 221);
             this.tableLayoutPanel3.TabIndex = 7;
             // 
             // txtDescColor
@@ -252,8 +251,8 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Color
             this.txtDescColor.IconRight = null;
             this.txtDescColor.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDescColor.Lines = new string[0];
-            this.txtDescColor.Location = new System.Drawing.Point(11, 2);
-            this.txtDescColor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDescColor.Location = new System.Drawing.Point(8, 2);
+            this.txtDescColor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDescColor.MaxLength = 32767;
             this.txtDescColor.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtDescColor.Modified = false;
@@ -279,7 +278,7 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Color
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtDescColor.OnIdleState = stateProperties8;
-            this.txtDescColor.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDescColor.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDescColor.PasswordChar = '\0';
             this.txtDescColor.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtDescColor.PlaceholderText = "Descripción del producto";
@@ -289,7 +288,7 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Color
             this.txtDescColor.SelectionLength = 0;
             this.txtDescColor.SelectionStart = 0;
             this.txtDescColor.ShortcutsEnabled = true;
-            this.txtDescColor.Size = new System.Drawing.Size(780, 182);
+            this.txtDescColor.Size = new System.Drawing.Size(585, 147);
             this.txtDescColor.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtDescColor.TabIndex = 0;
             this.txtDescColor.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -311,14 +310,14 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Color
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.4578F));
             this.tableLayoutPanel5.Controls.Add(this.btnActualizarColor, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.btnAgregarColor, 2, 0);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(11, 216);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(8, 176);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.18519F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.81481F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(780, 53);
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(585, 43);
             this.tableLayoutPanel5.TabIndex = 7;
             // 
             // btnActualizarColor
@@ -363,14 +362,13 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Color
             this.btnActualizarColor.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnActualizarColor.IconSize = 25;
             this.btnActualizarColor.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
-            this.btnActualizarColor.IdleBorderRadius = 35;
+            this.btnActualizarColor.IdleBorderRadius = 28;
             this.btnActualizarColor.IdleBorderThickness = 1;
             this.btnActualizarColor.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
             this.btnActualizarColor.IdleIconLeftImage = null;
             this.btnActualizarColor.IdleIconRightImage = null;
             this.btnActualizarColor.IndicateFocus = false;
-            this.btnActualizarColor.Location = new System.Drawing.Point(295, 4);
-            this.btnActualizarColor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnActualizarColor.Location = new System.Drawing.Point(221, 3);
             this.btnActualizarColor.Name = "btnActualizarColor";
             this.btnActualizarColor.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnActualizarColor.OnDisabledState.BorderRadius = 20;
@@ -404,7 +402,7 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Color
             this.btnActualizarColor.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnActualizarColor.OnPressedState.IconLeftImage = null;
             this.btnActualizarColor.OnPressedState.IconRightImage = null;
-            this.btnActualizarColor.Size = new System.Drawing.Size(235, 37);
+            this.btnActualizarColor.Size = new System.Drawing.Size(176, 30);
             this.btnActualizarColor.TabIndex = 34;
             this.btnActualizarColor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnActualizarColor.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -454,14 +452,13 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Color
             this.btnAgregarColor.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnAgregarColor.IconSize = 25;
             this.btnAgregarColor.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
-            this.btnAgregarColor.IdleBorderRadius = 35;
+            this.btnAgregarColor.IdleBorderRadius = 28;
             this.btnAgregarColor.IdleBorderThickness = 1;
             this.btnAgregarColor.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
             this.btnAgregarColor.IdleIconLeftImage = null;
             this.btnAgregarColor.IdleIconRightImage = null;
             this.btnAgregarColor.IndicateFocus = false;
-            this.btnAgregarColor.Location = new System.Drawing.Point(538, 4);
-            this.btnAgregarColor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregarColor.Location = new System.Drawing.Point(403, 3);
             this.btnAgregarColor.Name = "btnAgregarColor";
             this.btnAgregarColor.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAgregarColor.OnDisabledState.BorderRadius = 20;
@@ -495,7 +492,7 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Color
             this.btnAgregarColor.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnAgregarColor.OnPressedState.IconLeftImage = null;
             this.btnAgregarColor.OnPressedState.IconRightImage = null;
-            this.btnAgregarColor.Size = new System.Drawing.Size(238, 37);
+            this.btnAgregarColor.Size = new System.Drawing.Size(179, 30);
             this.btnAgregarColor.TabIndex = 35;
             this.btnAgregarColor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAgregarColor.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -513,14 +510,14 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Color
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.5297F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel6.Controls.Add(this.label1, 0, 1);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(45, 18);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(34, 15);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 3;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.38461F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.76923F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.30769F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(809, 63);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(607, 51);
             this.tableLayoutPanel6.TabIndex = 7;
             // 
             // label1
@@ -529,9 +526,10 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Color
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 9);
+            this.label1.Location = new System.Drawing.Point(2, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(253, 45);
+            this.label1.Size = new System.Drawing.Size(190, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Color";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -544,10 +542,10 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Color
             this.bunifuPictureBox1.BorderRadius = 0;
             this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
             this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(10, 2);
-            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(8, 2);
+            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(197, 94);
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(148, 76);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox1.TabIndex = 2;
             this.bunifuPictureBox1.TabStop = false;
@@ -555,15 +553,15 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Color
             // 
             // ViewAddColor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1349, 709);
+            this.ClientSize = new System.Drawing.Size(1012, 576);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximumSize = new System.Drawing.Size(1919, 1078);
-            this.MinimumSize = new System.Drawing.Size(1365, 746);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximumSize = new System.Drawing.Size(1443, 883);
+            this.MinimumSize = new System.Drawing.Size(1028, 613);
             this.Name = "ViewAddColor";
-            this.Text = "ViewAddColor";
+            this.Text = "Color";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.bunifuPanel1.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
