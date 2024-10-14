@@ -63,6 +63,7 @@ namespace OpticaMultivisual.Controllers.Helper
             /*Toma el directorio actual junto con el nombre del archivo*/
             string path = Path.Combine(Directory.GetCurrentDirectory().ToString(), "config_server.xml");
             // Verificar si el archivo XML existe en la ruta especificada
+            // Verificar si el archivo XML existe en la ruta especificada
             if (File.Exists(path))
             {
                 // Crear una instancia de XmlDocument para cargar y trabajar con el archivo XML
@@ -71,30 +72,39 @@ namespace OpticaMultivisual.Controllers.Helper
                 doc.Load(path);
                 // Obtener el elemento raíz del XML
                 XmlNode root = doc.DocumentElement;
-                // Seleccionar los nodos específicos que contienen los datos de conexión (servidor, base de datos, autenticación SQL, y contraseña SQL)
-                XmlNode servernode = root.SelectSingleNode("Server/text()");
+                // Seleccionar los nodos específicos que contienen los datos de conexión (servidor y base de datos)
+                XmlNode serverNode = root.SelectSingleNode("Server/text()");
                 XmlNode databaseNode = root.SelectSingleNode("Database/text()");
-                XmlNode sqlAuthNode = root.SelectSingleNode("SqlAuth/text()");
-                XmlNode sqlPassNode = root.SelectSingleNode("SqlPass/text()");
                 // Obtener los valores de los nodos como cadenas
-                string serverCode = servernode.Value;
+                string serverCode = serverNode.Value;
                 string databaseCode = databaseNode.Value;
-                string userCode = sqlAuthNode.Value;
-                string passwordCode = sqlPassNode.Value;
                 // Decodificar las cadenas cifradas utilizando el método DescifrarCadena
                 DTOdbContext.Server = DescifrarCadena(serverCode);
                 DTOdbContext.Database = DescifrarCadena(databaseCode);
-                DTOdbContext.User = DescifrarCadena(userCode);
-                DTOdbContext.Password = DescifrarCadena(passwordCode);
+                // Verificar si los nodos de autenticación SQL (SqlAuth y SqlPass) existen
+                XmlNode sqlAuthNode = root.SelectSingleNode("SqlAuth/text()");
+                XmlNode sqlPassNode = root.SelectSingleNode("SqlPass/text()");
+                if (sqlAuthNode != null && sqlPassNode != null)
+                {
+                    // Si existen los nodos, significa que es una conexión en línea con autenticación SQL
+                    string userCode = sqlAuthNode.Value;
+                    string passwordCode = sqlPassNode.Value;
+                    // Decodificar las credenciales de usuario y contraseña
+                    DTOdbContext.User = DescifrarCadena(userCode);
+                    DTOdbContext.Password = DescifrarCadena(passwordCode);
+                }
+                else
+                {
+                    // Si no existen los nodos, es una conexión local (autenticación de Windows)
+                    DTOdbContext.User = null;
+                    DTOdbContext.Password = null;
+                }
             }
             else
             {
-                // Si el archivo XML no existe, crear una nueva instancia de ViewAdminConnection y mostrarla
+                // Si el archivo XML no existe, abrir la vista para configurar la conexión
                 ViewAdminConnection openForm = new ViewAdminConnection(1);
                 openForm.ShowDialog();
-                // Mostrar el formulario de inicio de sesión (ViewLogin)
-                //ViewLogin openFormLog = new ViewLogin();
-                //openFormLog.Show();
             }
         }
 
