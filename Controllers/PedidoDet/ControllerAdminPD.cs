@@ -66,7 +66,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
         public void SearchRegister(object sender, EventArgs e)
         {
             DAOPedidoDet ObjADDPD = new DAOPedidoDet();
-            DataSet ds = ObjADDPD.BuscarDUI2(ObjAdminPD.txtBuscar.Text.Trim());
+            DataSet ds = ObjADDPD.BuscarDUI(ObjAdminPD.txtBuscar.Text.Trim());
             ObjAdminPD.dgvPD.DataSource = ds.Tables["ViewPedidoDet"];
         }
 
@@ -100,13 +100,12 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
 
             pd_ID = int.Parse(ObjAdminPD.dgvPD[0, pos].Value.ToString());
             con_ID = ObjAdminPD.dgvPD[1, pos].Value.ToString();
-            MessageBox.Show($"{con_ID}");
-            pd_fpedido = DateTime.Parse(ObjAdminPD.dgvPD[2, pos].Value.ToString());
-            pd_fprogramada = DateTime.Parse(ObjAdminPD.dgvPD[3, pos].Value.ToString());
-            art_codigo = ObjAdminPD.dgvPD[4, pos].Value.ToString();
-            art_cant = int.Parse(ObjAdminPD.dgvPD[5, pos].Value.ToString());
-            pd_obser = ObjAdminPD.dgvPD[6, pos].Value.ToString();
-            pd_recetalab = int.Parse(ObjAdminPD.dgvPD[7, pos].Value.ToString());
+            pd_fpedido = DateTime.Parse(ObjAdminPD.dgvPD[3, pos].Value.ToString());
+            pd_fprogramada = DateTime.Parse(ObjAdminPD.dgvPD[4, pos].Value.ToString());
+            art_codigo = ObjAdminPD.dgvPD[5, pos].Value.ToString();
+            art_cant = int.Parse(ObjAdminPD.dgvPD[6, pos].Value.ToString());
+            pd_obser = ObjAdminPD.dgvPD[7, pos].Value.ToString();
+            pd_recetalab = int.Parse(ObjAdminPD.dgvPD[8, pos].Value.ToString());
 
             ViewAddPedidoDet openForm = new ViewAddPedidoDet(2, pd_ID, con_ID, pd_fpedido, pd_fprogramada, art_codigo, art_cant, pd_obser, pd_recetalab);
 

@@ -932,9 +932,9 @@
             this.label9.Location = new System.Drawing.Point(184, 179);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(97, 21);
+            this.label9.Size = new System.Drawing.Size(96, 21);
             this.label9.TabIndex = 1;
-            this.label9.Text = "Consulta ID:";
+            this.label9.Text = "Cliente DUI:";
             // 
             // label8
             // 
