@@ -81,7 +81,8 @@ namespace OpticaMultivisual.Models.DAO
             {
                 Command.Connection = getConnection();
                 // Definir instrucción de lo que se quiere hacer
-                string query = "SELECT * FROM ViewPedidoDet";
+                string query = "SELECT con_ID, cli_DUI FROM Consulta";
+                //string query = "SELECT * FROM ViewPedidoDet";
 
                 // Creando un objeto de tipo comando donde recibe la instrucción y la conexión
                 SqlCommand cmdSelect = new SqlCommand(query, Command.Connection);
@@ -89,7 +90,7 @@ namespace OpticaMultivisual.Models.DAO
                 // Llenando el DataSet con SqlDataAdapter
                 SqlDataAdapter adp = new SqlDataAdapter(cmdSelect);
                 DataSet ds = new DataSet();
-                adp.Fill(ds, "ViewPedidoDet");
+                adp.Fill(ds, "Consulta");
 
                 // Retornar el DataSet
                 return ds;
@@ -253,13 +254,13 @@ namespace OpticaMultivisual.Models.DAO
             try
             {
                 Command.Connection = getConnection();
-                string query = $@"SELECT * FROM ViewPedidoDet WHERE DUI LIKE '%{valor}%'";
+                string query = $@"SELECT * FROM Consulta WHERE cli_DUI LIKE '%{valor}%'";
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
                 cmd.ExecuteNonQuery();
                 SqlDataAdapter adp = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 //Rellenamos con el Adaptador el DataSet diciéndole de que tabla provienen los datos
-                adp.Fill(ds, "ViewPedidoDet");
+                adp.Fill(ds, "Consulta");
                 return ds;
             }
             catch (Exception)

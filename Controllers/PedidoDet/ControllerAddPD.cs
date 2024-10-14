@@ -19,6 +19,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
         ViewAddPedidoDet ObjAddPD;
         public int accion;
 
+
         public ControllerAddPD(ViewAddPedidoDet frmAddDR, int accion)
         {
             ObjAddPD = frmAddDR;
@@ -66,16 +67,16 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
         {
             DAOPedidoDet daoCon = new DAOPedidoDet();
             DataSet ds = daoCon.ObtenerConsulta();
-            ObjAddPD.cbcon_ID.DataSource = ds.Tables["ViewPedidoDet"];
-            ObjAddPD.cbcon_ID.DisplayMember = "DUI"; // Mostrar la concatenación de con_ID y cli_DUI
-            ObjAddPD.cbcon_ID.ValueMember = "ID"; // Valor del con_ID real
+            ObjAddPD.cbcon_ID.DataSource = ds.Tables["Consulta"];
+            ObjAddPD.cbcon_ID.DisplayMember = "cli_DUI"; // Mostrar la el dui del cliente
+            ObjAddPD.cbcon_ID.ValueMember = "con_ID"; // Valor del ID de la consulta
         }
 
         public void SearchRegister(object sender, EventArgs e)
         {
             DAOPedidoDet ObjADDPD = new DAOPedidoDet();
             DataSet ds = ObjADDPD.BuscarDUI2(ObjAddPD.txtBuscar.Text.Trim());
-            ObjAddPD.cbcon_ID.DataSource = ds.Tables["ViewPedidoDet"];
+            ObjAddPD.cbcon_ID.DataSource = ds.Tables["Consulta"];
         }
 
         public void verificarAccion()

@@ -42,6 +42,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
             DataSet ds = objAdmin.ObtenerDatos();
             //Llenar DataGridView
             ObjAdminPD.dgvPD.DataSource = ds.Tables["ViewPedidoDet"];
+            //MessageBox.Show($"{ObjAdminPD.dgvPD.CurrentRow.Cells[1].Value}");
         }
 
         private void NewPD(object sender, EventArgs e)
