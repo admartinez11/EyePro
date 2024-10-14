@@ -44,7 +44,6 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -120,7 +119,6 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.18367F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.061224F));
             this.tableLayoutPanel3.Controls.Add(this.pictureBox1, 3, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label1, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.label2, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(11, 2);
@@ -141,18 +139,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
-            this.label1.Location = new System.Drawing.Point(1155, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 32);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Ajustes";
             // 
             // label2
             // 
@@ -280,7 +266,7 @@
             this.btnActModelo.IdleIconRightImage = null;
             this.btnActModelo.IndicateFocus = false;
             this.btnActModelo.Location = new System.Drawing.Point(270, 4);
-            this.btnActModelo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnActModelo.Margin = new System.Windows.Forms.Padding(4);
             this.btnActModelo.Name = "btnActModelo";
             this.btnActModelo.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnActModelo.OnDisabledState.BorderRadius = 20;
@@ -370,7 +356,7 @@
             this.btnNuevoModelo.IdleIconRightImage = null;
             this.btnNuevoModelo.IndicateFocus = false;
             this.btnNuevoModelo.Location = new System.Drawing.Point(20, 4);
-            this.btnNuevoModelo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNuevoModelo.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevoModelo.Name = "btnNuevoModelo";
             this.btnNuevoModelo.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnNuevoModelo.OnDisabledState.BorderRadius = 20;
@@ -460,7 +446,7 @@
             this.btnEliminarModelo.IdleIconRightImage = null;
             this.btnEliminarModelo.IndicateFocus = false;
             this.btnEliminarModelo.Location = new System.Drawing.Point(500, 4);
-            this.btnEliminarModelo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminarModelo.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminarModelo.Name = "btnEliminarModelo";
             this.btnEliminarModelo.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEliminarModelo.OnDisabledState.BorderRadius = 20;
@@ -615,7 +601,7 @@
             this.txtBuscar.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBuscar.Lines = new string[0];
             this.txtBuscar.Location = new System.Drawing.Point(4, 4);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscar.MaxLength = 32767;
             this.txtBuscar.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBuscar.Modified = false;
@@ -641,7 +627,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtBuscar.OnIdleState = stateProperties4;
-            this.txtBuscar.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscar.Padding = new System.Windows.Forms.Padding(4);
             this.txtBuscar.PasswordChar = '\0';
             this.txtBuscar.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtBuscar.PlaceholderText = "Buscador";
@@ -711,7 +697,7 @@
             this.btnBuscar.IdleIconRightImage = null;
             this.btnBuscar.IndicateFocus = true;
             this.btnBuscar.Location = new System.Drawing.Point(898, 6);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnBuscar.OnDisabledState.BorderRadius = 20;
@@ -787,7 +773,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         public System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         public System.Windows.Forms.PictureBox pictureBox2;
