@@ -16,7 +16,9 @@ namespace OpticaMultivisual.Controllers.Consulta
     {
         AñadirConsulta ObjAañadirConsulta;
         private int accion;
-
+        public string con_id;
+        public string vis_id;
+        public string emp_id;
 
         public ControladorVerConsulta(AñadirConsulta objAañadirConsulta, int accion)
         {
@@ -69,6 +71,10 @@ namespace OpticaMultivisual.Controllers.Consulta
             ObjAañadirConsulta.txtNombreCon.DataSource = dataSet.Tables["Cliente"];
             ObjAañadirConsulta.txtNombreCon.DisplayMember = "cli_dui";
             ObjAañadirConsulta.txtNombreCon.ValueMember = "cli_dui";
+            if (accion == 2)
+            {
+                ObjAañadirConsulta.txtNombreCon.Text = con_id;
+            }
 
         }
         void LlenarComboVisita()
@@ -78,6 +84,10 @@ namespace OpticaMultivisual.Controllers.Consulta
             ObjAañadirConsulta.cmbVisita.DataSource = dataSet.Tables["Visita"];
             ObjAañadirConsulta.cmbVisita.DisplayMember = "vis_dui";
             ObjAañadirConsulta.cmbVisita.ValueMember = "vis_ID";
+            if (accion == 2)
+            {
+                ObjAañadirConsulta.cmbVisita.Text = vis_id;
+            }
         }
         void LlenarComboEmpleados()
         {
@@ -86,6 +96,10 @@ namespace OpticaMultivisual.Controllers.Consulta
             ObjAañadirConsulta.cmbEmpleado.DataSource = dataSet.Tables["Empleado"];
             ObjAañadirConsulta.cmbEmpleado.DisplayMember = "emp_nombre";
             ObjAañadirConsulta.cmbEmpleado.ValueMember = "emp_ID";
+            if (accion == 2)
+            {
+                ObjAañadirConsulta.cmbEmpleado.Text = emp_id;
+            }
         }
         public void NuevaConsulta(object sender, EventArgs e)
         {
@@ -97,8 +111,8 @@ namespace OpticaMultivisual.Controllers.Consulta
                     Con_fecha = DateTime.Parse(ObjAañadirConsulta.DTPfechaconsulta.Text.Trim()),
                     Con_obser = ObjAañadirConsulta.txtObservaciones.Text.Trim(),
                     Cli_DUI = ObjAañadirConsulta.txtNombreCon.Text.Trim(),
-                    Vis_ID = ObjAañadirConsulta.cmbVisita.SelectedValue.ToString().Trim(),
-                    Emp_ID = ObjAañadirConsulta.cmbEmpleado.SelectedValue.ToString().Trim(),
+                    Vis_ID = int.Parse(ObjAañadirConsulta.cmbVisita.SelectedValue.ToString().Trim()),
+                    Emp_ID = int.Parse(ObjAañadirConsulta.cmbEmpleado.SelectedValue.ToString().Trim()),
                     Con_hora = DateTime.Parse(ObjAañadirConsulta.DTPHoraConsulta.Text.Trim())
                 };
                 if (ObjAañadirConsulta.cmbEstado.Checked == true)
@@ -137,6 +151,9 @@ namespace OpticaMultivisual.Controllers.Consulta
             ObjAañadirConsulta = Vista;
             ObjAañadirConsulta.Load += new EventHandler(CargaInicio);
             this.accion = p_accion;
+            this.con_id = cli_DUI;
+            this.emp_id = emp_ID;
+            this.vis_id = vis_ID;
             verificarAccion();
             CargarValores(cli_DUI, vis_ID, con_fecha, con_obser, emp_ID, con_ID, con_hora, est_ID);
             ObjAañadirConsulta.btnActualizar.Click += new EventHandler(ActualizarRegistro);
@@ -181,8 +198,8 @@ namespace OpticaMultivisual.Controllers.Consulta
 
                     // Accediendo directamente a las propiedades de DataRowView para los ComboBox
                     //DAOActualizar.Cli_DUI = ((DataRowView)ObjAañadirConsulta.cmbDUI.SelectedItem)["cli_DUI"].ToString().Trim();
-                    DAOActualizar.Vis_ID = ((DataRowView)ObjAañadirConsulta.cmbVisita.SelectedItem)["vis_ID"].ToString().Trim();
-                    DAOActualizar.Emp_ID = ((DataRowView)ObjAañadirConsulta.cmbEmpleado.SelectedItem)["emp_ID"].ToString().Trim();
+                    //DAOActualizar.Vis_ID = ((DataRowView)ObjAañadirConsulta.cmbVisita.SelectedItem)["vis_ID"].ToString().Trim();
+                    //DAOActualizar.Emp_ID = ((DataRowView)ObjAañadirConsulta.cmbEmpleado.SelectedItem)["emp_ID"].ToString().Trim();
 
                     if (ObjAañadirConsulta.cmbEstado.Checked == true)
                     {
@@ -453,11 +470,12 @@ namespace OpticaMultivisual.Controllers.Consulta
                 // Crear una nueva instancia de DAOConsulta con los valores correctos
                 DAOConsulta Consulta = new DAOConsulta
                 {
+                    Con_ID = int.Parse(ObjAañadirConsulta.txtConID.Text.Trim()),
                     Cli_DUI = ObjAañadirConsulta.txtNombreCon.Text.Trim(),  // Asignar el DUI desde el TextBox
                     Con_fecha = DateTime.Parse(ObjAañadirConsulta.DTPfechaconsulta.Text.Trim()),
                     Con_obser = ObjAañadirConsulta.txtObservaciones.Text.Trim(),
-                    Vis_ID = ObjAañadirConsulta.cmbVisita.SelectedValue.ToString().Trim(),
-                    Emp_ID = ObjAañadirConsulta.cmbEmpleado.SelectedValue.ToString().Trim(),
+                    Vis_ID = int.Parse(ObjAañadirConsulta.cmbVisita.SelectedValue.ToString().Trim()),
+                    Emp_ID = int.Parse(ObjAañadirConsulta.cmbEmpleado.SelectedValue.ToString().Trim()),
                     Con_hora = DateTime.Parse(ObjAañadirConsulta.DTPHoraConsulta.Text.Trim())
                     
                 };
