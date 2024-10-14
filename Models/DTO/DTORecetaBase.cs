@@ -9,7 +9,7 @@ namespace OpticaMultivisual.Models.DTO
     internal class DTORecetaBase : dbContext
     {
         private int DR_ID;
-        private string con_ID;
+        private int con_ID;
         private string OD_esfera;
         private string OD_cilindro;
         private string OD_eje;
@@ -28,7 +28,7 @@ namespace OpticaMultivisual.Models.DTO
         private string OI_DP;
 
         public int DR_ID1 { get => DR_ID; set => DR_ID = value; }
-        public string con_ID1 { get => con_ID; set => con_ID = value; }
+        public int con_ID1 { get => con_ID; set => con_ID = value; }
         public string OD_esfera1 { get => OD_esfera; set => OD_esfera = value; }
         public string OD_cilindro1 { get => OD_cilindro; set => OD_cilindro = value; }
         public string OD_eje1 { get => OD_eje; set => OD_eje = value; }

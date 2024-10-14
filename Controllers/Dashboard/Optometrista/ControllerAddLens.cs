@@ -16,16 +16,18 @@ namespace OpticaMultivisual.Controllers.Dashboard.Optometrista
     {
         ViewAddLens ObjAddLens;
         private int accion;
+        public string con_id;
 
-        public ControllerAddLens(ViewAddLens Vista, int accion, int lens_ID, int con_ID, string OD_esfera, string OD_cilindro, string OD_eje, string OD_prisma, string OD_adicion, string OI_esfera, string OI_cilindro, string OI_eje, string OI_prisma, string OI_adicion)
+        public ControllerAddLens(ViewAddLens Vista, int accion, int lens_ID, string con_ID, string OD_esfera, string OD_cilindro, string OD_eje, string OD_prisma, string OD_adicion, string OI_esfera, string OI_cilindro, string OI_eje, string OI_prisma, string OI_adicion)
         {
             //Acciones Iniciales
             ObjAddLens = Vista;
             this.accion = accion;
+            this.con_id = con_ID;
             Vista.Load += new EventHandler(CargaInicial);
             //Métodos iniciales: estos metodos se ejecutan cuando el formulario está cargando
             verificarAccion();
-            ChargeValues(lens_ID, con_ID, OD_esfera, OD_cilindro, OD_eje, OD_prisma, OD_adicion, OI_esfera, OI_cilindro, OI_eje, OI_prisma, OI_adicion);
+            ChargeValues(lens_ID, OD_esfera, OD_cilindro, OD_eje, OD_prisma, OD_adicion, OI_esfera, OI_cilindro, OI_eje, OI_prisma, OI_adicion);
             //Métodos que se ejecutan al ocurrir eventos
             ObjAddLens.btnGuardar.Click += new EventHandler(NewRegister);
             ObjAddLens.btnActualizar.Click += new EventHandler(UpdateRegister);
@@ -55,6 +57,10 @@ namespace OpticaMultivisual.Controllers.Dashboard.Optometrista
             ObjAddLens.cbcon_ID.DataSource = ds.Tables["Consulta"];
             ObjAddLens.cbcon_ID.DisplayMember = "cli_DUI";
             ObjAddLens.cbcon_ID.ValueMember = "con_ID";
+            if (accion == 2)
+            {
+                ObjAddLens.cbcon_ID.Text = con_id;
+            }
         }
 
         public void SearchRegister(object sender, EventArgs e)
@@ -380,7 +386,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.Optometrista
             return true;
         }
 
-        public void ChargeValues(int lens_ID, int con_ID, string OD_esfera, string OD_cilindro, string OD_eje, string OD_prisma, string OD_adicion, string OI_esfera, string OI_cilindro, string OI_eje, string OI_prisma, string OI_adicion)
+        public void ChargeValues(int lens_ID,  string OD_esfera, string OD_cilindro, string OD_eje, string OD_prisma, string OD_adicion, string OI_esfera, string OI_cilindro, string OI_eje, string OI_prisma, string OI_adicion)
         {
             //Asigna los valores recibidos a los campos correpondientes a la vista ObjAddLens
             //Valores de Ojo Derecho

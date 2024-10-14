@@ -21,7 +21,7 @@ namespace OpticaMultivisual.Models.DAO
                 //Accedemos a la conexión que ya se tiene
                 Command.Connection = getConnection();
                 //Instrucción que se hará hacia la base de datos
-                string query = "SELECT * FROM ViewDR ORDER BY [ID] asc";
+                string query = "SELECT * FROM ViewDR ORDER BY [DR ID] asc";
                 //Comando sql en el cual se pasa la instrucción y la conexión
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
                 //Se ejecuta el comando y con ExecuteNonQuery se verifica su retorno
@@ -119,7 +119,7 @@ namespace OpticaMultivisual.Models.DAO
             try
             {
                 Command.Connection = getConnection();
-                string query4 = "EXEC ActualizarDR @DR_ID, @con_ID, @OD_esfera, @OD_cilindro, @OD_eje, @OD_prisma, @OD_adicion, @OD_AO, @OD_AP, @OD_DP, @OI_esfera, @OI_cilindro, @OI_eje, @OI_prisma, @OI_adicion, @OI_AO, @OI_AP, @OI_DP";
+                string query4 = "UPDATE DRefractivo SET con_ID = @con_ID, OD_esfera = @OD_esfera, OD_cilindro = @OD_cilindro, OD_eje = @OD_eje, OD_prisma = @OD_prisma, OD_adicion = @OD_adicion, OD_AO = @OD_AO, OD_AP = @OD_AP, OD_DP = @OD_DP, OI_esfera = @OI_esfera, OI_cilindro = @OI_cilindro, OI_eje = @OI_eje, OI_prisma = @OI_prisma, OI_adicion = @OI_adicion, OI_AO = @OI_AO, OI_AP = @OI_AP, OI_DP = @OI_DP WHERE DR_ID = @DR_ID";
                 SqlCommand cmd = new SqlCommand(query4, Command.Connection);
 
                 cmd.Parameters.AddWithValue("@con_ID", con_ID1); 

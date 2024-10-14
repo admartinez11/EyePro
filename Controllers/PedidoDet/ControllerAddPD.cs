@@ -18,7 +18,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
     {
         ViewAddPedidoDet ObjAddPD;
         public int accion;
-
+        public string con_id;
 
         public ControllerAddPD(ViewAddPedidoDet frmAddDR, int accion)
         {
@@ -32,11 +32,12 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
         }
 
         //Actualizar 
-        public ControllerAddPD(ViewAddPedidoDet Vista, int accion, int pd_ID, DateTime pd_fpedido, DateTime pd_fprogramada, string art_codigo, int art_cant, string pd_obser, int pd_recetalab)
+        public ControllerAddPD(ViewAddPedidoDet Vista, int accion, int pd_ID, string con_ID, DateTime pd_fpedido, DateTime pd_fprogramada, string art_codigo, int art_cant, string pd_obser, int pd_recetalab)
         {
             //Acciones Iniciales
             ObjAddPD = Vista;
             this.accion = accion;
+            this.con_id = con_ID;
             Vista.Load += new EventHandler(CargaInicial);
             //Métodos iniciales: estos metodos se ejecutan cuando el formulario está cargando
             verificarAccion();
@@ -70,6 +71,10 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
             ObjAddPD.cbcon_ID.DataSource = ds.Tables["Consulta"];
             ObjAddPD.cbcon_ID.DisplayMember = "cli_DUI"; // Mostrar la el dui del cliente
             ObjAddPD.cbcon_ID.ValueMember = "con_ID"; // Valor del ID de la consulta
+            if (accion == 2)
+            {
+                ObjAddPD.cbcon_ID.Text = con_id;
+            }
         }
 
         public void SearchRegister(object sender, EventArgs e)
@@ -99,7 +104,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
             {
                 //Se crea una instancia de la clase DAOPedidoDet llamada DAOInsert
                 DAOPedidoDet DAOInsert = new DAOPedidoDet();
-                DAOInsert.con_ID1 = ObjAddPD.cbcon_ID.SelectedValue.ToString();
+                DAOInsert.con_ID1 = int.Parse(ObjAddPD.cbcon_ID.SelectedValue.ToString());
                 DAOInsert.pd_fpedido1 = ObjAddPD.DTPpd_fpedido.Value;
                 DAOInsert.pd_fprogramada1 = ObjAddPD.DTPpd_fprogramada.Value;
                 DAOInsert.art_codigo1 = ObjAddPD.cbart_codigo.SelectedValue.ToString();
@@ -140,7 +145,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
                 DAOPedidoDet daoUpdate = new DAOPedidoDet();
 
                 daoUpdate.pd_ID1 = int.Parse(ObjAddPD.txtpd_ID.Text.ToString());
-                daoUpdate.con_ID1 = (string)ObjAddPD.cbcon_ID.SelectedValue;
+                daoUpdate.con_ID1 = (int)ObjAddPD.cbcon_ID.SelectedValue;
                 daoUpdate.pd_fpedido1 = ObjAddPD.DTPpd_fpedido.Value;
                 daoUpdate.pd_fprogramada1 = ObjAddPD.DTPpd_fprogramada.Value;
                 daoUpdate.art_codigo1 = ObjAddPD.cbart_codigo.SelectedValue.ToString();
@@ -155,7 +160,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
                 }
                 daoUpdate.pd_obser1 = ObjAddPD.txtpd_obser.Text.Trim();
                 int valorRetornado = daoUpdate.ActualizarPD();
-                if (valorRetornado == 2)
+                if (valorRetornado == 1)
                 {
                     MessageBox.Show("Los datos han sido actualizado exitosamente",
                                     "Proceso completado",
@@ -163,7 +168,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
                                     MessageBoxIcon.Information);
                     ObjAddPD.Close();
                 }
-                else if (valorRetornado == 1)
+                else if (valorRetornado == 0)
                 {
                     MessageBox.Show("EPV002 - Los datos no pudieron ser actualizados correctamente",
                                     "Proceso interrumpido",

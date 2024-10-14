@@ -100,7 +100,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
             DateTime pd_fpedido, pd_fprogramada;
 
             pd_ID = int.Parse(ObjAdminPD.dgvPD[0, pos].Value.ToString());
-            con_ID = ObjAdminPD.dgvPD[1, pos].Value.ToString();
+            con_ID = ObjAdminPD.dgvPD[2, pos].Value.ToString();
             pd_fpedido = DateTime.Parse(ObjAdminPD.dgvPD[3, pos].Value.ToString());
             pd_fprogramada = DateTime.Parse(ObjAdminPD.dgvPD[4, pos].Value.ToString());
             art_codigo = ObjAdminPD.dgvPD[5, pos].Value.ToString();
