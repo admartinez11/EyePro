@@ -165,58 +165,60 @@ namespace OpticaMultivisual.Models.DAO
         {
             try
             {
-                // Establecer la conexión usando 'using' para asegurar que siempre se cierre
-                using (SqlConnection connection = getConnection())
+                Command.Connection = getConnection();
+
+                // Extraer todos los DUIs que empiecen con el mismo base
+                string query = "SELECT cli_dui FROM Cliente WHERE cli_dui LIKE @duiBase + '%'";
+                SqlCommand cmd = new SqlCommand(query, Command.Connection);
+                cmd.Parameters.AddWithValue("@duiBase", duiBase);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+                HashSet<int> sufijosExistentes = new HashSet<int>();
+
+                // Recorrer los DUI ya existentes
+                while (reader.Read())
                 {
-                    // Query para seleccionar todos los DUIs que empiecen con el mismo 'duiBase'
-                    string query = "SELECT cli_dui FROM Cliente WHERE cli_dui LIKE @duiBase + '%'";
-                    SqlCommand cmd = new SqlCommand(query, connection);
-                    cmd.Parameters.AddWithValue("@duiBase", duiBase);
+                    string duiExistente = reader["cli_dui"].ToString();
+                    string[] partes = duiExistente.Split('-');
 
-                    // Ejecutar la consulta
-                    SqlDataReader reader = cmd.ExecuteReader();
-                    HashSet<int> sufijosExistentes = new HashSet<int>();
-
-                    // Recorrer todos los DUIs ya existentes que empiecen con 'duiBase'
-                    while (reader.Read())
+                    if (partes.Length == 3 && int.TryParse(partes[2], out int sufijo))
                     {
-                        string duiExistente = reader["cli_dui"].ToString();
-                        string[] partes = duiExistente.Split('-');
-
-                        // Si el DUI tiene un sufijo (es decir, tiene 3 partes) y el sufijo es numérico
-                        if (partes.Length == 3 && int.TryParse(partes[2], out int sufijo))
-                        {
-                            sufijosExistentes.Add(sufijo); // Agregar el sufijo existente al conjunto
-                        }
-                        else
-                        {
-                            sufijosExistentes.Add(0); // Si no hay sufijo, agregar como 0 para la parte base
-                        }
+                        sufijosExistentes.Add(sufijo); // Agregar sufijo si ya existe
                     }
-
-                    reader.Close(); // Cerrar el lector de datos
-
-                    // Buscar el siguiente sufijo disponible entre 1 y 9
-                    for (int i = 1; i <= 9; i++)
+                    else
                     {
-                        if (!sufijosExistentes.Contains(i))
-                        {
-                            string nuevoDUI = $"{duiBase}-{i}";
-                            return nuevoDUI; // Retornar el nuevo DUI con sufijo
-                        }
+                        sufijosExistentes.Add(0); // Si no hay sufijo, agregar 0
                     }
-
-                    // Si no se encontró un sufijo disponible, retornar null
-                    return null;
                 }
+
+                reader.Close();
+
+                // Buscar el siguiente sufijo no usado
+                for (int i = 1; i <= 99; i++)
+                {
+                    if (!sufijosExistentes.Contains(i))
+                    {
+                        string nuevoDUI = $"{duiBase}-{i:D2}";
+                        return nuevoDUI; // Retorna el nuevo DUI con sufijo
+                    }
+                }
+
+                // Si no se encontró sufijo disponible
+                return null;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error EPV-005", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Error al asignar sufijo: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }
+            finally
+            {
+                if (Command.Connection != null && Command.Connection.State == ConnectionState.Open)
+                {
+                    Command.Connection.Close();
+                }
+            }
         }
-
 
     }
 }

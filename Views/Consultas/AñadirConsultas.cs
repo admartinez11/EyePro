@@ -38,9 +38,6 @@ namespace OpticaMultivisual.Views.Consultas
             txtConID.Enabled = false;
         }
 
-        private void txtNombreCon_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

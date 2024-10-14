@@ -52,12 +52,7 @@ namespace AdministrarClientes.Controlador
                     Profesion = ObjVistaR.txtprofecion.Text.Trim(),
                 };
 
-                string dui = DAOIngresarR.DUI.Trim();
-                // Mostrar longitud del DUI
-                MessageBox.Show($"DUI: {dui}\nLongitud: {dui.Length}",
-                                "Datos a Registrar",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Information);
+                
 
                 if (ObjVistaR.checkmenor.Checked == true)
                 {
@@ -90,6 +85,10 @@ namespace AdministrarClientes.Controlador
 
         private bool ValidarCampos()
         {
+            if(!ValidarEdadMenorDe18())
+            {
+                return false;
+            }
             string genero = ObjVistaR.txtGenero.Text.Trim();
             if (genero != "M" && genero != "F" && genero != "f" && genero != "m")
             {
@@ -154,6 +153,30 @@ namespace AdministrarClientes.Controlador
 
             return true;
         }
+        private bool ValidarEdadMenorDe18()
+        {
+            // Verificar si el contenido del txtEdad es un número válido
+            if (int.TryParse(ObjVistaR.txtEdad.Text, out int edad))
+            {
+                // Si la edad es menor de 18
+                if (edad < 18)
+                {
+                    ObjVistaR.checkmenor.Checked = true;  // Marcar el CheckBox
+                    return true;
+                }
+                else
+                {
+                    ObjVistaR.checkmenor.Checked = true; // Desmarcar el CheckBox
+                    return false;
+                }
+            }
+            else
+            {
+                // Si no es un número válido, podrías mostrar un mensaje de error
+                MessageBox.Show("Por favor, ingrese una edad válida.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
         private bool ValidarCamposa()
         {
             string genero = ObjVistaR.txtGenero.Text.Trim();
@@ -211,15 +234,15 @@ namespace AdministrarClientes.Controlador
         }
         private bool ValidarDUI(string dui)
         {
-            // Expresión regular para validar el formato del DUI con o sin sufijo de -1 a -9
-            string patronDUI = @"^\d{8}-\d{1}(-\d{1})?$";
+            // Expresión regular para validar el formato básico del DUI (sin sufijo)
+            string patronDUI = @"^\d{8}-\d{1}$";
 
-            // Validar formato del DUI
             if (!System.Text.RegularExpressions.Regex.IsMatch(dui, patronDUI))
             {
-                MessageBox.Show("El DUI ingresado no es válido. Debe tener el formato 12345678-9 o 12345678-9-1.", "Error de Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("El DUI ingresado no es válido. Debe tener el formato 12345678-9.", "Error de Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
+
 
             // Si el checkbox está marcado, se asigna sufijo
             if (ObjVistaR.checkmenor.Checked)
@@ -227,19 +250,16 @@ namespace AdministrarClientes.Controlador
                 DAORegistro daoRegistro = new DAORegistro();
                 string nuevoDUI = daoRegistro.AsignarSufijoDUI(dui);
 
-                // Si el sufijo alcanza el límite de -9, muestra un mensaje y no permite más asignaciones
-                if (nuevoDUI != null && nuevoDUI.EndsWith("-9"))
-                {
-                    MessageBox.Show("No se pueden agregar más sufijos. Se alcanzó el límite de -9.", "Límite Alcanzado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return false;
-                }
-
-                // Si se puede asignar un nuevo DUI con sufijo, actualiza el TextBox
                 if (nuevoDUI != null)
                 {
                     ObjVistaR.txtdui.Text = nuevoDUI; // Actualiza el DUI en el TextBox
                     MessageBox.Show($"Nuevo DUI asignado: {nuevoDUI}", "DUI Asignado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return true;
+                }
+                else
+                {
+                    MessageBox.Show("No se pueden agregar más sufijos. Se alcanzó el límite de -99.", "Límite Alcanzado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
                 }
             }
 
@@ -249,19 +269,18 @@ namespace AdministrarClientes.Controlador
 
         private bool EsDUIValidoRegistrar(string dui)
         {
-            // Expresión regular para validar el formato del DUI: 8 dígitos seguidos de un guion y un dígito, opcionalmente seguido de un guion y un solo dígito (1-9).
-            string patronDUI = @"^\d{8}-\d{1}(-\d{1})?$";
+            // Expresión regular para validar el formato del DUI: 8 dígitos seguidos de un guion y un dígito, opcionalmente seguido de un guion y 2 dígitos.
+            string patronDUI = @"^\d{8}-\d{1}(-\d{2})?$";
 
             // Verifica si el DUI ingresado cumple con el formato usando una expresión regular.
             if (!System.Text.RegularExpressions.Regex.IsMatch(dui, patronDUI))
             {
-                MessageBox.Show("El DUI ingresado no es válido. Debe tener el formato 12345678-9 o 12345678-9-1.", "Error de Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("El DUI ingresado no es válido. Debe tener el formato 12345678-9 o 12345678-9-01.", "Error de Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false; // El formato es inválido.
             }
 
             return true; // El formato es válido.
         }
-
         private bool EsCorreoValido(string correo)
         {
             string patron = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
