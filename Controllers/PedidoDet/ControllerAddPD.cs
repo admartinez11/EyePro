@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using OpticaMultivisual.Controllers.Helper;
+using System.Web.Security;
 
 namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
 {
@@ -29,8 +30,8 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
             ObjAddPD.btnBuscar.Click += new EventHandler(SearchRegister);
         }
 
-        //Actualizar shit
-        public ControllerAddPD(ViewAddPedidoDet Vista, int accion, int pd_ID, string con_ID, DateTime pd_fpedido, DateTime pd_fprogramada, string art_codigo, int art_cant, string pd_obser, int pd_recetalab)
+        //Actualizar 
+        public ControllerAddPD(ViewAddPedidoDet Vista, int accion, int pd_ID, DateTime pd_fpedido, DateTime pd_fprogramada, string art_codigo, int art_cant, string pd_obser, int pd_recetalab)
         {
             //Acciones Iniciales
             ObjAddPD = Vista;
@@ -38,7 +39,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
             Vista.Load += new EventHandler(CargaInicial);
             //Métodos iniciales: estos metodos se ejecutan cuando el formulario está cargando
             verificarAccion();
-            ChargeValues(pd_ID, con_ID, pd_fpedido, pd_fprogramada, art_codigo, art_cant, pd_obser, pd_recetalab);
+            ChargeValues(pd_ID, pd_fpedido, pd_fprogramada, art_codigo, art_cant, pd_obser, pd_recetalab);
             //Métodos que se ejecutan al ocurrir eventos
             //ObjAddPD.btnAgregar.Click += new EventHandler(NewRegister);
             ObjAddPD.btnActualizar.Click += new EventHandler(UpdateRegister);
@@ -65,16 +66,16 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
         {
             DAOPedidoDet daoCon = new DAOPedidoDet();
             DataSet ds = daoCon.ObtenerConsulta();
-            ObjAddPD.cbcon_ID.DataSource = ds.Tables["Consulta"];
-            ObjAddPD.cbcon_ID.DisplayMember = "cli_DUI"; // Mostrar la concatenación de con_ID y cli_DUI
-            ObjAddPD.cbcon_ID.ValueMember = "con_ID"; // Valor del con_ID real
+            ObjAddPD.cbcon_ID.DataSource = ds.Tables["ViewPedidoDet"];
+            ObjAddPD.cbcon_ID.DisplayMember = "DUI"; // Mostrar la concatenación de con_ID y cli_DUI
+            ObjAddPD.cbcon_ID.ValueMember = "ID"; // Valor del con_ID real
         }
 
         public void SearchRegister(object sender, EventArgs e)
         {
             DAOPedidoDet ObjADDPD = new DAOPedidoDet();
-            DataSet ds = ObjADDPD.BuscarDUI(ObjAddPD.txtBuscar.Text.Trim());
-            ObjAddPD.cbcon_ID.DataSource = ds.Tables["Consulta"];
+            DataSet ds = ObjADDPD.BuscarDUI2(ObjAddPD.txtBuscar.Text.Trim());
+            ObjAddPD.cbcon_ID.DataSource = ds.Tables["ViewPedidoDet"];
         }
 
         public void verificarAccion()
@@ -153,7 +154,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
                 }
                 daoUpdate.pd_obser1 = ObjAddPD.txtpd_obser.Text.Trim();
                 int valorRetornado = daoUpdate.ActualizarPD();
-                if (valorRetornado == 1)
+                if (valorRetornado == 2)
                 {
                     MessageBox.Show("Los datos han sido actualizado exitosamente",
                                     "Proceso completado",
@@ -161,7 +162,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
                                     MessageBoxIcon.Information);
                     ObjAddPD.Close();
                 }
-                else if (valorRetornado == 2)
+                else if (valorRetornado == 1)
                 {
                     MessageBox.Show("EPV002 - Los datos no pudieron ser actualizados correctamente",
                                     "Proceso interrumpido",
@@ -228,7 +229,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
                                     "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return false;
                 }
-            }        
+            }
 
             DateTime fpedidodet = ObjAddPD.DTPpd_fpedido.Value.Date;
             DateTime fprogramada = ObjAddPD.DTPpd_fprogramada.Value.Date;
@@ -243,14 +244,8 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
             return true;
         }
 
-        public void ChargeValues(int pd_ID, string con_ID, DateTime pd_fpedido, DateTime pd_fprogramada, string art_codigo, int art_cant, string pd_obser, int pd_recetalab)
+        public void ChargeValues(int pd_ID, DateTime pd_fpedido, DateTime pd_fprogramada, string art_codigo, int art_cant, string pd_obser, int pd_recetalab)
         {
-            DAOPedidoDet dAOPedidoDet = new DAOPedidoDet();
-            int idConsulta = dAOPedidoDet.ObtenerSoloIDPorConcatenacion(con_ID);
-            if (idConsulta != -1 && ObjAddPD.cbcon_ID.DataSource != null)
-            {
-                ObjAddPD.cbcon_ID.SelectedValue = idConsulta;
-            }
             ObjAddPD.txtpd_ID.Text = pd_ID.ToString();
             //ObjAddPD.cbcon_ID.SelectedValue = con_ID;
             ObjAddPD.DTPpd_fpedido.Value = pd_fpedido;

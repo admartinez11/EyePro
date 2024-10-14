@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using OpticaMultivisual.Views.Dashboard.PedidoDet;
 
 namespace OpticaMultivisual.Models.DAO
 {
@@ -80,7 +81,7 @@ namespace OpticaMultivisual.Models.DAO
             {
                 Command.Connection = getConnection();
                 // Definir instrucción de lo que se quiere hacer
-                string query = "SELECT con_ID, cli_dui FROM Consulta";
+                string query = "SELECT * FROM ViewPedidoDet";
 
                 // Creando un objeto de tipo comando donde recibe la instrucción y la conexión
                 SqlCommand cmdSelect = new SqlCommand(query, Command.Connection);
@@ -88,7 +89,7 @@ namespace OpticaMultivisual.Models.DAO
                 // Llenando el DataSet con SqlDataAdapter
                 SqlDataAdapter adp = new SqlDataAdapter(cmdSelect);
                 DataSet ds = new DataSet();
-                adp.Fill(ds, "Consulta");
+                adp.Fill(ds, "ViewPedidoDet");
 
                 // Retornar el DataSet
                 return ds;
@@ -104,6 +105,7 @@ namespace OpticaMultivisual.Models.DAO
                 Command.Connection.Close();
             }
         }
+
 
         public int ObtenerSoloIDPorConcatenacion(string clienteDUIConcatenado)
         {
@@ -154,7 +156,6 @@ namespace OpticaMultivisual.Models.DAO
                 cmd.Parameters.AddWithValue("@pd_obser", pd_obser1);
                 cmd.Parameters.AddWithValue("@pd_recetalab", pd_recetalab1);
 
-
                 int respuesta = cmd.ExecuteNonQuery();
                 return respuesta;
             }
@@ -177,7 +178,8 @@ namespace OpticaMultivisual.Models.DAO
             try
             {
                 Command.Connection = getConnection();
-                string query4 = "EXEC ActualizarPD @pd_ID, @con_ID, @pd_fpedido, @pd_fprogramada, @art_codigo, @art_cant, @pd_obser, @pd_recetalab";
+                string query4 = "UPDATE PedidoDet SET con_ID = @con_ID, pd_fpedido = @pd_fpedido, pd_fprogramada = @pd_fprogramada, art_codigo = @art_codigo, art_cant = @art_cant, pd_obser = @pd_obser, pd_recetalab = @pd_recetalab" + 
+                    "WHERE pd_ID = @pd_ID";
                 SqlCommand cmd = new SqlCommand(query4, Command.Connection);
 
                 cmd.Parameters.AddWithValue("@pd_ID", pd_ID1);
@@ -227,13 +229,13 @@ namespace OpticaMultivisual.Models.DAO
             try
             {
                 Command.Connection = getConnection();
-                string query = $"SELECT * FROM dbo.Consulta AS con INNER JOIN dbo.Cliente AS cli ON CAST(con.cli_DUI AS VARCHAR) = cli.cli_dui WHERE cli.cli_dui LIKE '%{valor}%'";
+                string query = $@"SELECT * FROM ViewPedidoDet WHERE DUI LIKE '%{valor}%'";
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
                 cmd.ExecuteNonQuery();
                 SqlDataAdapter adp = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 //Rellenamos con el Adaptador el DataSet diciéndole de que tabla provienen los datos
-                adp.Fill(ds, "Consulta");
+                adp.Fill(ds, "ViewPedidoDet");
                 return ds;
             }
             catch (Exception)
@@ -251,7 +253,7 @@ namespace OpticaMultivisual.Models.DAO
             try
             {
                 Command.Connection = getConnection();
-                string query = $@"SELECT * FROM ViewPedidoDet WHERE [Cliente DUI] LIKE '%{valor}%'";
+                string query = $@"SELECT * FROM ViewPedidoDet WHERE DUI LIKE '%{valor}%'";
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
                 cmd.ExecuteNonQuery();
                 SqlDataAdapter adp = new SqlDataAdapter(cmd);
