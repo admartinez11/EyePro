@@ -84,6 +84,7 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel2,
             this.toolStripSeparator1,
@@ -91,7 +92,7 @@
             this.btnCerrar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1000, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1333, 31);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -99,18 +100,18 @@
             // 
             this.toolStripLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(42, 22);
+            this.toolStripLabel2.Size = new System.Drawing.Size(55, 28);
             this.toolStripLabel2.Text = "Paso 1";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(148, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(185, 28);
             this.toolStripLabel1.Text = "Configuración del negocio";
             // 
             // btnCerrar
@@ -120,7 +121,7 @@
             this.btnCerrar.Image = global::OpticaMultivisual.Properties.Resources.Close;
             this.btnCerrar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(23, 22);
+            this.btnCerrar.Size = new System.Drawing.Size(29, 28);
             this.btnCerrar.Text = "Cerrar programa";
             // 
             // panel1
@@ -129,11 +130,11 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 25);
-            this.panel1.Margin = new System.Windows.Forms.Padding(20);
+            this.panel1.Location = new System.Drawing.Point(0, 31);
+            this.panel1.Margin = new System.Windows.Forms.Padding(27, 25, 27, 25);
             this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(15);
-            this.panel1.Size = new System.Drawing.Size(1000, 450);
+            this.panel1.Padding = new System.Windows.Forms.Padding(20, 18, 20, 18);
+            this.panel1.Size = new System.Drawing.Size(1333, 554);
             this.panel1.TabIndex = 2;
             // 
             // panel3
@@ -154,9 +155,10 @@
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(15, 15);
+            this.panel3.Location = new System.Drawing.Point(20, 18);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(770, 420);
+            this.panel3.Size = new System.Drawing.Size(1026, 518);
             this.panel3.TabIndex = 1;
             // 
             // txtPhone
@@ -188,10 +190,11 @@
             this.txtPhone.IconRight = null;
             this.txtPhone.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPhone.Lines = new string[0];
-            this.txtPhone.Location = new System.Drawing.Point(297, 300);
-            this.txtPhone.MaximumSize = new System.Drawing.Size(202, 32);
+            this.txtPhone.Location = new System.Drawing.Point(396, 369);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPhone.MaximumSize = new System.Drawing.Size(269, 39);
             this.txtPhone.MaxLength = 30;
-            this.txtPhone.MinimumSize = new System.Drawing.Size(202, 32);
+            this.txtPhone.MinimumSize = new System.Drawing.Size(269, 39);
             this.txtPhone.Modified = false;
             this.txtPhone.Multiline = false;
             this.txtPhone.Name = "txtPhone";
@@ -215,7 +218,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtPhone.OnIdleState = stateProperties4;
-            this.txtPhone.Padding = new System.Windows.Forms.Padding(3);
+            this.txtPhone.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPhone.PasswordChar = '\0';
             this.txtPhone.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtPhone.PlaceholderText = "";
@@ -225,7 +228,7 @@
             this.txtPhone.SelectionLength = 0;
             this.txtPhone.SelectionStart = 0;
             this.txtPhone.ShortcutsEnabled = true;
-            this.txtPhone.Size = new System.Drawing.Size(202, 32);
+            this.txtPhone.Size = new System.Drawing.Size(269, 39);
             this.txtPhone.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtPhone.TabIndex = 4;
             this.txtPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -265,10 +268,11 @@
             this.txtPbx.IconRight = null;
             this.txtPbx.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPbx.Lines = new string[0];
-            this.txtPbx.Location = new System.Drawing.Point(508, 300);
-            this.txtPbx.MaximumSize = new System.Drawing.Size(224, 32);
+            this.txtPbx.Location = new System.Drawing.Point(677, 369);
+            this.txtPbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPbx.MaximumSize = new System.Drawing.Size(299, 39);
             this.txtPbx.MaxLength = 30;
-            this.txtPbx.MinimumSize = new System.Drawing.Size(224, 32);
+            this.txtPbx.MinimumSize = new System.Drawing.Size(299, 39);
             this.txtPbx.Modified = false;
             this.txtPbx.Multiline = false;
             this.txtPbx.Name = "txtPbx";
@@ -292,7 +296,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtPbx.OnIdleState = stateProperties8;
-            this.txtPbx.Padding = new System.Windows.Forms.Padding(3);
+            this.txtPbx.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPbx.PasswordChar = '\0';
             this.txtPbx.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtPbx.PlaceholderText = "";
@@ -302,7 +306,7 @@
             this.txtPbx.SelectionLength = 0;
             this.txtPbx.SelectionStart = 0;
             this.txtPbx.ShortcutsEnabled = true;
-            this.txtPbx.Size = new System.Drawing.Size(224, 32);
+            this.txtPbx.Size = new System.Drawing.Size(299, 39);
             this.txtPbx.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtPbx.TabIndex = 5;
             this.txtPbx.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -332,10 +336,11 @@
             this.dtCreation.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(227)))), ((int)(((byte)(255)))));
             this.dtCreation.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.dtCreation.LeftTextMargin = 5;
-            this.dtCreation.Location = new System.Drawing.Point(37, 300);
+            this.dtCreation.Location = new System.Drawing.Point(49, 369);
+            this.dtCreation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtCreation.MinimumSize = new System.Drawing.Size(4, 32);
             this.dtCreation.Name = "dtCreation";
-            this.dtCreation.Size = new System.Drawing.Size(235, 32);
+            this.dtCreation.Size = new System.Drawing.Size(312, 32);
             this.dtCreation.TabIndex = 3;
             this.dtCreation.Value = new System.DateTime(2024, 8, 22, 21, 40, 0, 0);
             // 
@@ -368,10 +373,11 @@
             this.txtEmailBussines.IconRight = null;
             this.txtEmailBussines.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmailBussines.Lines = new string[0];
-            this.txtEmailBussines.Location = new System.Drawing.Point(38, 220);
-            this.txtEmailBussines.MaximumSize = new System.Drawing.Size(695, 32);
+            this.txtEmailBussines.Location = new System.Drawing.Point(51, 271);
+            this.txtEmailBussines.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmailBussines.MaximumSize = new System.Drawing.Size(927, 39);
             this.txtEmailBussines.MaxLength = 100;
-            this.txtEmailBussines.MinimumSize = new System.Drawing.Size(695, 32);
+            this.txtEmailBussines.MinimumSize = new System.Drawing.Size(927, 39);
             this.txtEmailBussines.Modified = false;
             this.txtEmailBussines.Multiline = false;
             this.txtEmailBussines.Name = "txtEmailBussines";
@@ -395,7 +401,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtEmailBussines.OnIdleState = stateProperties12;
-            this.txtEmailBussines.Padding = new System.Windows.Forms.Padding(3);
+            this.txtEmailBussines.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEmailBussines.PasswordChar = '\0';
             this.txtEmailBussines.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtEmailBussines.PlaceholderText = "";
@@ -405,7 +411,7 @@
             this.txtEmailBussines.SelectionLength = 0;
             this.txtEmailBussines.SelectionStart = 0;
             this.txtEmailBussines.ShortcutsEnabled = true;
-            this.txtEmailBussines.Size = new System.Drawing.Size(695, 32);
+            this.txtEmailBussines.Size = new System.Drawing.Size(927, 39);
             this.txtEmailBussines.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtEmailBussines.TabIndex = 2;
             this.txtEmailBussines.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -445,10 +451,11 @@
             this.txtAddressBussines.IconRight = null;
             this.txtAddressBussines.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtAddressBussines.Lines = new string[0];
-            this.txtAddressBussines.Location = new System.Drawing.Point(37, 133);
-            this.txtAddressBussines.MaximumSize = new System.Drawing.Size(695, 54);
+            this.txtAddressBussines.Location = new System.Drawing.Point(49, 164);
+            this.txtAddressBussines.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAddressBussines.MaximumSize = new System.Drawing.Size(927, 66);
             this.txtAddressBussines.MaxLength = 100;
-            this.txtAddressBussines.MinimumSize = new System.Drawing.Size(695, 54);
+            this.txtAddressBussines.MinimumSize = new System.Drawing.Size(927, 66);
             this.txtAddressBussines.Modified = false;
             this.txtAddressBussines.Multiline = false;
             this.txtAddressBussines.Name = "txtAddressBussines";
@@ -472,7 +479,7 @@
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtAddressBussines.OnIdleState = stateProperties16;
-            this.txtAddressBussines.Padding = new System.Windows.Forms.Padding(3);
+            this.txtAddressBussines.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAddressBussines.PasswordChar = '\0';
             this.txtAddressBussines.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtAddressBussines.PlaceholderText = "";
@@ -482,7 +489,7 @@
             this.txtAddressBussines.SelectionLength = 0;
             this.txtAddressBussines.SelectionStart = 0;
             this.txtAddressBussines.ShortcutsEnabled = true;
-            this.txtAddressBussines.Size = new System.Drawing.Size(695, 54);
+            this.txtAddressBussines.Size = new System.Drawing.Size(927, 66);
             this.txtAddressBussines.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtAddressBussines.TabIndex = 1;
             this.txtAddressBussines.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -522,10 +529,11 @@
             this.txtNameBussines.IconRight = null;
             this.txtNameBussines.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNameBussines.Lines = new string[0];
-            this.txtNameBussines.Location = new System.Drawing.Point(38, 66);
-            this.txtNameBussines.MaximumSize = new System.Drawing.Size(695, 32);
+            this.txtNameBussines.Location = new System.Drawing.Point(51, 81);
+            this.txtNameBussines.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNameBussines.MaximumSize = new System.Drawing.Size(927, 39);
             this.txtNameBussines.MaxLength = 50;
-            this.txtNameBussines.MinimumSize = new System.Drawing.Size(695, 32);
+            this.txtNameBussines.MinimumSize = new System.Drawing.Size(927, 39);
             this.txtNameBussines.Modified = false;
             this.txtNameBussines.Multiline = false;
             this.txtNameBussines.Name = "txtNameBussines";
@@ -549,7 +557,7 @@
             stateProperties20.ForeColor = System.Drawing.Color.Empty;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtNameBussines.OnIdleState = stateProperties20;
-            this.txtNameBussines.Padding = new System.Windows.Forms.Padding(3);
+            this.txtNameBussines.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNameBussines.PasswordChar = '\0';
             this.txtNameBussines.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtNameBussines.PlaceholderText = "";
@@ -559,7 +567,7 @@
             this.txtNameBussines.SelectionLength = 0;
             this.txtNameBussines.SelectionStart = 0;
             this.txtNameBussines.ShortcutsEnabled = true;
-            this.txtNameBussines.Size = new System.Drawing.Size(695, 32);
+            this.txtNameBussines.Size = new System.Drawing.Size(927, 39);
             this.txtNameBussines.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtNameBussines.TabIndex = 0;
             this.txtNameBussines.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -617,7 +625,8 @@
             this.btnSave.IdleIconLeftImage = null;
             this.btnSave.IdleIconRightImage = null;
             this.btnSave.IndicateFocus = false;
-            this.btnSave.Location = new System.Drawing.Point(523, 362);
+            this.btnSave.Location = new System.Drawing.Point(697, 446);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSave.Name = "btnSave";
             this.btnSave.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSave.OnDisabledState.BorderRadius = 20;
@@ -651,7 +660,7 @@
             this.btnSave.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnSave.OnPressedState.IconLeftImage = null;
             this.btnSave.OnPressedState.IconRightImage = null;
-            this.btnSave.Size = new System.Drawing.Size(210, 34);
+            this.btnSave.Size = new System.Drawing.Size(280, 42);
             this.btnSave.TabIndex = 7;
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSave.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -664,9 +673,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(34, 418);
+            this.label7.Location = new System.Drawing.Point(45, 514);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(385, 16);
+            this.label7.Size = new System.Drawing.Size(483, 20);
             this.label7.TabIndex = 12;
             this.label7.Text = "Bienvenido a Gnosis, iniciemos configurando tu biblioteca...";
             // 
@@ -675,9 +685,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(520, 273);
+            this.label6.Location = new System.Drawing.Point(693, 336);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(36, 20);
+            this.label6.Size = new System.Drawing.Size(46, 25);
             this.label6.TabIndex = 5;
             this.label6.Text = "PBX";
             // 
@@ -686,9 +697,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(293, 272);
+            this.label5.Location = new System.Drawing.Point(391, 335);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(148, 20);
+            this.label5.Size = new System.Drawing.Size(186, 25);
             this.label5.TabIndex = 4;
             this.label5.Text = "Número de telefono";
             // 
@@ -697,9 +709,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(34, 271);
+            this.label4.Location = new System.Drawing.Point(45, 334);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 20);
+            this.label4.Size = new System.Drawing.Size(165, 25);
             this.label4.TabIndex = 3;
             this.label4.Text = "Fecha de creación";
             // 
@@ -708,9 +721,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(34, 194);
+            this.label3.Location = new System.Drawing.Point(45, 239);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(136, 20);
+            this.label3.Size = new System.Drawing.Size(170, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Correo electrónico";
             // 
@@ -719,9 +733,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(34, 105);
+            this.label2.Location = new System.Drawing.Point(45, 129);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 20);
+            this.label2.Size = new System.Drawing.Size(142, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Dirección fisica";
             // 
@@ -730,9 +745,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(33, 37);
+            this.label1.Location = new System.Drawing.Point(44, 46);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(321, 20);
+            this.label1.Size = new System.Drawing.Size(401, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre de la óptica, empresa u organización";
             // 
@@ -742,9 +758,10 @@
             this.panel2.Controls.Add(this.btnAttach);
             this.panel2.Controls.Add(this.picBussines);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(785, 15);
+            this.panel2.Location = new System.Drawing.Point(1046, 18);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 420);
+            this.panel2.Size = new System.Drawing.Size(267, 518);
             this.panel2.TabIndex = 0;
             // 
             // btnAttach
@@ -794,7 +811,8 @@
             this.btnAttach.IdleIconLeftImage = null;
             this.btnAttach.IdleIconRightImage = null;
             this.btnAttach.IndicateFocus = false;
-            this.btnAttach.Location = new System.Drawing.Point(10, 206);
+            this.btnAttach.Location = new System.Drawing.Point(13, 254);
+            this.btnAttach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAttach.Name = "btnAttach";
             this.btnAttach.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAttach.OnDisabledState.BorderRadius = 20;
@@ -828,7 +846,7 @@
             this.btnAttach.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnAttach.OnPressedState.IconLeftImage = null;
             this.btnAttach.OnPressedState.IconRightImage = null;
-            this.btnAttach.Size = new System.Drawing.Size(181, 34);
+            this.btnAttach.Size = new System.Drawing.Size(241, 42);
             this.btnAttach.TabIndex = 6;
             this.btnAttach.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAttach.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -841,22 +859,24 @@
             this.picBussines.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.picBussines.Dock = System.Windows.Forms.DockStyle.Top;
             this.picBussines.Location = new System.Drawing.Point(0, 0);
+            this.picBussines.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picBussines.Name = "picBussines";
-            this.picBussines.Size = new System.Drawing.Size(200, 200);
+            this.picBussines.Size = new System.Drawing.Size(267, 246);
             this.picBussines.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBussines.TabIndex = 0;
             this.picBussines.TabStop = false;
             // 
             // ViewFirstUse
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1000, 475);
+            this.ClientSize = new System.Drawing.Size(1333, 585);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ViewFirstUse";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configuración del negocio";

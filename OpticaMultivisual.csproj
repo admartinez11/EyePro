@@ -650,6 +650,7 @@
     <None Include="Resources\hide.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\EyePro- Logos.png" />
     <None Include="Resources\Admin.png" />
     <None Include="Resources\SecurityQ.png" />
     <None Include="Resources\Gmail.png" />
