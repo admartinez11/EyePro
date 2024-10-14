@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OpticaMultivisual.Controllers.Article.MaterialTipoArt;
+using OpticaMultivisual.Controllers.Article.TipoArticulo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,7 @@ namespace OpticaMultivisual.Views.Dashboard.Article.MateralTipoArt
         public AddMaterialTipoArt()
         {
             InitializeComponent();
+            ControllerAdMaterialTipoArt objAddUser = new ControllerAdMaterialTipoArt(this);
         }
     }
 }

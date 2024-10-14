@@ -149,6 +149,8 @@
     <Compile Include="Controllers\Article\Color\ControllerAdminColor.cs" />
     <Compile Include="Controllers\Article\ControllerAddArticle.cs" />
     <Compile Include="Controllers\Article\ControllerAdminArticle.cs" />
+    <Compile Include="Controllers\Article\MaterialTipoArt\ControllerAdMaterialTipoArt.cs" />
+    <Compile Include="Controllers\Article\MaterialTipoArt\ControllerAdminMaterialTipoArt.cs" />
     <Compile Include="Controllers\Article\Material\ControllerADDMaterial.cs" />
     <Compile Include="Controllers\Article\Material\ControllerAdminMaterial.cs" />
     <Compile Include="Controllers\Article\Modelo\ControllerAddModelo.cs" />
@@ -194,6 +196,7 @@
     <Compile Include="Models\DAO\DAOLens.cs" />
     <Compile Include="Models\DAO\DAOLogin.cs" />
     <Compile Include="Models\DAO\DAOMaterial.cs" />
+    <Compile Include="Models\DAO\DAOMaterialTipoArticulo.cs" />
     <Compile Include="Models\DAO\DAOModelo.cs" />
     <Compile Include="Models\DAO\DAOPedidoDet.cs" />
     <Compile Include="Models\DAO\DAORecoverPassword.cs" />
@@ -211,6 +214,7 @@
     <Compile Include="Models\DTO\DTOLens.cs" />
     <Compile Include="Models\DTO\DTOLogin.cs" />
     <Compile Include="Models\DTO\DTOMaterial.cs" />
+    <Compile Include="Models\DTO\DTOMaterialTipoArticulo.cs" />
     <Compile Include="Models\DTO\DTOModelo.cs" />
     <Compile Include="Models\DTO\DTOPedidoDet.cs" />
     <Compile Include="Models\DTO\DTORecetaBase.cs" />

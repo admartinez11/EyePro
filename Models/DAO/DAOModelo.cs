@@ -83,6 +83,28 @@ namespace OpticaMultivisual.Models.DAO
                 getConnection().Close();
             }
         }
+        public int RegistrarMarca()
+        {
+            try
+            {
+                Command.Connection = getConnection();
+                string query = "INSERT INTO Marca (marca_nombre) VALUES (@Nombre)";
+                SqlCommand cmd = new SqlCommand(query, Command.Connection);
+
+                cmd.Parameters.AddWithValue("@Nombre", Marca_nombre);
+                int respuesta = cmd.ExecuteNonQuery();
+                return respuesta;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("EPV006 - No se pudieron registrar los datos", "Error al registrar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return -1;
+            }
+            finally
+            {
+                getConnection().Close();
+            }
+        }
         public DataSet BuscarModelo(string valor)
         {
             try

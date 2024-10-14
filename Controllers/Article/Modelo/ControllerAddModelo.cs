@@ -25,6 +25,18 @@ namespace OpticaMultivisual.Controllers.Article.Modelo
             Vista.Load += new EventHandler(CargaInicial);
             //Métodos iniciales: estos metodos se ejecutan cuando el formulario está cargando
             ObjVistaR.btnAgregarModelo.Click += new EventHandler(NuevoModelo);
+            ObjVistaR.bunifuPictureBox2.Click += new EventHandler(AbrirPanelAuxiliar);
+            ObjVistaR.toolStripButton1.Click += new EventHandler(CerrarPanelAuxiliar);
+            ObjVistaR.btnGuardarMar.Click += new EventHandler(NuevaMarca);
+        }
+        void AbrirPanelAuxiliar(object sender, EventArgs e)
+        {
+            ObjVistaR.PanelAuxiliar.Visible = true;
+        }
+
+        void CerrarPanelAuxiliar(object sender, EventArgs e)
+        {
+            ObjVistaR.PanelAuxiliar.Visible = false;
         }
         public void CargaInicial(object sender, EventArgs e)
         {
@@ -37,6 +49,30 @@ namespace OpticaMultivisual.Controllers.Article.Modelo
             ObjVistaR.cmbMarca.DataSource = ds.Tables["Marca"];
             ObjVistaR.cmbMarca.DisplayMember = "marca_nombre";
             ObjVistaR.cmbMarca.ValueMember = "marca_ID";
+        }
+        public void NuevaMarca(object sender, EventArgs e)
+        {
+            DAOModelo DAOIngresarR = new DAOModelo
+            {
+                Marca_nombre = ObjVistaR.txtNombreMar.Text.Trim(),
+            };
+
+            int valorRetornado = DAOIngresarR.RegistrarMarca();
+
+            if (valorRetornado == 1)
+            {
+                MessageBox.Show("Los datos han sido registrados exitosamente",
+                                "Proceso completado",
+                                 MessageBoxButtons.OK,
+                                 MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("EPV006 - No se pudieron registrar los datos",
+                                "Proceso interrumpido",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+            }
         }
         public void NuevoModelo(object sender, EventArgs e)
         {
