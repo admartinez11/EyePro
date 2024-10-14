@@ -113,7 +113,7 @@ namespace OpticaMultivisual.Models.DAO
             }
         }
 
-        public int EliminarTipoArticulo()
+        public int EliminarMaterialTipoArticulo()
         {
             try
             {
