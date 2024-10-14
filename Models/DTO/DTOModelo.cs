@@ -11,9 +11,11 @@ namespace OpticaMultivisual.Models.DTO
         private int mod_ID;
         private string mod_nombre;
         private int marca_ID;
+        private string marca_nombre;
 
         public int Mod_ID { get => mod_ID; set => mod_ID = value; }
         public string Mod_nombre { get => mod_nombre; set => mod_nombre = value; }
         public int Marca_ID { get => marca_ID; set => marca_ID = value; }
+        public string Marca_nombre { get => marca_nombre; set => marca_nombre = value; }
     }
 }
