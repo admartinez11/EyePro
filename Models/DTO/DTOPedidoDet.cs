@@ -9,7 +9,7 @@ namespace OpticaMultivisual.Models.DTO
     internal class DTOPedidoDet : dbContext
     {
         private int pd_ID;
-        private string con_ID;
+        private int con_ID;
         private DateTime pd_fpedido;
         private DateTime pd_fprogramada;
         private string art_codigo;
@@ -18,7 +18,7 @@ namespace OpticaMultivisual.Models.DTO
         private int pd_recetalab;
 
         public int pd_ID1 { get => pd_ID; set => pd_ID = value; }
-        public string con_ID1 { get => con_ID; set => con_ID = value; }
+        public int con_ID1 { get => con_ID; set => con_ID = value; }
         public DateTime pd_fpedido1 { get => pd_fpedido; set => pd_fpedido = value; }
         public DateTime pd_fprogramada1 { get => pd_fprogramada; set => pd_fprogramada = value; }
         public string art_codigo1 { get => art_codigo; set => art_codigo = value; }

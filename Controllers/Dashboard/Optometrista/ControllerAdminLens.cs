@@ -95,22 +95,22 @@ namespace OpticaMultivisual.Controllers.Dashboard.Optometrista
         {
             int pos = ObjAdminLens.dgvLens.CurrentRow.Index;
 
-            int lens_ID, con_ID;
-            string OD_prisma, OD_adicion, OI_prisma, OI_adicion, OD_esfera, OI_esfera, OD_cilindro, OD_eje, OI_cilindro, OI_eje;
+            int lens_ID;
+            string con_ID, OD_prisma, OD_adicion, OI_prisma, OI_adicion, OD_esfera, OI_esfera, OD_cilindro, OD_eje, OI_cilindro, OI_eje;
 
             lens_ID = int.Parse(ObjAdminLens.dgvLens[0, pos].Value.ToString());
-            con_ID = int.Parse(ObjAdminLens.dgvLens[1, pos].Value.ToString());
-            OD_esfera = ObjAdminLens.dgvLens[2, pos].Value.ToString();
-            OD_cilindro = ObjAdminLens.dgvLens[3, pos].Value.ToString();
-            OD_eje = ObjAdminLens.dgvLens[4, pos].Value.ToString();
-            OD_prisma = ObjAdminLens.dgvLens[5, pos].Value.ToString();
-            OD_adicion = ObjAdminLens.dgvLens[6, pos].Value.ToString();
+            con_ID = ObjAdminLens.dgvLens[2, pos].Value.ToString();
+            OD_esfera = ObjAdminLens.dgvLens[3, pos].Value.ToString();
+            OD_cilindro = ObjAdminLens.dgvLens[4, pos].Value.ToString();
+            OD_eje = ObjAdminLens.dgvLens[5, pos].Value.ToString();
+            OD_prisma = ObjAdminLens.dgvLens[6, pos].Value.ToString();
+            OD_adicion = ObjAdminLens.dgvLens[7, pos].Value.ToString();
 
-            OI_esfera = ObjAdminLens.dgvLens[7, pos].Value.ToString();
-            OI_cilindro = ObjAdminLens.dgvLens[8, pos].Value.ToString();
-            OI_eje = ObjAdminLens.dgvLens[9, pos].Value.ToString();
-            OI_prisma = ObjAdminLens.dgvLens[10, pos].Value.ToString();
-            OI_adicion = ObjAdminLens.dgvLens[11, pos].Value.ToString();
+            OI_esfera = ObjAdminLens.dgvLens[8, pos].Value.ToString();
+            OI_cilindro = ObjAdminLens.dgvLens[9, pos].Value.ToString();
+            OI_eje = ObjAdminLens.dgvLens[10, pos].Value.ToString();
+            OI_prisma = ObjAdminLens.dgvLens[11, pos].Value.ToString();
+            OI_adicion = ObjAdminLens.dgvLens[12, pos].Value.ToString();
 
             ViewAddLens openForm = new ViewAddLens(2, lens_ID, con_ID, OD_esfera, OD_cilindro, OD_eje, OD_prisma, OD_adicion, OI_esfera, OI_cilindro, OI_eje, OI_prisma, OI_adicion);
 

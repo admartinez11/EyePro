@@ -179,8 +179,7 @@ namespace OpticaMultivisual.Models.DAO
             try
             {
                 Command.Connection = getConnection();
-                string query4 = "UPDATE PedidoDet SET con_ID = @con_ID, pd_fpedido = @pd_fpedido, pd_fprogramada = @pd_fprogramada, art_codigo = @art_codigo, art_cant = @art_cant, pd_obser = @pd_obser, pd_recetalab = @pd_recetalab" + 
-                    "WHERE pd_ID = @pd_ID";
+                string query4 = "UPDATE PedidoDet SET con_ID = @con_ID, pd_fpedido = @pd_fpedido, pd_fprogramada = @pd_fprogramada, art_codigo = @art_codigo, art_cant = @art_cant, pd_obser = @pd_obser, pd_recetalab = @pd_recetalab WHERE pd_ID = @pd_ID";
                 SqlCommand cmd = new SqlCommand(query4, Command.Connection);
 
                 cmd.Parameters.AddWithValue("@pd_ID", pd_ID1);
