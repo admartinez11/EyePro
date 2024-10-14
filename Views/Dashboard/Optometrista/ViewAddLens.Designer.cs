@@ -224,7 +224,7 @@
             this.txtOIAdicion.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtOIAdicion.Lines = new string[0];
             this.txtOIAdicion.Location = new System.Drawing.Point(197, 473);
-            this.txtOIAdicion.MaxLength = 32767;
+            this.txtOIAdicion.MaxLength = 5;
             this.txtOIAdicion.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtOIAdicion.Modified = false;
             this.txtOIAdicion.Multiline = false;
@@ -301,7 +301,7 @@
             this.txtOIPrisma.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtOIPrisma.Lines = new string[0];
             this.txtOIPrisma.Location = new System.Drawing.Point(197, 361);
-            this.txtOIPrisma.MaxLength = 32767;
+            this.txtOIPrisma.MaxLength = 5;
             this.txtOIPrisma.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtOIPrisma.Modified = false;
             this.txtOIPrisma.Multiline = false;
@@ -378,7 +378,7 @@
             this.txtOIEje.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtOIEje.Lines = new string[0];
             this.txtOIEje.Location = new System.Drawing.Point(197, 250);
-            this.txtOIEje.MaxLength = 32767;
+            this.txtOIEje.MaxLength = 5;
             this.txtOIEje.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtOIEje.Modified = false;
             this.txtOIEje.Multiline = false;
@@ -455,7 +455,7 @@
             this.txtOICilindro.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtOICilindro.Lines = new string[0];
             this.txtOICilindro.Location = new System.Drawing.Point(197, 139);
-            this.txtOICilindro.MaxLength = 32767;
+            this.txtOICilindro.MaxLength = 5;
             this.txtOICilindro.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtOICilindro.Modified = false;
             this.txtOICilindro.Multiline = false;
@@ -592,7 +592,7 @@
             this.txtOIEsfera.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtOIEsfera.Lines = new string[0];
             this.txtOIEsfera.Location = new System.Drawing.Point(197, 28);
-            this.txtOIEsfera.MaxLength = 32767;
+            this.txtOIEsfera.MaxLength = 5;
             this.txtOIEsfera.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtOIEsfera.Modified = false;
             this.txtOIEsfera.Multiline = false;
@@ -742,7 +742,7 @@
             this.txtODAdicion.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtODAdicion.Lines = new string[0];
             this.txtODAdicion.Location = new System.Drawing.Point(218, 473);
-            this.txtODAdicion.MaxLength = 32767;
+            this.txtODAdicion.MaxLength = 5;
             this.txtODAdicion.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtODAdicion.Modified = false;
             this.txtODAdicion.Multiline = false;
@@ -819,7 +819,7 @@
             this.txtODPrisma.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtODPrisma.Lines = new string[0];
             this.txtODPrisma.Location = new System.Drawing.Point(218, 361);
-            this.txtODPrisma.MaxLength = 32767;
+            this.txtODPrisma.MaxLength = 5;
             this.txtODPrisma.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtODPrisma.Modified = false;
             this.txtODPrisma.Multiline = false;
@@ -896,7 +896,7 @@
             this.txtODEje.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtODEje.Lines = new string[0];
             this.txtODEje.Location = new System.Drawing.Point(218, 250);
-            this.txtODEje.MaxLength = 32767;
+            this.txtODEje.MaxLength = 5;
             this.txtODEje.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtODEje.Modified = false;
             this.txtODEje.Multiline = false;
@@ -973,7 +973,7 @@
             this.txtODCilindro.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtODCilindro.Lines = new string[0];
             this.txtODCilindro.Location = new System.Drawing.Point(218, 139);
-            this.txtODCilindro.MaxLength = 32767;
+            this.txtODCilindro.MaxLength = 5;
             this.txtODCilindro.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtODCilindro.Modified = false;
             this.txtODCilindro.Multiline = false;
@@ -1050,7 +1050,7 @@
             this.txtODEsfera.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtODEsfera.Lines = new string[0];
             this.txtODEsfera.Location = new System.Drawing.Point(218, 28);
-            this.txtODEsfera.MaxLength = 32767;
+            this.txtODEsfera.MaxLength = 5;
             this.txtODEsfera.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtODEsfera.Modified = false;
             this.txtODEsfera.Multiline = false;
@@ -1249,7 +1249,7 @@
             this.txtBuscar.Lines = new string[0];
             this.txtBuscar.Location = new System.Drawing.Point(36, 16);
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(2, 16, 3, 3);
-            this.txtBuscar.MaxLength = 32767;
+            this.txtBuscar.MaxLength = 15;
             this.txtBuscar.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBuscar.Modified = false;
             this.txtBuscar.Multiline = false;

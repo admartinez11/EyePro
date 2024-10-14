@@ -231,7 +231,7 @@
             this.txtBuscar.Lines = new string[0];
             this.txtBuscar.Location = new System.Drawing.Point(188, 72);
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 3, 3);
-            this.txtBuscar.MaxLength = 32767;
+            this.txtBuscar.MaxLength = 15;
             this.txtBuscar.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBuscar.Modified = false;
             this.txtBuscar.Multiline = false;
@@ -584,7 +584,7 @@
             this.txtpd_obser.Location = new System.Drawing.Point(390, 368);
             this.txtpd_obser.Margin = new System.Windows.Forms.Padding(2);
             this.txtpd_obser.MaximumSize = new System.Drawing.Size(196, 25);
-            this.txtpd_obser.MaxLength = 32767;
+            this.txtpd_obser.MaxLength = 100;
             this.txtpd_obser.MinimumSize = new System.Drawing.Size(2, 2);
             this.txtpd_obser.Modified = false;
             this.txtpd_obser.Multiline = false;
@@ -663,7 +663,7 @@
             this.txtart_cant.Location = new System.Drawing.Point(390, 329);
             this.txtart_cant.Margin = new System.Windows.Forms.Padding(2);
             this.txtart_cant.MaximumSize = new System.Drawing.Size(196, 25);
-            this.txtart_cant.MaxLength = 32767;
+            this.txtart_cant.MaxLength = 100;
             this.txtart_cant.MinimumSize = new System.Drawing.Size(2, 2);
             this.txtart_cant.Modified = false;
             this.txtart_cant.Multiline = false;
