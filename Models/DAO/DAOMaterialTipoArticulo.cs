@@ -112,9 +112,9 @@ namespace OpticaMultivisual.Models.DAO
             try
             {
                 Command.Connection = getConnection();
-                string query = "DELETE MaterialTipoArt WHERE materialtipoart_ID  = @ID";
+                string query = "DELETE MaterialTipoArt WHERE materialtipoart_ID = @ID";
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
-                cmd.Parameters.AddWithValue("@ID", Material_ID);
+                cmd.Parameters.AddWithValue("@ID", Materialtipoart_ID);
                 int respuesta = cmd.ExecuteNonQuery();
                 return respuesta;
             }

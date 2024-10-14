@@ -65,7 +65,7 @@ namespace OpticaMultivisual.Controllers.Article.TipoArticulo
             {
                 DAOTipoArticulo daoDel = new DAOTipoArticulo();
                 daoDel.Tipoart_ID = int.Parse(ObjVista.dgvInfoTipoArticulo[0, pos].Value.ToString());
-                int valorRetornado = daoDel.EliminarTipoArticulo();
+                int valorRetornado = daoDel.EliminarMaterialTipoArticulo();
                 if (valorRetornado == 1)
                 {
                     MessageBox.Show("Registro eliminado", "Acción completada", MessageBoxButtons.OK, MessageBoxIcon.Information);
