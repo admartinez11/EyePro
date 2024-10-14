@@ -609,7 +609,7 @@ namespace OpticaMultivisual.Views.Consultas
             this.txtBuscarConsulta.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBuscarConsulta.Lines = new string[0];
             this.txtBuscarConsulta.Location = new System.Drawing.Point(3, 3);
-            this.txtBuscarConsulta.MaxLength = 32767;
+            this.txtBuscarConsulta.MaxLength = 50;
             this.txtBuscarConsulta.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBuscarConsulta.Modified = false;
             this.txtBuscarConsulta.Multiline = false;
