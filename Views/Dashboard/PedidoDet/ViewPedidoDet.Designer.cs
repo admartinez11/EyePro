@@ -621,7 +621,7 @@
             this.txtBuscar.Lines = new string[0];
             this.txtBuscar.Location = new System.Drawing.Point(361, 9);
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 3, 3);
-            this.txtBuscar.MaxLength = 32767;
+            this.txtBuscar.MaxLength = 15;
             this.txtBuscar.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBuscar.Modified = false;
             this.txtBuscar.Multiline = false;

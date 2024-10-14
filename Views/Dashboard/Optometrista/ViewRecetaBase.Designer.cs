@@ -653,7 +653,7 @@
             this.txtBuscar.Lines = new string[0];
             this.txtBuscar.Location = new System.Drawing.Point(2, 2);
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 3, 3);
-            this.txtBuscar.MaxLength = 32767;
+            this.txtBuscar.MaxLength = 5;
             this.txtBuscar.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBuscar.Modified = false;
             this.txtBuscar.Multiline = false;
@@ -681,7 +681,7 @@
             this.txtBuscar.Padding = new System.Windows.Forms.Padding(3);
             this.txtBuscar.PasswordChar = '\0';
             this.txtBuscar.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtBuscar.PlaceholderText = "Buscar por DUI";
+            this.txtBuscar.PlaceholderText = "";
             this.txtBuscar.ReadOnly = false;
             this.txtBuscar.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtBuscar.SelectedText = "";
@@ -695,7 +695,7 @@
             this.txtBuscar.TextMarginBottom = 0;
             this.txtBuscar.TextMarginLeft = 1;
             this.txtBuscar.TextMarginTop = 1;
-            this.txtBuscar.TextPlaceholder = "Buscar por DUI";
+            this.txtBuscar.TextPlaceholder = "";
             this.txtBuscar.UseSystemPasswordChar = false;
             this.txtBuscar.WordWrap = true;
             // 
