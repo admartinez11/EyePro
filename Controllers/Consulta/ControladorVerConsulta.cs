@@ -32,7 +32,8 @@ namespace OpticaMultivisual.Controllers.Consulta
             LlenarComboVisita();
             LlenarComboEmpleados();
             //AñadirConsulta_Load();
-            ObjAañadirConsulta.txtNombreCon.Visible = false;
+            ObjAañadirConsulta.txtDuiCon.Visible = false;
+            ObjAañadirConsulta.txtDuiCon.Enabled = false;
         }
         void CargaInicioDUI(object sender, EventArgs e)
         {
@@ -258,6 +259,19 @@ namespace OpticaMultivisual.Controllers.Consulta
                 return false;
             }
 
+            if (!CoincidenciaCampos())
+            {
+                string duiConText = ObjAañadirConsulta.txtDuiCon.Text.Trim();
+                string cmbVisitaValue = ObjAañadirConsulta.cmbVisita.SelectedValue.ToString().Trim();
+                string nombreConText = ObjAañadirConsulta.txtNombreCon.Text.Trim();
+                string cmbNombreVisitaValue = ObjAañadirConsulta.cmbVisita.SelectedValue.ToString().Trim();
+
+                // Mostrar los valores para depuración
+                MessageBox.Show($"DUI Con: {duiConText}, CMB Visita Value: {cmbVisitaValue}", "Informaion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Nombre Con: {nombreConText}, CMB Nombre Visita Value: {cmbNombreVisitaValue}", "informacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false; 
+            }
+
 
             // Finalmente, verifica que el texto en txtObservaciones sea válido
             if (!VerificarTexto(ObjAañadirConsulta.txtObservaciones.Text))
@@ -268,7 +282,49 @@ namespace OpticaMultivisual.Controllers.Consulta
             return true;
         }
 
+        private bool CoincidenciaCampos()
+        {
+            //try
+            //{
+            //    // Verificar si el txtDuiCon tiene un valor y si el cmbVisita tiene un elemento seleccionado
+            //    if (string.IsNullOrEmpty(ObjAañadirConsulta.txtDuiCon.Text) || ObjAañadirConsulta.cmbVisita.SelectedValue == null)
+            //    {
+            //        return false; // Retorna false si alguno de los campos es nulo o no tiene valor
+            //    }
 
+            //    // Verificar si txtNombreCon tiene un valor y si cmbNombreVisita tiene un elemento seleccionado
+            //    if (string.IsNullOrEmpty(ObjAañadirConsulta.txtNombreCon.Text) || ObjAañadirConsulta.cmbVisita.SelectedValue == null)
+            //    {
+            //        return false; // Retorna false si alguno de los campos es nulo o no tiene valor
+            //    }
+
+            //    // Obtener los valores a comparar
+            //    string duiConText = ObjAañadirConsulta.txtDuiCon.Text.Trim();
+            //    string cmbVisitaValue = ObjAañadirConsulta.cmbVisita.SelectedValue.ToString().Trim();
+            //    string nombreConText = ObjAañadirConsulta.txtNombreCon.Text.Trim();
+            //    string cmbNombreVisitaValue = ObjAañadirConsulta.cmbVisita.SelectedValue.ToString().Trim();
+
+            //    // Mostrar los valores para depuración
+            //    Console.WriteLine($"DUI Con: {duiConText}, CMB Visita Value: {cmbVisitaValue}");
+            //    Console.WriteLine($"Nombre Con: {nombreConText}, CMB Nombre Visita Value: {cmbNombreVisitaValue}");
+
+            //    // Verificar si el valor de txtDuiCon coincide con el valor del cmbVisita
+            //    bool txt1Cmb1Coinciden = duiConText == cmbVisitaValue;
+
+            //    // Verificar si txtNombreCon coincide con el valor de cmbNombreVisita
+            //    bool cmb1Cmb2Coinciden = nombreConText == cmbNombreVisitaValue;
+
+            //    // Retorna true solo si ambas condiciones se cumplen
+            //    return txt1Cmb1Coinciden && cmb1Cmb2Coinciden;
+            //}
+            //catch (Exception ex)
+            //{
+            //    // Si ocurre un problema inesperado, muestra el mensaje de error y retorna false
+            //    Console.WriteLine($"Error: {ex.Message}");
+            //    return false;
+            //}
+            return true;
+        }
         private bool VerificacionCamposLlenos()
         {
             // Validar que los campos obligatorios estén llenos
