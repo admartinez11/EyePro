@@ -87,13 +87,13 @@ namespace OpticaMultivisual.Models.DAO
             try
             {
                 Command.Connection = getConnection();
-                string query = $"SELECT * FROM Visita WHERE vis_nombre LIKE '%{valor}%' OR vis_dui LIKE '%{valor}%' OR vis_apellido LIKE '%{valor}%'";
+                string query = $"SELECT * FROM ViewVisita WHERE DUI LIKE '%{valor}%' OR Nombre LIKE '%{valor}%' OR Apellido LIKE '%{valor}%'";
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
                 cmd.ExecuteNonQuery();
                 SqlDataAdapter adp = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 //Rellenamos con el Adaptador el DataSet diciéndole de que tabla provienen los datos
-                adp.Fill(ds, "Visita");
+                adp.Fill(ds, "ViewVisita");
                 return ds;
             }
             catch (Exception)

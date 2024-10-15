@@ -119,7 +119,7 @@ namespace OpticaMultivisual.Controllers.Article
         {
             DAOArticle Objadminregistro = new DAOArticle();
             DataSet ds = Objadminregistro.BuscarArticulo(ObjVista.txtBuscar.Text.Trim());
-            ObjVista.dgvInfoArticulo.DataSource = ds.Tables["Articulo"];
+            ObjVista.dgvInfoArticulo.DataSource = ds.Tables["ViewArt"];
         }
         public void AgregarArticulo(object sender, EventArgs e)
         {

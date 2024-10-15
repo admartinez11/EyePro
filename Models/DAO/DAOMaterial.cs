@@ -66,13 +66,13 @@ namespace OpticaMultivisual.Models.DAO
             try
             {
                 Command.Connection = getConnection();
-                string query = $"SELECT * FROM vistaMaterial WHERE material_nombre LIKE '%{valor}%' OR material_ID LIKE '%{valor}%'";
+                string query = $"SELECT * FROM vistaMaterial WHERE ID LIKE '%{valor}%' OR Nombre LIKE '%{valor}%'";
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
                 cmd.ExecuteNonQuery();
                 SqlDataAdapter adp = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 //Rellenamos con el Adaptador el DataSet diciéndole de que tabla provienen los datos
-                adp.Fill(ds, "Color");
+                adp.Fill(ds, "vistaMaterial");
                 return ds;
             }
             catch (Exception)
