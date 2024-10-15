@@ -231,6 +231,9 @@
             this.btnActCli.AllowAnimations = true;
             this.btnActCli.AllowMouseEffects = true;
             this.btnActCli.AllowToggling = false;
+            this.btnActCli.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnActCli.AnimationSpeed = 200;
             this.btnActCli.AutoGenerateColors = false;
             this.btnActCli.AutoRoundBorders = false;
@@ -308,7 +311,7 @@
             this.btnActCli.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnActCli.OnPressedState.IconLeftImage = null;
             this.btnActCli.OnPressedState.IconRightImage = null;
-            this.btnActCli.Size = new System.Drawing.Size(177, 30);
+            this.btnActCli.Size = new System.Drawing.Size(178, 31);
             this.btnActCli.TabIndex = 28;
             this.btnActCli.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnActCli.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -321,6 +324,9 @@
             this.btnNuevoCli.AllowAnimations = true;
             this.btnNuevoCli.AllowMouseEffects = true;
             this.btnNuevoCli.AllowToggling = false;
+            this.btnNuevoCli.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNuevoCli.AnimationSpeed = 200;
             this.btnNuevoCli.AutoGenerateColors = false;
             this.btnNuevoCli.AutoRoundBorders = false;
@@ -398,7 +404,7 @@
             this.btnNuevoCli.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnNuevoCli.OnPressedState.IconLeftImage = null;
             this.btnNuevoCli.OnPressedState.IconRightImage = null;
-            this.btnNuevoCli.Size = new System.Drawing.Size(181, 30);
+            this.btnNuevoCli.Size = new System.Drawing.Size(182, 31);
             this.btnNuevoCli.TabIndex = 29;
             this.btnNuevoCli.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnNuevoCli.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -411,6 +417,9 @@
             this.btnEliminarCli.AllowAnimations = true;
             this.btnEliminarCli.AllowMouseEffects = true;
             this.btnEliminarCli.AllowToggling = false;
+            this.btnEliminarCli.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEliminarCli.AnimationSpeed = 200;
             this.btnEliminarCli.AutoGenerateColors = false;
             this.btnEliminarCli.AutoRoundBorders = false;
@@ -488,7 +497,7 @@
             this.btnEliminarCli.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnEliminarCli.OnPressedState.IconLeftImage = null;
             this.btnEliminarCli.OnPressedState.IconRightImage = null;
-            this.btnEliminarCli.Size = new System.Drawing.Size(185, 30);
+            this.btnEliminarCli.Size = new System.Drawing.Size(185, 31);
             this.btnEliminarCli.TabIndex = 30;
             this.btnEliminarCli.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEliminarCli.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -501,6 +510,9 @@
             this.btnAgregarCon.AllowAnimations = true;
             this.btnAgregarCon.AllowMouseEffects = true;
             this.btnAgregarCon.AllowToggling = false;
+            this.btnAgregarCon.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAgregarCon.AnimationSpeed = 200;
             this.btnAgregarCon.AutoGenerateColors = false;
             this.btnAgregarCon.AutoRoundBorders = false;
@@ -578,7 +590,7 @@
             this.btnAgregarCon.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnAgregarCon.OnPressedState.IconLeftImage = null;
             this.btnAgregarCon.OnPressedState.IconRightImage = null;
-            this.btnAgregarCon.Size = new System.Drawing.Size(179, 30);
+            this.btnAgregarCon.Size = new System.Drawing.Size(240, 31);
             this.btnAgregarCon.TabIndex = 31;
             this.btnAgregarCon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAgregarCon.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -606,7 +618,10 @@
             // dgvInfoClientes
             // 
             this.dgvInfoClientes.AllowUserToAddRows = false;
-            this.dgvInfoClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvInfoClientes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvInfoClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInfoClientes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvInfoClientes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
             this.dgvInfoClientes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -623,7 +638,6 @@
             this.dgvInfoClientes.ColumnHeadersHeight = 30;
             this.dgvInfoClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvInfoClientes.ContextMenuStrip = this.contextMenuStrip1;
-            this.dgvInfoClientes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvInfoClientes.EnableHeadersVisualStyles = false;
             this.dgvInfoClientes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
             this.dgvInfoClientes.Location = new System.Drawing.Point(3, 51);

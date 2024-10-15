@@ -472,7 +472,7 @@ namespace OpticaMultivisual.Views.Consultas
             this.DTPfechaconsulta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DTPfechaconsulta.MinimumSize = new System.Drawing.Size(4, 32);
             this.DTPfechaconsulta.Name = "DTPfechaconsulta";
-            this.DTPfechaconsulta.Size = new System.Drawing.Size(305, 34);
+            this.DTPfechaconsulta.Size = new System.Drawing.Size(305, 32);
             this.DTPfechaconsulta.TabIndex = 0;
             this.DTPfechaconsulta.Value = new System.DateTime(2024, 9, 1, 11, 29, 0, 0);
             // 
@@ -484,7 +484,7 @@ namespace OpticaMultivisual.Views.Consultas
             this.label6.Location = new System.Drawing.Point(4, 11);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 11, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(209, 28);
+            this.label6.Size = new System.Drawing.Size(168, 21);
             this.label6.TabIndex = 1;
             this.label6.Text = "Fecha de la consulta:";
             // 
@@ -647,10 +647,10 @@ namespace OpticaMultivisual.Views.Consultas
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(373, 6);
+            this.label5.Location = new System.Drawing.Point(373, 12);
             this.label5.Margin = new System.Windows.Forms.Padding(20, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 19);
+            this.label5.Size = new System.Drawing.Size(66, 13);
             this.label5.TabIndex = 11;
             this.label5.Text = "Profesional";
             // 
@@ -660,10 +660,10 @@ namespace OpticaMultivisual.Views.Consultas
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(165, 6);
+            this.label4.Location = new System.Drawing.Point(165, 12);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 19);
+            this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 10;
             this.label4.Text = "Visita";
             // 
@@ -728,10 +728,10 @@ namespace OpticaMultivisual.Views.Consultas
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(671, 27);
+            this.label2.Location = new System.Drawing.Point(671, 39);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 38);
+            this.label2.Size = new System.Drawing.Size(105, 13);
             this.label2.TabIndex = 8;
             this.label2.Text = "Consulta Realizada";
             // 
@@ -741,10 +741,10 @@ namespace OpticaMultivisual.Views.Consultas
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(4, 6);
+            this.label3.Location = new System.Drawing.Point(4, 12);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 19);
+            this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 9;
             this.label3.Text = "Consulta";
             // 
