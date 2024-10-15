@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewAddArticle));
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -55,10 +59,6 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties28 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
@@ -72,6 +72,7 @@
             this.cmbModeloArt = new Bunifu.UI.WinForms.BunifuDropdown();
             this.cmbMaterialArt = new Bunifu.UI.WinForms.BunifuDropdown();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtPUnitario = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtArCodigo = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtArNombre = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtMedidas = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -86,7 +87,6 @@
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.txtPUnitario = new Bunifu.UI.WinForms.BunifuTextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
@@ -429,6 +429,84 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(607, 37);
             this.tableLayoutPanel4.TabIndex = 16;
+            // 
+            // txtPUnitario
+            // 
+            this.txtPUnitario.AcceptsReturn = false;
+            this.txtPUnitario.AcceptsTab = false;
+            this.txtPUnitario.AnimationSpeed = 200;
+            this.txtPUnitario.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtPUnitario.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtPUnitario.AutoSizeHeight = true;
+            this.txtPUnitario.BackColor = System.Drawing.Color.Transparent;
+            this.txtPUnitario.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtPUnitario.BackgroundImage")));
+            this.txtPUnitario.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtPUnitario.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtPUnitario.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtPUnitario.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtPUnitario.BorderRadius = 15;
+            this.txtPUnitario.BorderThickness = 1;
+            this.txtPUnitario.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
+            this.txtPUnitario.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtPUnitario.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPUnitario.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txtPUnitario.DefaultText = "";
+            this.txtPUnitario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtPUnitario.FillColor = System.Drawing.Color.White;
+            this.txtPUnitario.HideSelection = true;
+            this.txtPUnitario.IconLeft = null;
+            this.txtPUnitario.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPUnitario.IconPadding = 10;
+            this.txtPUnitario.IconRight = null;
+            this.txtPUnitario.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPUnitario.Lines = new string[0];
+            this.txtPUnitario.Location = new System.Drawing.Point(468, 2);
+            this.txtPUnitario.Margin = new System.Windows.Forms.Padding(15, 2, 2, 2);
+            this.txtPUnitario.MaxLength = 50;
+            this.txtPUnitario.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtPUnitario.Modified = false;
+            this.txtPUnitario.Multiline = false;
+            this.txtPUnitario.Name = "txtPUnitario";
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPUnitario.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtPUnitario.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPUnitario.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPUnitario.OnIdleState = stateProperties4;
+            this.txtPUnitario.Padding = new System.Windows.Forms.Padding(2);
+            this.txtPUnitario.PasswordChar = '\0';
+            this.txtPUnitario.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtPUnitario.PlaceholderText = "Precio";
+            this.txtPUnitario.ReadOnly = false;
+            this.txtPUnitario.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtPUnitario.SelectedText = "";
+            this.txtPUnitario.SelectionLength = 0;
+            this.txtPUnitario.SelectionStart = 0;
+            this.txtPUnitario.ShortcutsEnabled = true;
+            this.txtPUnitario.Size = new System.Drawing.Size(137, 33);
+            this.txtPUnitario.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtPUnitario.TabIndex = 11;
+            this.txtPUnitario.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtPUnitario.TextMarginBottom = 0;
+            this.txtPUnitario.TextMarginLeft = 3;
+            this.txtPUnitario.TextMarginTop = 1;
+            this.txtPUnitario.TextPlaceholder = "Precio";
+            this.txtPUnitario.UseSystemPasswordChar = false;
+            this.txtPUnitario.WordWrap = true;
             // 
             // txtArCodigo
             // 
@@ -1193,84 +1271,6 @@
             this.bunifuPictureBox1.TabIndex = 2;
             this.bunifuPictureBox1.TabStop = false;
             this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
-            // 
-            // txtPUnitario
-            // 
-            this.txtPUnitario.AcceptsReturn = false;
-            this.txtPUnitario.AcceptsTab = false;
-            this.txtPUnitario.AnimationSpeed = 200;
-            this.txtPUnitario.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtPUnitario.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtPUnitario.AutoSizeHeight = true;
-            this.txtPUnitario.BackColor = System.Drawing.Color.Transparent;
-            this.txtPUnitario.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtPUnitario.BackgroundImage")));
-            this.txtPUnitario.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtPUnitario.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtPUnitario.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtPUnitario.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtPUnitario.BorderRadius = 15;
-            this.txtPUnitario.BorderThickness = 1;
-            this.txtPUnitario.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
-            this.txtPUnitario.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtPUnitario.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPUnitario.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.txtPUnitario.DefaultText = "";
-            this.txtPUnitario.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtPUnitario.FillColor = System.Drawing.Color.White;
-            this.txtPUnitario.HideSelection = true;
-            this.txtPUnitario.IconLeft = null;
-            this.txtPUnitario.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPUnitario.IconPadding = 10;
-            this.txtPUnitario.IconRight = null;
-            this.txtPUnitario.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPUnitario.Lines = new string[0];
-            this.txtPUnitario.Location = new System.Drawing.Point(468, 2);
-            this.txtPUnitario.Margin = new System.Windows.Forms.Padding(15, 2, 2, 2);
-            this.txtPUnitario.MaxLength = 50;
-            this.txtPUnitario.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtPUnitario.Modified = false;
-            this.txtPUnitario.Multiline = false;
-            this.txtPUnitario.Name = "txtPUnitario";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPUnitario.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtPUnitario.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPUnitario.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPUnitario.OnIdleState = stateProperties4;
-            this.txtPUnitario.Padding = new System.Windows.Forms.Padding(2);
-            this.txtPUnitario.PasswordChar = '\0';
-            this.txtPUnitario.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtPUnitario.PlaceholderText = "Precio";
-            this.txtPUnitario.ReadOnly = false;
-            this.txtPUnitario.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtPUnitario.SelectedText = "";
-            this.txtPUnitario.SelectionLength = 0;
-            this.txtPUnitario.SelectionStart = 0;
-            this.txtPUnitario.ShortcutsEnabled = true;
-            this.txtPUnitario.Size = new System.Drawing.Size(137, 33);
-            this.txtPUnitario.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtPUnitario.TabIndex = 11;
-            this.txtPUnitario.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtPUnitario.TextMarginBottom = 0;
-            this.txtPUnitario.TextMarginLeft = 3;
-            this.txtPUnitario.TextMarginTop = 1;
-            this.txtPUnitario.TextPlaceholder = "Precio";
-            this.txtPUnitario.UseSystemPasswordChar = false;
-            this.txtPUnitario.WordWrap = true;
             // 
             // ViewAddArticle
             // 
