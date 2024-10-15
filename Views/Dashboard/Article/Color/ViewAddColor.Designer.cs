@@ -152,7 +152,7 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Color
             this.txtColorNombre.Lines = new string[0];
             this.txtColorNombre.Location = new System.Drawing.Point(2, 6);
             this.txtColorNombre.Margin = new System.Windows.Forms.Padding(2);
-            this.txtColorNombre.MaxLength = 32767;
+            this.txtColorNombre.MaxLength = 100;
             this.txtColorNombre.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtColorNombre.Modified = false;
             this.txtColorNombre.Multiline = false;
@@ -253,7 +253,7 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Color
             this.txtDescColor.Lines = new string[0];
             this.txtDescColor.Location = new System.Drawing.Point(8, 2);
             this.txtDescColor.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDescColor.MaxLength = 32767;
+            this.txtDescColor.MaxLength = 100;
             this.txtDescColor.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtDescColor.Modified = false;
             this.txtDescColor.Multiline = true;
@@ -281,7 +281,7 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Color
             this.txtDescColor.Padding = new System.Windows.Forms.Padding(2);
             this.txtDescColor.PasswordChar = '\0';
             this.txtDescColor.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtDescColor.PlaceholderText = "Descripción del producto";
+            this.txtDescColor.PlaceholderText = "Descripción del Color";
             this.txtDescColor.ReadOnly = false;
             this.txtDescColor.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtDescColor.SelectedText = "";
@@ -295,7 +295,7 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Color
             this.txtDescColor.TextMarginBottom = 0;
             this.txtDescColor.TextMarginLeft = 5;
             this.txtDescColor.TextMarginTop = 10;
-            this.txtDescColor.TextPlaceholder = "Descripción del producto";
+            this.txtDescColor.TextPlaceholder = "Descripción del Color";
             this.txtDescColor.UseSystemPasswordChar = false;
             this.txtDescColor.WordWrap = true;
             // 

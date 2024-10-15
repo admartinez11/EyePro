@@ -614,7 +614,7 @@
             this.txtBuscar.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBuscar.Lines = new string[0];
             this.txtBuscar.Location = new System.Drawing.Point(3, 3);
-            this.txtBuscar.MaxLength = 32767;
+            this.txtBuscar.MaxLength = 100;
             this.txtBuscar.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBuscar.Modified = false;
             this.txtBuscar.Multiline = false;

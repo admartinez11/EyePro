@@ -152,7 +152,7 @@
             this.txtArNombre.Lines = new string[0];
             this.txtArNombre.Location = new System.Drawing.Point(2, 6);
             this.txtArNombre.Margin = new System.Windows.Forms.Padding(2);
-            this.txtArNombre.MaxLength = 32767;
+            this.txtArNombre.MaxLength = 100;
             this.txtArNombre.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtArNombre.Modified = false;
             this.txtArNombre.Multiline = false;
@@ -253,7 +253,7 @@
             this.txtDescArt.Lines = new string[0];
             this.txtDescArt.Location = new System.Drawing.Point(8, 2);
             this.txtDescArt.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDescArt.MaxLength = 32767;
+            this.txtDescArt.MaxLength = 100;
             this.txtDescArt.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtDescArt.Modified = false;
             this.txtDescArt.Multiline = true;
@@ -281,7 +281,7 @@
             this.txtDescArt.Padding = new System.Windows.Forms.Padding(2);
             this.txtDescArt.PasswordChar = '\0';
             this.txtDescArt.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtDescArt.PlaceholderText = "Descripción del producto";
+            this.txtDescArt.PlaceholderText = "Descripción del Material";
             this.txtDescArt.ReadOnly = false;
             this.txtDescArt.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtDescArt.SelectedText = "";
@@ -295,7 +295,7 @@
             this.txtDescArt.TextMarginBottom = 0;
             this.txtDescArt.TextMarginLeft = 5;
             this.txtDescArt.TextMarginTop = 10;
-            this.txtDescArt.TextPlaceholder = "Descripción del producto";
+            this.txtDescArt.TextPlaceholder = "Descripción del Material";
             this.txtDescArt.UseSystemPasswordChar = false;
             this.txtDescArt.WordWrap = true;
             // 

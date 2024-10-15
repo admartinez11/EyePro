@@ -71,13 +71,12 @@ namespace OpticaMultivisual.Views.Dashboard.Article.TipoArticulo
             this.tableLayoutPanel1.Controls.Add(this.bunifuPictureBox1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.96333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 73.34274F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.69394F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1349, 709);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1012, 576);
             this.tableLayoutPanel1.TabIndex = 15;
             // 
             // bunifuPanel1
@@ -94,11 +93,11 @@ namespace OpticaMultivisual.Views.Dashboard.Article.TipoArticulo
             this.bunifuPanel1.Controls.Add(this.tableLayoutPanel7);
             this.bunifuPanel1.Controls.Add(this.tableLayoutPanel3);
             this.bunifuPanel1.Controls.Add(this.tableLayoutPanel6);
-            this.bunifuPanel1.Location = new System.Drawing.Point(221, 100);
-            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuPanel1.Location = new System.Drawing.Point(166, 82);
+            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(905, 515);
+            this.bunifuPanel1.Size = new System.Drawing.Size(679, 418);
             this.bunifuPanel1.TabIndex = 1;
             // 
             // tableLayoutPanel7
@@ -108,17 +107,17 @@ namespace OpticaMultivisual.Views.Dashboard.Article.TipoArticulo
             this.tableLayoutPanel7.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel7.ColumnCount = 1;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
             this.tableLayoutPanel7.Controls.Add(this.txtTipArNombre, 0, 1);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(41, 119);
-            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(31, 97);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 4;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.843444F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 76.47359F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.841484F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.841484F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(809, 63);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(607, 51);
             this.tableLayoutPanel7.TabIndex = 15;
             // 
             // txtTipArNombre
@@ -151,9 +150,9 @@ namespace OpticaMultivisual.Views.Dashboard.Article.TipoArticulo
             this.txtTipArNombre.IconRight = null;
             this.txtTipArNombre.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTipArNombre.Lines = new string[0];
-            this.txtTipArNombre.Location = new System.Drawing.Point(3, 6);
-            this.txtTipArNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTipArNombre.MaxLength = 32767;
+            this.txtTipArNombre.Location = new System.Drawing.Point(2, 6);
+            this.txtTipArNombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTipArNombre.MaxLength = 100;
             this.txtTipArNombre.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtTipArNombre.Modified = false;
             this.txtTipArNombre.Multiline = false;
@@ -178,7 +177,7 @@ namespace OpticaMultivisual.Views.Dashboard.Article.TipoArticulo
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtTipArNombre.OnIdleState = stateProperties4;
-            this.txtTipArNombre.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTipArNombre.Padding = new System.Windows.Forms.Padding(2);
             this.txtTipArNombre.PasswordChar = '\0';
             this.txtTipArNombre.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtTipArNombre.PlaceholderText = "Nombre";
@@ -188,7 +187,7 @@ namespace OpticaMultivisual.Views.Dashboard.Article.TipoArticulo
             this.txtTipArNombre.SelectionLength = 0;
             this.txtTipArNombre.SelectionStart = 0;
             this.txtTipArNombre.ShortcutsEnabled = true;
-            this.txtTipArNombre.Size = new System.Drawing.Size(556, 44);
+            this.txtTipArNombre.Size = new System.Drawing.Size(417, 35);
             this.txtTipArNombre.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtTipArNombre.TabIndex = 8;
             this.txtTipArNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -211,15 +210,15 @@ namespace OpticaMultivisual.Views.Dashboard.Article.TipoArticulo
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.9937888F));
             this.tableLayoutPanel3.Controls.Add(this.txtDescTipArt, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel5, 1, 3);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(41, 224);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(31, 182);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 4;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 92.06349F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.936508F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 7F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(813, 263);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 6F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(610, 214);
             this.tableLayoutPanel3.TabIndex = 7;
             // 
             // txtDescTipArt
@@ -252,9 +251,9 @@ namespace OpticaMultivisual.Views.Dashboard.Article.TipoArticulo
             this.txtDescTipArt.IconRight = null;
             this.txtDescTipArt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDescTipArt.Lines = new string[0];
-            this.txtDescTipArt.Location = new System.Drawing.Point(12, 2);
-            this.txtDescTipArt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtDescTipArt.MaxLength = 32767;
+            this.txtDescTipArt.Location = new System.Drawing.Point(8, 2);
+            this.txtDescTipArt.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDescTipArt.MaxLength = 100;
             this.txtDescTipArt.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtDescTipArt.Modified = false;
             this.txtDescTipArt.Multiline = true;
@@ -279,24 +278,24 @@ namespace OpticaMultivisual.Views.Dashboard.Article.TipoArticulo
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtDescTipArt.OnIdleState = stateProperties8;
-            this.txtDescTipArt.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDescTipArt.Padding = new System.Windows.Forms.Padding(2);
             this.txtDescTipArt.PasswordChar = '\0';
             this.txtDescTipArt.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtDescTipArt.PlaceholderText = "Descripción del producto";
+            this.txtDescTipArt.PlaceholderText = "Descripción del Tipo de Articulo";
             this.txtDescTipArt.ReadOnly = false;
             this.txtDescTipArt.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtDescTipArt.SelectedText = "";
             this.txtDescTipArt.SelectionLength = 0;
             this.txtDescTipArt.SelectionStart = 0;
             this.txtDescTipArt.ShortcutsEnabled = true;
-            this.txtDescTipArt.Size = new System.Drawing.Size(789, 179);
+            this.txtDescTipArt.Size = new System.Drawing.Size(593, 145);
             this.txtDescTipArt.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtDescTipArt.TabIndex = 0;
             this.txtDescTipArt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtDescTipArt.TextMarginBottom = 0;
             this.txtDescTipArt.TextMarginLeft = 5;
             this.txtDescTipArt.TextMarginTop = 10;
-            this.txtDescTipArt.TextPlaceholder = "Descripción del producto";
+            this.txtDescTipArt.TextPlaceholder = "Descripción del Tipo de Articulo";
             this.txtDescTipArt.UseSystemPasswordChar = false;
             this.txtDescTipArt.WordWrap = true;
             // 
@@ -311,14 +310,14 @@ namespace OpticaMultivisual.Views.Dashboard.Article.TipoArticulo
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.4578F));
             this.tableLayoutPanel5.Controls.Add(this.btnActualizarTipArt, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.btnAgregarTipArt, 2, 0);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(12, 207);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(8, 169);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.18519F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.81481F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(789, 47);
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(593, 38);
             this.tableLayoutPanel5.TabIndex = 7;
             // 
             // btnActualizarTipArt
@@ -363,14 +362,13 @@ namespace OpticaMultivisual.Views.Dashboard.Article.TipoArticulo
             this.btnActualizarTipArt.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnActualizarTipArt.IconSize = 25;
             this.btnActualizarTipArt.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
-            this.btnActualizarTipArt.IdleBorderRadius = 30;
+            this.btnActualizarTipArt.IdleBorderRadius = 24;
             this.btnActualizarTipArt.IdleBorderThickness = 1;
             this.btnActualizarTipArt.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
             this.btnActualizarTipArt.IdleIconLeftImage = null;
             this.btnActualizarTipArt.IdleIconRightImage = null;
             this.btnActualizarTipArt.IndicateFocus = false;
-            this.btnActualizarTipArt.Location = new System.Drawing.Point(298, 4);
-            this.btnActualizarTipArt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnActualizarTipArt.Location = new System.Drawing.Point(224, 3);
             this.btnActualizarTipArt.Name = "btnActualizarTipArt";
             this.btnActualizarTipArt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnActualizarTipArt.OnDisabledState.BorderRadius = 20;
@@ -404,7 +402,7 @@ namespace OpticaMultivisual.Views.Dashboard.Article.TipoArticulo
             this.btnActualizarTipArt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnActualizarTipArt.OnPressedState.IconLeftImage = null;
             this.btnActualizarTipArt.OnPressedState.IconRightImage = null;
-            this.btnActualizarTipArt.Size = new System.Drawing.Size(238, 32);
+            this.btnActualizarTipArt.Size = new System.Drawing.Size(179, 26);
             this.btnActualizarTipArt.TabIndex = 34;
             this.btnActualizarTipArt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnActualizarTipArt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -454,14 +452,13 @@ namespace OpticaMultivisual.Views.Dashboard.Article.TipoArticulo
             this.btnAgregarTipArt.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnAgregarTipArt.IconSize = 25;
             this.btnAgregarTipArt.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
-            this.btnAgregarTipArt.IdleBorderRadius = 30;
+            this.btnAgregarTipArt.IdleBorderRadius = 24;
             this.btnAgregarTipArt.IdleBorderThickness = 1;
             this.btnAgregarTipArt.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
             this.btnAgregarTipArt.IdleIconLeftImage = null;
             this.btnAgregarTipArt.IdleIconRightImage = null;
             this.btnAgregarTipArt.IndicateFocus = false;
-            this.btnAgregarTipArt.Location = new System.Drawing.Point(544, 4);
-            this.btnAgregarTipArt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregarTipArt.Location = new System.Drawing.Point(409, 3);
             this.btnAgregarTipArt.Name = "btnAgregarTipArt";
             this.btnAgregarTipArt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAgregarTipArt.OnDisabledState.BorderRadius = 20;
@@ -495,7 +492,7 @@ namespace OpticaMultivisual.Views.Dashboard.Article.TipoArticulo
             this.btnAgregarTipArt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnAgregarTipArt.OnPressedState.IconLeftImage = null;
             this.btnAgregarTipArt.OnPressedState.IconRightImage = null;
-            this.btnAgregarTipArt.Size = new System.Drawing.Size(241, 32);
+            this.btnAgregarTipArt.Size = new System.Drawing.Size(181, 26);
             this.btnAgregarTipArt.TabIndex = 35;
             this.btnAgregarTipArt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAgregarTipArt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -513,14 +510,14 @@ namespace OpticaMultivisual.Views.Dashboard.Article.TipoArticulo
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.5297F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel6.Controls.Add(this.label1, 0, 1);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(45, 18);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(34, 15);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 3;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.38461F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.76923F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.30769F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(809, 63);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(607, 51);
             this.tableLayoutPanel6.TabIndex = 7;
             // 
             // label1
@@ -529,9 +526,10 @@ namespace OpticaMultivisual.Views.Dashboard.Article.TipoArticulo
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 9);
+            this.label1.Location = new System.Drawing.Point(2, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(253, 45);
+            this.label1.Size = new System.Drawing.Size(190, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tipo Artículo";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -544,10 +542,10 @@ namespace OpticaMultivisual.Views.Dashboard.Article.TipoArticulo
             this.bunifuPictureBox1.BorderRadius = 0;
             this.bunifuPictureBox1.Image = global::OpticaMultivisual.Properties.Resources.EyePro__Logos;
             this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(10, 2);
-            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(8, 2);
+            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(197, 94);
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(148, 76);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox1.TabIndex = 2;
             this.bunifuPictureBox1.TabStop = false;
@@ -555,13 +553,13 @@ namespace OpticaMultivisual.Views.Dashboard.Article.TipoArticulo
             // 
             // ViewAddTipoArt
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1349, 709);
+            this.ClientSize = new System.Drawing.Size(1012, 576);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximumSize = new System.Drawing.Size(1918, 1076);
-            this.MinimumSize = new System.Drawing.Size(1365, 744);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximumSize = new System.Drawing.Size(1442, 882);
+            this.MinimumSize = new System.Drawing.Size(1028, 612);
             this.Name = "ViewAddTipoArt";
             this.Text = "Tipo de Artículo";
             this.tableLayoutPanel1.ResumeLayout(false);

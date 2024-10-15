@@ -82,13 +82,13 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 96.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.5F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1371, 750);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1028, 609);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
             // tableLayoutPanel2
@@ -102,14 +102,14 @@
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel5, 1, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(16, 9);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 8);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1337, 719);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1003, 583);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // tableLayoutPanel3
@@ -123,21 +123,21 @@
             this.tableLayoutPanel3.Controls.Add(this.label2, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(11, 2);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(8, 2);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 86.44068F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1302, 53);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(977, 42);
             this.tableLayoutPanel3.TabIndex = 15;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Location = new System.Drawing.Point(1263, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(948, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(19, 49);
+            this.pictureBox1.Size = new System.Drawing.Size(14, 38);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
@@ -148,9 +148,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
-            this.label2.Location = new System.Drawing.Point(11, 21);
+            this.label2.Location = new System.Drawing.Point(8, 17);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(154, 32);
+            this.label2.Size = new System.Drawing.Size(119, 25);
             this.label2.TabIndex = 7;
             this.label2.Text = "Nueva visita";
             // 
@@ -161,21 +162,21 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.495713F));
             this.tableLayoutPanel4.Controls.Add(this.pictureBox2, 1, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(11, 691);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(8, 561);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1302, 26);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(977, 20);
             this.tableLayoutPanel4.TabIndex = 16;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Location = new System.Drawing.Point(1194, 2);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(895, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(105, 22);
+            this.pictureBox2.Size = new System.Drawing.Size(80, 16);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
@@ -187,14 +188,14 @@
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel6, 0, 2);
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel7, 0, 1);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(11, 59);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(8, 48);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 3;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.976936F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.26853F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.75453F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(1302, 628);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(977, 509);
             this.tableLayoutPanel5.TabIndex = 17;
             // 
             // tableLayoutPanel6
@@ -212,12 +213,12 @@
             this.tableLayoutPanel6.Controls.Add(this.btnNuevoVis, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.btnCliente, 6, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 587);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(2, 476);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(1296, 39);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(973, 31);
             this.tableLayoutPanel6.TabIndex = 1;
             // 
             // btnEliminarVis
@@ -267,8 +268,7 @@
             this.btnEliminarVis.IdleIconLeftImage = null;
             this.btnEliminarVis.IdleIconRightImage = null;
             this.btnEliminarVis.IndicateFocus = false;
-            this.btnEliminarVis.Location = new System.Drawing.Point(506, 4);
-            this.btnEliminarVis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminarVis.Location = new System.Drawing.Point(377, 3);
             this.btnEliminarVis.Name = "btnEliminarVis";
             this.btnEliminarVis.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEliminarVis.OnDisabledState.BorderRadius = 20;
@@ -302,7 +302,7 @@
             this.btnEliminarVis.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnEliminarVis.OnPressedState.IconLeftImage = null;
             this.btnEliminarVis.OnPressedState.IconRightImage = null;
-            this.btnEliminarVis.Size = new System.Drawing.Size(185, 31);
+            this.btnEliminarVis.Size = new System.Drawing.Size(139, 25);
             this.btnEliminarVis.TabIndex = 31;
             this.btnEliminarVis.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEliminarVis.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -357,8 +357,7 @@
             this.btnActVis.IdleIconLeftImage = null;
             this.btnActVis.IdleIconRightImage = null;
             this.btnActVis.IndicateFocus = false;
-            this.btnActVis.Location = new System.Drawing.Point(274, 4);
-            this.btnActVis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnActVis.Location = new System.Drawing.Point(204, 3);
             this.btnActVis.Name = "btnActVis";
             this.btnActVis.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnActVis.OnDisabledState.BorderRadius = 20;
@@ -392,7 +391,7 @@
             this.btnActVis.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnActVis.OnPressedState.IconLeftImage = null;
             this.btnActVis.OnPressedState.IconRightImage = null;
-            this.btnActVis.Size = new System.Drawing.Size(185, 31);
+            this.btnActVis.Size = new System.Drawing.Size(139, 25);
             this.btnActVis.TabIndex = 32;
             this.btnActVis.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnActVis.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -447,8 +446,7 @@
             this.btnNuevoVis.IdleIconLeftImage = null;
             this.btnNuevoVis.IdleIconRightImage = null;
             this.btnNuevoVis.IndicateFocus = false;
-            this.btnNuevoVis.Location = new System.Drawing.Point(42, 4);
-            this.btnNuevoVis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNuevoVis.Location = new System.Drawing.Point(31, 3);
             this.btnNuevoVis.Name = "btnNuevoVis";
             this.btnNuevoVis.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnNuevoVis.OnDisabledState.BorderRadius = 20;
@@ -482,7 +480,7 @@
             this.btnNuevoVis.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnNuevoVis.OnPressedState.IconLeftImage = null;
             this.btnNuevoVis.OnPressedState.IconRightImage = null;
-            this.btnNuevoVis.Size = new System.Drawing.Size(185, 31);
+            this.btnNuevoVis.Size = new System.Drawing.Size(139, 25);
             this.btnNuevoVis.TabIndex = 33;
             this.btnNuevoVis.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnNuevoVis.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -538,8 +536,7 @@
             this.btnCliente.IdleIconLeftImage = null;
             this.btnCliente.IdleIconRightImage = null;
             this.btnCliente.IndicateFocus = false;
-            this.btnCliente.Location = new System.Drawing.Point(1079, 4);
-            this.btnCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCliente.Location = new System.Drawing.Point(810, 3);
             this.btnCliente.Name = "btnCliente";
             this.btnCliente.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCliente.OnDisabledState.BorderRadius = 20;
@@ -573,7 +570,7 @@
             this.btnCliente.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnCliente.OnPressedState.IconLeftImage = null;
             this.btnCliente.OnPressedState.IconRightImage = null;
-            this.btnCliente.Size = new System.Drawing.Size(213, 31);
+            this.btnCliente.Size = new System.Drawing.Size(160, 25);
             this.btnCliente.TabIndex = 34;
             this.btnCliente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnCliente.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -588,13 +585,13 @@
             this.tableLayoutPanel7.Controls.Add(this.dgvInfoVisita, 0, 1);
             this.tableLayoutPanel7.Controls.Add(this.tableLayoutPanel8, 0, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 14);
-            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(2, 12);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 2;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.759124F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.24088F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(1296, 569);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(973, 460);
             this.tableLayoutPanel7.TabIndex = 2;
             // 
             // dgvInfoVisita
@@ -619,8 +616,8 @@
             this.dgvInfoVisita.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvInfoVisita.EnableHeadersVisualStyles = false;
             this.dgvInfoVisita.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
-            this.dgvInfoVisita.Location = new System.Drawing.Point(3, 51);
-            this.dgvInfoVisita.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvInfoVisita.Location = new System.Drawing.Point(2, 42);
+            this.dgvInfoVisita.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvInfoVisita.Name = "dgvInfoVisita";
             this.dgvInfoVisita.ReadOnly = true;
             this.dgvInfoVisita.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -640,7 +637,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvInfoVisita.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvInfoVisita.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvInfoVisita.Size = new System.Drawing.Size(1290, 516);
+            this.dgvInfoVisita.Size = new System.Drawing.Size(969, 416);
             this.dgvInfoVisita.TabIndex = 3;
             // 
             // tableLayoutPanel8
@@ -653,12 +650,12 @@
             this.tableLayoutPanel8.Controls.Add(this.btnBuscar, 2, 0);
             this.tableLayoutPanel8.Controls.Add(this.txtBuscar, 0, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 2);
-            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(2, 2);
+            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(1290, 45);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(969, 36);
             this.tableLayoutPanel8.TabIndex = 2;
             // 
             // btnBuscar
@@ -709,8 +706,7 @@
             this.btnBuscar.IdleIconLeftImage = null;
             this.btnBuscar.IdleIconRightImage = null;
             this.btnBuscar.IndicateFocus = true;
-            this.btnBuscar.Location = new System.Drawing.Point(902, 6);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscar.Location = new System.Drawing.Point(677, 4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnBuscar.OnDisabledState.BorderRadius = 20;
@@ -744,7 +740,7 @@
             this.btnBuscar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnBuscar.OnPressedState.IconLeftImage = null;
             this.btnBuscar.OnPressedState.IconRightImage = null;
-            this.btnBuscar.Size = new System.Drawing.Size(132, 33);
+            this.btnBuscar.Size = new System.Drawing.Size(99, 27);
             this.btnBuscar.TabIndex = 34;
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnBuscar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -782,9 +778,8 @@
             this.txtBuscar.IconRight = null;
             this.txtBuscar.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBuscar.Lines = new string[0];
-            this.txtBuscar.Location = new System.Drawing.Point(4, 4);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtBuscar.MaxLength = 32767;
+            this.txtBuscar.Location = new System.Drawing.Point(3, 3);
+            this.txtBuscar.MaxLength = 100;
             this.txtBuscar.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBuscar.Modified = false;
             this.txtBuscar.Multiline = false;
@@ -809,7 +804,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtBuscar.OnIdleState = stateProperties4;
-            this.txtBuscar.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscar.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.txtBuscar.PasswordChar = '\0';
             this.txtBuscar.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtBuscar.PlaceholderText = "Buscador";
@@ -819,7 +814,7 @@
             this.txtBuscar.SelectionLength = 0;
             this.txtBuscar.SelectionStart = 0;
             this.txtBuscar.ShortcutsEnabled = false;
-            this.txtBuscar.Size = new System.Drawing.Size(872, 37);
+            this.txtBuscar.Size = new System.Drawing.Size(655, 30);
             this.txtBuscar.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtBuscar.TabIndex = 34;
             this.txtBuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -832,14 +827,14 @@
             // 
             // ViewSearchScheduleAppointment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1371, 750);
+            this.ClientSize = new System.Drawing.Size(1028, 609);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximumSize = new System.Drawing.Size(2554, 1315);
-            this.MinimumSize = new System.Drawing.Size(1362, 715);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximumSize = new System.Drawing.Size(1920, 1076);
+            this.MinimumSize = new System.Drawing.Size(1026, 588);
             this.Name = "ViewSearchScheduleAppointment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Visitas";
