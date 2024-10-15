@@ -89,7 +89,6 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tableLayoutPanel1.MinimumSize = new System.Drawing.Size(1365, 748);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1F));
@@ -154,9 +153,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
-            this.label2.Location = new System.Drawing.Point(11, 21);
+            this.label2.Location = new System.Drawing.Point(11, 28);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(175, 32);
+            this.label2.Size = new System.Drawing.Size(137, 25);
             this.label2.TabIndex = 7;
             this.label2.Text = "Nuevo Cliente";
             // 
@@ -275,7 +274,7 @@
             this.btnActCli.IdleIconRightImage = null;
             this.btnActCli.IndicateFocus = false;
             this.btnActCli.Location = new System.Drawing.Point(231, 4);
-            this.btnActCli.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnActCli.Margin = new System.Windows.Forms.Padding(4);
             this.btnActCli.Name = "btnActCli";
             this.btnActCli.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnActCli.OnDisabledState.BorderRadius = 20;
@@ -365,7 +364,7 @@
             this.btnNuevoCli.IdleIconRightImage = null;
             this.btnNuevoCli.IndicateFocus = false;
             this.btnNuevoCli.Location = new System.Drawing.Point(15, 4);
-            this.btnNuevoCli.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNuevoCli.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevoCli.Name = "btnNuevoCli";
             this.btnNuevoCli.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnNuevoCli.OnDisabledState.BorderRadius = 20;
@@ -455,7 +454,7 @@
             this.btnEliminarCli.IdleIconRightImage = null;
             this.btnEliminarCli.IndicateFocus = false;
             this.btnEliminarCli.Location = new System.Drawing.Point(446, 4);
-            this.btnEliminarCli.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminarCli.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminarCli.Name = "btnEliminarCli";
             this.btnEliminarCli.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEliminarCli.OnDisabledState.BorderRadius = 20;
@@ -545,7 +544,7 @@
             this.btnAgregarCon.IdleIconRightImage = null;
             this.btnAgregarCon.IndicateFocus = false;
             this.btnAgregarCon.Location = new System.Drawing.Point(1042, 4);
-            this.btnAgregarCon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregarCon.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregarCon.Name = "btnAgregarCon";
             this.btnAgregarCon.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAgregarCon.OnDisabledState.BorderRadius = 20;
@@ -657,12 +656,12 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.agendarConsultaToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(197, 28);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(170, 26);
             // 
             // agendarConsultaToolStripMenuItem
             // 
             this.agendarConsultaToolStripMenuItem.Name = "agendarConsultaToolStripMenuItem";
-            this.agendarConsultaToolStripMenuItem.Size = new System.Drawing.Size(196, 24);
+            this.agendarConsultaToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.agendarConsultaToolStripMenuItem.Text = "Agendar Consulta";
             // 
             // tableLayoutPanel8
@@ -714,7 +713,7 @@
             this.txtBuscar.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBuscar.Lines = new string[0];
             this.txtBuscar.Location = new System.Drawing.Point(4, 4);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscar.MaxLength = 32767;
             this.txtBuscar.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBuscar.Modified = false;
@@ -740,7 +739,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtBuscar.OnIdleState = stateProperties4;
-            this.txtBuscar.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscar.Padding = new System.Windows.Forms.Padding(4);
             this.txtBuscar.PasswordChar = '\0';
             this.txtBuscar.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtBuscar.PlaceholderText = "Buscador";
@@ -810,7 +809,7 @@
             this.btnBuscar.IdleIconRightImage = null;
             this.btnBuscar.IndicateFocus = true;
             this.btnBuscar.Location = new System.Drawing.Point(895, 6);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnBuscar.OnDisabledState.BorderRadius = 20;

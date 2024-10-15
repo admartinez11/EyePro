@@ -21,6 +21,8 @@ namespace OpticaMultivisual.Views.Dashboard
             InitializeComponent();
             // Se instancia un objeto ControllerDashboard y se le pasa esta instancia de ViewMain como parámetro
             ControllerMain objDash = new ControllerMain(this, username);
+
         }
+            
     }
 }
