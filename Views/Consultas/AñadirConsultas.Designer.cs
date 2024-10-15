@@ -91,12 +91,13 @@ namespace OpticaMultivisual.Views.Consultas
             this.tableLayoutPanel1.Controls.Add(this.bunifuPictureBox1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.93491F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 58.13143F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.93366F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1012, 576);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1349, 709);
             this.tableLayoutPanel1.TabIndex = 14;
             // 
             // bunifuPanel1
@@ -114,11 +115,11 @@ namespace OpticaMultivisual.Views.Consultas
             this.bunifuPanel1.Controls.Add(this.tableLayoutPanel3);
             this.bunifuPanel1.Controls.Add(this.tableLayoutPanel6);
             this.bunifuPanel1.Controls.Add(this.tableLayoutPanel2);
-            this.bunifuPanel1.Location = new System.Drawing.Point(166, 122);
-            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuPanel1.Location = new System.Drawing.Point(221, 150);
+            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(679, 330);
+            this.bunifuPanel1.Size = new System.Drawing.Size(905, 408);
             this.bunifuPanel1.TabIndex = 1;
             // 
             // tableLayoutPanel9
@@ -133,15 +134,15 @@ namespace OpticaMultivisual.Views.Consultas
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.9937888F));
             this.tableLayoutPanel9.Controls.Add(this.txtObservaciones, 1, 0);
             this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel10, 1, 3);
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(34, 175);
-            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(45, 215);
+            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 4;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 89.28571F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.71429F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 52F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(612, 134);
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(816, 167);
             this.tableLayoutPanel9.TabIndex = 12;
             // 
             // txtObservaciones
@@ -174,8 +175,8 @@ namespace OpticaMultivisual.Views.Consultas
             this.txtObservaciones.IconRight = null;
             this.txtObservaciones.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtObservaciones.Lines = new string[0];
-            this.txtObservaciones.Location = new System.Drawing.Point(8, 2);
-            this.txtObservaciones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtObservaciones.Location = new System.Drawing.Point(12, 2);
+            this.txtObservaciones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtObservaciones.MaxLength = 100;
             this.txtObservaciones.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtObservaciones.Modified = false;
@@ -201,7 +202,7 @@ namespace OpticaMultivisual.Views.Consultas
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtObservaciones.OnIdleState = stateProperties4;
-            this.txtObservaciones.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtObservaciones.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtObservaciones.PasswordChar = '\0';
             this.txtObservaciones.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtObservaciones.PlaceholderText = "Observaciones";
@@ -211,7 +212,7 @@ namespace OpticaMultivisual.Views.Consultas
             this.txtObservaciones.SelectionLength = 0;
             this.txtObservaciones.SelectionStart = 0;
             this.txtObservaciones.ShortcutsEnabled = true;
-            this.txtObservaciones.Size = new System.Drawing.Size(595, 62);
+            this.txtObservaciones.Size = new System.Drawing.Size(792, 79);
             this.txtObservaciones.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtObservaciones.TabIndex = 0;
             this.txtObservaciones.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -234,14 +235,14 @@ namespace OpticaMultivisual.Views.Consultas
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.4578F));
             this.tableLayoutPanel10.Controls.Add(this.btnActualizar, 1, 0);
             this.tableLayoutPanel10.Controls.Add(this.btnAgendar, 2, 0);
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(8, 83);
-            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(12, 104);
+            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 2;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.18519F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.81481F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(595, 49);
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(792, 61);
             this.tableLayoutPanel10.TabIndex = 7;
             // 
             // btnActualizar
@@ -286,13 +287,14 @@ namespace OpticaMultivisual.Views.Consultas
             this.btnActualizar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnActualizar.IconSize = 25;
             this.btnActualizar.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
-            this.btnActualizar.IdleBorderRadius = 33;
+            this.btnActualizar.IdleBorderRadius = 41;
             this.btnActualizar.IdleBorderThickness = 1;
             this.btnActualizar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
             this.btnActualizar.IdleIconLeftImage = null;
             this.btnActualizar.IdleIconRightImage = null;
             this.btnActualizar.IndicateFocus = false;
-            this.btnActualizar.Location = new System.Drawing.Point(225, 3);
+            this.btnActualizar.Location = new System.Drawing.Point(299, 4);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnActualizar.OnDisabledState.BorderRadius = 20;
@@ -326,7 +328,7 @@ namespace OpticaMultivisual.Views.Consultas
             this.btnActualizar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnActualizar.OnPressedState.IconLeftImage = null;
             this.btnActualizar.OnPressedState.IconRightImage = null;
-            this.btnActualizar.Size = new System.Drawing.Size(179, 35);
+            this.btnActualizar.Size = new System.Drawing.Size(239, 43);
             this.btnActualizar.TabIndex = 34;
             this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnActualizar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -376,13 +378,14 @@ namespace OpticaMultivisual.Views.Consultas
             this.btnAgendar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnAgendar.IconSize = 25;
             this.btnAgendar.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
-            this.btnAgendar.IdleBorderRadius = 33;
+            this.btnAgendar.IdleBorderRadius = 41;
             this.btnAgendar.IdleBorderThickness = 1;
             this.btnAgendar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
             this.btnAgendar.IdleIconLeftImage = null;
             this.btnAgendar.IdleIconRightImage = null;
             this.btnAgendar.IndicateFocus = false;
-            this.btnAgendar.Location = new System.Drawing.Point(410, 3);
+            this.btnAgendar.Location = new System.Drawing.Point(546, 4);
+            this.btnAgendar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAgendar.Name = "btnAgendar";
             this.btnAgendar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAgendar.OnDisabledState.BorderRadius = 20;
@@ -416,7 +419,7 @@ namespace OpticaMultivisual.Views.Consultas
             this.btnAgendar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnAgendar.OnPressedState.IconLeftImage = null;
             this.btnAgendar.OnPressedState.IconRightImage = null;
-            this.btnAgendar.Size = new System.Drawing.Size(182, 35);
+            this.btnAgendar.Size = new System.Drawing.Size(242, 43);
             this.btnAgendar.TabIndex = 35;
             this.btnAgendar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAgendar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -436,12 +439,12 @@ namespace OpticaMultivisual.Views.Consultas
             this.tableLayoutPanel3.Controls.Add(this.DTPfechaconsulta, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.label6, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.DTPHoraConsulta, 2, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(34, 135);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(19, 2, 2, 2);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(45, 166);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(25, 2, 3, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(607, 37);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(809, 46);
             this.tableLayoutPanel3.TabIndex = 11;
             // 
             // DTPfechaconsulta
@@ -465,11 +468,11 @@ namespace OpticaMultivisual.Views.Consultas
             this.DTPfechaconsulta.IconColor = System.Drawing.Color.White;
             this.DTPfechaconsulta.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.DTPfechaconsulta.LeftTextMargin = 5;
-            this.DTPfechaconsulta.Location = new System.Drawing.Point(172, 2);
-            this.DTPfechaconsulta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DTPfechaconsulta.Location = new System.Drawing.Point(230, 2);
+            this.DTPfechaconsulta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DTPfechaconsulta.MinimumSize = new System.Drawing.Size(4, 32);
             this.DTPfechaconsulta.Name = "DTPfechaconsulta";
-            this.DTPfechaconsulta.Size = new System.Drawing.Size(230, 32);
+            this.DTPfechaconsulta.Size = new System.Drawing.Size(305, 34);
             this.DTPfechaconsulta.TabIndex = 0;
             this.DTPfechaconsulta.Value = new System.DateTime(2024, 9, 1, 11, 29, 0, 0);
             // 
@@ -478,10 +481,10 @@ namespace OpticaMultivisual.Views.Consultas
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(3, 9);
-            this.label6.Margin = new System.Windows.Forms.Padding(3, 9, 3, 0);
+            this.label6.Location = new System.Drawing.Point(4, 11);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 11, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(99, 28);
+            this.label6.Size = new System.Drawing.Size(209, 28);
             this.label6.TabIndex = 1;
             this.label6.Text = "Fecha de la consulta:";
             // 
@@ -490,11 +493,11 @@ namespace OpticaMultivisual.Views.Consultas
             this.DTPHoraConsulta.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.DTPHoraConsulta.CustomFormat = "hh:mm:ss tt";
             this.DTPHoraConsulta.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DTPHoraConsulta.Location = new System.Drawing.Point(415, 8);
-            this.DTPHoraConsulta.Margin = new System.Windows.Forms.Padding(11, 2, 2, 2);
+            this.DTPHoraConsulta.Location = new System.Drawing.Point(554, 12);
+            this.DTPHoraConsulta.Margin = new System.Windows.Forms.Padding(15, 2, 3, 2);
             this.DTPHoraConsulta.Name = "DTPHoraConsulta";
             this.DTPHoraConsulta.ShowUpDown = true;
-            this.DTPHoraConsulta.Size = new System.Drawing.Size(116, 20);
+            this.DTPHoraConsulta.Size = new System.Drawing.Size(153, 22);
             this.DTPHoraConsulta.TabIndex = 2;
             // 
             // tableLayoutPanel6
@@ -508,14 +511,14 @@ namespace OpticaMultivisual.Views.Consultas
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel6.Controls.Add(this.label1, 0, 1);
             this.tableLayoutPanel6.Controls.Add(this.txtConID, 2, 1);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(34, 15);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(45, 18);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 3;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.38461F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.76923F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.30769F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(607, 51);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(809, 63);
             this.tableLayoutPanel6.TabIndex = 7;
             // 
             // label1
@@ -524,10 +527,9 @@ namespace OpticaMultivisual.Views.Consultas
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(2, 7);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(3, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(190, 36);
+            this.label1.Size = new System.Drawing.Size(253, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "Consulta";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -562,8 +564,8 @@ namespace OpticaMultivisual.Views.Consultas
             this.txtConID.IconRight = null;
             this.txtConID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtConID.Lines = new string[0];
-            this.txtConID.Location = new System.Drawing.Point(518, 9);
-            this.txtConID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtConID.Location = new System.Drawing.Point(690, 11);
+            this.txtConID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtConID.MaxLength = 32767;
             this.txtConID.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtConID.Modified = false;
@@ -589,7 +591,7 @@ namespace OpticaMultivisual.Views.Consultas
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtConID.OnIdleState = stateProperties8;
-            this.txtConID.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtConID.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtConID.PasswordChar = '\0';
             this.txtConID.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtConID.PlaceholderText = "ID";
@@ -599,7 +601,7 @@ namespace OpticaMultivisual.Views.Consultas
             this.txtConID.SelectionLength = 0;
             this.txtConID.SelectionStart = 0;
             this.txtConID.ShortcutsEnabled = true;
-            this.txtConID.Size = new System.Drawing.Size(87, 32);
+            this.txtConID.Size = new System.Drawing.Size(116, 39);
             this.txtConID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtConID.TabIndex = 1;
             this.txtConID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -629,14 +631,14 @@ namespace OpticaMultivisual.Views.Consultas
             this.tableLayoutPanel2.Controls.Add(this.cmbVisita, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.cmbEmpleado, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.bunifuPanel2, 0, 1);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(34, 70);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(45, 86);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.66667F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(607, 62);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(809, 76);
             this.tableLayoutPanel2.TabIndex = 6;
             // 
             // label5
@@ -645,10 +647,10 @@ namespace OpticaMultivisual.Views.Consultas
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(280, 7);
-            this.label5.Margin = new System.Windows.Forms.Padding(15, 0, 3, 0);
+            this.label5.Location = new System.Drawing.Point(373, 6);
+            this.label5.Margin = new System.Windows.Forms.Padding(20, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 13);
+            this.label5.Size = new System.Drawing.Size(85, 19);
             this.label5.TabIndex = 11;
             this.label5.Text = "Profesional";
             // 
@@ -658,9 +660,10 @@ namespace OpticaMultivisual.Views.Consultas
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(124, 7);
+            this.label4.Location = new System.Drawing.Point(165, 6);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(45, 19);
             this.label4.TabIndex = 10;
             this.label4.Text = "Visita";
             // 
@@ -683,9 +686,9 @@ namespace OpticaMultivisual.Views.Consultas
             this.cmbEstado.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
             this.cmbEstado.Cursor = System.Windows.Forms.Cursors.Default;
             this.cmbEstado.CustomCheckmarkImage = null;
-            this.cmbEstado.Location = new System.Drawing.Point(472, 26);
-            this.cmbEstado.Margin = new System.Windows.Forms.Padding(30, 3, 3, 3);
-            this.cmbEstado.MinimumSize = new System.Drawing.Size(17, 17);
+            this.cmbEstado.Location = new System.Drawing.Point(629, 32);
+            this.cmbEstado.Margin = new System.Windows.Forms.Padding(40, 4, 4, 4);
+            this.cmbEstado.MinimumSize = new System.Drawing.Size(23, 21);
             this.cmbEstado.Name = "cmbEstado";
             this.cmbEstado.OnCheck.BorderColor = System.Drawing.Color.PaleTurquoise;
             this.cmbEstado.OnCheck.BorderRadius = 12;
@@ -713,7 +716,7 @@ namespace OpticaMultivisual.Views.Consultas
             this.cmbEstado.OnUncheck.BorderRadius = 12;
             this.cmbEstado.OnUncheck.BorderThickness = 1;
             this.cmbEstado.OnUncheck.CheckBoxColor = System.Drawing.Color.WhiteSmoke;
-            this.cmbEstado.Size = new System.Drawing.Size(21, 21);
+            this.cmbEstado.Size = new System.Drawing.Size(28, 28);
             this.cmbEstado.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
             this.cmbEstado.TabIndex = 7;
             this.cmbEstado.ThreeState = false;
@@ -725,9 +728,10 @@ namespace OpticaMultivisual.Views.Consultas
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(503, 24);
+            this.label2.Location = new System.Drawing.Point(671, 27);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 26);
+            this.label2.Size = new System.Drawing.Size(74, 38);
             this.label2.TabIndex = 8;
             this.label2.Text = "Consulta Realizada";
             // 
@@ -737,9 +741,10 @@ namespace OpticaMultivisual.Views.Consultas
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(3, 7);
+            this.label3.Location = new System.Drawing.Point(4, 6);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.Size = new System.Drawing.Size(66, 19);
             this.label3.TabIndex = 9;
             this.label3.Text = "Consulta";
             // 
@@ -779,9 +784,10 @@ namespace OpticaMultivisual.Views.Consultas
             this.cmbVisita.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.cmbVisita.ItemHighLightForeColor = System.Drawing.Color.White;
             this.cmbVisita.ItemTopMargin = 3;
-            this.cmbVisita.Location = new System.Drawing.Point(124, 23);
+            this.cmbVisita.Location = new System.Drawing.Point(165, 29);
+            this.cmbVisita.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbVisita.Name = "cmbVisita";
-            this.cmbVisita.Size = new System.Drawing.Size(138, 32);
+            this.cmbVisita.Size = new System.Drawing.Size(183, 32);
             this.cmbVisita.TabIndex = 13;
             this.cmbVisita.Text = null;
             this.cmbVisita.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -823,9 +829,10 @@ namespace OpticaMultivisual.Views.Consultas
             this.cmbEmpleado.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.cmbEmpleado.ItemHighLightForeColor = System.Drawing.Color.White;
             this.cmbEmpleado.ItemTopMargin = 3;
-            this.cmbEmpleado.Location = new System.Drawing.Point(268, 23);
+            this.cmbEmpleado.Location = new System.Drawing.Point(357, 29);
+            this.cmbEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbEmpleado.Name = "cmbEmpleado";
-            this.cmbEmpleado.Size = new System.Drawing.Size(171, 32);
+            this.cmbEmpleado.Size = new System.Drawing.Size(227, 32);
             this.cmbEmpleado.TabIndex = 14;
             this.cmbEmpleado.Text = null;
             this.cmbEmpleado.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -841,11 +848,11 @@ namespace OpticaMultivisual.Views.Consultas
             this.bunifuPanel2.BorderThickness = 1;
             this.bunifuPanel2.Controls.Add(this.txtDuiCon);
             this.bunifuPanel2.Controls.Add(this.txtNombreCon);
-            this.bunifuPanel2.Location = new System.Drawing.Point(2, 22);
-            this.bunifuPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuPanel2.Location = new System.Drawing.Point(3, 27);
+            this.bunifuPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuPanel2.Name = "bunifuPanel2";
             this.bunifuPanel2.ShowBorders = true;
-            this.bunifuPanel2.Size = new System.Drawing.Size(116, 29);
+            this.bunifuPanel2.Size = new System.Drawing.Size(155, 36);
             this.bunifuPanel2.TabIndex = 15;
             // 
             // txtDuiCon
@@ -879,7 +886,7 @@ namespace OpticaMultivisual.Views.Consultas
             this.txtDuiCon.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDuiCon.Lines = new string[0];
             this.txtDuiCon.Location = new System.Drawing.Point(0, 0);
-            this.txtDuiCon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDuiCon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDuiCon.MaxLength = 32767;
             this.txtDuiCon.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtDuiCon.Modified = false;
@@ -905,7 +912,7 @@ namespace OpticaMultivisual.Views.Consultas
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtDuiCon.OnIdleState = stateProperties12;
-            this.txtDuiCon.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDuiCon.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDuiCon.PasswordChar = '\0';
             this.txtDuiCon.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtDuiCon.PlaceholderText = "Enter text";
@@ -915,7 +922,7 @@ namespace OpticaMultivisual.Views.Consultas
             this.txtDuiCon.SelectionLength = 0;
             this.txtDuiCon.SelectionStart = 0;
             this.txtDuiCon.ShortcutsEnabled = true;
-            this.txtDuiCon.Size = new System.Drawing.Size(116, 29);
+            this.txtDuiCon.Size = new System.Drawing.Size(155, 36);
             this.txtDuiCon.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtDuiCon.TabIndex = 16;
             this.txtDuiCon.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -964,8 +971,9 @@ namespace OpticaMultivisual.Views.Consultas
             this.txtNombreCon.ItemHighLightForeColor = System.Drawing.Color.White;
             this.txtNombreCon.ItemTopMargin = 3;
             this.txtNombreCon.Location = new System.Drawing.Point(0, 0);
+            this.txtNombreCon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombreCon.Name = "txtNombreCon";
-            this.txtNombreCon.Size = new System.Drawing.Size(116, 32);
+            this.txtNombreCon.Size = new System.Drawing.Size(155, 32);
             this.txtNombreCon.TabIndex = 15;
             this.txtNombreCon.Text = null;
             this.txtNombreCon.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -979,10 +987,10 @@ namespace OpticaMultivisual.Views.Consultas
             this.bunifuPictureBox1.BorderRadius = 0;
             this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
             this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(8, 2);
-            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(10, 2);
+            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(148, 116);
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(197, 144);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox1.TabIndex = 2;
             this.bunifuPictureBox1.TabStop = false;
@@ -990,14 +998,14 @@ namespace OpticaMultivisual.Views.Consultas
             // 
             // AñadirConsulta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1012, 576);
+            this.ClientSize = new System.Drawing.Size(1349, 709);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.MaximumSize = new System.Drawing.Size(1443, 883);
-            this.MinimumSize = new System.Drawing.Size(1028, 613);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximumSize = new System.Drawing.Size(1918, 1076);
+            this.MinimumSize = new System.Drawing.Size(1365, 744);
             this.Name = "AñadirConsulta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta";
