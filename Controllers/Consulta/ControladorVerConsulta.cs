@@ -45,6 +45,7 @@ namespace OpticaMultivisual.Controllers.Consulta
             //AñadirConsulta_Load();
              ObjAañadirConsulta.txtNombreCon.Visible = false;
              ObjAañadirConsulta.txtNombreCon.Enabled = false;
+            ObjAañadirConsulta.txtDuiCon.Enabled = false;
         }
 
         //private void AñadirConsulta_Load()
@@ -187,7 +188,7 @@ namespace OpticaMultivisual.Controllers.Consulta
                     DAOConsulta DAOActualizar = new DAOConsulta();
 
                     // Verificar si los elementos seleccionados en los ComboBox son válidos
-                    if (
+                    if (ObjAañadirConsulta.txtNombreCon.SelectedItem == null ||
                         ObjAañadirConsulta.cmbVisita.SelectedItem == null ||
                         ObjAañadirConsulta.cmbEmpleado.SelectedItem == null)
                     {
@@ -196,10 +197,12 @@ namespace OpticaMultivisual.Controllers.Consulta
                         return;
                     }
 
-                    // Accediendo directamente a las propiedades de DataRowView para los ComboBox
-                    //DAOActualizar.Cli_DUI = ((DataRowView)ObjAañadirConsulta.cmbDUI.SelectedItem)["cli_DUI"].ToString().Trim();
-                    //DAOActualizar.Vis_ID = ((DataRowView)ObjAañadirConsulta.cmbVisita.SelectedItem)["vis_ID"].ToString().Trim();
-                    //DAOActualizar.Emp_ID = ((DataRowView)ObjAañadirConsulta.cmbEmpleado.SelectedItem)["emp_ID"].ToString().Trim();
+                    //Accediendo directamente a las propiedades de DataRowView para los ComboBox
+                    // Asegúrate de que el SelectedItem no es null antes de acceder a las propiedades
+                    DAOActualizar.Cli_DUI = ((DataRowView)ObjAañadirConsulta.txtNombreCon.SelectedItem)["cli_DUI"].ToString().Trim();
+                    DAOActualizar.Vis_ID = int.Parse(((DataRowView)ObjAañadirConsulta.cmbVisita.SelectedItem)["vis_ID"].ToString().Trim());
+                    DAOActualizar.Emp_ID = int.Parse(((DataRowView)ObjAañadirConsulta.cmbEmpleado.SelectedItem)["emp_ID"].ToString().Trim());
+
 
                     if (ObjAañadirConsulta.cmbEstado.Checked == true)
                     {
@@ -275,20 +278,46 @@ namespace OpticaMultivisual.Controllers.Consulta
             {
                 return false;
             }
-
-            if (!CoincidenciaCampos())
+            // Obtener los valores de ambos ComboBox
+            int vis_ID = Convert.ToInt32(((DataRowView)ObjAañadirConsulta.cmbVisita.SelectedItem)["vis_ID"].ToString().Trim());
+            string cli_DUI = ((DataRowView)ObjAañadirConsulta.txtNombreCon.SelectedItem)["cli_DUI"].ToString().Trim();
+            string cli_DUI2 = ObjAañadirConsulta.txtDuiCon.Text.Trim();  // Obtener el valor de DUI2 desde el TextBox
+            // Llamar a la función CoincidenciaCampos para comparar
+            if (!CoincidenciaCampos(vis_ID, cli_DUI, cli_DUI2))
             {
-                string duiConText = ObjAañadirConsulta.txtDuiCon.Text.Trim();
-                string cmbVisitaValue = ObjAañadirConsulta.cmbVisita.SelectedValue.ToString().Trim();
-                string nombreConText = ObjAañadirConsulta.txtNombreCon.Text.Trim();
-                string cmbNombreVisitaValue = ObjAañadirConsulta.cmbVisita.SelectedValue.ToString().Trim();
-
-                // Mostrar los valores para depuración
-                MessageBox.Show($"DUI Con: {duiConText}, CMB Visita Value: {cmbVisitaValue}", "Informaion", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                MessageBox.Show($"Nombre Con: {nombreConText}, CMB Nombre Visita Value: {cmbNombreVisitaValue}", "informacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false; 
+                return false;
             }
 
+            // Finalmente, verifica que el texto en txtObservaciones sea válido
+            if (!VerificarTexto(ObjAañadirConsulta.txtObservaciones.Text))
+            {
+                return false;
+            }
+
+            return true;
+        }
+        private bool ValidarCamposa()
+        {
+            // Primero, verifica que todos los campos obligatorios estén llenos
+            if (!VerificacionCamposLlenosa())
+            {
+                return false;
+            }
+
+            // Luego, verifica que la fecha sea válida
+            if (!VerificarFecha())
+            {
+                return false;
+            }
+            // Obtener los valores de ambos ComboBox
+            int vis_ID = Convert.ToInt32(((DataRowView)ObjAañadirConsulta.cmbVisita.SelectedItem)["vis_ID"].ToString().Trim());
+            //string cli_DUI = ((DataRowView)ObjAañadirConsulta.txtNombreCon.SelectedItem)["cli_DUI"].ToString().Trim();
+            string cli_DUI2 = ObjAañadirConsulta.txtDuiCon.Text.Trim();  // Obtener el valor de DUI2 desde el TextBox
+            // Llamar a la función CoincidenciaCampos para comparar
+            if (!CoincidenciaCamposa(vis_ID, cli_DUI2))
+            {
+                return false;
+            }
 
             // Finalmente, verifica que el texto en txtObservaciones sea válido
             if (!VerificarTexto(ObjAañadirConsulta.txtObservaciones.Text))
@@ -299,49 +328,78 @@ namespace OpticaMultivisual.Controllers.Consulta
             return true;
         }
 
-        private bool CoincidenciaCampos()
+        public bool CoincidenciaCampos(int vis_ID, string cli_DUI1, string cli_DUI2)
         {
-            //try
-            //{
-            //    // Verificar si el txtDuiCon tiene un valor y si el cmbVisita tiene un elemento seleccionado
-            //    if (string.IsNullOrEmpty(ObjAañadirConsulta.txtDuiCon.Text) || ObjAañadirConsulta.cmbVisita.SelectedValue == null)
-            //    {
-            //        return false; // Retorna false si alguno de los campos es nulo o no tiene valor
-            //    }
+            // Instancia del DAO para acceder a la base de datos
+            var dao = new DAOConsulta();  // Reemplaza 'DAOConsulta' por el nombre de tu DAO
 
-            //    // Verificar si txtNombreCon tiene un valor y si cmbNombreVisita tiene un elemento seleccionado
-            //    if (string.IsNullOrEmpty(ObjAañadirConsulta.txtNombreCon.Text) || ObjAañadirConsulta.cmbVisita.SelectedValue == null)
-            //    {
-            //        return false; // Retorna false si alguno de los campos es nulo o no tiene valor
-            //    }
+            // Obtener el DUI desde el DAO basado en el vis_ID
+            string duiDeVisita = dao.ObtenerDUIPorVisita(vis_ID);
 
-            //    // Obtener los valores a comparar
-            //    string duiConText = ObjAañadirConsulta.txtDuiCon.Text.Trim();
-            //    string cmbVisitaValue = ObjAañadirConsulta.cmbVisita.SelectedValue.ToString().Trim();
-            //    string nombreConText = ObjAañadirConsulta.txtNombreCon.Text.Trim();
-            //    string cmbNombreVisitaValue = ObjAañadirConsulta.cmbVisita.SelectedValue.ToString().Trim();
+            // Obtener los valores correctamente
+            string valorDUIComboBox = ((DataRowView)ObjAañadirConsulta.txtNombreCon.SelectedItem)["cli_DUI"].ToString().Trim();  // Para el ComboBox
+            string valorDUITextBox = ObjAañadirConsulta.txtDuiCon.Text.Trim();  // Para el TextBox
 
-            //    // Mostrar los valores para depuración
-            //    Console.WriteLine($"DUI Con: {duiConText}, CMB Visita Value: {cmbVisitaValue}");
-            //    Console.WriteLine($"Nombre Con: {nombreConText}, CMB Nombre Visita Value: {cmbNombreVisitaValue}");
-
-            //    // Verificar si el valor de txtDuiCon coincide con el valor del cmbVisita
-            //    bool txt1Cmb1Coinciden = duiConText == cmbVisitaValue;
-
-            //    // Verificar si txtNombreCon coincide con el valor de cmbNombreVisita
-            //    bool cmb1Cmb2Coinciden = nombreConText == cmbNombreVisitaValue;
-
-            //    // Retorna true solo si ambas condiciones se cumplen
-            //    return txt1Cmb1Coinciden && cmb1Cmb2Coinciden;
-            //}
-            //catch (Exception ex)
-            //{
-            //    // Si ocurre un problema inesperado, muestra el mensaje de error y retorna false
-            //    Console.WriteLine($"Error: {ex.Message}");
-            //    return false;
-            //}
-            return true;
+            if (duiDeVisita != null)
+            {
+                // Comparar los valores con cualquiera de los dos (ComboBox y TextBox)
+                if (duiDeVisita.Trim() == valorDUIComboBox || duiDeVisita.Trim() == valorDUITextBox)
+                {
+                    // Si coinciden con cualquiera de los dos, retornar true
+                    return true;
+                }
+                else
+                {
+                    // Si no coinciden, mostrar mensaje y retornar false
+                    MessageBox.Show("Los valores NO coinciden.\nValor en cmbDUI: " + valorDUIComboBox +
+                                    "\nValor en txtDuiCon: " + valorDUITextBox +
+                                    "\nValor en la base de datos: " + duiDeVisita,
+                                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+            }
+            else
+            {
+                MessageBox.Show("No se encontró un DUI para el vis_ID proporcionado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
         }
+        public bool CoincidenciaCamposa(int vis_ID, string cli_DUI2)
+        {
+            // Instancia del DAO para acceder a la base de datos
+            var dao = new DAOConsulta();  // Reemplaza 'DAOConsulta' por el nombre de tu DAO
+
+            // Obtener el DUI desde el DAO basado en el vis_ID
+            string duiDeVisita = dao.ObtenerDUIPorVisita(vis_ID);
+
+            // Obtener el valor del TextBox (DUI)
+            string valorDUITextBox = ObjAañadirConsulta.txtDuiCon.Text.Trim();  // Para el TextBox
+
+            if (duiDeVisita != null)
+            {
+                // Comparar el valor del TextBox con el DUI de la base de datos
+                if (duiDeVisita.Trim() == valorDUITextBox)
+                {
+                    // Si coinciden, retornar true
+                    return true;
+                }
+                else
+                {
+                    // Si no coinciden, mostrar mensaje y retornar false
+                    MessageBox.Show("Los valores NO coinciden.\nValor en txtDuiCon: " + valorDUITextBox +
+                                    "\nValor en la base de datos: " + duiDeVisita,
+                                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+            }
+            else
+            {
+                MessageBox.Show("No se encontró un DUI para el vis_ID proporcionado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+
+
         private bool VerificacionCamposLlenos()
         {
             // Validar que los campos obligatorios estén llenos
@@ -351,6 +409,30 @@ namespace OpticaMultivisual.Controllers.Consulta
                 return false;
             }
 
+            if (string.IsNullOrWhiteSpace(ObjAañadirConsulta.cmbVisita.Text))
+            {
+                MessageBox.Show("Por favor, seleccione una Visita.", "Campo Obligatorio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            if (string.IsNullOrWhiteSpace(ObjAañadirConsulta.cmbEmpleado.Text))
+            {
+                MessageBox.Show("Por favor, seleccione un Empleado.", "Campo Obligatorio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            if (string.IsNullOrWhiteSpace(ObjAañadirConsulta.txtObservaciones.Text))
+            {
+                MessageBox.Show("Por favor, ingrese alguna Observación.", "Campo Obligatorio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            // Si todas las validaciones pasan, se retorna true.
+            return true;
+        }
+        private bool VerificacionCamposLlenosa()
+        {
+            // Validar que los campos obligatorios estén llenos
             if (string.IsNullOrWhiteSpace(ObjAañadirConsulta.cmbVisita.Text))
             {
                 MessageBox.Show("Por favor, seleccione una Visita.", "Campo Obligatorio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -447,7 +529,7 @@ namespace OpticaMultivisual.Controllers.Consulta
             try
             {
                 // Asignar el valor directamente al TextBox (txtDuiCon)
-                ObjAañadirConsulta.txtNombreCon.Text = cli_DUI;
+                ObjAañadirConsulta.txtDuiCon.Text = cli_DUI;
             }
             catch (Exception ex)
             {
@@ -457,30 +539,26 @@ namespace OpticaMultivisual.Controllers.Consulta
         }
         public void ActualizarRegistroCon(object sender, EventArgs e)
         {
-            try
+            if (ValidarCamposa())
             {
-
-                // Asegúrate de que el TextBox del DUI no esté vacío
-                if (string.IsNullOrWhiteSpace(ObjAañadirConsulta.txtNombreCon.Text.Trim()))
-                {
-                    MessageBox.Show("El campo DUI no puede estar vacío.", "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
                 // Crear una nueva instancia de DAOConsulta con los valores correctos
                 DAOConsulta Consulta = new DAOConsulta
                 {
-                    Con_ID = int.Parse(ObjAañadirConsulta.txtConID.Text.Trim()),
-                    Cli_DUI = ObjAañadirConsulta.txtNombreCon.Text.Trim(),  // Asignar el DUI desde el TextBox
                     Con_fecha = DateTime.Parse(ObjAañadirConsulta.DTPfechaconsulta.Text.Trim()),
                     Con_obser = ObjAañadirConsulta.txtObservaciones.Text.Trim(),
+                    Cli_DUI = ObjAañadirConsulta.txtDuiCon.Text.Trim(),
                     Vis_ID = int.Parse(ObjAañadirConsulta.cmbVisita.SelectedValue.ToString().Trim()),
                     Emp_ID = int.Parse(ObjAañadirConsulta.cmbEmpleado.SelectedValue.ToString().Trim()),
                     Con_hora = DateTime.Parse(ObjAañadirConsulta.DTPHoraConsulta.Text.Trim())
-                    
                 };
-
-                Consulta.Est_ID = ObjAañadirConsulta.cmbEstado.Checked;
+                if (ObjAañadirConsulta.cmbEstado.Checked == true)
+                {
+                    Consulta.Est_ID = true;
+                }
+                else
+                {
+                    Consulta.Est_ID = false;
+                }
 
                 // Registrar la consulta en la base de datos
                 int valorRetornado = Consulta.RegistrarCliente();
@@ -502,12 +580,7 @@ namespace OpticaMultivisual.Controllers.Consulta
                                     MessageBoxIcon.Error);
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error inesperado: " + ex.Message,
-                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
-        
     }
 }
+

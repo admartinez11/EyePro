@@ -148,29 +148,30 @@ namespace OpticaMultivisual.Models.DAO
             try
             {
                 command.Connection = getConnection();
-                string query = "UPDATE Consulta SET " +
-                "cli_DUI = @param1, " +
-                "vis_ID = @param2, " +
-                "con_fecha = @param3, " +
-                "con_obser = @param4, " +
-                "emp_ID = @param5, " +
-                "con_hora = @param6, " +
-                "est_ID = @param7 " +
-                "WHERE con_ID = @param10";
 
+                string query = "UPDATE Consulta SET " +
+                               "cli_DUI = @param1, " +
+                               "vis_ID = @param2, " +
+                               "con_fecha = @param3, " +
+                               "con_obser = @param4, " +
+                               "emp_ID = @param5, " +
+                               "con_hora = @param6, " +
+                               "est_ID = @param7 " +
+                               "WHERE con_ID = @param8";
 
                 SqlCommand cmd = new SqlCommand(query, command.Connection);
+
+                // Asignando los valores a cada parámetro
                 cmd.Parameters.AddWithValue("@param1", Cli_DUI);
-                cmd.Parameters.AddWithValue("@param2", Vis_ID);  // Asignación corregida
+                cmd.Parameters.AddWithValue("@param2", Vis_ID);
                 cmd.Parameters.AddWithValue("@param3", Con_fecha);
                 cmd.Parameters.AddWithValue("@param4", Con_obser);
                 cmd.Parameters.AddWithValue("@param5", Emp_ID);
                 cmd.Parameters.AddWithValue("@param6", Con_hora);
                 cmd.Parameters.AddWithValue("@param7", Est_ID);
-                cmd.Parameters.AddWithValue("@param10", Con_ID);
+                cmd.Parameters.AddWithValue("@param8", Con_ID);
 
                 int respuesta = cmd.ExecuteNonQuery();
-
                 return respuesta;
             }
             catch (SqlException ex)
@@ -183,6 +184,28 @@ namespace OpticaMultivisual.Models.DAO
                 getConnection().Close();
             }
         }
+        public string ObtenerDUIPorVisita(int vis_ID)
+        {
+            try
+            {
+                command.Connection = getConnection();
+                string query = "SELECT vis_dui FROM Visita WHERE vis_ID = @vis_ID";
+                SqlCommand cmd = new SqlCommand(query, command.Connection);
+                cmd.Parameters.AddWithValue("@vis_ID", vis_ID);
+                return (string)cmd.ExecuteScalar();
+            }
+            catch (SqlException ex)
+            {
+                // Manejo de errores
+                MessageBox.Show("Error al consultar el DUI: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+            finally
+            {
+                getConnection().Close();
+            }
+        }
+
 
         public DataSet ObtenerInfoConsulta()
         {
@@ -282,13 +305,13 @@ namespace OpticaMultivisual.Models.DAO
             {
 
                 command.Connection = getConnection();
-                string query = $"SELECT * FROM Consulta WHERE cli_DUI LIKE '%{valor}%'";
+                string query = $"SELECT * FROM VistaConsultas WHERE DUI del Cliente LIKE '%{valor}%'";
                 SqlCommand cmd = new SqlCommand(query, command.Connection);
                 cmd.ExecuteNonQuery();
                 SqlDataAdapter adp = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 //Rellenamos con el Adaptador el DataSet diciendole de que tabla provienen los datos
-                adp.Fill(ds, "Consulta");
+                adp.Fill(ds, "VistaConsultas");
                 return ds;
             }
             catch (Exception)
