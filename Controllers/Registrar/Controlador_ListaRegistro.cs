@@ -44,7 +44,7 @@ namespace OpticaMultivisual.Controllers
         {
             DAORegistro Objadminregistro = new DAORegistro();
             DataSet ds = Objadminregistro.BuscarClientes(ObjVista.txtBuscar.Text.Trim());
-            ObjVista.dgvInfoClientes.DataSource = ds.Tables["Cliente"];
+            ObjVista.dgvInfoClientes.DataSource = ds.Tables["VistaClientes"];
         }
         public void AgregarCliente(object sender, EventArgs e)
         {
@@ -86,13 +86,16 @@ namespace OpticaMultivisual.Controllers
                 ObjVista.dgvInfoClientes[6, pos].Value.ToString(),    // Correo_E
                 ObjVista.dgvInfoClientes[7, pos].Value.ToString(),    // Profesión
                 ObjVista.dgvInfoClientes[8, pos].Value.ToString(),    // Padecimientos
-                                                                      // Manejar el valor booleano de manera segura
-                bool.TryParse(ObjVista.dgvInfoClientes[9, pos].Value.ToString(), out bool menor) ? menor : false
+                (bool.Parse(ObjVista.dgvInfoClientes[9, pos].Value.ToString()) ? true : false) // Valor booleano para menor
             );
+
+            // Si deseas un manejo adicional del estado después del constructor
+            openForm.checkmenor.Checked = bool.Parse(ObjVista.dgvInfoClientes[9, pos].Value.ToString());
 
             openForm.ShowDialog();
             ActualizarDatos();
         }
+
 
         public void AgregarConsulta(object sender, EventArgs e)
         {

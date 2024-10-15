@@ -351,9 +351,7 @@ namespace OpticaMultivisual.Controllers.Consulta
                 else
                 {
                     // Si no coinciden, mostrar mensaje y retornar false
-                    MessageBox.Show("Los valores NO coinciden.\nValor en cmbDUI: " + valorDUIComboBox +
-                                    "\nValor en txtDuiCon: " + valorDUITextBox +
-                                    "\nValor en la base de datos: " + duiDeVisita,
+                    MessageBox.Show("Los valores NO coinciden, Verifique que el DUI conincidan",
                                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return false;
                 }
@@ -386,8 +384,7 @@ namespace OpticaMultivisual.Controllers.Consulta
                 else
                 {
                     // Si no coinciden, mostrar mensaje y retornar false
-                    MessageBox.Show("Los valores NO coinciden.\nValor en txtDuiCon: " + valorDUITextBox +
-                                    "\nValor en la base de datos: " + duiDeVisita,
+                    MessageBox.Show("Los valores NO coinciden, Verifique que el DUI conincidan",
                                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return false;
                 }

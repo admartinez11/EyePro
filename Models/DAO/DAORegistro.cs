@@ -99,18 +99,14 @@ namespace OpticaMultivisual.Models.DAO
         {
             try
             {
-
-                Command.Connection = getConnection();
-                string query = $"SELECT * FROM Cliente WHERE cli_nombre LIKE '%{valor}%' OR cli_dui LIKE '%{valor}%' OR cli_apellido LIKE '%{valor}%'";
-                SqlCommand cmd = new SqlCommand(query, Command.Connection);
-                cmd.ExecuteNonQuery();
+                string query = $"SELECT * FROM VistaClientes WHERE Nombre LIKE '%{valor}%' OR DUI LIKE '%{valor}%' OR Apellido LIKE '%{valor}%'";
+                SqlCommand cmd = new SqlCommand(query, getConnection());
                 SqlDataAdapter adp = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
-                //Rellenamos con el Adaptador el DataSet diciendole de que tabla provienen los datos
-                adp.Fill(ds, "Cliente");
+                adp.Fill(ds, "VistaClientes");
                 return ds;
             }
-            catch (Exception)
+            catch
             {
                 return null;
             }
@@ -119,6 +115,7 @@ namespace OpticaMultivisual.Models.DAO
                 getConnection().Close();
             }
         }
+
         public int ActualizarCliente()
         {
             try

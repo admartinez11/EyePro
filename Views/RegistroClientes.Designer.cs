@@ -80,6 +80,7 @@ namespace AdministrarClientes.View.RegistroCliente
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties47 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties48 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.txtpadecimientos = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -104,8 +105,10 @@ namespace AdministrarClientes.View.RegistroCliente
             this.bunifuTextBox3 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuTextBox2 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuTextBox6 = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.bunifuPanel1.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
@@ -114,7 +117,7 @@ namespace AdministrarClientes.View.RegistroCliente
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
+            this.bunifuPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -128,7 +131,7 @@ namespace AdministrarClientes.View.RegistroCliente
             this.tableLayoutPanel1.Controls.Add(this.bunifuPanel1, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.96333F));
@@ -136,6 +139,22 @@ namespace AdministrarClientes.View.RegistroCliente
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.69394F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1371, 750);
             this.tableLayoutPanel1.TabIndex = 14;
+            // 
+            // bunifuPictureBox1
+            // 
+            this.bunifuPictureBox1.AllowFocused = false;
+            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox1.AutoSizeHeight = true;
+            this.bunifuPictureBox1.BorderRadius = 47;
+            this.bunifuPictureBox1.Image = global::OpticaMultivisual.Properties.Resources.EyePro__Logos;
+            this.bunifuPictureBox1.IsCircle = true;
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(63, 4);
+            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(95, 95);
+            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox1.TabIndex = 9;
+            this.bunifuPictureBox1.TabStop = false;
+            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
             // bunifuPanel1
             // 
@@ -173,7 +192,7 @@ namespace AdministrarClientes.View.RegistroCliente
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.9937888F));
             this.tableLayoutPanel9.Controls.Add(this.txtpadecimientos, 1, 0);
             this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel10, 1, 3);
-            this.tableLayoutPanel9.Controls.Add(this.checkmenor, 1, 2);
+            this.tableLayoutPanel9.Controls.Add(this.bunifuPanel2, 1, 2);
             this.tableLayoutPanel9.Location = new System.Drawing.Point(37, 315);
             this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
@@ -334,7 +353,7 @@ namespace AdministrarClientes.View.RegistroCliente
             this.btnActualizar.IdleIconRightImage = null;
             this.btnActualizar.IndicateFocus = false;
             this.btnActualizar.Location = new System.Drawing.Point(308, 4);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnActualizar.OnDisabledState.BorderRadius = 20;
@@ -425,7 +444,7 @@ namespace AdministrarClientes.View.RegistroCliente
             this.btnAgregarCliente.IdleIconRightImage = null;
             this.btnAgregarCliente.IndicateFocus = false;
             this.btnAgregarCliente.Location = new System.Drawing.Point(562, 4);
-            this.btnAgregarCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregarCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregarCliente.Name = "btnAgregarCliente";
             this.btnAgregarCliente.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAgregarCliente.OnDisabledState.BorderRadius = 20;
@@ -485,7 +504,7 @@ namespace AdministrarClientes.View.RegistroCliente
             this.checkmenor.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
             this.checkmenor.Cursor = System.Windows.Forms.Cursors.Default;
             this.checkmenor.CustomCheckmarkImage = null;
-            this.checkmenor.Location = new System.Drawing.Point(12, 113);
+            this.checkmenor.Location = new System.Drawing.Point(11, 2);
             this.checkmenor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkmenor.MinimumSize = new System.Drawing.Size(17, 17);
             this.checkmenor.Name = "checkmenor";
@@ -1496,21 +1515,37 @@ namespace AdministrarClientes.View.RegistroCliente
             this.bunifuTextBox6.UseSystemPasswordChar = false;
             this.bunifuTextBox6.WordWrap = true;
             // 
-            // bunifuPictureBox1
+            // bunifuPanel2
             // 
-            this.bunifuPictureBox1.AllowFocused = false;
-            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox1.AutoSizeHeight = true;
-            this.bunifuPictureBox1.BorderRadius = 47;
-            this.bunifuPictureBox1.Image = global::OpticaMultivisual.Properties.Resources.EyePro__Logos;
-            this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(63, 4);
-            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(95, 95);
-            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox1.TabIndex = 9;
-            this.bunifuPictureBox1.TabStop = false;
-            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.bunifuPanel2.BackgroundColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
+            this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel2.BorderRadius = 3;
+            this.bunifuPanel2.BorderThickness = 1;
+            this.bunifuPanel2.Controls.Add(this.bunifuLabel1);
+            this.bunifuPanel2.Controls.Add(this.checkmenor);
+            this.bunifuPanel2.Location = new System.Drawing.Point(12, 114);
+            this.bunifuPanel2.Name = "bunifuPanel2";
+            this.bunifuPanel2.ShowBorders = true;
+            this.bunifuPanel2.Size = new System.Drawing.Size(200, 28);
+            this.bunifuPanel2.TabIndex = 11;
+            // 
+            // bunifuLabel1
+            // 
+            this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bunifuLabel1.Location = new System.Drawing.Point(38, 4);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(105, 20);
+            this.bunifuLabel1.TabIndex = 10;
+            this.bunifuLabel1.Text = "Menor de Edad";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // RegistroClientes
             // 
@@ -1519,13 +1554,14 @@ namespace AdministrarClientes.View.RegistroCliente
             this.ClientSize = new System.Drawing.Size(1371, 750);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(2554, 1311);
             this.MinimumSize = new System.Drawing.Size(1362, 712);
             this.Name = "RegistroClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cliente";
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.bunifuPanel1.ResumeLayout(false);
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel10.ResumeLayout(false);
@@ -1535,7 +1571,8 @@ namespace AdministrarClientes.View.RegistroCliente
             this.tableLayoutPanel6.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
+            this.bunifuPanel2.ResumeLayout(false);
+            this.bunifuPanel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1568,5 +1605,7 @@ namespace AdministrarClientes.View.RegistroCliente
         public Bunifu.UI.WinForms.BunifuTextBox txtEdad;
         public Bunifu.UI.WinForms.BunifuCheckBox checkmenor;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
     }
 }

@@ -247,6 +247,17 @@
         77fRphXaYNwAQv678AYccLaMC2uaW7o4TO7CfJV2E0Sn8wt56COnV0e+UAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="bunifuPanel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAMgAAAAcCAYAAAAk9/CnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAB9SURBVHhe7dYxCsAwDARB//89/l9CCgVE4FBqz4CLc7+g
+        BQzsva96tn3yrr/X5wMO15oQCHQCgUATMKUW6JxYEAgEAk3AlFqgc2JBIBAINAFTaoHOiQWBQCDQBEyp
+        BTonFgQCgUATMKUW6JxYEAgEAoHAX08o9Wz79A1Ea90jLQdBqaRfeQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+  </data>
   <data name="checkmenor.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8

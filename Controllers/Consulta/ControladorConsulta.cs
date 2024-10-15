@@ -14,6 +14,7 @@ namespace OpticaMultivisual.Controllers.Consulta
     internal class ControladorConsulta
     {
         VerConsulta ObjverConsulta;
+        AñadirConsulta ObjConsulta;
         public ControladorConsulta(VerConsulta Vista)
         {
             ObjverConsulta = Vista;
@@ -110,6 +111,7 @@ namespace OpticaMultivisual.Controllers.Consulta
         public void ActualizarConsulta(object sender, EventArgs e)
         {
             int pos = ObjverConsulta.dgvInfoConsulta.CurrentRow.Index;
+
             AñadirConsulta openForm = new AñadirConsulta(
                 2, // accion
                 ObjverConsulta.dgvInfoConsulta[1, pos].Value.ToString(), // cli_DUI
@@ -119,9 +121,10 @@ namespace OpticaMultivisual.Controllers.Consulta
                 ObjverConsulta.dgvInfoConsulta[8, pos].Value.ToString(), // emp_ID
                 int.Parse(ObjverConsulta.dgvInfoConsulta[0, pos].Value.ToString()),  // con_ID
                 DateTime.Parse(ObjverConsulta.dgvInfoConsulta[6, pos].Value.ToString()), // con_fechahora
-                bool.Parse(ObjverConsulta.dgvInfoConsulta[9, pos].Value.ToString()
+                bool.Parse(ObjverConsulta.dgvInfoConsulta[9, pos].Value.ToString()) // cmbEstado.Checked
+            );
 
-            ));
+            openForm.cmbEstado.Checked = bool.Parse(ObjverConsulta.dgvInfoConsulta[9, pos].Value.ToString());
 
             openForm.ShowDialog();
             ActualizarDatosConsulta();
