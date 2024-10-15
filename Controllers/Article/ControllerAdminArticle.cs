@@ -165,11 +165,11 @@ namespace OpticaMultivisual.Controllers.Article
             ObjVista.dgvInfoArticulo[0, pos].Value.ToString(),// Codigo del articulo
             ObjVista.dgvInfoArticulo[1, pos].Value.ToString(),// Nombre
             ObjVista.dgvInfoArticulo[2, pos].Value.ToString(),// Descripcion
-            int.Parse(ObjVista.dgvInfoArticulo[3, pos].Value.ToString()),// Tipo
-            int.Parse(ObjVista.dgvInfoArticulo[4, pos].Value.ToString()),// Modelo
+            ObjVista.dgvInfoArticulo[3, pos].Value.ToString(),// Tipo
+            ObjVista.dgvInfoArticulo[4, pos].Value.ToString(),// Modelo
             ObjVista.dgvInfoArticulo[5, pos].Value.ToString(),   // Medidas
-            int.Parse(ObjVista.dgvInfoArticulo[6, pos].Value.ToString()),// Material
-            int.Parse(ObjVista.dgvInfoArticulo[7, pos].Value.ToString()),// Color
+            ObjVista.dgvInfoArticulo[6, pos].Value.ToString(),// Material
+            ObjVista.dgvInfoArticulo[7, pos].Value.ToString(),// Color
             ObjVista.dgvInfoArticulo[8, pos].Value.ToString(),   // Url Imagen
             ObjVista.dgvInfoArticulo[9, pos].Value.ToString(),   // Comentarios
             ObjVista.dgvInfoArticulo[10, pos].Value.ToString() // Precio Unitario
