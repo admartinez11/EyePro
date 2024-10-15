@@ -166,8 +166,8 @@ namespace AdministrarClientes.Controlador
                 }
                 else
                 {
-                    ObjVistaR.checkmenor.Checked = true; // Desmarcar el CheckBox
-                    return false;
+                    ObjVistaR.checkmenor.Checked = false; // Desmarcar el CheckBox si es mayor o igual a 18
+                    return true;
                 }
             }
             else
@@ -177,15 +177,20 @@ namespace AdministrarClientes.Controlador
                 return false;
             }
         }
+
         private bool ValidarCamposa()
         {
+            ObjVistaR.checkmenor.Enabled = true;
             string genero = ObjVistaR.txtGenero.Text.Trim();
             if (genero != "M" && genero != "F" && genero != "f" && genero != "m")
             {
                 MessageBox.Show("El campo Género solo puede contener 'M' o 'F'.", "Validación de Género", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
-
+            if (!ValidarEdadMenorDe18())
+            {
+                return false;
+            }
             string telefono = ObjVistaR.txtTelefono.Text.Trim();
             if (!EsTelValido(telefono))
             {
@@ -321,7 +326,7 @@ namespace AdministrarClientes.Controlador
                 ObjVistaR.txtcorreo_electronico.Text = Correo_E;
                 ObjVistaR.txtprofecion.Text = Profeción;
                 ObjVistaR.txtpadecimientos.Text = Padecimientos;
-
+                
             }
             catch (Exception ex)
             {
@@ -343,6 +348,14 @@ namespace AdministrarClientes.Controlador
                     DAOActualizar.Profesion = ObjVistaR.txtprofecion.Text.Trim();
                     DAOActualizar.DUI = ObjVistaR.txtdui.Text.Trim();
                     DAOActualizar.Correo_E = ObjVistaR.txtcorreo_electronico.Text.Trim();
+                    if (ObjVistaR.checkmenor.Checked == true)
+                    {
+                        DAOActualizar.Menor = true;
+                    }
+                    else
+                    {
+                        DAOActualizar.Menor = false;
+                    }
                     int valorRetornado = DAOActualizar.ActualizarCliente();
                     if (valorRetornado == 1)
                     {
