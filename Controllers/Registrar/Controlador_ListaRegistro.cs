@@ -81,7 +81,7 @@ namespace OpticaMultivisual.Controllers
                 ObjVista.dgvInfoClientes[1, pos].Value.ToString(),    // Nombre
                 ObjVista.dgvInfoClientes[2, pos].Value.ToString(),    // Apellido
                 ObjVista.dgvInfoClientes[3, pos].Value.ToString(),    // Teléfono
-                char.Parse(ObjVista.dgvInfoClientes[5, pos].Value.ToString()),  // Género
+                ObjVista.dgvInfoClientes[5, pos].Value.ToString(),  // Género
                 ObjVista.dgvInfoClientes[4, pos].Value.ToString(),    // Edad
                 ObjVista.dgvInfoClientes[6, pos].Value.ToString(),    // Correo_E
                 ObjVista.dgvInfoClientes[7, pos].Value.ToString(),    // Profesión

@@ -13,7 +13,7 @@ namespace AdministrarClientes.Modelo.DTO
         private string nombre;
         private string apellido;
         private string telefono;
-        private char genero;
+        private string genero;
         private string edad;
         private string correo_E;
         private string profesion;
@@ -25,7 +25,7 @@ namespace AdministrarClientes.Modelo.DTO
         public string Nombre { get => nombre; set => nombre = value; }
         public string Apellido { get => apellido; set => apellido = value; }
         public string Telefono { get => telefono; set => telefono = value; }
-        public char Genero { get => genero; set => genero = value; }
+        public string Genero { get => genero; set => genero = value; }
         public string Edad { get => edad; set => edad = value; }
         public string Correo_E { get => correo_E; set => correo_E = value; }
         public string Profesion { get => profesion; set => profesion = value; }
