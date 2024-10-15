@@ -118,9 +118,17 @@ namespace OpticaMultivisual.Controllers.Dashboard
 
         private void cerrarPrograma(Object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Desea cerrar el programa directamente, considere que se cerrará la sesión de forma automática", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            DialogResult result = MessageBox.Show("Desea cerrar el programa directamente, considere que se cerrará la sesión de forma automática", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
             {
+                // Si selecciona "Sí", se cierra el programa
                 Environment.Exit(0);
+            }
+            else
+            {
+                // Si selecciona "No", se cancela el cierre del formulario
+                e.Cancel = true;
             }
         }
 

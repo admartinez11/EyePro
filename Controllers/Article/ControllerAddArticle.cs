@@ -17,6 +17,10 @@ namespace OpticaMultivisual.Controllers.Article
     {
         ViewAddArticle ObjVistaR;
         private int accion;
+        public string material_id;
+        public string tipoart_id;
+        public string mod_id;
+        public string color_id;
 
         public ControllerAddArticle(ViewAddArticle Vista, int accion)
         {
@@ -42,6 +46,10 @@ namespace OpticaMultivisual.Controllers.Article
             ObjVistaR.cmbMaterialArt.DataSource = ds.Tables["MaterialTipoArt"];
             ObjVistaR.cmbMaterialArt.DisplayMember = "material_nombre";
             ObjVistaR.cmbMaterialArt.ValueMember = "material_ID";
+            if (accion == 2)
+            {
+                ObjVistaR.cmbMaterialArt.Text = material_id;
+            }
         }
         private void CmbTipoArt_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -58,6 +66,10 @@ namespace OpticaMultivisual.Controllers.Article
             ObjVistaR.cmbColorArt.DataSource = ds.Tables["Color"];
             ObjVistaR.cmbColorArt.DisplayMember = "color_nombre";
             ObjVistaR.cmbColorArt.ValueMember = "color_ID";
+            if (accion == 2)
+            {
+                ObjVistaR.cmbColorArt.Text = color_id;
+            }
         }
         void LlenarComboTipoArticulo()
         {
@@ -66,6 +78,10 @@ namespace OpticaMultivisual.Controllers.Article
             ObjVistaR.cmbTipoArt.DataSource = ds.Tables["TipoArt"];
             ObjVistaR.cmbTipoArt.DisplayMember = "tipoart_nombre";
             ObjVistaR.cmbTipoArt.ValueMember = "tipoart_ID";
+            if (accion == 2)
+            {
+                ObjVistaR.cmbTipoArt.Text = tipoart_id;
+            }
         }
         void LlenarComboModelo()
         {
@@ -74,6 +90,10 @@ namespace OpticaMultivisual.Controllers.Article
             ObjVistaR.cmbModeloArt.DataSource = ds.Tables["Modelo"];
             ObjVistaR.cmbModeloArt.DisplayMember = "mod_nombre";
             ObjVistaR.cmbModeloArt.ValueMember = "mod_ID";
+            if (accion == 2)
+            {
+                ObjVistaR.cmbModeloArt.Text = mod_id;
+            }
         }
         public void NuevoArticulo(object sender, EventArgs e)
         {
@@ -168,21 +188,25 @@ namespace OpticaMultivisual.Controllers.Article
             }
             return true;
         }
-        public ControllerAddArticle(ViewAddArticle Vista, int p_accion, string art_codigo, string art_nombre, string art_descripcion, int tipoart_ID, int mod_ID, string art_medidas, int material_ID, int color_ID, string art_urlimagen, string art_comentarios, string art_punitario)
+        public ControllerAddArticle(ViewAddArticle Vista, int p_accion, string art_codigo, string art_nombre, string art_descripcion, string tipoart_ID, string mod_ID, string art_medidas, string material_ID, string color_ID, string art_urlimagen, string art_comentarios, string art_punitario)
         {
             // Acciones iniciales
             ObjVistaR = Vista;
             this.accion = p_accion;
+            this.material_id = material_ID;
+            this.tipoart_id = tipoart_ID;
+            this.mod_id = mod_ID;
+            this.color_id = color_ID;
             Vista.Load += new EventHandler(CargaInicial);
             // Verificar la acción a realizar
             verificarAccion();
             // Cargar los valores en la vista
-            Cargarvalores(art_codigo, art_nombre, art_descripcion, tipoart_ID, mod_ID, art_medidas, material_ID, color_ID, art_urlimagen, art_comentarios, art_punitario);
+            Cargarvalores(art_codigo, art_nombre, art_descripcion, art_medidas, art_urlimagen, art_comentarios, art_punitario);
             // Métodos que se ejecutan al ocurrir eventos
             ObjVistaR.btnActualizarArt.Click += new EventHandler(ActualizarRegistro);
             // ObjAddUser.btnFoto.Click += new EventHandler(ChargePhoto);
         }
-        public void Cargarvalores(string art_codigo, string art_nombre, string art_descripcion, int tipoart_ID, int mod_ID, string art_medidas, int material_ID, int color_ID, string art_urlimagen, string art_comentarios, string art_punitario)
+        public void Cargarvalores(string art_codigo, string art_nombre, string art_descripcion, string art_medidas, string art_urlimagen, string art_comentarios, string art_punitario)
         {
             try
             {
@@ -190,11 +214,7 @@ namespace OpticaMultivisual.Controllers.Article
                 ObjVistaR.txtArCodigo.Text = art_codigo; // Campo para Codigo
                 ObjVistaR.txtArNombre.Text = art_nombre; // Campo para Nombre
                 ObjVistaR.txtDescArt.Text = art_descripcion; // Campo para descripcion  
-                ObjVistaR.cmbTipoArt.SelectedValue = tipoart_ID; // Campo para tipo de articulo
-                ObjVistaR.cmbModeloArt.SelectedValue = mod_ID; // Campo para Modelo
                 ObjVistaR.txtMedidas.Text = art_medidas; // Campo para Medidas
-                ObjVistaR.cmbMaterialArt.SelectedValue = material_ID; // Campo para Material
-                ObjVistaR.cmbColorArt.SelectedValue = color_ID; //Campo para Color
                 ObjVistaR.txtUrlImagenArt.Text = art_urlimagen; //Campo para El URL de la imagen
                 ObjVistaR.txtComentariosArt.Text = art_comentarios; //Campo para Comentarios
                 ObjVistaR.txtPUnitario.Text = art_punitario; //Campo para Precio

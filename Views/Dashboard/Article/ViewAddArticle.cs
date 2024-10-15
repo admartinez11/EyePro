@@ -21,7 +21,7 @@ namespace OpticaMultivisual.Views.Dashboard.Article
             CargarFormulario();
         }
 
-        public ViewAddArticle(int accion, string art_codigo, string art_nombre, string art_descripcion, int tipoart_ID, int mod_ID, string art_medidas, int material_ID, int color_ID, string art_urlimagen, string art_comentarios, string art_punitario)
+        public ViewAddArticle(int accion, string art_codigo, string art_nombre, string art_descripcion, string tipoart_ID, string mod_ID, string art_medidas, string material_ID, string color_ID, string art_urlimagen, string art_comentarios, string art_punitario)
         {
             InitializeComponent();
             // Se invoca al controlador de la vista y se le envía el formulario, la acción y los datos que recibió la vista.
