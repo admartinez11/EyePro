@@ -41,7 +41,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.ScheduleAppointment
         {
             DAOScheduleAppointment Objadminregistro = new DAOScheduleAppointment();
             DataSet ds = Objadminregistro.BuscarVisita(ObjVista.txtBuscar.Text.Trim());
-            ObjVista.dgvInfoVisita.DataSource = ds.Tables["Visita"];
+            ObjVista.dgvInfoVisita.DataSource = ds.Tables["ViewVisita"];
         }
         public void AgregarVisita(object sender, EventArgs e)
         {

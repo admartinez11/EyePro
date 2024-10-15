@@ -37,7 +37,7 @@ namespace OpticaMultivisual.Controllers.Article.Modelo
         {
             DAOModelo ObjRegistro = new DAOModelo();
             DataSet ds = ObjRegistro.BuscarModelo(ObjVista.txtBuscar.Text.Trim());
-            ObjVista.dgvInfoModelo.DataSource = ds.Tables["Modelo"];
+            ObjVista.dgvInfoModelo.DataSource = ds.Tables["VistaModelo"];
         }
         public void AgregarModelo(object sender, EventArgs e)
         {

@@ -38,7 +38,7 @@ namespace OpticaMultivisual.Controllers.Article.TipoArticulo
         {
             DAOTipoArticulo ObjRegistro = new DAOTipoArticulo();
             DataSet ds = ObjRegistro.BuscarTipoArticulo(ObjVista.txtBuscar.Text.Trim());
-            ObjVista.dgvInfoTipoArticulo.DataSource = ds.Tables["TipoArt"];
+            ObjVista.dgvInfoTipoArticulo.DataSource = ds.Tables["VistaTipoArt"];
         }
         public void AgregarTipArt(object sender, EventArgs e)
         {
