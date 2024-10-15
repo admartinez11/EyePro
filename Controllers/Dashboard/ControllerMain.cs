@@ -98,7 +98,7 @@ namespace OpticaMultivisual.Controllers.Dashboard
 
         private void AbrirFormularioConsulta(object sender, EventArgs e)
         {
-            AbrirFormulario<VerConsulta>();
+            AbrirFormulario<Consultas>();
         }
 
         private void AbrirFormularioPD(object sender, EventArgs e)

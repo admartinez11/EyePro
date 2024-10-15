@@ -13,9 +13,9 @@ namespace OpticaMultivisual.Controllers.Consulta
 {
     internal class ControladorConsulta
     {
-        VerConsulta ObjverConsulta;
+        Consultas ObjverConsulta;
         AñadirConsulta ObjConsulta;
-        public ControladorConsulta(VerConsulta Vista)
+        public ControladorConsulta(Consultas Vista)
         {
             ObjverConsulta = Vista;
             ObjverConsulta.Load += new EventHandler(CargarInfoConsulta);
