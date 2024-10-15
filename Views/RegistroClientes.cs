@@ -20,7 +20,7 @@ namespace AdministrarClientes.View.RegistroCliente
             //Se invoca al controlador de la vista y se le envía el formulario y la acción
             Controlador_Registrar objAddUser = new Controlador_Registrar(this, accion);
         }
-        public RegistroClientes(int accion, string DUI, string Nombre, string Apellido, string Telefono, char Genero, string Edad, string Correo_E, string Profesion, string Padecimientos, bool Menor)
+        public RegistroClientes(int accion, string DUI, string Nombre, string Apellido, string Telefono, string Genero, string Edad, string Correo_E, string Profesion, string Padecimientos, bool Menor)
         {
             InitializeComponent();
             // Se invoca al controlador de la vista y se le envía el formulario, la acción y los datos que recibió la vista.

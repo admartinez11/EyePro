@@ -47,7 +47,7 @@ namespace AdministrarClientes.Controlador
                     Correo_E = ObjVistaR.txtcorreo_electronico.Text.Trim(),
                     Telefono = ObjVistaR.txtTelefono.Text.Trim(),
                     Edad = ObjVistaR.txtEdad.Text.Trim(),
-                    Genero = char.Parse(ObjVistaR.txtGenero.Text.Trim()),
+                    Genero = ObjVistaR.cmbGenero.SelectedItem.ToString().Trim(),
                     Padecimientos = ObjVistaR.txtpadecimientos.Text.Trim(),
                     Profesion = ObjVistaR.txtprofecion.Text.Trim(),
                 };
@@ -89,12 +89,15 @@ namespace AdministrarClientes.Controlador
             {
                 return false;
             }
-            string genero = ObjVistaR.txtGenero.Text.Trim();
-            if (genero != "M" && genero != "F" && genero != "f" && genero != "m")
+            // Obtener el valor seleccionado del ComboBox
+            string genero = ObjVistaR.cmbGenero.SelectedItem.ToString().Trim();
+
+            // Verificar que el valor no sea nulo y sea 'M' o 'F'
+            if (string.IsNullOrEmpty(genero) || (genero != "Masculino" && genero != "Femenino"))
             {
-                MessageBox.Show("El campo Género solo puede contener 'M' o 'F'.", "Validación de Género", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
+               return false;
             }
+            ObjVistaR.cmbGenero.DropDownStyle = ComboBoxStyle.DropDownList;
 
             string telefono = ObjVistaR.txtTelefono.Text.Trim();
             if (!EsTelValido(telefono))
@@ -180,13 +183,14 @@ namespace AdministrarClientes.Controlador
 
         private bool ValidarCamposa()
         {
-            ObjVistaR.checkmenor.Enabled = true;
-            string genero = ObjVistaR.txtGenero.Text.Trim();
-            if (genero != "M" && genero != "F" && genero != "f" && genero != "m")
+            string genero = ObjVistaR.cmbGenero.SelectedItem.ToString().Trim();
+
+            // Verificar que el valor no sea nulo y sea 'M' o 'F'
+            if (string.IsNullOrEmpty(genero) || (genero != "Masculino" && genero != "Femenino"))
             {
-                MessageBox.Show("El campo Género solo puede contener 'M' o 'F'.", "Validación de Género", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
+            ObjVistaR.cmbGenero.DropDownStyle = ComboBoxStyle.DropDownList;
             if (!ValidarEdadMenorDe18())
             {
                 return false;
@@ -300,7 +304,7 @@ namespace AdministrarClientes.Controlador
             return true;
         }
 
-        public Controlador_Registrar(RegistroClientes Vista, int p_accion, string DUI, string Nombre, string Apellido, string Correo_E, string Edad, char Genero, string Profeción, string Padecimientos, string Telefono, bool Menor)
+        public Controlador_Registrar(RegistroClientes Vista, int p_accion, string DUI, string Nombre, string Apellido, string Correo_E, string Edad, string Genero, string Profeción, string Padecimientos, string Telefono, bool Menor)
         {
             //Acciones iniciales
             ObjVistaR = Vista;
@@ -313,7 +317,7 @@ namespace AdministrarClientes.Controlador
             //ObjAddUser.btnFoto.Click += new EventHandler(ChargePhoto);
 
         }
-        public void Cargarvalores(string DUI, string Nombre, string Apellido, string Telefono, char Genero, string Edad, string Correo_E, string Profeción, string Padecimientos, bool Menor)
+        public void Cargarvalores(string DUI, string Nombre, string Apellido, string Telefono, string Genero, string Edad, string Correo_E, string Profeción, string Padecimientos, bool Menor)
         {
             try
             {
@@ -321,7 +325,7 @@ namespace AdministrarClientes.Controlador
                 ObjVistaR.txtNombre.Text = Nombre;
                 ObjVistaR.txtApellido.Text = Apellido;
                 ObjVistaR.txtTelefono.Text = Telefono;
-                ObjVistaR.txtGenero.Text = Genero.ToString();
+                ObjVistaR.cmbGenero.SelectedItem = Genero;
                 ObjVistaR.txtEdad.Text = Edad;
                 ObjVistaR.txtcorreo_electronico.Text = Correo_E;
                 ObjVistaR.txtprofecion.Text = Profeción;
@@ -341,7 +345,7 @@ namespace AdministrarClientes.Controlador
                     DAORegistro DAOActualizar = new DAORegistro();
                     DAOActualizar.Edad = ObjVistaR.txtEdad.Text.Trim();
                     DAOActualizar.Telefono = ObjVistaR.txtTelefono.Text.Trim();
-                    DAOActualizar.Genero = char.Parse(ObjVistaR.txtGenero.Text.Trim());
+                    DAOActualizar.Genero = ObjVistaR.cmbGenero.SelectedItem.ToString().Trim();
                     DAOActualizar.Nombre = ObjVistaR.txtNombre.Text.Trim();
                     DAOActualizar.Apellido = ObjVistaR.txtApellido.Text.Trim();
                     DAOActualizar.Padecimientos = ObjVistaR.txtpadecimientos.Text.Trim();
@@ -435,7 +439,7 @@ namespace AdministrarClientes.Controlador
                     Correo_E = ObjVistaR.txtcorreo_electronico.Text.Trim(),
                     Telefono = ObjVistaR.txtTelefono.Text.Trim(),
                     Edad = ObjVistaR.txtEdad.Text.Trim(),
-                    Genero = char.Parse(ObjVistaR.txtGenero.Text.Trim()),
+                    Genero = ObjVistaR.cmbGenero.SelectedItem.ToString().Trim(),
                     Padecimientos = ObjVistaR.txtpadecimientos.Text.Trim(),
                     Profesion = ObjVistaR.txtprofecion.Text.Trim(),
                 };
