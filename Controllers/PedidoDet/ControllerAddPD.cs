@@ -69,7 +69,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
             DAOPedidoDet daoCon = new DAOPedidoDet();
             DataSet ds = daoCon.ObtenerConsulta();
             ObjAddPD.cbcon_ID.DataSource = ds.Tables["Consulta"];
-            ObjAddPD.cbcon_ID.DisplayMember = "cli_DUI"; // Mostrar la el dui del cliente
+            ObjAddPD.cbcon_ID.DisplayMember = "cli_DUI"; // Mostrar el dui del cliente
             ObjAddPD.cbcon_ID.ValueMember = "con_ID"; // Valor del ID de la consulta
             if (accion == 2)
             {
