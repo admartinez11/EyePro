@@ -27,6 +27,7 @@ namespace OpticaMultivisual.Models.DAO
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
                 //Se ejecuta el comando y con ExecuteNonQuery se verifica su retorno
                 //ExecuteNonQuery devuelve un valor entero.
+                cmd.Parameters.AddWithValue("valor", true);
                 cmd.ExecuteNonQuery();
                 //Se utiliza un adaptador sql para rellenar el dataset
                 SqlDataAdapter adp = new SqlDataAdapter(cmd);

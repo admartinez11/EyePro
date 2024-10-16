@@ -95,7 +95,8 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
         private void UpdatePD(object sender, EventArgs e)
         {
             int pos = ObjAdminPD.dgvPD.CurrentRow.Index;
-            int pd_ID, art_cant, pd_recetalab;
+            int pd_ID, art_cant;
+            bool pd_recetalab;
             string con_ID, art_codigo, pd_obser;
             DateTime pd_fpedido, pd_fprogramada;
 
@@ -106,9 +107,11 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
             art_codigo = ObjAdminPD.dgvPD[5, pos].Value.ToString();
             art_cant = int.Parse(ObjAdminPD.dgvPD[6, pos].Value.ToString());
             pd_obser = ObjAdminPD.dgvPD[7, pos].Value.ToString();
-            pd_recetalab = int.Parse(ObjAdminPD.dgvPD[8, pos].Value.ToString());
+            pd_recetalab = (bool.Parse(ObjAdminPD.dgvPD[8, pos].Value.ToString()) ? true : false);
 
             ViewAddPedidoDet openForm = new ViewAddPedidoDet(2, pd_ID, con_ID, pd_fpedido, pd_fprogramada, art_codigo, art_cant, pd_obser, pd_recetalab);
+
+            openForm.cbpd_recetalab.Checked = bool.Parse(ObjAdminPD.dgvPD[8, pos].Value.ToString());
 
             openForm.ShowDialog();
             RefrescarData();
