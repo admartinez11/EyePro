@@ -66,7 +66,6 @@
             this.label17 = new System.Windows.Forms.Label();
             this.mskDocument = new System.Windows.Forms.MaskedTextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.comboRole = new System.Windows.Forms.ComboBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -86,7 +85,6 @@
             this.txtFirstName = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuPanel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,9 +96,13 @@
             this.bunifuPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(78)))), ((int)(((byte)(172)))));
             this.bunifuPanel1.BorderRadius = 40;
             this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Controls.Add(this.comboRole);
             this.bunifuPanel1.Controls.Add(this.txtSecurityAnswer);
             this.bunifuPanel1.Controls.Add(this.label3);
+            this.bunifuPanel1.Controls.Add(this.txtUsername);
+            this.bunifuPanel1.Controls.Add(this.label15);
             this.bunifuPanel1.Controls.Add(this.label2);
+            this.bunifuPanel1.Controls.Add(this.label16);
             this.bunifuPanel1.Controls.Add(this.cmbSecurityQuestion);
             this.bunifuPanel1.Controls.Add(this.btnAdd);
             this.bunifuPanel1.Controls.Add(this.btnUpdate);
@@ -108,7 +110,6 @@
             this.bunifuPanel1.Controls.Add(this.label17);
             this.bunifuPanel1.Controls.Add(this.mskDocument);
             this.bunifuPanel1.Controls.Add(this.label18);
-            this.bunifuPanel1.Controls.Add(this.groupBox1);
             this.bunifuPanel1.Controls.Add(this.txtPhone);
             this.bunifuPanel1.Controls.Add(this.label13);
             this.bunifuPanel1.Controls.Add(this.txtEmail);
@@ -127,6 +128,7 @@
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(510, 649);
             this.bunifuPanel1.TabIndex = 8;
+            this.bunifuPanel1.TabStop = true;
             // 
             // txtSecurityAnswer
             // 
@@ -511,26 +513,6 @@
             this.label18.TabIndex = 32;
             this.label18.Text = "Dui:";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.comboRole);
-            this.groupBox1.Controls.Add(this.txtUsername);
-            this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.groupBox1.Location = new System.Drawing.Point(32, 435);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox1.Size = new System.Drawing.Size(444, 127);
-            this.groupBox1.TabIndex = 15;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Información para inicio de sesión";
-            // 
             // comboRole
             // 
             this.comboRole.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -542,10 +524,10 @@
             "Administrador",
             "Empleado",
             "Asesor"});
-            this.comboRole.Location = new System.Drawing.Point(28, 38);
+            this.comboRole.Location = new System.Drawing.Point(36, 467);
             this.comboRole.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboRole.Name = "comboRole";
-            this.comboRole.Size = new System.Drawing.Size(388, 21);
+            this.comboRole.Size = new System.Drawing.Size(433, 21);
             this.comboRole.TabIndex = 10;
             // 
             // txtUsername
@@ -555,19 +537,21 @@
             this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(227)))), ((int)(((byte)(255)))));
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(28, 86);
+            this.txtUsername.Location = new System.Drawing.Point(36, 515);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtUsername.MaxLength = 50;
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.ShortcutsEnabled = false;
-            this.txtUsername.Size = new System.Drawing.Size(388, 20);
+            this.txtUsername.Size = new System.Drawing.Size(433, 20);
             this.txtUsername.TabIndex = 11;
             // 
             // label15
             // 
             this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(24, 20);
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(32, 449);
             this.label15.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(26, 13);
@@ -577,7 +561,9 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(24, 65);
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(32, 494);
             this.label16.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(50, 13);
@@ -1112,8 +1098,6 @@
             this.Text = "Empleado";
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -1133,7 +1117,6 @@
         private System.Windows.Forms.Label label17;
         public System.Windows.Forms.MaskedTextBox mskDocument;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.GroupBox groupBox1;
         public System.Windows.Forms.ComboBox comboRole;
         public System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label label15;

@@ -51,7 +51,7 @@ namespace OpticaMultivisual.Controllers.Article.Modelo
             ViewAddModelo openForm = new ViewAddModelo(2,
             int.Parse(ObjVista.dgvInfoModelo[0, pos].Value.ToString()),//Id del tipo de articulo
             ObjVista.dgvInfoModelo[1, pos].Value.ToString(),        // Nombre
-            int.Parse(ObjVista.dgvInfoModelo[2, pos].Value.ToString())     // descripcion
+            ObjVista.dgvInfoModelo[2, pos].Value.ToString()     // descripcion
             );
 
             openForm.ShowDialog();

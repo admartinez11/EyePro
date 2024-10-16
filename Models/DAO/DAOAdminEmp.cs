@@ -640,6 +640,30 @@ namespace OpticaMultivisual.Models.DAO
             return existe;
         }
 
+        public bool VerificarDuiExistenteUP(string dui, int idUsuario)
+        {
+            bool existe = false;
+            try
+            {
+                using (var connection = getConnection())
+                {
+                    string query = "SELECT COUNT(2) FROM Empleado WHERE emp_DUI = @dui AND emp_ID != @idUsuario";
+                    using (SqlCommand cmd = new SqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@dui", dui);
+                        cmd.Parameters.AddWithValue("@idUsuario", idUsuario);
+                        int count = Convert.ToInt32(cmd.ExecuteScalar());
+                        existe = count > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            return existe;
+        }
+
         // Método para verificar si el correo ya está registrado
         public bool VerificarCorreoExistente(string correo)
         {
@@ -652,6 +676,30 @@ namespace OpticaMultivisual.Models.DAO
                     using (SqlCommand cmd = new SqlCommand(query, connection))
                     {
                         cmd.Parameters.AddWithValue("@correo", correo);
+                        int count = Convert.ToInt32(cmd.ExecuteScalar());
+                        existe = count > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            return existe;
+        }
+
+        public bool VerificarCorreoExistenteUP(string correo, int idUsuario)
+        {
+            bool existe = false;
+            try
+            {
+                using (var connection = getConnection())
+                {
+                    string query = "SELECT COUNT(1) FROM Empleado WHERE emp_correo = @correo AND emp_ID != @idUsuario";
+                    using (SqlCommand cmd = new SqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@correo", correo);
+                        cmd.Parameters.AddWithValue("@idUsuario", idUsuario);
                         int count = Convert.ToInt32(cmd.ExecuteScalar());
                         existe = count > 0;
                     }
