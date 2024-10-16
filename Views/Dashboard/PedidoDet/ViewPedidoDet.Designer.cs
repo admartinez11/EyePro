@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewPedidoDet));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
@@ -40,10 +37,12 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.dgvPD = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.btnActualizar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnAgregar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
@@ -52,12 +51,13 @@
             this.btnBuscar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.label1 = new System.Windows.Forms.Label();
             this.txtBuscar = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.dgvPD = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPD)).BeginInit();
             this.tableLayoutPanel10.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPD)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -107,8 +107,8 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.9512485F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 99.04875F));
-            this.tableLayoutPanel2.Controls.Add(this.dgvPD, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel10, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.dgvPD, 1, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(28, 84);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -117,51 +117,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.66295F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(744, 366);
             this.tableLayoutPanel2.TabIndex = 9;
-            // 
-            // dgvPD
-            // 
-            this.dgvPD.AllowUserToAddRows = false;
-            this.dgvPD.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvPD.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
-            this.dgvPD.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
-            this.dgvPD.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvPD.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
-            this.dgvPD.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvPD.ColumnHeadersHeight = 30;
-            this.dgvPD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvPD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvPD.EnableHeadersVisualStyles = false;
-            this.dgvPD.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
-            this.dgvPD.Location = new System.Drawing.Point(9, 2);
-            this.dgvPD.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvPD.Name = "dgvPD";
-            this.dgvPD.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPD.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvPD.RowHeadersWidth = 51;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvPD.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvPD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPD.Size = new System.Drawing.Size(733, 293);
-            this.dgvPD.TabIndex = 53;
             // 
             // tableLayoutPanel10
             // 
@@ -667,6 +622,54 @@
             this.txtBuscar.UseSystemPasswordChar = false;
             this.txtBuscar.WordWrap = true;
             // 
+            // dgvPD
+            // 
+            this.dgvPD.AllowUserToAddRows = false;
+            this.dgvPD.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvPD.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvPD.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvPD.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
+            this.dgvPD.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvPD.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
+            this.dgvPD.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvPD.ColumnHeadersHeight = 30;
+            this.dgvPD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvPD.EnableHeadersVisualStyles = false;
+            this.dgvPD.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
+            this.dgvPD.Location = new System.Drawing.Point(9, 2);
+            this.dgvPD.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvPD.Name = "dgvPD";
+            this.dgvPD.ReadOnly = true;
+            this.dgvPD.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPD.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvPD.RowHeadersWidth = 51;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvPD.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvPD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvPD.Size = new System.Drawing.Size(733, 293);
+            this.dgvPD.TabIndex = 9;
+            // 
             // ViewPedidoDet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -681,10 +684,10 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.bunifuPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPD)).EndInit();
             this.tableLayoutPanel10.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPD)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -694,7 +697,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        public System.Windows.Forms.DataGridView dgvPD;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnActualizar;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnAgregar;
@@ -703,5 +705,6 @@
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnBuscar;
         private System.Windows.Forms.Label label1;
         public Bunifu.UI.WinForms.BunifuTextBox txtBuscar;
+        public System.Windows.Forms.DataGridView dgvPD;
     }
 }

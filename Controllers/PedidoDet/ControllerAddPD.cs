@@ -32,7 +32,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
         }
 
         //Actualizar 
-        public ControllerAddPD(ViewAddPedidoDet Vista, int accion, int pd_ID, string con_ID, DateTime pd_fpedido, DateTime pd_fprogramada, string art_codigo, int art_cant, string pd_obser, int pd_recetalab)
+        public ControllerAddPD(ViewAddPedidoDet Vista, int accion, int pd_ID, string con_ID, DateTime pd_fpedido, DateTime pd_fprogramada, string art_codigo, int art_cant, string pd_obser, bool pd_recetalab)
         {
             //Acciones Iniciales
             ObjAddPD = Vista;
@@ -111,11 +111,11 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
                 DAOInsert.art_cant1 = int.Parse(ObjAddPD.txtart_cant.Text.ToString());
                 if (ObjAddPD.cbpd_recetalab.Checked == true)
                 {
-                    DAOInsert.pd_recetalab1 = 1;
+                    DAOInsert.pd_recetalab1 = true;
                 }
                 else
                 {
-                    DAOInsert.pd_recetalab1 = 0;
+                    DAOInsert.pd_recetalab1 = false;
                 }
                 DAOInsert.pd_obser1 = ObjAddPD.txtpd_obser.Text.Trim();
                 int valorRetornado = DAOInsert.InsertarPedido();
@@ -152,11 +152,11 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
                 daoUpdate.art_cant1 = int.Parse(ObjAddPD.txtart_cant.Text.ToString());
                 if (ObjAddPD.cbpd_recetalab.Checked == true)
                 {
-                    daoUpdate.pd_recetalab1 = 1;
+                    daoUpdate.pd_recetalab1 = true;
                 }
                 else
                 {
-                    daoUpdate.pd_recetalab1 = 0;
+                    daoUpdate.pd_recetalab1 = false;
                 }
                 daoUpdate.pd_obser1 = ObjAddPD.txtpd_obser.Text.Trim();
                 int valorRetornado = daoUpdate.ActualizarPD();
@@ -250,7 +250,7 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
             return true;
         }
 
-        public void ChargeValues(int pd_ID, DateTime pd_fpedido, DateTime pd_fprogramada, string art_codigo, int art_cant, string pd_obser, int pd_recetalab)
+        public void ChargeValues(int pd_ID, DateTime pd_fpedido, DateTime pd_fprogramada, string art_codigo, int art_cant, string pd_obser, bool pd_recetalab)
         {
             ObjAddPD.txtpd_ID.Text = pd_ID.ToString();
             //ObjAddPD.cbcon_ID.SelectedValue = con_ID;
@@ -258,15 +258,6 @@ namespace OpticaMultivisual.Controllers.Dashboard.PedidoDetalle
             ObjAddPD.DTPpd_fpedido.Value = pd_fprogramada;
             ObjAddPD.cbart_codigo.SelectedValue = art_codigo;
             ObjAddPD.txtart_cant.Text = art_cant.ToString();
-            ObjAddPD.txtpd_obser.Text = pd_obser;
-            if (pd_recetalab == 1)
-            {
-                ObjAddPD.cbpd_recetalab.Checked = true;
-            }
-            else
-            {
-                ObjAddPD.cbpd_recetalab.Checked = false;
-            }
         }
     }
 }
