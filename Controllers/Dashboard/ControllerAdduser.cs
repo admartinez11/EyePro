@@ -507,27 +507,27 @@ namespace OpticaMultivisual.Controllers.Dashboard
                 return false;
             }
 
-            //// Verificar si el DUI ya está registrado
-            //bool existeDui = daoAdminEmp.VerificarDuiExistente(ObjAddUser.mskDocument.Text.Trim());
-            //if (existeDui)
-            //{
-            //    MessageBox.Show("El DUI ingresado ya está asociado a otro usuario. Por favor, verifique e ingrese un DUI diferente.",
-            //                    "Error de validación",
-            //                    MessageBoxButtons.OK,
-            //                    MessageBoxIcon.Error);
-            //    return false; // Detener el proceso si el DUI ya existe
-            //}
+            // Verificar si el DUI ya está registrado
+            bool existeDui = daoAdminEmp.VerificarDuiExistenteUP(ObjAddUser.mskDocument.Text.Trim(), int.Parse(ObjAddUser.txtId.Text.Trim()));
+            if (existeDui)
+            {
+                MessageBox.Show("El DUI ingresado ya está asociado a otro usuario. Por favor, verifique e ingrese un DUI diferente.",
+                                "Error de validación",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+                return false; // Detener el proceso si el DUI ya existe
+            }
 
-            // Verificar si el correo ya está registrado
-            //bool existeCorreo = daoAdminEmp.VerificarCorreoExistente(ObjAddUser.txtEmail.Text.Trim());
-            //if (existeCorreo)
-            //{
-            //    MessageBox.Show("El correo electrónico ingresado ya está asociado a otro usuario. Por favor, verifique e ingrese un correo electrónico diferente.",
-            //                    "Error de validación",
-            //                    MessageBoxButtons.OK,
-            //                    MessageBoxIcon.Error);
-            //    return false; // Detener el proceso si el correo ya existe
-            //}
+            //Verificar si el correo ya está registrado
+            bool existeCorreo = daoAdminEmp.VerificarCorreoExistenteUP(ObjAddUser.txtEmail.Text.Trim(), int.Parse(ObjAddUser.txtId.Text.Trim()));
+            if (existeCorreo)
+            {
+                MessageBox.Show("El correo electrónico ingresado ya está asociado a otro usuario. Por favor, verifique e ingrese un correo electrónico diferente.",
+                                "Error de validación",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+                return false; // Detener el proceso si el correo ya existe
+            }
 
             if (string.IsNullOrWhiteSpace(ObjAddUser.txtPhone.Text.Trim()))
             {

@@ -115,7 +115,6 @@ namespace OpticaMultivisual.Controllers.Article.TipoArticulo
                 dAOTipoArticulo.Tipoart_nombre = ObjVistaR.txtTipArNombre.Text.Trim();
                 dAOTipoArticulo.Tipoart_descripcion = ObjVistaR.txtDescTipArt.Text.Trim();
                 int valorRetornado = dAOTipoArticulo.ActualizarTipoArticulo();
-                MessageBox.Show($"{valorRetornado}", "Error al cargar valores", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 if (valorRetornado == 1)
                 {
                     MessageBox.Show("Los datos han sido actualizados exitosamente",

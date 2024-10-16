@@ -19,7 +19,7 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Modelo
             InitializeComponent();
             ControllerAddModelo objAddUser = new ControllerAddModelo(this, accion);
         }
-        public ViewAddModelo(int accion, int mod_ID, string Mod_nombre, int Marca_ID)
+        public ViewAddModelo(int accion, int mod_ID, string Mod_nombre, string Marca_ID)
         {
             InitializeComponent();
             ControllerAddModelo objAddUser = new ControllerAddModelo(this, accion, mod_ID, Mod_nombre, Marca_ID);

@@ -92,7 +92,6 @@ namespace OpticaMultivisual.Models.DAO
             try
             {
                 Command.Connection = getConnection();
-                MessageBox.Show($"{Tipoart_descripcion} {Tipoart_ID} {Tipoart_nombre}", "Error al cargar valores", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 string query = "UPDATE TipoArt SET tipoart_nombre = @Nombre, tipoart_descripcion = @Descripcion " + "WHERE tipoart_ID = @ID";
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
                 cmd.Parameters.AddWithValue("@Nombre", Tipoart_nombre);
