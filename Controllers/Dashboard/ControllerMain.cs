@@ -57,7 +57,7 @@ namespace OpticaMultivisual.Controllers.Dashboard
             if (result == DialogResult.Yes)
             {
                 // URL del archivo en Google Drive del Manual de Usuario
-                string url = "https://drive.google.com/uc?export=download&id=1pRvsLTh4Cbo44xstGkr8X081Oh-vy5Ze";
+                string url = "https://drive.google.com/uc?export=download&id=1sqpmAPaGkwrhZ0OoAyAG0PM0slw9pVP1";
                 // Crear una instancia de SaveFileDialog para que el usuario elija la ubicación
                 SaveFileDialog saveFileDialog = new SaveFileDialog();
                 saveFileDialog.Filter = "PDF Files|*.pdf";  // Filtrar solo archivos PDF
