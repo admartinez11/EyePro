@@ -85,19 +85,16 @@ namespace AdministrarClientes.Controlador
 
         private bool ValidarCampos()
         {
-            if(!ValidarEdadMenorDe18())
+            
+            if (!ValidarEdadMenorDe18())
             {
                 return false;
             }
-            // Obtener el valor seleccionado del ComboBox
-            string genero = ObjVistaR.cmbGenero.SelectedItem.ToString().Trim();
-
-            // Verificar que el valor no sea nulo y sea 'M' o 'F'
-            if (string.IsNullOrEmpty(genero) || (genero != "Masculino" && genero != "Femenino"))
+            if (!ValidarGenero())
             {
-               return false;
+                return false;
             }
-            ObjVistaR.cmbGenero.DropDownStyle = ComboBoxStyle.DropDownList;
+
 
             string telefono = ObjVistaR.txtTelefono.Text.Trim();
             if (!EsTelValido(telefono))
@@ -156,6 +153,30 @@ namespace AdministrarClientes.Controlador
 
             return true;
         }
+        private bool ValidarGenero()
+        {
+            string genero = ObjVistaR.cmbGenero.SelectedItem?.ToString().Trim();
+
+            // Verificar que el valor no sea nulo o vacío
+            if (string.IsNullOrEmpty(genero))
+            {
+                MessageBox.Show("Por favor, seleccione un género válido (Masculino o Femenino).", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            // Verificar que el valor sea 'Masculino' o 'Femenino'
+            if (genero == "Masculino" || genero == "Femenino")
+            {
+                
+                return true;
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione un género válido (Masculino o Femenino).", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+
         private bool ValidarEdadMenorDe18()
         {
             // Verificar si el contenido del txtEdad es un número válido

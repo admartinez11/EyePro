@@ -540,7 +540,7 @@ namespace OpticaMultivisual.Views.Dashboard.Article.Color
             this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuPictureBox1.AutoSizeHeight = false;
             this.bunifuPictureBox1.BorderRadius = 0;
-            this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
+            this.bunifuPictureBox1.Image = global::OpticaMultivisual.Properties.Resources.EyePro__Logos;
             this.bunifuPictureBox1.IsCircle = true;
             this.bunifuPictureBox1.Location = new System.Drawing.Point(8, 2);
             this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(2);

@@ -113,15 +113,14 @@
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.33704F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.66295F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.60656F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.39344F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(744, 366);
             this.tableLayoutPanel2.TabIndex = 9;
             // 
             // tableLayoutPanel10
             // 
-            this.tableLayoutPanel10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.tableLayoutPanel10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel10.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel10.ColumnCount = 3;
@@ -131,14 +130,14 @@
             this.tableLayoutPanel10.Controls.Add(this.btnActualizar, 1, 0);
             this.tableLayoutPanel10.Controls.Add(this.btnAgregar, 2, 0);
             this.tableLayoutPanel10.Controls.Add(this.btnEliminar, 0, 0);
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(45, 313);
-            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(38, 16, 2, 2);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(9, 308);
+            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 2;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.18519F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.81481F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(697, 51);
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(733, 56);
             this.tableLayoutPanel10.TabIndex = 8;
             // 
             // btnActualizar
@@ -146,7 +145,8 @@
             this.btnActualizar.AllowAnimations = true;
             this.btnActualizar.AllowMouseEffects = true;
             this.btnActualizar.AllowToggling = false;
-            this.btnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnActualizar.AnimationSpeed = 200;
             this.btnActualizar.AutoGenerateColors = false;
@@ -184,13 +184,14 @@
             this.btnActualizar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnActualizar.IconSize = 25;
             this.btnActualizar.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
-            this.btnActualizar.IdleBorderRadius = 24;
+            this.btnActualizar.IdleBorderRadius = 23;
             this.btnActualizar.IdleBorderThickness = 1;
             this.btnActualizar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
             this.btnActualizar.IdleIconLeftImage = null;
             this.btnActualizar.IdleIconRightImage = null;
             this.btnActualizar.IndicateFocus = false;
-            this.btnActualizar.Location = new System.Drawing.Point(263, 3);
+            this.btnActualizar.Location = new System.Drawing.Point(293, 20);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(20, 20, 20, 2);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnActualizar.OnDisabledState.BorderRadius = 20;
@@ -224,7 +225,7 @@
             this.btnActualizar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnActualizar.OnPressedState.IconLeftImage = null;
             this.btnActualizar.OnPressedState.IconRightImage = null;
-            this.btnActualizar.Size = new System.Drawing.Size(211, 26);
+            this.btnActualizar.Size = new System.Drawing.Size(188, 25);
             this.btnActualizar.TabIndex = 34;
             this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnActualizar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -237,7 +238,8 @@
             this.btnAgregar.AllowAnimations = true;
             this.btnAgregar.AllowMouseEffects = true;
             this.btnAgregar.AllowToggling = false;
-            this.btnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAgregar.AnimationSpeed = 200;
             this.btnAgregar.AutoGenerateColors = false;
@@ -275,13 +277,14 @@
             this.btnAgregar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnAgregar.IconSize = 25;
             this.btnAgregar.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
-            this.btnAgregar.IdleBorderRadius = 24;
+            this.btnAgregar.IdleBorderRadius = 23;
             this.btnAgregar.IdleBorderThickness = 1;
             this.btnAgregar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
             this.btnAgregar.IdleIconLeftImage = null;
             this.btnAgregar.IdleIconRightImage = null;
             this.btnAgregar.IndicateFocus = false;
-            this.btnAgregar.Location = new System.Drawing.Point(480, 3);
+            this.btnAgregar.Location = new System.Drawing.Point(521, 20);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(20, 20, 20, 2);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAgregar.OnDisabledState.BorderRadius = 20;
@@ -315,7 +318,7 @@
             this.btnAgregar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnAgregar.OnPressedState.IconLeftImage = null;
             this.btnAgregar.OnPressedState.IconRightImage = null;
-            this.btnAgregar.Size = new System.Drawing.Size(214, 26);
+            this.btnAgregar.Size = new System.Drawing.Size(192, 25);
             this.btnAgregar.TabIndex = 35;
             this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAgregar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -328,7 +331,8 @@
             this.btnEliminar.AllowAnimations = true;
             this.btnEliminar.AllowMouseEffects = true;
             this.btnEliminar.AllowToggling = false;
-            this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEliminar.AnimationSpeed = 200;
             this.btnEliminar.AutoGenerateColors = false;
@@ -366,14 +370,14 @@
             this.btnEliminar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnEliminar.IconSize = 25;
             this.btnEliminar.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
-            this.btnEliminar.IdleBorderRadius = 24;
+            this.btnEliminar.IdleBorderRadius = 23;
             this.btnEliminar.IdleBorderThickness = 1;
             this.btnEliminar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
             this.btnEliminar.IdleIconLeftImage = null;
             this.btnEliminar.IdleIconRightImage = null;
             this.btnEliminar.IndicateFocus = false;
-            this.btnEliminar.Location = new System.Drawing.Point(45, 3);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(45, 3, 8, 3);
+            this.btnEliminar.Location = new System.Drawing.Point(20, 20);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(20, 20, 20, 2);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEliminar.OnDisabledState.BorderRadius = 20;
@@ -407,7 +411,7 @@
             this.btnEliminar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.OnPressedState.IconLeftImage = null;
             this.btnEliminar.OnPressedState.IconRightImage = null;
-            this.btnEliminar.Size = new System.Drawing.Size(207, 26);
+            this.btnEliminar.Size = new System.Drawing.Size(233, 25);
             this.btnEliminar.TabIndex = 36;
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEliminar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -642,7 +646,7 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvPD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvPD.ColumnHeadersHeight = 30;
+            this.dgvPD.ColumnHeadersHeight = 60;
             this.dgvPD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvPD.EnableHeadersVisualStyles = false;
             this.dgvPD.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
@@ -667,7 +671,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvPD.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPD.Size = new System.Drawing.Size(733, 293);
+            this.dgvPD.Size = new System.Drawing.Size(733, 302);
             this.dgvPD.TabIndex = 9;
             // 
             // ViewPedidoDet

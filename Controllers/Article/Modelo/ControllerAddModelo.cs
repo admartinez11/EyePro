@@ -16,6 +16,7 @@ namespace OpticaMultivisual.Controllers.Article.Modelo
         ViewAddModelo ObjVistaR;
         private int accion;
         protected int modId;
+        public string marca_id;
         public ControllerAddModelo(ViewAddModelo Vista, int accion)
         {
             //Acciones iniciales
@@ -49,6 +50,10 @@ namespace OpticaMultivisual.Controllers.Article.Modelo
             ObjVistaR.cmbMarca.DataSource = ds.Tables["Marca"];
             ObjVistaR.cmbMarca.DisplayMember = "marca_nombre";
             ObjVistaR.cmbMarca.ValueMember = "marca_ID";
+            if (accion == 2)
+            {
+                ObjVistaR.cmbMarca.Text = marca_id;
+            }
         }
         public void NuevaMarca(object sender, EventArgs e)
         {
@@ -121,28 +126,28 @@ namespace OpticaMultivisual.Controllers.Article.Modelo
             }
             return true;
         }
-        public ControllerAddModelo(ViewAddModelo Vista, int p_accion, int mod_ID, string Mod_nombre, int Marca_ID)
+        public ControllerAddModelo(ViewAddModelo Vista, int p_accion, int mod_ID, string Mod_nombre, string Marca_ID)
         {
             // Acciones iniciales
             ObjVistaR = Vista;
             this.accion = p_accion;
             this.modId = mod_ID;
+            this.marca_id = Marca_ID;
             Vista.Load += new EventHandler(CargaInicial);
             // Verificar la acción a realizar
             verificarAccion();
             // Cargar los valores en la articulo
-            Cargarvalores(Mod_nombre, Marca_ID);
+            Cargarvalores(Mod_nombre);
             // Métodos que se ejecutan al ocurrir eventos
             ObjVistaR.btnActualizarModelo.Click += new EventHandler(ActualizarRegistro);
             // ObjAddUser.btnFoto.Click += new EventHandler(ChargePhoto);
         }
-        public void Cargarvalores(string Mod_nombre, int Marca_ID)
+        public void Cargarvalores(string Mod_nombre)
         {
             try
             {
                 // Asignación correcta
                 ObjVistaR.txtModeloNombre.Text = Mod_nombre; // Campo para DUI
-                ObjVistaR.cmbMarca.SelectedValue = Marca_ID; // Campo para Teléfono
             }
             catch (Exception ex)
             {
