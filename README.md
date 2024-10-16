@@ -1,8 +1,8 @@
 # EyePro
-Autores: Adriana Paola Martínez Vásquez, Joshua Gilberto Marinero Hernández, Astrid Berenice Murgas Herrera, Carlos Mario Quintanilla Ramírez, Paul Melquisedec Cañas Palacios.
-Año de creación: 2024
-Lenguaje de programación utilizado: C#
-Gestor de base de datos: SQL Server
+- Autores: Adriana Paola Martínez Vásquez, Joshua Gilberto Marinero Hernández, Astrid Berenice Murgas Herrera, Carlos Mario Quintanilla Ramírez, Paul Melquisedec Cañas Palacios.
+- Año de creación: 2024
+- Lenguaje de programación utilizado: C#
+- Gestor de base de datos: SQL Server
 
 El repositorio es solo de lectura. EyePro es un sistema diseñado para la gestión de ópticas, con características que permiten administrar inventarios de productos, usuarios. Solo puede descargarse, pero no es modificable. El proyecto contiene:
 
