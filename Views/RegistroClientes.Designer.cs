@@ -83,8 +83,6 @@ namespace AdministrarClientes.View.RegistroCliente
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.btnActualizar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnAgregarCliente = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
-            this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.checkmenor = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.txtdui = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -92,6 +90,7 @@ namespace AdministrarClientes.View.RegistroCliente
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.txtEdad = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtcorreo_electronico = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.cmbGenero = new Bunifu.UI.WinForms.BunifuDropdown();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
@@ -102,18 +101,19 @@ namespace AdministrarClientes.View.RegistroCliente
             this.bunifuTextBox3 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuTextBox2 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuTextBox6 = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.cmbGenero = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.bunifuPanel1.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
-            this.bunifuPanel2.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -188,15 +188,15 @@ namespace AdministrarClientes.View.RegistroCliente
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.9937888F));
             this.tableLayoutPanel9.Controls.Add(this.txtpadecimientos, 1, 0);
             this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel10, 1, 3);
-            this.tableLayoutPanel9.Controls.Add(this.bunifuPanel2, 1, 2);
+            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel3, 1, 2);
             this.tableLayoutPanel9.Location = new System.Drawing.Point(37, 315);
             this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 4;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.61062F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.38938F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 58F));
             this.tableLayoutPanel9.Size = new System.Drawing.Size(840, 210);
             this.tableLayoutPanel9.TabIndex = 8;
             // 
@@ -290,14 +290,14 @@ namespace AdministrarClientes.View.RegistroCliente
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.4578F));
             this.tableLayoutPanel10.Controls.Add(this.btnActualizar, 1, 0);
             this.tableLayoutPanel10.Controls.Add(this.btnAgregarCliente, 2, 0);
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(12, 147);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(12, 153);
             this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 2;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.18519F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.81481F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(816, 61);
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(816, 55);
             this.tableLayoutPanel10.TabIndex = 7;
             // 
             // btnActualizar
@@ -342,7 +342,7 @@ namespace AdministrarClientes.View.RegistroCliente
             this.btnActualizar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnActualizar.IconSize = 25;
             this.btnActualizar.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
-            this.btnActualizar.IdleBorderRadius = 41;
+            this.btnActualizar.IdleBorderRadius = 36;
             this.btnActualizar.IdleBorderThickness = 1;
             this.btnActualizar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
             this.btnActualizar.IdleIconLeftImage = null;
@@ -383,7 +383,7 @@ namespace AdministrarClientes.View.RegistroCliente
             this.btnActualizar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnActualizar.OnPressedState.IconLeftImage = null;
             this.btnActualizar.OnPressedState.IconRightImage = null;
-            this.btnActualizar.Size = new System.Drawing.Size(246, 43);
+            this.btnActualizar.Size = new System.Drawing.Size(246, 38);
             this.btnActualizar.TabIndex = 10;
             this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnActualizar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -433,7 +433,7 @@ namespace AdministrarClientes.View.RegistroCliente
             this.btnAgregarCliente.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnAgregarCliente.IconSize = 25;
             this.btnAgregarCliente.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
-            this.btnAgregarCliente.IdleBorderRadius = 41;
+            this.btnAgregarCliente.IdleBorderRadius = 36;
             this.btnAgregarCliente.IdleBorderThickness = 1;
             this.btnAgregarCliente.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(31)))), ((int)(((byte)(92)))));
             this.btnAgregarCliente.IdleIconLeftImage = null;
@@ -474,46 +474,13 @@ namespace AdministrarClientes.View.RegistroCliente
             this.btnAgregarCliente.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnAgregarCliente.OnPressedState.IconLeftImage = null;
             this.btnAgregarCliente.OnPressedState.IconRightImage = null;
-            this.btnAgregarCliente.Size = new System.Drawing.Size(250, 43);
+            this.btnAgregarCliente.Size = new System.Drawing.Size(250, 38);
             this.btnAgregarCliente.TabIndex = 9;
             this.btnAgregarCliente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAgregarCliente.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnAgregarCliente.TextMarginLeft = 0;
             this.btnAgregarCliente.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnAgregarCliente.UseDefaultRadiusAndThickness = true;
-            // 
-            // bunifuPanel2
-            // 
-            this.bunifuPanel2.BackgroundColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
-            this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel2.BorderRadius = 3;
-            this.bunifuPanel2.BorderThickness = 1;
-            this.bunifuPanel2.Controls.Add(this.bunifuLabel1);
-            this.bunifuPanel2.Controls.Add(this.checkmenor);
-            this.bunifuPanel2.Location = new System.Drawing.Point(12, 114);
-            this.bunifuPanel2.Name = "bunifuPanel2";
-            this.bunifuPanel2.ShowBorders = true;
-            this.bunifuPanel2.Size = new System.Drawing.Size(200, 28);
-            this.bunifuPanel2.TabIndex = 11;
-            // 
-            // bunifuLabel1
-            // 
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bunifuLabel1.Location = new System.Drawing.Point(38, 4);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(105, 20);
-            this.bunifuLabel1.TabIndex = 10;
-            this.bunifuLabel1.Text = "Menor de Edad";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // checkmenor
             // 
@@ -533,7 +500,7 @@ namespace AdministrarClientes.View.RegistroCliente
             this.checkmenor.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
             this.checkmenor.Cursor = System.Windows.Forms.Cursors.Default;
             this.checkmenor.CustomCheckmarkImage = null;
-            this.checkmenor.Location = new System.Drawing.Point(11, 2);
+            this.checkmenor.Location = new System.Drawing.Point(3, 2);
             this.checkmenor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkmenor.MinimumSize = new System.Drawing.Size(17, 17);
             this.checkmenor.Name = "checkmenor";
@@ -563,7 +530,7 @@ namespace AdministrarClientes.View.RegistroCliente
             this.checkmenor.OnUncheck.BorderRadius = 12;
             this.checkmenor.OnUncheck.BorderThickness = 1;
             this.checkmenor.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
-            this.checkmenor.Size = new System.Drawing.Size(21, 21);
+            this.checkmenor.Size = new System.Drawing.Size(28, 28);
             this.checkmenor.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
             this.checkmenor.TabIndex = 9;
             this.checkmenor.ThreeState = false;
@@ -923,6 +890,56 @@ namespace AdministrarClientes.View.RegistroCliente
             this.txtcorreo_electronico.UseSystemPasswordChar = false;
             this.txtcorreo_electronico.WordWrap = true;
             // 
+            // cmbGenero
+            // 
+            this.cmbGenero.BackColor = System.Drawing.Color.Transparent;
+            this.cmbGenero.BackgroundColor = System.Drawing.Color.White;
+            this.cmbGenero.BorderColor = System.Drawing.Color.Silver;
+            this.cmbGenero.BorderRadius = 15;
+            this.cmbGenero.Color = System.Drawing.Color.Silver;
+            this.cmbGenero.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.cmbGenero.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.cmbGenero.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.cmbGenero.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.cmbGenero.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.cmbGenero.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
+            this.cmbGenero.DisplayMember = "Genero";
+            this.cmbGenero.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbGenero.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
+            this.cmbGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbGenero.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.cmbGenero.FillDropDown = true;
+            this.cmbGenero.FillIndicator = false;
+            this.cmbGenero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbGenero.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cmbGenero.ForeColor = System.Drawing.Color.Black;
+            this.cmbGenero.FormattingEnabled = true;
+            this.cmbGenero.Icon = null;
+            this.cmbGenero.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.cmbGenero.IndicatorColor = System.Drawing.Color.DarkGray;
+            this.cmbGenero.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.cmbGenero.IndicatorThickness = 2;
+            this.cmbGenero.IsDropdownOpened = false;
+            this.cmbGenero.ItemBackColor = System.Drawing.Color.White;
+            this.cmbGenero.ItemBorderColor = System.Drawing.Color.White;
+            this.cmbGenero.ItemForeColor = System.Drawing.Color.Black;
+            this.cmbGenero.ItemHeight = 38;
+            this.cmbGenero.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.cmbGenero.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.cmbGenero.Items.AddRange(new object[] {
+            "Masculino",
+            "Femenino"});
+            this.cmbGenero.ItemTopMargin = 3;
+            this.cmbGenero.Location = new System.Drawing.Point(2, 14);
+            this.cmbGenero.Margin = new System.Windows.Forms.Padding(2, 14, 2, 12);
+            this.cmbGenero.Name = "cmbGenero";
+            this.cmbGenero.Size = new System.Drawing.Size(156, 44);
+            this.cmbGenero.TabIndex = 6;
+            this.cmbGenero.Text = null;
+            this.cmbGenero.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.cmbGenero.TextLeftMargin = 5;
+            this.cmbGenero.ValueMember = "Genero";
+            // 
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -1163,8 +1180,8 @@ namespace AdministrarClientes.View.RegistroCliente
             this.txtNombre.IconRight = null;
             this.txtNombre.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNombre.Lines = new string[0];
-            this.txtNombre.Location = new System.Drawing.Point(15, 14);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(15, 14, 3, 12);
+            this.txtNombre.Location = new System.Drawing.Point(2, 14);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 14, 3, 12);
             this.txtNombre.MaxLength = 100;
             this.txtNombre.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtNombre.Modified = false;
@@ -1200,7 +1217,7 @@ namespace AdministrarClientes.View.RegistroCliente
             this.txtNombre.SelectionLength = 0;
             this.txtNombre.SelectionStart = 0;
             this.txtNombre.ShortcutsEnabled = true;
-            this.txtNombre.Size = new System.Drawing.Size(245, 45);
+            this.txtNombre.Size = new System.Drawing.Size(258, 45);
             this.txtNombre.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtNombre.TabIndex = 0;
             this.txtNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1466,53 +1483,42 @@ namespace AdministrarClientes.View.RegistroCliente
             this.bunifuTextBox6.UseSystemPasswordChar = false;
             this.bunifuTextBox6.WordWrap = true;
             // 
-            // cmbGenero
+            // tableLayoutPanel3
             // 
-            this.cmbGenero.BackColor = System.Drawing.Color.Transparent;
-            this.cmbGenero.BackgroundColor = System.Drawing.Color.White;
-            this.cmbGenero.BorderColor = System.Drawing.Color.Silver;
-            this.cmbGenero.BorderRadius = 1;
-            this.cmbGenero.Color = System.Drawing.Color.Silver;
-            this.cmbGenero.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.cmbGenero.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cmbGenero.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.cmbGenero.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cmbGenero.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.cmbGenero.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
-            this.cmbGenero.DisplayMember = "Genero";
-            this.cmbGenero.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbGenero.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
-            this.cmbGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbGenero.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.cmbGenero.FillDropDown = true;
-            this.cmbGenero.FillIndicator = false;
-            this.cmbGenero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbGenero.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.cmbGenero.ForeColor = System.Drawing.Color.Black;
-            this.cmbGenero.FormattingEnabled = true;
-            this.cmbGenero.Icon = null;
-            this.cmbGenero.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.cmbGenero.IndicatorColor = System.Drawing.Color.DarkGray;
-            this.cmbGenero.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.cmbGenero.IndicatorThickness = 2;
-            this.cmbGenero.IsDropdownOpened = false;
-            this.cmbGenero.ItemBackColor = System.Drawing.Color.White;
-            this.cmbGenero.ItemBorderColor = System.Drawing.Color.White;
-            this.cmbGenero.ItemForeColor = System.Drawing.Color.Black;
-            this.cmbGenero.ItemHeight = 26;
-            this.cmbGenero.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
-            this.cmbGenero.ItemHighLightForeColor = System.Drawing.Color.White;
-            this.cmbGenero.Items.AddRange(new object[] {
-            "Masculino",
-            "Femenino"});
-            this.cmbGenero.ItemTopMargin = 3;
-            this.cmbGenero.Location = new System.Drawing.Point(3, 3);
-            this.cmbGenero.Name = "cmbGenero";
-            this.cmbGenero.Size = new System.Drawing.Size(154, 32);
-            this.cmbGenero.TabIndex = 6;
-            this.cmbGenero.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.cmbGenero.TextLeftMargin = 5;
-            this.cmbGenero.ValueMember = "Genero";
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel3.ColumnCount = 3;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.779412F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.60294F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.4578F));
+            this.tableLayoutPanel3.Controls.Add(this.checkmenor, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label2, 1, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(12, 113);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.18519F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.81481F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(816, 36);
+            this.tableLayoutPanel3.TabIndex = 9;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(42, 8);
+            this.label2.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(513, 22);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Menor de edad";
             // 
             // RegistroClientes
             // 
@@ -1532,14 +1538,14 @@ namespace AdministrarClientes.View.RegistroCliente
             this.bunifuPanel1.ResumeLayout(false);
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel10.ResumeLayout(false);
-            this.bunifuPanel2.ResumeLayout(false);
-            this.bunifuPanel2.PerformLayout();
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1571,8 +1577,8 @@ namespace AdministrarClientes.View.RegistroCliente
         public Bunifu.UI.WinForms.BunifuTextBox txtEdad;
         public Bunifu.UI.WinForms.BunifuCheckBox checkmenor;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         public Bunifu.UI.WinForms.BunifuDropdown cmbGenero;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Label label2;
     }
 }
