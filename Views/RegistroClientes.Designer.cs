@@ -134,6 +134,7 @@ namespace AdministrarClientes.View.RegistroCliente
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.69394F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1028, 609);
             this.tableLayoutPanel1.TabIndex = 14;
+            this.tableLayoutPanel1.TabStop = true;
             // 
             // bunifuPictureBox1
             // 
@@ -473,7 +474,7 @@ namespace AdministrarClientes.View.RegistroCliente
             this.btnAgregarCliente.OnPressedState.IconLeftImage = null;
             this.btnAgregarCliente.OnPressedState.IconRightImage = null;
             this.btnAgregarCliente.Size = new System.Drawing.Size(188, 31);
-            this.btnAgregarCliente.TabIndex = 9;
+            this.btnAgregarCliente.TabIndex = 11;
             this.btnAgregarCliente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAgregarCliente.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnAgregarCliente.TextMarginLeft = 0;
@@ -969,7 +970,7 @@ namespace AdministrarClientes.View.RegistroCliente
             this.cmbGenero.Margin = new System.Windows.Forms.Padding(2, 11, 2, 10);
             this.cmbGenero.Name = "cmbGenero";
             this.cmbGenero.Size = new System.Drawing.Size(116, 44);
-            this.cmbGenero.TabIndex = 6;
+            this.cmbGenero.TabIndex = 3;
             this.cmbGenero.Text = null;
             this.cmbGenero.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.cmbGenero.TextLeftMargin = 5;
@@ -994,6 +995,7 @@ namespace AdministrarClientes.View.RegistroCliente
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.30769F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(618, 51);
             this.tableLayoutPanel6.TabIndex = 7;
+            this.tableLayoutPanel6.TabStop = true;
             // 
             // label1
             // 
