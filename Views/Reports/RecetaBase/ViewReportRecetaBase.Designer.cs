@@ -28,12 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.button1 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.dataSet_ReportRecetaBase = new OpticaMultivisual.Views.Reports.RecetaBase.DataSet_ReportRecetaBase();
+            this.dRefractivoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dRefractivoTableAdapter = new OpticaMultivisual.Views.Reports.RecetaBase.DataSet_ReportRecetaBaseTableAdapters.DRefractivoTableAdapter();
             this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet_ReportRecetaBase)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dRefractivoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -83,11 +90,29 @@
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.dRefractivoBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "OpticaMultivisual.Views.Reports.RecetaBase.ReportGeneralRecetaBase.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 50);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Size = new System.Drawing.Size(915, 494);
             this.reportViewer1.TabIndex = 2;
+            // 
+            // dataSet_ReportRecetaBase
+            // 
+            this.dataSet_ReportRecetaBase.DataSetName = "DataSet_ReportRecetaBase";
+            this.dataSet_ReportRecetaBase.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dRefractivoBindingSource
+            // 
+            this.dRefractivoBindingSource.DataMember = "DRefractivo";
+            this.dRefractivoBindingSource.DataSource = this.dataSet_ReportRecetaBase;
+            // 
+            // dRefractivoTableAdapter
+            // 
+            this.dRefractivoTableAdapter.ClearBeforeFill = true;
             // 
             // ViewReportRecetaBase
             // 
@@ -103,6 +128,8 @@
             this.Load += new System.EventHandler(this.ViewReportRecetaBase_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet_ReportRecetaBase)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dRefractivoBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -114,5 +141,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private DataSet_ReportRecetaBase dataSet_ReportRecetaBase;
+        private System.Windows.Forms.BindingSource dRefractivoBindingSource;
+        private DataSet_ReportRecetaBaseTableAdapters.DRefractivoTableAdapter dRefractivoTableAdapter;
     }
 }

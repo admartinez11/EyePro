@@ -180,6 +180,27 @@ namespace OpticaMultivisual.Models.DAO
             }
         }
 
+        //public int ImprimirDR()
+        //{
+        //    try
+        //    {
+        //        Command.Connection = getConnection();
+        //        string query4 = "Select DRefractivo WHERE DR_ID = @paramDR";
+        //        SqlCommand cmd = new SqlCommand(query4, Command.Connection);
+        //        cmd.Parameters.AddWithValue("paramDR", DR_ID1);
+        //        int respuesta = cmd.ExecuteNonQuery();
+        //        return respuesta;
+        //    }
+        //    catch (Exception)
+        //    {
+        //        return -1;
+        //    }
+        //    finally
+        //    {
+        //        Command.Connection.Close();
+        //    }
+        //}
+
         public DataSet BuscarDUI(string valor)
         {
             try

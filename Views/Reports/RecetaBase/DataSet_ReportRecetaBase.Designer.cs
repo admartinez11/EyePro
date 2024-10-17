@@ -10,6 +10,8 @@
 
 #pragma warning disable 1591
 
+using System;
+
 namespace OpticaMultivisual.Views.Reports.RecetaBase {
     
     
@@ -313,25 +315,7 @@ namespace OpticaMultivisual.Views.Reports.RecetaBase {
             
             private global::System.Data.DataColumn columncli_DUI;
             
-            private global::System.Data.DataColumn columnOD_esfera2;
-            
-            private global::System.Data.DataColumn columnOD_cilindro2;
-            
-            private global::System.Data.DataColumn columnOD_eje2;
-            
-            private global::System.Data.DataColumn columnOD_prisma2;
-            
-            private global::System.Data.DataColumn columnOD_adicion2;
-            
-            private global::System.Data.DataColumn columnOI_esfera2;
-            
-            private global::System.Data.DataColumn columnOI_cilindro2;
-            
-            private global::System.Data.DataColumn columnOI_eje2;
-            
-            private global::System.Data.DataColumn columnOI_prisma2;
-            
-            private global::System.Data.DataColumn columnOI_adicion2;
+            private global::System.Data.DataColumn columnDR_ID;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -504,81 +488,9 @@ namespace OpticaMultivisual.Views.Reports.RecetaBase {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn OD_esfera2Column {
+            public global::System.Data.DataColumn DR_IDColumn {
                 get {
-                    return this.columnOD_esfera2;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn OD_cilindro2Column {
-                get {
-                    return this.columnOD_cilindro2;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn OD_eje2Column {
-                get {
-                    return this.columnOD_eje2;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn OD_prisma2Column {
-                get {
-                    return this.columnOD_prisma2;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn OD_adicion2Column {
-                get {
-                    return this.columnOD_adicion2;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn OI_esfera2Column {
-                get {
-                    return this.columnOI_esfera2;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn OI_cilindro2Column {
-                get {
-                    return this.columnOI_cilindro2;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn OI_eje2Column {
-                get {
-                    return this.columnOI_eje2;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn OI_prisma2Column {
-                get {
-                    return this.columnOI_prisma2;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn OI_adicion2Column {
-                get {
-                    return this.columnOI_adicion2;
+                    return this.columnDR_ID;
                 }
             }
             
@@ -636,17 +548,7 @@ namespace OpticaMultivisual.Views.Reports.RecetaBase {
                         string OI_AO, 
                         string OI_AP, 
                         string OI_DP, 
-                        string cli_DUI, 
-                        string OD_esfera2, 
-                        string OD_cilindro2, 
-                        string OD_eje2, 
-                        string OD_prisma2, 
-                        string OD_adicion2, 
-                        string OI_esfera2, 
-                        string OI_cilindro2, 
-                        string OI_eje2, 
-                        string OI_prisma2, 
-                        string OI_adicion2) {
+                        string cli_DUI) {
                 DRefractivoRow rowDRefractivoRow = ((DRefractivoRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         OD_esfera,
@@ -666,19 +568,17 @@ namespace OpticaMultivisual.Views.Reports.RecetaBase {
                         OI_AP,
                         OI_DP,
                         cli_DUI,
-                        OD_esfera2,
-                        OD_cilindro2,
-                        OD_eje2,
-                        OD_prisma2,
-                        OD_adicion2,
-                        OI_esfera2,
-                        OI_cilindro2,
-                        OI_eje2,
-                        OI_prisma2,
-                        OI_adicion2};
+                        null};
                 rowDRefractivoRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDRefractivoRow);
                 return rowDRefractivoRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public DRefractivoRow FindByDR_ID(int DR_ID) {
+                return ((DRefractivoRow)(this.Rows.Find(new object[] {
+                            DR_ID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -715,16 +615,7 @@ namespace OpticaMultivisual.Views.Reports.RecetaBase {
                 this.columnOI_AP = base.Columns["OI_AP"];
                 this.columnOI_DP = base.Columns["OI_DP"];
                 this.columncli_DUI = base.Columns["cli_DUI"];
-                this.columnOD_esfera2 = base.Columns["OD_esfera2"];
-                this.columnOD_cilindro2 = base.Columns["OD_cilindro2"];
-                this.columnOD_eje2 = base.Columns["OD_eje2"];
-                this.columnOD_prisma2 = base.Columns["OD_prisma2"];
-                this.columnOD_adicion2 = base.Columns["OD_adicion2"];
-                this.columnOI_esfera2 = base.Columns["OI_esfera2"];
-                this.columnOI_cilindro2 = base.Columns["OI_cilindro2"];
-                this.columnOI_eje2 = base.Columns["OI_eje2"];
-                this.columnOI_prisma2 = base.Columns["OI_prisma2"];
-                this.columnOI_adicion2 = base.Columns["OI_adicion2"];
+                this.columnDR_ID = base.Columns["DR_ID"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -764,26 +655,10 @@ namespace OpticaMultivisual.Views.Reports.RecetaBase {
                 base.Columns.Add(this.columnOI_DP);
                 this.columncli_DUI = new global::System.Data.DataColumn("cli_DUI", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncli_DUI);
-                this.columnOD_esfera2 = new global::System.Data.DataColumn("OD_esfera2", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOD_esfera2);
-                this.columnOD_cilindro2 = new global::System.Data.DataColumn("OD_cilindro2", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOD_cilindro2);
-                this.columnOD_eje2 = new global::System.Data.DataColumn("OD_eje2", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOD_eje2);
-                this.columnOD_prisma2 = new global::System.Data.DataColumn("OD_prisma2", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOD_prisma2);
-                this.columnOD_adicion2 = new global::System.Data.DataColumn("OD_adicion2", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOD_adicion2);
-                this.columnOI_esfera2 = new global::System.Data.DataColumn("OI_esfera2", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOI_esfera2);
-                this.columnOI_cilindro2 = new global::System.Data.DataColumn("OI_cilindro2", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOI_cilindro2);
-                this.columnOI_eje2 = new global::System.Data.DataColumn("OI_eje2", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOI_eje2);
-                this.columnOI_prisma2 = new global::System.Data.DataColumn("OI_prisma2", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOI_prisma2);
-                this.columnOI_adicion2 = new global::System.Data.DataColumn("OI_adicion2", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOI_adicion2);
+                this.columnDR_ID = new global::System.Data.DataColumn("DR_ID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDR_ID);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnDR_ID}, true));
                 this.columnOD_esfera.MaxLength = 5;
                 this.columnOD_cilindro.MaxLength = 5;
                 this.columnOD_eje.MaxLength = 5;
@@ -801,16 +676,12 @@ namespace OpticaMultivisual.Views.Reports.RecetaBase {
                 this.columnOI_AP.MaxLength = 5;
                 this.columnOI_DP.MaxLength = 5;
                 this.columncli_DUI.MaxLength = 15;
-                this.columnOD_esfera2.MaxLength = 5;
-                this.columnOD_cilindro2.MaxLength = 5;
-                this.columnOD_eje2.MaxLength = 5;
-                this.columnOD_prisma2.MaxLength = 5;
-                this.columnOD_adicion2.MaxLength = 5;
-                this.columnOI_esfera2.MaxLength = 5;
-                this.columnOI_cilindro2.MaxLength = 5;
-                this.columnOI_eje2.MaxLength = 5;
-                this.columnOI_prisma2.MaxLength = 5;
-                this.columnOI_adicion2.MaxLength = 5;
+                this.columnDR_ID.AutoIncrement = true;
+                this.columnDR_ID.AutoIncrementSeed = -1;
+                this.columnDR_ID.AutoIncrementStep = -1;
+                this.columnDR_ID.AllowDBNull = false;
+                this.columnDR_ID.ReadOnly = true;
+                this.columnDR_ID.Unique = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1225,161 +1096,12 @@ namespace OpticaMultivisual.Views.Reports.RecetaBase {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string OD_esfera2 {
+            public int DR_ID {
                 get {
-                    try {
-                        return ((string)(this[this.tableDRefractivo.OD_esfera2Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'OD_esfera2\' in table \'DRefractivo\' is DBNull.", e);
-                    }
+                    return ((int)(this[this.tableDRefractivo.DR_IDColumn]));
                 }
                 set {
-                    this[this.tableDRefractivo.OD_esfera2Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string OD_cilindro2 {
-                get {
-                    try {
-                        return ((string)(this[this.tableDRefractivo.OD_cilindro2Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'OD_cilindro2\' in table \'DRefractivo\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDRefractivo.OD_cilindro2Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string OD_eje2 {
-                get {
-                    try {
-                        return ((string)(this[this.tableDRefractivo.OD_eje2Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'OD_eje2\' in table \'DRefractivo\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDRefractivo.OD_eje2Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string OD_prisma2 {
-                get {
-                    try {
-                        return ((string)(this[this.tableDRefractivo.OD_prisma2Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'OD_prisma2\' in table \'DRefractivo\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDRefractivo.OD_prisma2Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string OD_adicion2 {
-                get {
-                    try {
-                        return ((string)(this[this.tableDRefractivo.OD_adicion2Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'OD_adicion2\' in table \'DRefractivo\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDRefractivo.OD_adicion2Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string OI_esfera2 {
-                get {
-                    try {
-                        return ((string)(this[this.tableDRefractivo.OI_esfera2Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'OI_esfera2\' in table \'DRefractivo\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDRefractivo.OI_esfera2Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string OI_cilindro2 {
-                get {
-                    try {
-                        return ((string)(this[this.tableDRefractivo.OI_cilindro2Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'OI_cilindro2\' in table \'DRefractivo\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDRefractivo.OI_cilindro2Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string OI_eje2 {
-                get {
-                    try {
-                        return ((string)(this[this.tableDRefractivo.OI_eje2Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'OI_eje2\' in table \'DRefractivo\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDRefractivo.OI_eje2Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string OI_prisma2 {
-                get {
-                    try {
-                        return ((string)(this[this.tableDRefractivo.OI_prisma2Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'OI_prisma2\' in table \'DRefractivo\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDRefractivo.OI_prisma2Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string OI_adicion2 {
-                get {
-                    try {
-                        return ((string)(this[this.tableDRefractivo.OI_adicion2Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'OI_adicion2\' in table \'DRefractivo\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDRefractivo.OI_adicion2Column] = value;
+                    this[this.tableDRefractivo.DR_IDColumn] = value;
                 }
             }
             
@@ -1586,126 +1308,6 @@ namespace OpticaMultivisual.Views.Reports.RecetaBase {
             public void Setcli_DUINull() {
                 this[this.tableDRefractivo.cli_DUIColumn] = global::System.Convert.DBNull;
             }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsOD_esfera2Null() {
-                return this.IsNull(this.tableDRefractivo.OD_esfera2Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetOD_esfera2Null() {
-                this[this.tableDRefractivo.OD_esfera2Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsOD_cilindro2Null() {
-                return this.IsNull(this.tableDRefractivo.OD_cilindro2Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetOD_cilindro2Null() {
-                this[this.tableDRefractivo.OD_cilindro2Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsOD_eje2Null() {
-                return this.IsNull(this.tableDRefractivo.OD_eje2Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetOD_eje2Null() {
-                this[this.tableDRefractivo.OD_eje2Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsOD_prisma2Null() {
-                return this.IsNull(this.tableDRefractivo.OD_prisma2Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetOD_prisma2Null() {
-                this[this.tableDRefractivo.OD_prisma2Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsOD_adicion2Null() {
-                return this.IsNull(this.tableDRefractivo.OD_adicion2Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetOD_adicion2Null() {
-                this[this.tableDRefractivo.OD_adicion2Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsOI_esfera2Null() {
-                return this.IsNull(this.tableDRefractivo.OI_esfera2Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetOI_esfera2Null() {
-                this[this.tableDRefractivo.OI_esfera2Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsOI_cilindro2Null() {
-                return this.IsNull(this.tableDRefractivo.OI_cilindro2Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetOI_cilindro2Null() {
-                this[this.tableDRefractivo.OI_cilindro2Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsOI_eje2Null() {
-                return this.IsNull(this.tableDRefractivo.OI_eje2Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetOI_eje2Null() {
-                this[this.tableDRefractivo.OI_eje2Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsOI_prisma2Null() {
-                return this.IsNull(this.tableDRefractivo.OI_prisma2Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetOI_prisma2Null() {
-                this[this.tableDRefractivo.OI_prisma2Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsOI_adicion2Null() {
-                return this.IsNull(this.tableDRefractivo.OI_adicion2Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetOI_adicion2Null() {
-                this[this.tableDRefractivo.OI_adicion2Column] = global::System.Convert.DBNull;
-            }
         }
         
         /// <summary>
@@ -1884,16 +1486,7 @@ namespace OpticaMultivisual.Views.Reports.RecetaBase.DataSet_ReportRecetaBaseTab
             tableMapping.ColumnMappings.Add("OI_AP", "OI_AP");
             tableMapping.ColumnMappings.Add("OI_DP", "OI_DP");
             tableMapping.ColumnMappings.Add("cli_DUI", "cli_DUI");
-            tableMapping.ColumnMappings.Add("OD_esfera2", "OD_esfera2");
-            tableMapping.ColumnMappings.Add("OD_cilindro2", "OD_cilindro2");
-            tableMapping.ColumnMappings.Add("OD_eje2", "OD_eje2");
-            tableMapping.ColumnMappings.Add("OD_prisma2", "OD_prisma2");
-            tableMapping.ColumnMappings.Add("OD_adicion2", "OD_adicion2");
-            tableMapping.ColumnMappings.Add("OI_esfera2", "OI_esfera2");
-            tableMapping.ColumnMappings.Add("OI_cilindro2", "OI_cilindro2");
-            tableMapping.ColumnMappings.Add("OI_eje2", "OI_eje2");
-            tableMapping.ColumnMappings.Add("OI_prisma2", "OI_prisma2");
-            tableMapping.ColumnMappings.Add("OI_adicion2", "OI_adicion2");
+            tableMapping.ColumnMappings.Add("DR_ID", "DR_ID");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -1911,34 +1504,44 @@ namespace OpticaMultivisual.Views.Reports.RecetaBase.DataSet_ReportRecetaBaseTab
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT        DRefractivo.OD_esfera, DRefractivo.OD_cilindro, DRefractivo.OD_eje, DRefractivo.OD_prisma, DRefractivo.OD_adicion, DRefractivo.OD_AO, DRefractivo.OD_AP, DRefractivo.OD_DP, DRefractivo.OI_esfera, 
-                         DRefractivo.OI_cilindro, DRefractivo.OI_eje, DRefractivo.OI_prisma, DRefractivo.OI_adicion, DRefractivo.OI_AO, DRefractivo.OI_AP, DRefractivo.OI_DP, Consulta.cli_DUI, Lensometria.OD_esfera AS OD_esfera2, 
-                         Lensometria.OD_cilindro AS OD_cilindro2, Lensometria.OD_eje AS OD_eje2, Lensometria.OD_prisma AS OD_prisma2, Lensometria.OD_adicion AS OD_adicion2, Lensometria.OI_esfera AS OI_esfera2, 
-                         Lensometria.OI_cilindro AS OI_cilindro2, Lensometria.OI_eje AS OI_eje2, Lensometria.OI_prisma AS OI_prisma2, Lensometria.OI_adicion AS OI_adicion2
+                         DRefractivo.OI_cilindro, DRefractivo.OI_eje, DRefractivo.OI_prisma, DRefractivo.OI_adicion, DRefractivo.OI_AO, DRefractivo.OI_AP, DRefractivo.OI_DP, Consulta.cli_DUI, DRefractivo.DR_ID
 FROM            DRefractivo INNER JOIN
-                         Consulta ON DRefractivo.con_ID = Consulta.con_ID INNER JOIN
-                         Lensometria ON Consulta.con_ID = Lensometria.con_ID";
+                         Consulta ON DRefractivo.con_ID = Consulta.con_ID
+WHERE        DRefractivo.DR_ID = @paramDR";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@paramDR", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "DR_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int ObtenerRecetaBase(DataSet_ReportRecetaBase.DRefractivoDataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
+        public virtual int ObtenerRecetaBase(DataSet_ReportRecetaBase.DRefractivoDataTable dataTable, int paramDR)
+        {
+            try
+            {
+                this.Adapter.SelectCommand = this.CommandCollection[0];
+                this.Adapter.SelectCommand.Parameters[0].Value = ((int)(paramDR));
+                if (this.ClearBeforeFill)
+                {
+                    dataTable.Clear();
+                }
+                int returnValue = this.Adapter.Fill(dataTable);
+                return returnValue;
             }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
+            catch (Exception ex)
+            {
+                throw new Exception("Error al ejecutar la consulta de receta base: " + ex.Message);
+            }
         }
-        
+
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet_ReportRecetaBase.DRefractivoDataTable GetData() {
+        public virtual DataSet_ReportRecetaBase.DRefractivoDataTable GetData(int paramDR) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(paramDR));
             DataSet_ReportRecetaBase.DRefractivoDataTable dataTable = new DataSet_ReportRecetaBase.DRefractivoDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
