@@ -22,36 +22,46 @@ namespace OpticaMultivisual.Controllers.Login
 
         void CambiarClave(object sender, EventArgs e)
         {
-            if (!(string.IsNullOrEmpty(vista.txtPIN.Text.Trim()) ||
+            try
+            {
+                // Cambiar el cursor a "Wait" mientras se descarga el archivo
+                Cursor.Current = Cursors.WaitCursor;
+                if (!(string.IsNullOrEmpty(vista.txtPIN.Text.Trim()) ||
                 string.IsNullOrEmpty(vista.txtUsuario.Text.Trim()) ||
                 string.IsNullOrEmpty(vista.txtNuevaContra.Text.Trim()) ||
                 string.IsNullOrEmpty(vista.txtConfirmarNuevaContra.Text.Trim())))
-            {
-                if (VerificarUsuario())
                 {
-                    if (VerificarPIN())
+                    if (VerificarUsuario())
                     {
-                        if (RestablecerClave())
+                        if (VerificarPIN())
                         {
-                            MessageBox.Show("Contraseña restablecida con éxito, ya puedes iniciar sesión con tu nueva contraseña.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            vista.Dispose();
-                            ViewLogin viewLogin = new ViewLogin();
-                            viewLogin.Show();
+                            if (RestablecerClave())
+                            {
+                                MessageBox.Show("Contraseña restablecida con éxito, ya puedes iniciar sesión con tu nueva contraseña.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                vista.Dispose();
+                                ViewLogin viewLogin = new ViewLogin();
+                                viewLogin.Show();
+                            }
+                            else
+                            {
+                                MessageBox.Show("EPV002 - Los datos no pudieron ser actualizados correctamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
                         }
                         else
                         {
-                            MessageBox.Show("EPV002 - Los datos no pudieron ser actualizados correctamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("El PIN o el usuario son incorrectos, verifique la información proporcionada.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
-                    else
-                    {
-                        MessageBox.Show("El PIN o el usuario son incorrectos, verifique la información proporcionada.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+                }
+                else
+                {
+                    MessageBox.Show("Todos los campos requeridos, favor complétalos para establecer una nueva contraseña.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            else
+            finally
             {
-                MessageBox.Show("Todos los campos requeridos, favor complétalos para establecer una nueva contraseña.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // Restaurar el cursor a su estado normal después de completar la descarga
+                Cursor.Current = Cursors.Default;
             }
         }
 

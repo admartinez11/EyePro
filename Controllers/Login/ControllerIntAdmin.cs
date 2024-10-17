@@ -26,74 +26,84 @@ namespace OpticaMultivisual.Controllers.Login
         // Método que se ejecuta cuando se hace clic en el botón de restablecer
         private void CambiarClave(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(ObjAdmin.txtUserEmp.Text.Trim()) ||
+            try
+            {
+                // Cambiar el cursor a "Wait" mientras se descarga el archivo
+                Cursor.Current = Cursors.WaitCursor;
+                if (string.IsNullOrEmpty(ObjAdmin.txtUserEmp.Text.Trim()) ||
                 string.IsNullOrEmpty(ObjAdmin.txtUserAd.Text.Trim()) ||
                 string.IsNullOrEmpty(ObjAdmin.txtPassAd.Text.Trim()))
-            {
-                MessageBox.Show("Todos los campos son requeridos, por favor complétalos para restablecer la contraseña.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                {
+                    MessageBox.Show("Todos los campos son requeridos, por favor complétalos para restablecer la contraseña.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (!VerificarAdmin())
+                {
+                    MessageBox.Show("Las credenciales del administrador son incorrectas o las credenciales ingresadas no son de un administrador.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (!VerificarUsuario())
+                {
+                    MessageBox.Show("El usuario ingresado no existe, por favor ingresa un usuario existente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (RestablecerClave())
+                {
+                    DAOAdminEmp daoAdminEmp = new DAOAdminEmp();
+                    CommonClasses commonClasses = new CommonClasses();
+                    string pin = commonClasses.GenerarPin();  // Genera el PIN
+                    daoAdminEmp.VerificationCode = commonClasses.ComputeSha256Hash(pin);
+                    // Registrar el PIN en la base de datos
+                    daoAdminEmp.User = ObjAdmin.txtUserEmp.Text.Trim();
+                    bool pinRegistrado = daoAdminEmp.RegistrarPIN();
+                    // Obtener el correo del usuario
+                    string correoUsuario = daoAdminEmp.ObtenerCorreoPorUsername(ObjAdmin.txtUserEmp.Text.Trim());
+                    string user = ObjAdmin.txtUserEmp.Text.Trim();
+                    // Enviar el PIN por correo si se registró correctamente
+                    bool correoEnviado = false;
+                    if (pinRegistrado && !string.IsNullOrEmpty(correoUsuario))
+                    {
+                        correoEnviado = EnviarCorreoConPIN(correoUsuario, pin, user);
+                    }
+
+                    // Mostrar mensajes dependiendo de los resultados
+                    if (pinRegistrado && correoEnviado)
+                    {
+                        MessageBox.Show("PIN de seguridad generado correctamente, indique al empleado que el PIN ha sido enviado a su correo registrado en el sistema.", "PIN de seguridad", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else if (!pinRegistrado && !correoEnviado)
+                    {
+                        MessageBox.Show("El PIN no pudo ser registrado en la base de datos, por lo tanto no se envió al correo del destinatario", "Proceso incompleto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else if (!pinRegistrado)
+                    {
+                        MessageBox.Show("El PIN no pudo ser registrado en la base de datos.", "Proceso incompleto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else if (!correoEnviado)
+                    {
+                        MessageBox.Show("El PIN fue registrado en la base de datos, pero no pudo enviarse al correo del destinatario.", "Proceso incompleto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
+                    // Cerrar la vista actual y abrir la vista de login si todo fue exitoso
+                    if (pinRegistrado && correoEnviado)
+                    {
+                        ObjAdmin.Dispose();  // Cierra la vista actual
+                        ViewLogin viewLogin = new ViewLogin();  // Abre la vista de login
+                        viewLogin.Show();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("La contraseña no pudo ser actualizada. Vuelve a intentarlo. Si el error persiste, contacta al administrador del sistema.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-
-            if (!VerificarAdmin())
+            finally
             {
-                MessageBox.Show("Las credenciales del administrador son incorrectas o las credenciales ingresadas no son de un administrador.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            if (!VerificarUsuario())
-            {
-                MessageBox.Show("El usuario ingresado no existe, por favor ingresa un usuario existente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            if (RestablecerClave())
-            {
-                DAOAdminEmp daoAdminEmp = new DAOAdminEmp();
-                CommonClasses commonClasses = new CommonClasses();
-                string pin = commonClasses.GenerarPin();  // Genera el PIN
-                daoAdminEmp.VerificationCode = commonClasses.ComputeSha256Hash(pin);
-                // Registrar el PIN en la base de datos
-                daoAdminEmp.User = ObjAdmin.txtUserEmp.Text.Trim();
-                bool pinRegistrado = daoAdminEmp.RegistrarPIN();
-                // Obtener el correo del usuario
-                string correoUsuario = daoAdminEmp.ObtenerCorreoPorUsername(ObjAdmin.txtUserEmp.Text.Trim());
-                string user = ObjAdmin.txtUserEmp.Text.Trim();
-                // Enviar el PIN por correo si se registró correctamente
-                bool correoEnviado = false;
-                if (pinRegistrado && !string.IsNullOrEmpty(correoUsuario))
-                {
-                    correoEnviado = EnviarCorreoConPIN(correoUsuario, pin, user);
-                }
-
-                // Mostrar mensajes dependiendo de los resultados
-                if (pinRegistrado && correoEnviado)
-                {
-                    MessageBox.Show("PIN de seguridad generado correctamente, indique al empleado que el PIN ha sido enviado a su correo registrado en el sistema.", "PIN de seguridad", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else if (!pinRegistrado && !correoEnviado)
-                {
-                    MessageBox.Show("El PIN no pudo ser registrado en la base de datos, por lo tanto no se envió al correo del destinatario", "Proceso incompleto", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else if (!pinRegistrado)
-                {
-                    MessageBox.Show("El PIN no pudo ser registrado en la base de datos.", "Proceso incompleto", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else if (!correoEnviado)
-                {
-                    MessageBox.Show("El PIN fue registrado en la base de datos, pero no pudo enviarse al correo del destinatario.", "Proceso incompleto", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-
-                // Cerrar la vista actual y abrir la vista de login si todo fue exitoso
-                if (pinRegistrado && correoEnviado)
-                {
-                    ObjAdmin.Dispose();  // Cierra la vista actual
-                    ViewLogin viewLogin = new ViewLogin();  // Abre la vista de login
-                    viewLogin.Show();
-                }
-            }
-            else
-            {
-                MessageBox.Show("La contraseña no pudo ser actualizada. Vuelve a intentarlo. Si el error persiste, contacta al administrador del sistema.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // Restaurar el cursor a su estado normal después de completar la descarga
+                Cursor.Current = Cursors.Default;
             }
         }
 

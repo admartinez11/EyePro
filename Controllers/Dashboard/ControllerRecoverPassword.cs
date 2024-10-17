@@ -33,53 +33,63 @@ namespace OpticaMultivisual.Controllers.Dashboard
         // Método para enviar el correo de recuperación
         private void SendRecoveryEmail(object sender, EventArgs e)
         {
-            CommonClasses commonClasses = new CommonClasses();
-            string userEmail = ObjRecoverPassword.txtCorreo.Text.Trim();
-            if (ValidateEmail(userEmail))
+            try
             {
-                string verificationCode = commonClasses.GenerarPin();
-                DAORecoverPassword DAOInsert = new DAORecoverPassword();
-
-                bool isStored = DAOInsert.StoreVerificationCode(userEmail, verificationCode);
-                if (isStored)
+                // Cambiar el cursor a "Wait" mientras se descarga el archivo
+                Cursor.Current = Cursors.WaitCursor;
+                CommonClasses commonClasses = new CommonClasses();
+                string userEmail = ObjRecoverPassword.txtCorreo.Text.Trim();
+                if (ValidateEmail(userEmail))
                 {
+                    string verificationCode = commonClasses.GenerarPin();
+                    DAORecoverPassword DAOInsert = new DAORecoverPassword();
 
-                    if (SendEmail(userEmail, verificationCode))
+                    bool isStored = DAOInsert.StoreVerificationCode(userEmail, verificationCode);
+                    if (isStored)
                     {
-                        // Almacenar el correo electrónico temporalmente en SessionVar
-                        SessionVar.UserEmail = userEmail;
 
-                        MessageBox.Show("Código de verificación enviado exitosamente.",
-                                        "Proceso completado",
-                                        MessageBoxButtons.OK,
-                                        MessageBoxIcon.Information);
-                        ObjRecoverPassword.Close();
-                        // Mostrar la vista para ingresar el código de verificación
-                        ViewVerifyCode viewVerifyCode = new ViewVerifyCode();
-                        viewVerifyCode.Show();
+                        if (SendEmail(userEmail, verificationCode))
+                        {
+                            // Almacenar el correo electrónico temporalmente en SessionVar
+                            SessionVar.UserEmail = userEmail;
+
+                            MessageBox.Show("Código de verificación enviado exitosamente.",
+                                            "Proceso completado",
+                                            MessageBoxButtons.OK,
+                                            MessageBoxIcon.Information);
+                            ObjRecoverPassword.Close();
+                            // Mostrar la vista para ingresar el código de verificación
+                            ViewVerifyCode viewVerifyCode = new ViewVerifyCode();
+                            viewVerifyCode.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("EPV007 - No se pudo enviar el código de verificación",
+                                            "Proceso interrumpido",
+                                            MessageBoxButtons.OK,
+                                            MessageBoxIcon.Error);
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("EPV007 - No se pudo enviar el código de verificación",
-                                        "Proceso interrumpido",
+                        MessageBox.Show("EPV008 - No se pudo almacenar el código de verificación",
+                                        "Error",
                                         MessageBoxButtons.OK,
                                         MessageBoxIcon.Error);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("EPV008 - No se pudo almacenar el código de verificación",
-                                    "Error",
+                    MessageBox.Show("Por favor, ingrese un correo electrónico válido.",
+                                    "Correo inválido",
                                     MessageBoxButtons.OK,
-                                    MessageBoxIcon.Error);
+                                    MessageBoxIcon.Warning);
                 }
             }
-            else
+            finally
             {
-                MessageBox.Show("Por favor, ingrese un correo electrónico válido.",
-                                "Correo inválido",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Warning);
+                // Restaurar el cursor a su estado normal después de completar la descarga
+                Cursor.Current = Cursors.Default;
             }
         }
 
