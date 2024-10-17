@@ -29,31 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.dRefractivoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet_ReportRecetaBase = new OpticaMultivisual.Views.Reports.RecetaBase.DataSet_ReportRecetaBase();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.dRefractivoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet_ReportRecetaBase = new OpticaMultivisual.Views.Reports.RecetaBase.DataSet_ReportRecetaBase();
             this.dRefractivoTableAdapter = new OpticaMultivisual.Views.Reports.RecetaBase.DataSet_ReportRecetaBaseTableAdapters.DRefractivoTableAdapter();
+            this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dRefractivoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet_ReportRecetaBase)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // dRefractivoBindingSource
-            // 
-            this.dRefractivoBindingSource.DataMember = "DRefractivo";
-            this.dRefractivoBindingSource.DataSource = this.dataSet_ReportRecetaBase;
-            // 
-            // dataSet_ReportRecetaBase
-            // 
-            this.dataSet_ReportRecetaBase.DataSetName = "DataSet_ReportRecetaBase";
-            this.dataSet_ReportRecetaBase.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(61)))), ((int)(((byte)(115)))));
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(78)))), ((int)(((byte)(172)))));
             this.flowLayoutPanel1.Controls.Add(this.label1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.ForeColor = System.Drawing.Color.White;
@@ -65,25 +55,36 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(10, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(10, 15, 10, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 13);
+            this.label1.Size = new System.Drawing.Size(229, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Diagnóstico Refractivo";
             // 
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.dRefractivoBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource2.Name = "DataSet1";
+            reportDataSource2.Value = this.dRefractivoBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "OpticaMultivisual.Views.Reports.RecetaBase.ReportGeneralRecetaBase.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 50);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Size = new System.Drawing.Size(915, 494);
             this.reportViewer1.TabIndex = 2;
+            // 
+            // dRefractivoBindingSource
+            // 
+            this.dRefractivoBindingSource.DataMember = "DRefractivo";
+            this.dRefractivoBindingSource.DataSource = this.dataSet_ReportRecetaBase;
+            // 
+            // dataSet_ReportRecetaBase
+            // 
+            this.dataSet_ReportRecetaBase.DataSetName = "DataSet_ReportRecetaBase";
+            this.dataSet_ReportRecetaBase.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dRefractivoTableAdapter
             // 
@@ -101,10 +102,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reporte de Receta Base";
             this.Load += new System.EventHandler(this.ViewReportRecetaBase_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dRefractivoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet_ReportRecetaBase)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dRefractivoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet_ReportRecetaBase)).EndInit();
             this.ResumeLayout(false);
 
         }

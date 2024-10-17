@@ -467,10 +467,7 @@ namespace AdministrarClientes.Controlador
 
                 string dui = DAOIngresarR.DUI.Trim();
                 // Mostrar longitud del DUI
-                MessageBox.Show($"DUI: {dui}\nLongitud: {dui.Length}",
-                                "Datos a Registrar",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Information);
+                
 
                 if (ObjVistaR.checkmenor.Checked == true)
                 {
