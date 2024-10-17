@@ -1,6 +1,6 @@
-﻿namespace OpticaMultivisual.Views.Reports.RecetaBase
+﻿namespace OpticaMultivisual.Views.Reports.Lensometria
 {
-    partial class ViewReportRecetaBase
+    partial class ViewReportLens
     {
         /// <summary>
         /// Required designer variable.
@@ -28,28 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.dRefractivoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet_ReportRecetaBase = new OpticaMultivisual.Views.Reports.RecetaBase.DataSet_ReportRecetaBase();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.dRefractivoTableAdapter = new OpticaMultivisual.Views.Reports.RecetaBase.DataSet_ReportRecetaBaseTableAdapters.DRefractivoTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dRefractivoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet_ReportRecetaBase)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // dRefractivoBindingSource
-            // 
-            this.dRefractivoBindingSource.DataMember = "DRefractivo";
-            this.dRefractivoBindingSource.DataSource = this.dataSet_ReportRecetaBase;
-            // 
-            // dataSet_ReportRecetaBase
-            // 
-            this.dataSet_ReportRecetaBase.DataSetName = "DataSet_ReportRecetaBase";
-            this.dataSet_ReportRecetaBase.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // flowLayoutPanel1
             // 
@@ -59,8 +42,8 @@
             this.flowLayoutPanel1.ForeColor = System.Drawing.Color.White;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(915, 50);
-            this.flowLayoutPanel1.TabIndex = 1;
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(800, 50);
+            this.flowLayoutPanel1.TabIndex = 2;
             // 
             // label1
             // 
@@ -68,41 +51,31 @@
             this.label1.Location = new System.Drawing.Point(10, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(10, 15, 10, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 13);
+            this.label1.Size = new System.Drawing.Size(66, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Diagnóstico Refractivo";
+            this.label1.Text = "Lensometría";
             // 
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.dRefractivoBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "OpticaMultivisual.Views.Reports.RecetaBase.ReportGeneralRecetaBase.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 50);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(915, 494);
-            this.reportViewer1.TabIndex = 2;
+            this.reportViewer1.Size = new System.Drawing.Size(800, 400);
+            this.reportViewer1.TabIndex = 3;
             // 
-            // dRefractivoTableAdapter
-            // 
-            this.dRefractivoTableAdapter.ClearBeforeFill = true;
-            // 
-            // ViewReportRecetaBase
+            // ViewReportLens
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(915, 544);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "ViewReportRecetaBase";
+            this.Name = "ViewReportLens";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Reporte de Receta Base";
-            this.Load += new System.EventHandler(this.ViewReportRecetaBase_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dRefractivoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet_ReportRecetaBase)).EndInit();
+            this.Text = "ViewReportLens";
+            this.Load += new System.EventHandler(this.ViewReportLens_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -110,11 +83,9 @@
         }
 
         #endregion
+
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label1;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private DataSet_ReportRecetaBase dataSet_ReportRecetaBase;
-        private System.Windows.Forms.BindingSource dRefractivoBindingSource;
-        private DataSet_ReportRecetaBaseTableAdapters.DRefractivoTableAdapter dRefractivoTableAdapter;
     }
 }
