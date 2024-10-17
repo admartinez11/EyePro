@@ -31,12 +31,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewRecetaBase));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -45,7 +45,8 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            this.btnImprimir = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvDR = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -57,30 +58,31 @@
             this.txtBuscar = new Bunifu.UI.WinForms.BunifuTextBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.btnImprimirDR = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.btnImprimir.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDR)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // btnImprimir
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.997159F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 93.5667F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.446547F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 96F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1028, 609);
-            this.tableLayoutPanel1.TabIndex = 3;
+            this.btnImprimir.BackColor = System.Drawing.Color.White;
+            this.btnImprimir.ColumnCount = 3;
+            this.btnImprimir.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.997159F));
+            this.btnImprimir.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 93.5667F));
+            this.btnImprimir.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.446547F));
+            this.btnImprimir.Controls.Add(this.tableLayoutPanel2, 1, 1);
+            this.btnImprimir.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnImprimir.Location = new System.Drawing.Point(0, 0);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.RowCount = 3;
+            this.btnImprimir.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.btnImprimir.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 96F));
+            this.btnImprimir.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.btnImprimir.Size = new System.Drawing.Size(1028, 609);
+            this.btnImprimir.TabIndex = 3;
             // 
             // tableLayoutPanel2
             // 
@@ -147,18 +149,20 @@
             // 
             // tableLayoutPanel3
             // 
-            this.tableLayoutPanel3.ColumnCount = 5;
+            this.tableLayoutPanel3.ColumnCount = 6;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.40984F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.62705F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.86066F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.80738F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.14973F));
-            this.tableLayoutPanel3.Controls.Add(this.btnBuscar, 0, 1);
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.Controls.Add(this.btnEliminar, 3, 0);
             this.tableLayoutPanel3.Controls.Add(this.btnEditar, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.btnAgregar, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.btnSiguiente, 4, 0);
             this.tableLayoutPanel3.Controls.Add(this.txtBuscar, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnBuscar, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.btnImprimirDR, 4, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 482);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -189,11 +193,11 @@
             this.btnBuscar.ColorContrastOnClick = 45;
             this.btnBuscar.ColorContrastOnHover = 45;
             this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnBuscar.CustomizableEdges = borderEdges1;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.btnBuscar.CustomizableEdges = borderEdges5;
             this.btnBuscar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnBuscar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnBuscar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -252,7 +256,7 @@
             this.btnBuscar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnBuscar.OnPressedState.IconLeftImage = null;
             this.btnBuscar.OnPressedState.IconRightImage = null;
-            this.btnBuscar.Size = new System.Drawing.Size(82, 24);
+            this.btnBuscar.Size = new System.Drawing.Size(71, 24);
             this.btnBuscar.TabIndex = 120;
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnBuscar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -280,11 +284,11 @@
             this.btnEliminar.ColorContrastOnClick = 45;
             this.btnEliminar.ColorContrastOnHover = 45;
             this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnEliminar.CustomizableEdges = borderEdges2;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnEliminar.CustomizableEdges = borderEdges1;
             this.btnEliminar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnEliminar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEliminar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -308,7 +312,7 @@
             this.btnEliminar.IdleIconLeftImage = null;
             this.btnEliminar.IdleIconRightImage = null;
             this.btnEliminar.IndicateFocus = false;
-            this.btnEliminar.Location = new System.Drawing.Point(725, 5);
+            this.btnEliminar.Location = new System.Drawing.Point(708, 5);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEliminar.OnDisabledState.BorderRadius = 20;
@@ -370,11 +374,11 @@
             this.btnEditar.ColorContrastOnClick = 45;
             this.btnEditar.ColorContrastOnHover = 45;
             this.btnEditar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnEditar.CustomizableEdges = borderEdges3;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnEditar.CustomizableEdges = borderEdges2;
             this.btnEditar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnEditar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEditar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -398,7 +402,7 @@
             this.btnEditar.IdleIconLeftImage = null;
             this.btnEditar.IdleIconRightImage = null;
             this.btnEditar.IndicateFocus = false;
-            this.btnEditar.Location = new System.Drawing.Point(613, 5);
+            this.btnEditar.Location = new System.Drawing.Point(598, 5);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEditar.OnDisabledState.BorderRadius = 20;
@@ -460,11 +464,11 @@
             this.btnAgregar.ColorContrastOnClick = 45;
             this.btnAgregar.ColorContrastOnHover = 45;
             this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btnAgregar.CustomizableEdges = borderEdges4;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnAgregar.CustomizableEdges = borderEdges3;
             this.btnAgregar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAgregar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAgregar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -488,7 +492,7 @@
             this.btnAgregar.IdleIconLeftImage = null;
             this.btnAgregar.IdleIconRightImage = null;
             this.btnAgregar.IndicateFocus = false;
-            this.btnAgregar.Location = new System.Drawing.Point(497, 5);
+            this.btnAgregar.Location = new System.Drawing.Point(484, 5);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAgregar.OnDisabledState.BorderRadius = 20;
@@ -550,11 +554,11 @@
             this.btnSiguiente.ColorContrastOnClick = 45;
             this.btnSiguiente.ColorContrastOnHover = 45;
             this.btnSiguiente.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.btnSiguiente.CustomizableEdges = borderEdges5;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnSiguiente.CustomizableEdges = borderEdges4;
             this.btnSiguiente.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSiguiente.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSiguiente.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -578,7 +582,7 @@
             this.btnSiguiente.IdleIconLeftImage = null;
             this.btnSiguiente.IdleIconRightImage = null;
             this.btnSiguiente.IndicateFocus = false;
-            this.btnSiguiente.Location = new System.Drawing.Point(844, 5);
+            this.btnSiguiente.Location = new System.Drawing.Point(824, 5);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSiguiente.OnDisabledState.BorderRadius = 20;
@@ -688,7 +692,7 @@
             this.txtBuscar.SelectionLength = 0;
             this.txtBuscar.SelectionStart = 0;
             this.txtBuscar.ShortcutsEnabled = false;
-            this.txtBuscar.Size = new System.Drawing.Size(474, 28);
+            this.txtBuscar.Size = new System.Drawing.Size(463, 28);
             this.txtBuscar.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtBuscar.TabIndex = 57;
             this.txtBuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -795,19 +799,109 @@
             this.bunifuTextBox1.UseSystemPasswordChar = false;
             this.bunifuTextBox1.WordWrap = true;
             // 
+            // btnImprimirDR
+            // 
+            this.btnImprimirDR.AllowAnimations = true;
+            this.btnImprimirDR.AllowMouseEffects = true;
+            this.btnImprimirDR.AllowToggling = false;
+            this.btnImprimirDR.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnImprimirDR.AnimationSpeed = 200;
+            this.btnImprimirDR.AutoGenerateColors = false;
+            this.btnImprimirDR.AutoRoundBorders = true;
+            this.btnImprimirDR.AutoSizeLeftIcon = true;
+            this.btnImprimirDR.AutoSizeRightIcon = true;
+            this.btnImprimirDR.BackColor = System.Drawing.Color.Transparent;
+            this.btnImprimirDR.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(219)))), ((int)(((byte)(114)))));
+            this.btnImprimirDR.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnImprimirDR.BackgroundImage")));
+            this.btnImprimirDR.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnImprimirDR.ButtonText = "Imprimir";
+            this.btnImprimirDR.ButtonTextMarginLeft = 0;
+            this.btnImprimirDR.ColorContrastOnClick = 45;
+            this.btnImprimirDR.ColorContrastOnHover = 45;
+            this.btnImprimirDR.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.btnImprimirDR.CustomizableEdges = borderEdges6;
+            this.btnImprimirDR.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnImprimirDR.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnImprimirDR.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnImprimirDR.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnImprimirDR.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
+            this.btnImprimirDR.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImprimirDR.ForeColor = System.Drawing.Color.Black;
+            this.btnImprimirDR.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnImprimirDR.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnImprimirDR.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnImprimirDR.IconMarginLeft = 11;
+            this.btnImprimirDR.IconPadding = 10;
+            this.btnImprimirDR.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnImprimirDR.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnImprimirDR.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnImprimirDR.IconSize = 25;
+            this.btnImprimirDR.IdleBorderColor = System.Drawing.Color.Transparent;
+            this.btnImprimirDR.IdleBorderRadius = 28;
+            this.btnImprimirDR.IdleBorderThickness = 1;
+            this.btnImprimirDR.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(219)))), ((int)(((byte)(114)))));
+            this.btnImprimirDR.IdleIconLeftImage = null;
+            this.btnImprimirDR.IdleIconRightImage = null;
+            this.btnImprimirDR.IndicateFocus = false;
+            this.btnImprimirDR.Location = new System.Drawing.Point(824, 55);
+            this.btnImprimirDR.Name = "btnImprimirDR";
+            this.btnImprimirDR.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnImprimirDR.OnDisabledState.BorderRadius = 20;
+            this.btnImprimirDR.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnImprimirDR.OnDisabledState.BorderThickness = 1;
+            this.btnImprimirDR.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnImprimirDR.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnImprimirDR.OnDisabledState.IconLeftImage = null;
+            this.btnImprimirDR.OnDisabledState.IconRightImage = null;
+            this.btnImprimirDR.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnImprimirDR.onHoverState.BorderRadius = 20;
+            this.btnImprimirDR.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnImprimirDR.onHoverState.BorderThickness = 1;
+            this.btnImprimirDR.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnImprimirDR.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnImprimirDR.onHoverState.IconLeftImage = null;
+            this.btnImprimirDR.onHoverState.IconRightImage = null;
+            this.btnImprimirDR.OnIdleState.BorderColor = System.Drawing.Color.Transparent;
+            this.btnImprimirDR.OnIdleState.BorderRadius = 20;
+            this.btnImprimirDR.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnImprimirDR.OnIdleState.BorderThickness = 1;
+            this.btnImprimirDR.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(219)))), ((int)(((byte)(114)))));
+            this.btnImprimirDR.OnIdleState.ForeColor = System.Drawing.Color.Black;
+            this.btnImprimirDR.OnIdleState.IconLeftImage = null;
+            this.btnImprimirDR.OnIdleState.IconRightImage = null;
+            this.btnImprimirDR.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnImprimirDR.OnPressedState.BorderRadius = 20;
+            this.btnImprimirDR.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnImprimirDR.OnPressedState.BorderThickness = 1;
+            this.btnImprimirDR.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnImprimirDR.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnImprimirDR.OnPressedState.IconLeftImage = null;
+            this.btnImprimirDR.OnPressedState.IconRightImage = null;
+            this.btnImprimirDR.Size = new System.Drawing.Size(93, 30);
+            this.btnImprimirDR.TabIndex = 121;
+            this.btnImprimirDR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnImprimirDR.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnImprimirDR.TextMarginLeft = 0;
+            this.btnImprimirDR.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnImprimirDR.UseDefaultRadiusAndThickness = true;
+            // 
             // ViewRecetaBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1028, 609);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.btnImprimir);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1920, 1076);
             this.MinimumSize = new System.Drawing.Size(1026, 588);
             this.Name = "ViewRecetaBase";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Diagnósticos Refractivos";
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.btnImprimir.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDR)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -817,8 +911,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnEliminar;
@@ -830,5 +922,7 @@
         public System.Windows.Forms.DataGridView dgvDR;
         public Bunifu.UI.WinForms.BunifuTextBox txtBuscar;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnBuscar;
+        public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnImprimirDR;
+        public System.Windows.Forms.TableLayoutPanel btnImprimir;
     }
 }
