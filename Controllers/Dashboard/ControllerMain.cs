@@ -68,6 +68,8 @@ namespace OpticaMultivisual.Controllers.Dashboard
                 {
                     // Obtener la ruta seleccionada por el usuario
                     string destinationPath = saveFileDialog.FileName;
+                    // Cambiar el cursor a "Wait" mientras se descarga el archivo
+                    Cursor.Current = Cursors.WaitCursor;
                     using (var client = new WebClient())
                     {
                         try
@@ -75,10 +77,21 @@ namespace OpticaMultivisual.Controllers.Dashboard
                             // Descargar el archivo desde Google Driv
                             client.DownloadFile(url, destinationPath);
                             MessageBox.Show("Manual descargado con éxito", "Manual", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            // Abrir el archivo PDF descargado
+                            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
+                            {
+                                FileName = destinationPath,
+                                UseShellExecute = true // Para abrir el archivo con la aplicación predeterminada
+                            });
                         }
-                        catch (Exception ex)
+                        catch (Exception)
                         {
                             MessageBox.Show("Error al descargar el manual de usuario", "Manual", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        finally
+                        {
+                            // Restaurar el cursor a su estado normal después de completar la descarga
+                            Cursor.Current = Cursors.Default;
                         }
                     }
                 }

@@ -657,6 +657,7 @@
             this.btnDoc.AllowAnimations = true;
             this.btnDoc.AllowMouseEffects = true;
             this.btnDoc.AllowToggling = false;
+            this.btnDoc.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnDoc.AnimationSpeed = 200;
             this.btnDoc.AutoGenerateColors = false;
             this.btnDoc.AutoRoundBorders = false;
@@ -699,8 +700,7 @@
             this.btnDoc.IdleIconLeftImage = global::OpticaMultivisual.Properties.Resources.Documents;
             this.btnDoc.IdleIconRightImage = null;
             this.btnDoc.IndicateFocus = false;
-            this.btnDoc.Location = new System.Drawing.Point(223, 16);
-            this.btnDoc.Margin = new System.Windows.Forms.Padding(3, 16, 3, 3);
+            this.btnDoc.Location = new System.Drawing.Point(223, 19);
             this.btnDoc.Name = "btnDoc";
             this.btnDoc.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnDoc.OnDisabledState.BorderRadius = 20;
