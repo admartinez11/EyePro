@@ -305,10 +305,7 @@ namespace OpticaMultivisual.Controllers.Consulta
             }
 
             // Luego, verifica que la fecha sea válida
-            if (!VerificarFecha())
-            {
-                return false;
-            }
+            
             // Obtener los valores de ambos ComboBox
             int vis_ID = Convert.ToInt32(((DataRowView)ObjAañadirConsulta.cmbVisita.SelectedItem)["vis_ID"].ToString().Trim());
             //string cli_DUI = ((DataRowView)ObjAañadirConsulta.txtNombreCon.SelectedItem)["cli_DUI"].ToString().Trim();
@@ -342,8 +339,9 @@ namespace OpticaMultivisual.Controllers.Consulta
 
             if (duiDeVisita != null)
             {
-                // Comparar los valores con cualquiera de los dos (ComboBox y TextBox)
-                if (duiDeVisita.Trim() == valorDUIComboBox || duiDeVisita.Trim() == valorDUITextBox)
+                // Comparar solo los primeros 10 caracteres de los valores
+                if (duiDeVisita.Trim().Substring(0, Math.Min(10, duiDeVisita.Length)) == valorDUIComboBox.Substring(0, Math.Min(10, valorDUIComboBox.Length)) ||
+                    duiDeVisita.Trim().Substring(0, Math.Min(10, duiDeVisita.Length)) == valorDUITextBox.Substring(0, Math.Min(10, valorDUITextBox.Length)))
                 {
                     // Si coinciden con cualquiera de los dos, retornar true
                     return true;
@@ -351,17 +349,18 @@ namespace OpticaMultivisual.Controllers.Consulta
                 else
                 {
                     // Si no coinciden, mostrar mensaje y retornar false
-                    MessageBox.Show("Los valores NO coinciden, Verifique que el DUI conincidan",
+                    MessageBox.Show("Los valores NO coinciden, Verifique que el DUI coincidan",
                                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return false;
                 }
             }
             else
             {
-                MessageBox.Show("No se encontró un DUI para el vis_ID proporcionado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
                 return false;
             }
         }
+
         public bool CoincidenciaCamposa(int vis_ID, string cli_DUI2)
         {
             // Instancia del DAO para acceder a la base de datos
@@ -375,8 +374,11 @@ namespace OpticaMultivisual.Controllers.Consulta
 
             if (duiDeVisita != null)
             {
-                // Comparar el valor del TextBox con el DUI de la base de datos
-                if (duiDeVisita.Trim() == valorDUITextBox)
+                // Comparar solo los primeros 10 caracteres del DUI
+                string duiDeVisitaRecortado = duiDeVisita.Trim().Substring(0, Math.Min(10, duiDeVisita.Length));
+                string valorDUITextBoxRecortado = valorDUITextBox.Substring(0, Math.Min(10, valorDUITextBox.Length));
+
+                if (duiDeVisitaRecortado == valorDUITextBoxRecortado)
                 {
                     // Si coinciden, retornar true
                     return true;
@@ -384,17 +386,18 @@ namespace OpticaMultivisual.Controllers.Consulta
                 else
                 {
                     // Si no coinciden, mostrar mensaje y retornar false
-                    MessageBox.Show("Los valores NO coinciden, Verifique que el DUI conincidan",
+                    MessageBox.Show("Los valores NO coinciden, Verifique que el DUI coincidan",
                                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return false;
                 }
             }
             else
             {
-                MessageBox.Show("No se encontró un DUI para el vis_ID proporcionado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
                 return false;
             }
         }
+
 
 
         private bool VerificacionCamposLlenos()
