@@ -446,6 +446,17 @@
     <Compile Include="Views\AdministrarCientes.Designer.cs">
       <DependentUpon>AdministrarCientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Reports\Lensometria\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\Lensometria\ViewReportLens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\Lensometria\ViewReportLens.Designer.cs">
+      <DependentUpon>ViewReportLens.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Reports\RecetaBase\DataSet_ReportRecetaBase.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -594,6 +605,10 @@
     <EmbeddedResource Include="Views\AdministrarCientes.resx">
       <DependentUpon>AdministrarCientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\Lensometria\Report1.rdlc" />
+    <EmbeddedResource Include="Views\Reports\Lensometria\ViewReportLens.resx">
+      <DependentUpon>ViewReportLens.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Reports\RecetaBase\ReportGeneralRecetaBase.rdlc" />
     <EmbeddedResource Include="Views\Reports\RecetaBase\ViewReportRecetaBase.resx">
       <DependentUpon>ViewReportRecetaBase.cs</DependentUpon>
@@ -622,6 +637,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Views\Reports\Lensometria\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Views\Reports\Lensometria\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Views\Reports\Lensometria\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Views\Reports\RecetaBase\DataSet_ReportRecetaBase.xsc">
       <DependentUpon>DataSet_ReportRecetaBase.xsd</DependentUpon>
     </None>
