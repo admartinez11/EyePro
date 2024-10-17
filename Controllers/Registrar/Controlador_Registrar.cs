@@ -358,6 +358,7 @@ namespace AdministrarClientes.Controlador
                 MessageBox.Show("Error: EPV010 - Error de excepción");
             }
         }
+//h
         public void AcualizarRegistro(object sender, EventArgs e)
         {
             if (ValidarCamposa())
