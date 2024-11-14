@@ -63,7 +63,6 @@ namespace OpticaMultivisual.Controllers.Helper
             /*Toma el directorio actual junto con el nombre del archivo*/
             string path = Path.Combine(Directory.GetCurrentDirectory().ToString(), "config_server.xml");
             // Verificar si el archivo XML existe en la ruta especificada
-            // Verificar si el archivo XML existe en la ruta especificada
             if (File.Exists(path))
             {
                 // Crear una instancia de XmlDocument para cargar y trabajar con el archivo XML

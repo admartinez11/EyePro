@@ -210,6 +210,12 @@ namespace OpticaMultivisual.Controllers.Login
             // Deshabilitar el menú contextual
             ObjLogin.txtUsername.ContextMenuStrip = new ContextMenuStrip();
             ObjLogin.txtPassword.ContextMenuStrip = new ContextMenuStrip();
+
+            if (!string.IsNullOrEmpty(ObjLogin.txtUsername.Text.Trim()) && !string.IsNullOrEmpty(ObjLogin.txtPassword.Text.Trim()))
+            {
+                ObjLogin.BtnStart.TabIndex = 0;
+                ObjLogin.BtnStart.Focus();
+            }
         }
 
         /// <summary>

@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AdministrarClientes.View.RegistroCliente;
+using Newtonsoft.Json.Linq;
 using OpticaMultivisual.Controllers.Helper;
 using OpticaMultivisual.Models.DAO;
 using OpticaMultivisual.Views.Article;
@@ -24,6 +25,7 @@ namespace OpticaMultivisual.Controllers.Dashboard
     {
         ViewMain ObjMain;
         Form currentForm;
+        private int NexT = 0;
 
         // Constructor que recibe la vista ViewMain como parámetro
         public ControllerMain(ViewMain View, string username)
@@ -46,6 +48,23 @@ namespace OpticaMultivisual.Controllers.Dashboard
             ObjMain.btnArticulo.Click += new EventHandler(AbrirFormArt);
             ObjMain.btnServer.Click += new EventHandler(ConfServer);
             ObjMain.btnDoc.Click += new EventHandler(DownloadManual);
+        }
+
+        void EventosIniciales(object sender, EventArgs e)
+        {
+            Acceso();
+            // Verificamos si no hay un formulario actualmente en el PanelContenedor
+            if (ObjMain.PanelContenedor.Controls.Count == 0)  // Verificamos si el contenedor está vacío
+            {
+                // Si está vacío, mostramos la imagen de carga
+                ObjMain.PanelContenedor.Controls.Clear();  // Limpiar cualquier control anterior
+                ObjMain.pictureBoxLoading.Visible = false;  // Mostrar la imagen de carga
+            }
+            else
+            {
+                // Si hay formularios en el contenedor, ocultamos la imagen de carga
+                ObjMain.pictureBoxLoading.Visible = true;
+            }
         }
 
         private void DownloadManual(object sender, EventArgs e)
@@ -165,11 +184,6 @@ namespace OpticaMultivisual.Controllers.Dashboard
             SessionVar.RoleId = 0;
         }
 
-        void EventosIniciales(object sender, EventArgs e)
-        {
-            Acceso();
-        }
-
         public void Acceso()
         {
             //Estructura selectiva para evaluar los posibles valores de la variable Access
@@ -241,6 +255,7 @@ namespace OpticaMultivisual.Controllers.Dashboard
             // Forzar actualización del tamaño al agregar el formulario al panel
             currentForm.Dock = DockStyle.Fill;
             currentForm.Refresh();
+            formulario.BringToFront();
         }
 
         private void AbrirFormularioAdminUsuarios(object sender, EventArgs e)
