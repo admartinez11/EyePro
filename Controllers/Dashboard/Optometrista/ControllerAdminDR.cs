@@ -1,4 +1,7 @@
-﻿using OpticaMultivisual.Models.DAO;
+﻿using Newtonsoft.Json.Linq;
+using OpticaMultivisual.Controllers.Helper;
+using OpticaMultivisual.Models.DAO;
+using OpticaMultivisual.Views.Dashboard;
 using OpticaMultivisual.Views.Dashboard.Optometrista;
 using OpticaMultivisual.Views.Reports.RecetaBase;
 using System;
@@ -14,8 +17,9 @@ namespace OpticaMultivisual.Controllers.Dashboard.Optometrista
     class ControllerAdminDR
     {
         ViewRecetaBase ObjAdminDR;
+        ViewMain ObjMain;
         public int accion;
-
+        SessionVar Session;
 
         public ControllerAdminDR(ViewRecetaBase Vista)
         {
@@ -41,8 +45,8 @@ namespace OpticaMultivisual.Controllers.Dashboard.Optometrista
 
         public void Next(object sender, EventArgs e)
         {
-            ViewLens viewLens = new ViewLens();
-            viewLens.ShowDialog();
+            ViewLens openforms = new ViewLens();
+            openforms.ShowDialog();
         }
 
         public void LoadData(object sender, EventArgs e)
