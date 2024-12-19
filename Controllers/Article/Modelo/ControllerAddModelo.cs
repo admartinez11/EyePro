@@ -70,6 +70,8 @@ namespace OpticaMultivisual.Controllers.Article.Modelo
                                 "Proceso completado",
                                  MessageBoxButtons.OK,
                                  MessageBoxIcon.Information);
+                LlenarComboMarca();
+
             }
             else
             {
