@@ -509,7 +509,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvInfoColor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvInfoColor.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
+            this.dgvInfoColor.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvInfoColor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
             this.dgvInfoColor.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvInfoColor.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
@@ -522,7 +522,7 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvInfoColor.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvInfoColor.ColumnHeadersHeight = 30;
+            this.dgvInfoColor.ColumnHeadersHeight = 55;
             this.dgvInfoColor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvInfoColor.EnableHeadersVisualStyles = false;
             this.dgvInfoColor.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
@@ -539,6 +539,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvInfoColor.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvInfoColor.RowHeadersVisible = false;
             this.dgvInfoColor.RowHeadersWidth = 51;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -548,7 +549,7 @@
             this.dgvInfoColor.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvInfoColor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvInfoColor.Size = new System.Drawing.Size(965, 415);
-            this.dgvInfoColor.TabIndex = 1;
+            this.dgvInfoColor.TabIndex = 3;
             // 
             // tableLayoutPanel8
             // 
@@ -778,9 +779,9 @@
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnNuevoColor;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnEliminarColor;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        public System.Windows.Forms.DataGridView dgvInfoColor;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         public Bunifu.UI.WinForms.BunifuTextBox txtBuscar;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnBuscar;
+        public System.Windows.Forms.DataGridView dgvInfoColor;
     }
 }
