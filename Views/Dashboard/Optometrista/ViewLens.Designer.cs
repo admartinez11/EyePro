@@ -28,10 +28,6 @@ namespace OpticaMultivisual.Views.Dashboard.Optometrista
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewLens));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
@@ -40,35 +36,39 @@ namespace OpticaMultivisual.Views.Dashboard.Optometrista
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.dgvLens = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnBuscar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnAgregar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnEliminar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnEditar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.txtBuscar = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.btnBuscar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.dgvLens = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLens)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLens)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.642269F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 84.71545F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.642269F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.96109F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90.27238F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.669261F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -88,56 +88,14 @@ namespace OpticaMultivisual.Views.Dashboard.Optometrista
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(81, 15);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(54, 15);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.61905F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 77.38095F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(864, 578);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(922, 578);
             this.tableLayoutPanel2.TabIndex = 0;
-            // 
-            // dgvLens
-            // 
-            this.dgvLens.AllowUserToAddRows = false;
-            this.dgvLens.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvLens.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
-            this.dgvLens.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
-            this.dgvLens.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvLens.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLens.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvLens.ColumnHeadersHeight = 30;
-            this.dgvLens.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvLens.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvLens.EnableHeadersVisualStyles = false;
-            this.dgvLens.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
-            this.dgvLens.Location = new System.Drawing.Point(3, 114);
-            this.dgvLens.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dgvLens.Name = "dgvLens";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLens.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvLens.RowHeadersWidth = 51;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvLens.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvLens.Size = new System.Drawing.Size(858, 381);
-            this.dgvLens.TabIndex = 61;
             // 
             // tableLayoutPanel3
             // 
@@ -158,100 +116,8 @@ namespace OpticaMultivisual.Views.Dashboard.Optometrista
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 52F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(858, 75);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(916, 75);
             this.tableLayoutPanel3.TabIndex = 48;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.AllowAnimations = true;
-            this.btnBuscar.AllowMouseEffects = true;
-            this.btnBuscar.AllowToggling = false;
-            this.btnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBuscar.AnimationSpeed = 200;
-            this.btnBuscar.AutoGenerateColors = false;
-            this.btnBuscar.AutoRoundBorders = true;
-            this.btnBuscar.AutoSizeLeftIcon = true;
-            this.btnBuscar.AutoSizeRightIcon = true;
-            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
-            this.btnBuscar.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(219)))), ((int)(((byte)(114)))));
-            this.btnBuscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBuscar.BackgroundImage")));
-            this.btnBuscar.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnBuscar.ButtonText = "Buscar";
-            this.btnBuscar.ButtonTextMarginLeft = 0;
-            this.btnBuscar.ColorContrastOnClick = 45;
-            this.btnBuscar.ColorContrastOnHover = 45;
-            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btnBuscar.CustomizableEdges = borderEdges4;
-            this.btnBuscar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnBuscar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnBuscar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnBuscar.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnBuscar.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
-            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.Color.Black;
-            this.btnBuscar.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btnBuscar.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.btnBuscar.IconMarginLeft = 11;
-            this.btnBuscar.IconPadding = 10;
-            this.btnBuscar.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBuscar.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btnBuscar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btnBuscar.IconSize = 25;
-            this.btnBuscar.IdleBorderColor = System.Drawing.Color.Silver;
-            this.btnBuscar.IdleBorderRadius = 22;
-            this.btnBuscar.IdleBorderThickness = 1;
-            this.btnBuscar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(219)))), ((int)(((byte)(114)))));
-            this.btnBuscar.IdleIconLeftImage = null;
-            this.btnBuscar.IdleIconRightImage = null;
-            this.btnBuscar.IndicateFocus = true;
-            this.btnBuscar.Location = new System.Drawing.Point(3, 44);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 5, 394, 3);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnBuscar.OnDisabledState.BorderRadius = 20;
-            this.btnBuscar.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnBuscar.OnDisabledState.BorderThickness = 1;
-            this.btnBuscar.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnBuscar.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnBuscar.OnDisabledState.IconLeftImage = null;
-            this.btnBuscar.OnDisabledState.IconRightImage = null;
-            this.btnBuscar.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btnBuscar.onHoverState.BorderRadius = 20;
-            this.btnBuscar.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnBuscar.onHoverState.BorderThickness = 1;
-            this.btnBuscar.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btnBuscar.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.onHoverState.IconLeftImage = null;
-            this.btnBuscar.onHoverState.IconRightImage = null;
-            this.btnBuscar.OnIdleState.BorderColor = System.Drawing.Color.Silver;
-            this.btnBuscar.OnIdleState.BorderRadius = 20;
-            this.btnBuscar.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnBuscar.OnIdleState.BorderThickness = 1;
-            this.btnBuscar.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(219)))), ((int)(((byte)(114)))));
-            this.btnBuscar.OnIdleState.ForeColor = System.Drawing.Color.Black;
-            this.btnBuscar.OnIdleState.IconLeftImage = null;
-            this.btnBuscar.OnIdleState.IconRightImage = null;
-            this.btnBuscar.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btnBuscar.OnPressedState.BorderRadius = 20;
-            this.btnBuscar.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnBuscar.OnPressedState.BorderThickness = 1;
-            this.btnBuscar.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btnBuscar.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.OnPressedState.IconLeftImage = null;
-            this.btnBuscar.OnPressedState.IconRightImage = null;
-            this.btnBuscar.Size = new System.Drawing.Size(103, 24);
-            this.btnBuscar.TabIndex = 119;
-            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnBuscar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnBuscar.TextMarginLeft = 0;
-            this.btnBuscar.TextPadding = new System.Windows.Forms.Padding(0);
-            this.btnBuscar.UseDefaultRadiusAndThickness = true;
             // 
             // btnAgregar
             // 
@@ -301,7 +167,7 @@ namespace OpticaMultivisual.Views.Dashboard.Optometrista
             this.btnAgregar.IdleIconLeftImage = null;
             this.btnAgregar.IdleIconRightImage = null;
             this.btnAgregar.IndicateFocus = false;
-            this.btnAgregar.Location = new System.Drawing.Point(517, 3);
+            this.btnAgregar.Location = new System.Drawing.Point(555, 3);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAgregar.OnDisabledState.BorderRadius = 20;
@@ -391,7 +257,7 @@ namespace OpticaMultivisual.Views.Dashboard.Optometrista
             this.btnEliminar.IdleIconLeftImage = null;
             this.btnEliminar.IdleIconRightImage = null;
             this.btnEliminar.IndicateFocus = false;
-            this.btnEliminar.Location = new System.Drawing.Point(755, 3);
+            this.btnEliminar.Location = new System.Drawing.Point(809, 3);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEliminar.OnDisabledState.BorderRadius = 20;
@@ -481,7 +347,7 @@ namespace OpticaMultivisual.Views.Dashboard.Optometrista
             this.btnEditar.IdleIconLeftImage = null;
             this.btnEditar.IdleIconRightImage = null;
             this.btnEditar.IndicateFocus = false;
-            this.btnEditar.Location = new System.Drawing.Point(639, 3);
+            this.btnEditar.Location = new System.Drawing.Point(685, 3);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEditar.OnDisabledState.BorderRadius = 20;
@@ -591,7 +457,7 @@ namespace OpticaMultivisual.Views.Dashboard.Optometrista
             this.txtBuscar.SelectionLength = 0;
             this.txtBuscar.SelectionStart = 0;
             this.txtBuscar.ShortcutsEnabled = false;
-            this.txtBuscar.Size = new System.Drawing.Size(495, 28);
+            this.txtBuscar.Size = new System.Drawing.Size(529, 28);
             this.txtBuscar.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtBuscar.TabIndex = 56;
             this.txtBuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -601,6 +467,98 @@ namespace OpticaMultivisual.Views.Dashboard.Optometrista
             this.txtBuscar.TextPlaceholder = "Buscar por DUI";
             this.txtBuscar.UseSystemPasswordChar = false;
             this.txtBuscar.WordWrap = true;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.AllowAnimations = true;
+            this.btnBuscar.AllowMouseEffects = true;
+            this.btnBuscar.AllowToggling = false;
+            this.btnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBuscar.AnimationSpeed = 200;
+            this.btnBuscar.AutoGenerateColors = false;
+            this.btnBuscar.AutoRoundBorders = true;
+            this.btnBuscar.AutoSizeLeftIcon = true;
+            this.btnBuscar.AutoSizeRightIcon = true;
+            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.btnBuscar.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(219)))), ((int)(((byte)(114)))));
+            this.btnBuscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBuscar.BackgroundImage")));
+            this.btnBuscar.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnBuscar.ButtonText = "Buscar";
+            this.btnBuscar.ButtonTextMarginLeft = 0;
+            this.btnBuscar.ColorContrastOnClick = 45;
+            this.btnBuscar.ColorContrastOnHover = 45;
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnBuscar.CustomizableEdges = borderEdges4;
+            this.btnBuscar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnBuscar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnBuscar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnBuscar.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnBuscar.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
+            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.Black;
+            this.btnBuscar.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnBuscar.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnBuscar.IconMarginLeft = 11;
+            this.btnBuscar.IconPadding = 10;
+            this.btnBuscar.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscar.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnBuscar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnBuscar.IconSize = 25;
+            this.btnBuscar.IdleBorderColor = System.Drawing.Color.Silver;
+            this.btnBuscar.IdleBorderRadius = 22;
+            this.btnBuscar.IdleBorderThickness = 1;
+            this.btnBuscar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(219)))), ((int)(((byte)(114)))));
+            this.btnBuscar.IdleIconLeftImage = null;
+            this.btnBuscar.IdleIconRightImage = null;
+            this.btnBuscar.IndicateFocus = true;
+            this.btnBuscar.Location = new System.Drawing.Point(3, 44);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 5, 394, 3);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnBuscar.OnDisabledState.BorderRadius = 20;
+            this.btnBuscar.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnBuscar.OnDisabledState.BorderThickness = 1;
+            this.btnBuscar.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnBuscar.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnBuscar.OnDisabledState.IconLeftImage = null;
+            this.btnBuscar.OnDisabledState.IconRightImage = null;
+            this.btnBuscar.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnBuscar.onHoverState.BorderRadius = 20;
+            this.btnBuscar.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnBuscar.onHoverState.BorderThickness = 1;
+            this.btnBuscar.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnBuscar.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.onHoverState.IconLeftImage = null;
+            this.btnBuscar.onHoverState.IconRightImage = null;
+            this.btnBuscar.OnIdleState.BorderColor = System.Drawing.Color.Silver;
+            this.btnBuscar.OnIdleState.BorderRadius = 20;
+            this.btnBuscar.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnBuscar.OnIdleState.BorderThickness = 1;
+            this.btnBuscar.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(219)))), ((int)(((byte)(114)))));
+            this.btnBuscar.OnIdleState.ForeColor = System.Drawing.Color.Black;
+            this.btnBuscar.OnIdleState.IconLeftImage = null;
+            this.btnBuscar.OnIdleState.IconRightImage = null;
+            this.btnBuscar.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnBuscar.OnPressedState.BorderRadius = 20;
+            this.btnBuscar.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnBuscar.OnPressedState.BorderThickness = 1;
+            this.btnBuscar.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnBuscar.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.OnPressedState.IconLeftImage = null;
+            this.btnBuscar.OnPressedState.IconRightImage = null;
+            this.btnBuscar.Size = new System.Drawing.Size(137, 24);
+            this.btnBuscar.TabIndex = 119;
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnBuscar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnBuscar.TextMarginLeft = 0;
+            this.btnBuscar.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnBuscar.UseDefaultRadiusAndThickness = true;
             // 
             // tableLayoutPanel4
             // 
@@ -617,7 +575,7 @@ namespace OpticaMultivisual.Views.Dashboard.Optometrista
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 37.03704F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 62.96296F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(858, 106);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(916, 106);
             this.tableLayoutPanel4.TabIndex = 49;
             // 
             // bunifuTextBox1
@@ -650,7 +608,7 @@ namespace OpticaMultivisual.Views.Dashboard.Optometrista
             this.bunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox1.Lines = new string[] {
         "Lensometría"};
-            this.bunifuTextBox1.Location = new System.Drawing.Point(318, 32);
+            this.bunifuTextBox1.Location = new System.Drawing.Point(339, 32);
             this.bunifuTextBox1.MaxLength = 32767;
             this.bunifuTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBox1.Modified = false;
@@ -697,6 +655,55 @@ namespace OpticaMultivisual.Views.Dashboard.Optometrista
             this.bunifuTextBox1.UseSystemPasswordChar = false;
             this.bunifuTextBox1.WordWrap = true;
             // 
+            // dgvLens
+            // 
+            this.dgvLens.AllowUserToAddRows = false;
+            this.dgvLens.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvLens.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvLens.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvLens.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
+            this.dgvLens.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvLens.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
+            this.dgvLens.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(174)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLens.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvLens.ColumnHeadersHeight = 55;
+            this.dgvLens.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvLens.EnableHeadersVisualStyles = false;
+            this.dgvLens.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
+            this.dgvLens.Location = new System.Drawing.Point(2, 114);
+            this.dgvLens.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvLens.Name = "dgvLens";
+            this.dgvLens.ReadOnly = true;
+            this.dgvLens.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLens.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvLens.RowHeadersVisible = false;
+            this.dgvLens.RowHeadersWidth = 51;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvLens.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvLens.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvLens.Size = new System.Drawing.Size(918, 381);
+            this.dgvLens.TabIndex = 50;
+            // 
             // ViewLens
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -711,9 +718,9 @@ namespace OpticaMultivisual.Views.Dashboard.Optometrista
             this.Text = "Lensometrías";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLens)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLens)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -728,8 +735,8 @@ namespace OpticaMultivisual.Views.Dashboard.Optometrista
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnEditar;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox1;
-        public System.Windows.Forms.DataGridView dgvLens;
         public Bunifu.UI.WinForms.BunifuTextBox txtBuscar;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnBuscar;
+        public System.Windows.Forms.DataGridView dgvLens;
     }
 }
