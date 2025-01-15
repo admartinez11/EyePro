@@ -28,6 +28,21 @@ namespace OpticaMultivisual.Controllers.Consulta
             verificarAccion();
             objAañadirConsulta.btnAgendar.Click += new EventHandler(NuevaConsulta);
         }
+
+        public ControladorVerConsulta(AñadirConsulta Vista, int p_accion, string cli_DUI, string vis_ID, DateTime con_fecha, string con_obser, string emp_ID, int con_ID, DateTime con_hora, bool est_ID)
+        {
+            ObjAañadirConsulta = Vista;
+            ObjAañadirConsulta.Load += new EventHandler(CargaInicio);
+            this.accion = p_accion;
+            this.con_id = cli_DUI; //DUI cliente
+            this.emp_id = emp_ID;
+            this.vis_id = vis_ID; //DUI visita
+            MessageBox.Show($"con_id: {cli_DUI}, vis_id: {vis_ID}+", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            verificarAccion();
+            CargarValores(con_fecha, con_obser, con_ID, con_hora, est_ID);
+            ObjAañadirConsulta.btnActualizar.Click += new EventHandler(ActualizarRegistro);
+        }
+
         void CargaInicio(object sender, EventArgs e)
         {
             LlenarComboDui();
@@ -75,6 +90,7 @@ namespace OpticaMultivisual.Controllers.Consulta
             if (accion == 2)
             {
                 ObjAañadirConsulta.txtNombreCon.Text = con_id;
+                ObjAañadirConsulta.txtNombreCon.SelectedValue = con_id;
             }
 
         }
@@ -87,7 +103,9 @@ namespace OpticaMultivisual.Controllers.Consulta
             ObjAañadirConsulta.cmbVisita.ValueMember = "vis_ID";
             if (accion == 2)
             {
+                ObjAañadirConsulta.cmbVisita.ValueMember = "vis_dui";
                 ObjAañadirConsulta.cmbVisita.Text = vis_id;
+                ObjAañadirConsulta.cmbVisita.SelectedValue = vis_id;
             }
         }
         void LlenarComboEmpleados()
@@ -146,27 +164,15 @@ namespace OpticaMultivisual.Controllers.Consulta
                 }
             }
         }
-
-        public ControladorVerConsulta(AñadirConsulta Vista, int p_accion, string cli_DUI, string vis_ID, DateTime con_fecha, string con_obser, string emp_ID, int con_ID, DateTime con_hora, bool est_ID)
-        {
-            ObjAañadirConsulta = Vista;
-            ObjAañadirConsulta.Load += new EventHandler(CargaInicio);
-            this.accion = p_accion;
-            this.con_id = cli_DUI;
-            this.emp_id = emp_ID;
-            this.vis_id = vis_ID;
-            verificarAccion();
-            CargarValores(cli_DUI, vis_ID, con_fecha, con_obser, emp_ID, con_ID, con_hora, est_ID);
-            ObjAañadirConsulta.btnActualizar.Click += new EventHandler(ActualizarRegistro);
-        }
-        public void CargarValores(string cli_DUI, string vis_ID, DateTime con_fecha, string con_obser, string emp_ID, int con_ID, DateTime con_hora, bool est_ID)
+        
+        public void CargarValores(DateTime con_fecha, string con_obser, int con_ID, DateTime con_hora, bool est_ID)
         {
             try
             {
                 ObjAañadirConsulta.txtObservaciones.Text = con_obser;
-                ObjAañadirConsulta.txtNombreCon.Text = cli_DUI;
-                ObjAañadirConsulta.cmbVisita.Text = vis_ID;
-                ObjAañadirConsulta.cmbEmpleado.Text = emp_ID;
+                //ObjAañadirConsulta.txtNombreCon.Text = cli_DUI;
+                //ObjAañadirConsulta.cmbVisita.Text = vis_ID;
+                //ObjAañadirConsulta.cmbEmpleado.Text = emp_ID;
                 ObjAañadirConsulta.DTPfechaconsulta.Value = con_fecha;
                 ObjAañadirConsulta.txtConID.Text = con_ID.ToString();
                 ObjAañadirConsulta.DTPHoraConsulta.Value = con_hora;
@@ -183,7 +189,7 @@ namespace OpticaMultivisual.Controllers.Consulta
             try
             {
                 // Verificar que los campos estén correctamente llenos y validados
-                if (ValidarCampos())
+                if (ValidarCamposUP())
                 {
                     DAOConsulta DAOActualizar = new DAOConsulta();
 
@@ -217,7 +223,7 @@ namespace OpticaMultivisual.Controllers.Consulta
                     ObjAañadirConsulta.txtConID.Enabled = false;
 
                     // Asignación de los demás valores con validación de fecha
-                    if (!VerificarFecha())
+                    if (!VerificarFechaUP())
                     {
                         return; // Si la fecha no es válida, salir del método
                     }
@@ -296,6 +302,39 @@ namespace OpticaMultivisual.Controllers.Consulta
 
             return true;
         }
+
+        private bool ValidarCamposUP()
+        {
+            // Primero, verifica que todos los campos obligatorios estén llenos
+            if (!VerificacionCamposLlenos())
+            {
+                return false;
+            }
+
+            // Luego, verifica que la fecha sea válida
+            if (!VerificarFechaUP())
+            {
+                return false;
+            }
+            // Obtener los valores de ambos ComboBox
+            int vis_ID = Convert.ToInt32(((DataRowView)ObjAañadirConsulta.cmbVisita.SelectedItem)["vis_ID"].ToString().Trim());
+            string cli_DUI = ObjAañadirConsulta.txtNombreCon.SelectedValue.ToString().Trim();
+            string vis_DUI2 = ObjAañadirConsulta.cmbVisita.SelectedValue.ToString().Trim();
+            // Llamar a la función CoincidenciaCampos para comparar
+            if (!CoincidenciaCamposUP(vis_ID, cli_DUI, vis_DUI2))
+            {
+                return false;
+            }
+
+            // Finalmente, verifica que el texto en txtObservaciones sea válido
+            if (!VerificarTexto(ObjAañadirConsulta.txtObservaciones.Text))
+            {
+                return false;
+            }
+
+            return true;
+        }
+
         private bool ValidarCamposa()
         {
             // Primero, verifica que todos los campos obligatorios estén llenos
@@ -323,6 +362,42 @@ namespace OpticaMultivisual.Controllers.Consulta
             }
 
             return true;
+        }
+
+        public bool CoincidenciaCamposUP(int vis_DUI, string cli_DUI1, string cli_DUI2)
+        {
+            // Instancia del DAO para acceder a la base de datos
+            var dao = new DAOConsulta();  // Reemplaza 'DAOConsulta' por el nombre de tu DAO
+
+            // Obtener el DUI desde el DAO basado en el vis_ID
+            string duiDeVisita = dao.ObtenerDUIPorVisita(vis_DUI);
+
+            // Obtener los valores correctamente
+            string valorDUIComboBox = ((DataRowView)ObjAañadirConsulta.txtNombreCon.SelectedItem)["cli_DUI"].ToString().Trim();  // Para el ComboBox
+            string valorDUITextBox = ObjAañadirConsulta.txtDuiCon.Text.Trim();  // Para el TextBox
+
+            if (duiDeVisita != null)
+            {
+                // Comparar solo los primeros 10 caracteres de los valores
+                if (duiDeVisita.Trim().Substring(0, Math.Min(10, duiDeVisita.Length)) == valorDUIComboBox.Substring(0, Math.Min(10, valorDUIComboBox.Length)) ||
+                    duiDeVisita.Trim().Substring(0, Math.Min(10, duiDeVisita.Length)) == valorDUITextBox.Substring(0, Math.Min(10, valorDUITextBox.Length)))
+                {
+                    // Si coinciden con cualquiera de los dos, retornar true
+                    return true;
+                }
+                else
+                {
+                    // Si no coinciden, mostrar mensaje y retornar false
+                    MessageBox.Show("Los valores NO coinciden, Verifique que los DUI coincidan",
+                                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+            }
+            else
+            {
+
+                return false;
+            }
         }
 
         public bool CoincidenciaCampos(int vis_ID, string cli_DUI1, string cli_DUI2)
@@ -386,7 +461,7 @@ namespace OpticaMultivisual.Controllers.Consulta
                 else
                 {
                     // Si no coinciden, mostrar mensaje y retornar false
-                    MessageBox.Show("Los valores NO coinciden, Verifique que el DUI coincidan",
+                    MessageBox.Show("Los valores NO coinciden, Verifique que los DUI coincidan",
                                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return false;
                 }
@@ -470,6 +545,24 @@ namespace OpticaMultivisual.Controllers.Consulta
             // Si la fecha seleccionada pasa ambas validaciones, se retorna true, indicando que la fecha es válida.
             return true;
         }
+
+        private bool VerificarFechaUP()
+        {
+            DateTime fechaSeleccionada = ObjAañadirConsulta.DTPfechaconsulta.Value;
+            DateTime fechaActual = DateTime.Today;
+            DateTime fechaMaximaPermitida = fechaActual.AddDays(70); // Fecha máxima permitida (30 días en el futuro)
+
+            // Validar si la fecha seleccionada es demasiado futura (más de 30 días)
+            if (fechaSeleccionada > fechaMaximaPermitida)
+            {
+                MessageBox.Show("La fecha no puede ser mayor a 70 días a partir de hoy.", "Fecha Incorrecta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            // Si la fecha seleccionada es válida, retornar true
+            return true;
+        }
+
         private bool VerificarTexto(string texto)
         {
             // Define un conjunto de caracteres que no están permitidos en secuencia.
@@ -512,6 +605,7 @@ namespace OpticaMultivisual.Controllers.Consulta
             else if (accion == 2) // Acción 2: Actualizar
             {
                 ObjAañadirConsulta.btnAgendar.Enabled = false;
+                ObjAañadirConsulta.txtConID.Enabled = false;
                 ObjAañadirConsulta.btnActualizar.Enabled = true;
             }
         }

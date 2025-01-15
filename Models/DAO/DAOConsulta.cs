@@ -303,7 +303,7 @@ namespace OpticaMultivisual.Models.DAO
         {
             try
             {
-                string query = $"SELECT * FROM VistaConsultas WHERE [DUI del Cliente] LIKE '%{valor}%'";
+                string query = $"SELECT * FROM VistaConsultas WHERE [DUI del Cliente] LIKE '%{valor}%' OR [ID de Consulta] LIKE '%{valor}%' OR [Nombre del Cliente] LIKE '%{valor}%' OR [Apellido del Cliente] LIKE '%{valor}%' OR [DUI de la Visita] LIKE '%{valor}%' OR [Nombre del Empleado] LIKE '%{valor}%'";
                 SqlCommand cmd = new SqlCommand(query, getConnection());
                 SqlDataAdapter adp = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
