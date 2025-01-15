@@ -49,6 +49,10 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbpd_recetalab = new Bunifu.UI.WinForms.BunifuCheckBox();
+            this.DTPpd_fprogramada = new Bunifu.UI.WinForms.BunifuDatePicker();
+            this.DTPpd_fpedido = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.btnBuscar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.txtBuscar = new Bunifu.UI.WinForms.BunifuTextBox();
             this.cbcon_ID = new Bunifu.UI.WinForms.BunifuDropdown();
@@ -57,10 +61,7 @@
             this.cbart_codigo = new Bunifu.UI.WinForms.BunifuDropdown();
             this.txtpd_obser = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtart_cant = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.DTPpd_fprogramada = new Bunifu.UI.WinForms.BunifuDatePicker();
-            this.DTPpd_fpedido = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.txtpd_ID = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.cbpd_recetalab = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -79,6 +80,10 @@
             this.bunifuPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(78)))), ((int)(((byte)(172)))));
             this.bunifuPanel1.BorderRadius = 0;
             this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Controls.Add(this.label2);
+            this.bunifuPanel1.Controls.Add(this.cbpd_recetalab);
+            this.bunifuPanel1.Controls.Add(this.DTPpd_fprogramada);
+            this.bunifuPanel1.Controls.Add(this.DTPpd_fpedido);
             this.bunifuPanel1.Controls.Add(this.btnBuscar);
             this.bunifuPanel1.Controls.Add(this.txtBuscar);
             this.bunifuPanel1.Controls.Add(this.cbcon_ID);
@@ -87,10 +92,7 @@
             this.bunifuPanel1.Controls.Add(this.cbart_codigo);
             this.bunifuPanel1.Controls.Add(this.txtpd_obser);
             this.bunifuPanel1.Controls.Add(this.txtart_cant);
-            this.bunifuPanel1.Controls.Add(this.DTPpd_fprogramada);
-            this.bunifuPanel1.Controls.Add(this.DTPpd_fpedido);
             this.bunifuPanel1.Controls.Add(this.txtpd_ID);
-            this.bunifuPanel1.Controls.Add(this.cbpd_recetalab);
             this.bunifuPanel1.Controls.Add(this.label7);
             this.bunifuPanel1.Controls.Add(this.label13);
             this.bunifuPanel1.Controls.Add(this.label12);
@@ -105,6 +107,128 @@
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(920, 488);
             this.bunifuPanel1.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(733, 165);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 6, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(138, 19);
+            this.label2.TabIndex = 124;
+            this.label2.Text = "Receta Laboratorio";
+            // 
+            // cbpd_recetalab
+            // 
+            this.cbpd_recetalab.AllowBindingControlAnimation = true;
+            this.cbpd_recetalab.AllowBindingControlColorChanges = false;
+            this.cbpd_recetalab.AllowBindingControlLocation = true;
+            this.cbpd_recetalab.AllowCheckBoxAnimation = false;
+            this.cbpd_recetalab.AllowCheckmarkAnimation = true;
+            this.cbpd_recetalab.AllowOnHoverStates = true;
+            this.cbpd_recetalab.AutoCheck = true;
+            this.cbpd_recetalab.BackColor = System.Drawing.Color.Transparent;
+            this.cbpd_recetalab.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cbpd_recetalab.BackgroundImage")));
+            this.cbpd_recetalab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cbpd_recetalab.BindingControlPosition = Bunifu.UI.WinForms.BunifuCheckBox.BindingControlPositions.Right;
+            this.cbpd_recetalab.BorderRadius = 12;
+            this.cbpd_recetalab.Checked = false;
+            this.cbpd_recetalab.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
+            this.cbpd_recetalab.Cursor = System.Windows.Forms.Cursors.Default;
+            this.cbpd_recetalab.CustomCheckmarkImage = null;
+            this.cbpd_recetalab.Location = new System.Drawing.Point(703, 165);
+            this.cbpd_recetalab.Margin = new System.Windows.Forms.Padding(2);
+            this.cbpd_recetalab.MinimumSize = new System.Drawing.Size(13, 14);
+            this.cbpd_recetalab.Name = "cbpd_recetalab";
+            this.cbpd_recetalab.OnCheck.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.cbpd_recetalab.OnCheck.BorderRadius = 12;
+            this.cbpd_recetalab.OnCheck.BorderThickness = 2;
+            this.cbpd_recetalab.OnCheck.CheckBoxColor = System.Drawing.Color.DodgerBlue;
+            this.cbpd_recetalab.OnCheck.CheckmarkColor = System.Drawing.Color.White;
+            this.cbpd_recetalab.OnCheck.CheckmarkThickness = 2;
+            this.cbpd_recetalab.OnDisable.BorderColor = System.Drawing.Color.LightGray;
+            this.cbpd_recetalab.OnDisable.BorderRadius = 12;
+            this.cbpd_recetalab.OnDisable.BorderThickness = 2;
+            this.cbpd_recetalab.OnDisable.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.cbpd_recetalab.OnDisable.CheckmarkColor = System.Drawing.Color.LightGray;
+            this.cbpd_recetalab.OnDisable.CheckmarkThickness = 2;
+            this.cbpd_recetalab.OnHoverChecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.cbpd_recetalab.OnHoverChecked.BorderRadius = 12;
+            this.cbpd_recetalab.OnHoverChecked.BorderThickness = 2;
+            this.cbpd_recetalab.OnHoverChecked.CheckBoxColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.cbpd_recetalab.OnHoverChecked.CheckmarkColor = System.Drawing.Color.White;
+            this.cbpd_recetalab.OnHoverChecked.CheckmarkThickness = 2;
+            this.cbpd_recetalab.OnHoverUnchecked.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.cbpd_recetalab.OnHoverUnchecked.BorderRadius = 12;
+            this.cbpd_recetalab.OnHoverUnchecked.BorderThickness = 1;
+            this.cbpd_recetalab.OnHoverUnchecked.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.cbpd_recetalab.OnUncheck.BorderColor = System.Drawing.Color.DarkGray;
+            this.cbpd_recetalab.OnUncheck.BorderRadius = 12;
+            this.cbpd_recetalab.OnUncheck.BorderThickness = 1;
+            this.cbpd_recetalab.OnUncheck.CheckBoxColor = System.Drawing.Color.Transparent;
+            this.cbpd_recetalab.Size = new System.Drawing.Size(21, 21);
+            this.cbpd_recetalab.Style = Bunifu.UI.WinForms.BunifuCheckBox.CheckBoxStyles.Bunifu;
+            this.cbpd_recetalab.TabIndex = 123;
+            this.cbpd_recetalab.ThreeState = false;
+            this.cbpd_recetalab.ToolTipText = null;
+            // 
+            // DTPpd_fprogramada
+            // 
+            this.DTPpd_fprogramada.BackColor = System.Drawing.Color.Transparent;
+            this.DTPpd_fprogramada.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(227)))), ((int)(((byte)(255)))));
+            this.DTPpd_fprogramada.BorderRadius = 10;
+            this.DTPpd_fprogramada.Color = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(227)))), ((int)(((byte)(255)))));
+            this.DTPpd_fprogramada.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thick;
+            this.DTPpd_fprogramada.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
+            this.DTPpd_fprogramada.DisabledColor = System.Drawing.Color.Gray;
+            this.DTPpd_fprogramada.DisplayWeekNumbers = false;
+            this.DTPpd_fprogramada.DPHeight = 0;
+            this.DTPpd_fprogramada.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.DTPpd_fprogramada.FillDatePicker = false;
+            this.DTPpd_fprogramada.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DTPpd_fprogramada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(227)))), ((int)(((byte)(255)))));
+            this.DTPpd_fprogramada.Icon = ((System.Drawing.Image)(resources.GetObject("DTPpd_fprogramada.Icon")));
+            this.DTPpd_fprogramada.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(227)))), ((int)(((byte)(255)))));
+            this.DTPpd_fprogramada.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
+            this.DTPpd_fprogramada.LeftTextMargin = 5;
+            this.DTPpd_fprogramada.Location = new System.Drawing.Point(390, 256);
+            this.DTPpd_fprogramada.MinimumSize = new System.Drawing.Size(4, 32);
+            this.DTPpd_fprogramada.Name = "DTPpd_fprogramada";
+            this.DTPpd_fprogramada.Size = new System.Drawing.Size(235, 32);
+            this.DTPpd_fprogramada.TabIndex = 3;
+            this.DTPpd_fprogramada.Value = new System.DateTime(2024, 8, 22, 21, 40, 0, 0);
+            // 
+            // DTPpd_fpedido
+            // 
+            this.DTPpd_fpedido.BackColor = System.Drawing.Color.Transparent;
+            this.DTPpd_fpedido.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(227)))), ((int)(((byte)(255)))));
+            this.DTPpd_fpedido.BorderRadius = 10;
+            this.DTPpd_fpedido.Color = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(227)))), ((int)(((byte)(255)))));
+            this.DTPpd_fpedido.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thick;
+            this.DTPpd_fpedido.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
+            this.DTPpd_fpedido.DisabledColor = System.Drawing.Color.Gray;
+            this.DTPpd_fpedido.DisplayWeekNumbers = false;
+            this.DTPpd_fpedido.DPHeight = 0;
+            this.DTPpd_fpedido.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.DTPpd_fpedido.FillDatePicker = false;
+            this.DTPpd_fpedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DTPpd_fpedido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(227)))), ((int)(((byte)(255)))));
+            this.DTPpd_fpedido.Icon = ((System.Drawing.Image)(resources.GetObject("DTPpd_fpedido.Icon")));
+            this.DTPpd_fpedido.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(227)))), ((int)(((byte)(255)))));
+            this.DTPpd_fpedido.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
+            this.DTPpd_fpedido.LeftTextMargin = 5;
+            this.DTPpd_fpedido.Location = new System.Drawing.Point(390, 197);
+            this.DTPpd_fpedido.MinimumSize = new System.Drawing.Size(4, 32);
+            this.DTPpd_fpedido.Name = "DTPpd_fpedido";
+            this.DTPpd_fpedido.Size = new System.Drawing.Size(235, 32);
+            this.DTPpd_fpedido.TabIndex = 2;
+            this.DTPpd_fpedido.Value = new System.DateTime(2024, 8, 22, 21, 40, 0, 0);
             // 
             // btnBuscar
             // 
@@ -137,7 +261,7 @@
             this.btnBuscar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnBuscar.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnBuscar.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
-            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.Black;
             this.btnBuscar.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscar.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -149,13 +273,13 @@
             this.btnBuscar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnBuscar.IconSize = 25;
             this.btnBuscar.IdleBorderColor = System.Drawing.Color.Silver;
-            this.btnBuscar.IdleBorderRadius = 22;
+            this.btnBuscar.IdleBorderRadius = 32;
             this.btnBuscar.IdleBorderThickness = 1;
             this.btnBuscar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(219)))), ((int)(((byte)(114)))));
             this.btnBuscar.IdleIconLeftImage = null;
             this.btnBuscar.IdleIconRightImage = null;
             this.btnBuscar.IndicateFocus = true;
-            this.btnBuscar.Location = new System.Drawing.Point(632, 72);
+            this.btnBuscar.Location = new System.Drawing.Point(748, 27);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 3);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -190,7 +314,7 @@
             this.btnBuscar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnBuscar.OnPressedState.IconLeftImage = null;
             this.btnBuscar.OnPressedState.IconRightImage = null;
-            this.btnBuscar.Size = new System.Drawing.Size(112, 24);
+            this.btnBuscar.Size = new System.Drawing.Size(123, 34);
             this.btnBuscar.TabIndex = 122;
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnBuscar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -229,7 +353,7 @@
             this.txtBuscar.IconRight = null;
             this.txtBuscar.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBuscar.Lines = new string[0];
-            this.txtBuscar.Location = new System.Drawing.Point(188, 72);
+            this.txtBuscar.Location = new System.Drawing.Point(107, 27);
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 3, 3);
             this.txtBuscar.MaxLength = 15;
             this.txtBuscar.MinimumSize = new System.Drawing.Size(1, 1);
@@ -266,7 +390,7 @@
             this.txtBuscar.SelectionLength = 0;
             this.txtBuscar.SelectionStart = 0;
             this.txtBuscar.ShortcutsEnabled = false;
-            this.txtBuscar.Size = new System.Drawing.Size(438, 28);
+            this.txtBuscar.Size = new System.Drawing.Size(617, 34);
             this.txtBuscar.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtBuscar.TabIndex = 121;
             this.txtBuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -282,7 +406,7 @@
             this.cbcon_ID.BackColor = System.Drawing.Color.Transparent;
             this.cbcon_ID.BackgroundColor = System.Drawing.Color.White;
             this.cbcon_ID.BorderColor = System.Drawing.Color.Silver;
-            this.cbcon_ID.BorderRadius = 1;
+            this.cbcon_ID.BorderRadius = 17;
             this.cbcon_ID.Color = System.Drawing.Color.Silver;
             this.cbcon_ID.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
             this.cbcon_ID.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
@@ -313,11 +437,11 @@
             this.cbcon_ID.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.cbcon_ID.ItemHighLightForeColor = System.Drawing.Color.White;
             this.cbcon_ID.ItemTopMargin = 3;
-            this.cbcon_ID.Location = new System.Drawing.Point(390, 179);
+            this.cbcon_ID.Location = new System.Drawing.Point(390, 141);
             this.cbcon_ID.Margin = new System.Windows.Forms.Padding(2);
-            this.cbcon_ID.MaximumSize = new System.Drawing.Size(196, 0);
+            this.cbcon_ID.MaximumSize = new System.Drawing.Size(237, 0);
             this.cbcon_ID.Name = "cbcon_ID";
-            this.cbcon_ID.Size = new System.Drawing.Size(196, 32);
+            this.cbcon_ID.Size = new System.Drawing.Size(237, 32);
             this.cbcon_ID.TabIndex = 1;
             this.cbcon_ID.Text = null;
             this.cbcon_ID.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -352,7 +476,7 @@
             this.btnActualizar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnActualizar.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnActualizar.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
-            this.btnActualizar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnActualizar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.ForeColor = System.Drawing.Color.White;
             this.btnActualizar.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnActualizar.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -370,7 +494,7 @@
             this.btnActualizar.IdleIconLeftImage = null;
             this.btnActualizar.IdleIconRightImage = null;
             this.btnActualizar.IndicateFocus = false;
-            this.btnActualizar.Location = new System.Drawing.Point(632, 305);
+            this.btnActualizar.Location = new System.Drawing.Point(737, 290);
             this.btnActualizar.Margin = new System.Windows.Forms.Padding(2);
             this.btnActualizar.MaximumSize = new System.Drawing.Size(112, 32);
             this.btnActualizar.Name = "btnActualizar";
@@ -443,7 +567,7 @@
             this.btnAgregar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnAgregar.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnAgregar.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
-            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.White;
             this.btnAgregar.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregar.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -461,7 +585,7 @@
             this.btnAgregar.IdleIconLeftImage = null;
             this.btnAgregar.IdleIconRightImage = null;
             this.btnAgregar.IndicateFocus = false;
-            this.btnAgregar.Location = new System.Drawing.Point(632, 243);
+            this.btnAgregar.Location = new System.Drawing.Point(737, 227);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregar.MaximumSize = new System.Drawing.Size(112, 32);
             this.btnAgregar.Name = "btnAgregar";
@@ -510,7 +634,7 @@
             this.cbart_codigo.BackColor = System.Drawing.Color.Transparent;
             this.cbart_codigo.BackgroundColor = System.Drawing.Color.White;
             this.cbart_codigo.BorderColor = System.Drawing.Color.Silver;
-            this.cbart_codigo.BorderRadius = 1;
+            this.cbart_codigo.BorderRadius = 17;
             this.cbart_codigo.Color = System.Drawing.Color.Silver;
             this.cbart_codigo.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
             this.cbart_codigo.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
@@ -541,11 +665,11 @@
             this.cbart_codigo.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.cbart_codigo.ItemHighLightForeColor = System.Drawing.Color.White;
             this.cbart_codigo.ItemTopMargin = 3;
-            this.cbart_codigo.Location = new System.Drawing.Point(390, 289);
+            this.cbart_codigo.Location = new System.Drawing.Point(390, 313);
             this.cbart_codigo.Margin = new System.Windows.Forms.Padding(2);
-            this.cbart_codigo.MaximumSize = new System.Drawing.Size(196, 0);
+            this.cbart_codigo.MaximumSize = new System.Drawing.Size(237, 0);
             this.cbart_codigo.Name = "cbart_codigo";
-            this.cbart_codigo.Size = new System.Drawing.Size(196, 32);
+            this.cbart_codigo.Size = new System.Drawing.Size(233, 32);
             this.cbart_codigo.TabIndex = 4;
             this.cbart_codigo.Text = null;
             this.cbart_codigo.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -565,7 +689,7 @@
             this.txtpd_obser.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.txtpd_obser.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txtpd_obser.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtpd_obser.BorderRadius = 1;
+            this.txtpd_obser.BorderRadius = 20;
             this.txtpd_obser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtpd_obser.BorderThickness = 1;
             this.txtpd_obser.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
@@ -581,9 +705,9 @@
             this.txtpd_obser.IconRight = null;
             this.txtpd_obser.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtpd_obser.Lines = new string[0];
-            this.txtpd_obser.Location = new System.Drawing.Point(390, 368);
+            this.txtpd_obser.Location = new System.Drawing.Point(390, 426);
             this.txtpd_obser.Margin = new System.Windows.Forms.Padding(2);
-            this.txtpd_obser.MaximumSize = new System.Drawing.Size(196, 25);
+            this.txtpd_obser.MaximumSize = new System.Drawing.Size(235, 30);
             this.txtpd_obser.MaxLength = 100;
             this.txtpd_obser.MinimumSize = new System.Drawing.Size(2, 2);
             this.txtpd_obser.Modified = false;
@@ -619,7 +743,7 @@
             this.txtpd_obser.SelectionLength = 0;
             this.txtpd_obser.SelectionStart = 0;
             this.txtpd_obser.ShortcutsEnabled = true;
-            this.txtpd_obser.Size = new System.Drawing.Size(196, 25);
+            this.txtpd_obser.Size = new System.Drawing.Size(235, 30);
             this.txtpd_obser.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtpd_obser.TabIndex = 6;
             this.txtpd_obser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -644,7 +768,7 @@
             this.txtart_cant.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.txtart_cant.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txtart_cant.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtart_cant.BorderRadius = 1;
+            this.txtart_cant.BorderRadius = 20;
             this.txtart_cant.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtart_cant.BorderThickness = 1;
             this.txtart_cant.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
@@ -660,9 +784,9 @@
             this.txtart_cant.IconRight = null;
             this.txtart_cant.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtart_cant.Lines = new string[0];
-            this.txtart_cant.Location = new System.Drawing.Point(390, 329);
+            this.txtart_cant.Location = new System.Drawing.Point(390, 370);
             this.txtart_cant.Margin = new System.Windows.Forms.Padding(2);
-            this.txtart_cant.MaximumSize = new System.Drawing.Size(196, 25);
+            this.txtart_cant.MaximumSize = new System.Drawing.Size(235, 30);
             this.txtart_cant.MaxLength = 100;
             this.txtart_cant.MinimumSize = new System.Drawing.Size(2, 2);
             this.txtart_cant.Modified = false;
@@ -698,7 +822,7 @@
             this.txtart_cant.SelectionLength = 0;
             this.txtart_cant.SelectionStart = 0;
             this.txtart_cant.ShortcutsEnabled = true;
-            this.txtart_cant.Size = new System.Drawing.Size(196, 25);
+            this.txtart_cant.Size = new System.Drawing.Size(235, 30);
             this.txtart_cant.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtart_cant.TabIndex = 5;
             this.txtart_cant.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -708,62 +832,6 @@
             this.txtart_cant.TextPlaceholder = "";
             this.txtart_cant.UseSystemPasswordChar = false;
             this.txtart_cant.WordWrap = true;
-            // 
-            // DTPpd_fprogramada
-            // 
-            this.DTPpd_fprogramada.BackColor = System.Drawing.Color.White;
-            this.DTPpd_fprogramada.BorderColor = System.Drawing.Color.Silver;
-            this.DTPpd_fprogramada.BorderRadius = 1;
-            this.DTPpd_fprogramada.Color = System.Drawing.Color.Silver;
-            this.DTPpd_fprogramada.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
-            this.DTPpd_fprogramada.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
-            this.DTPpd_fprogramada.DisabledColor = System.Drawing.Color.Gray;
-            this.DTPpd_fprogramada.DisplayWeekNumbers = false;
-            this.DTPpd_fprogramada.DPHeight = 0;
-            this.DTPpd_fprogramada.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.DTPpd_fprogramada.FillDatePicker = false;
-            this.DTPpd_fprogramada.Font = new System.Drawing.Font("Segoe UI", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DTPpd_fprogramada.ForeColor = System.Drawing.Color.Black;
-            this.DTPpd_fprogramada.Icon = ((System.Drawing.Image)(resources.GetObject("DTPpd_fprogramada.Icon")));
-            this.DTPpd_fprogramada.IconColor = System.Drawing.Color.Gray;
-            this.DTPpd_fprogramada.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.DTPpd_fprogramada.LeftTextMargin = 5;
-            this.DTPpd_fprogramada.Location = new System.Drawing.Point(390, 253);
-            this.DTPpd_fprogramada.Margin = new System.Windows.Forms.Padding(2);
-            this.DTPpd_fprogramada.MaximumSize = new System.Drawing.Size(196, 32);
-            this.DTPpd_fprogramada.MinimumSize = new System.Drawing.Size(4, 32);
-            this.DTPpd_fprogramada.Name = "DTPpd_fprogramada";
-            this.DTPpd_fprogramada.Size = new System.Drawing.Size(196, 32);
-            this.DTPpd_fprogramada.TabIndex = 3;
-            this.DTPpd_fprogramada.Value = new System.DateTime(2024, 9, 3, 13, 31, 0, 0);
-            // 
-            // DTPpd_fpedido
-            // 
-            this.DTPpd_fpedido.BackColor = System.Drawing.Color.White;
-            this.DTPpd_fpedido.BorderColor = System.Drawing.Color.Silver;
-            this.DTPpd_fpedido.BorderRadius = 1;
-            this.DTPpd_fpedido.Color = System.Drawing.Color.Silver;
-            this.DTPpd_fpedido.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
-            this.DTPpd_fpedido.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
-            this.DTPpd_fpedido.DisabledColor = System.Drawing.Color.Gray;
-            this.DTPpd_fpedido.DisplayWeekNumbers = false;
-            this.DTPpd_fpedido.DPHeight = 0;
-            this.DTPpd_fpedido.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.DTPpd_fpedido.FillDatePicker = false;
-            this.DTPpd_fpedido.Font = new System.Drawing.Font("Segoe UI", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DTPpd_fpedido.ForeColor = System.Drawing.Color.Black;
-            this.DTPpd_fpedido.Icon = ((System.Drawing.Image)(resources.GetObject("DTPpd_fpedido.Icon")));
-            this.DTPpd_fpedido.IconColor = System.Drawing.Color.Gray;
-            this.DTPpd_fpedido.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.DTPpd_fpedido.LeftTextMargin = 5;
-            this.DTPpd_fpedido.Location = new System.Drawing.Point(390, 217);
-            this.DTPpd_fpedido.Margin = new System.Windows.Forms.Padding(2);
-            this.DTPpd_fpedido.MaximumSize = new System.Drawing.Size(196, 32);
-            this.DTPpd_fpedido.MinimumSize = new System.Drawing.Size(4, 32);
-            this.DTPpd_fpedido.Name = "DTPpd_fpedido";
-            this.DTPpd_fpedido.Size = new System.Drawing.Size(196, 32);
-            this.DTPpd_fpedido.TabIndex = 2;
-            this.DTPpd_fpedido.Value = new System.DateTime(2024, 9, 3, 13, 31, 0, 0);
             // 
             // txtpd_ID
             // 
@@ -779,7 +847,7 @@
             this.txtpd_ID.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.txtpd_ID.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txtpd_ID.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtpd_ID.BorderRadius = 1;
+            this.txtpd_ID.BorderRadius = 20;
             this.txtpd_ID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtpd_ID.BorderThickness = 1;
             this.txtpd_ID.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
@@ -795,10 +863,10 @@
             this.txtpd_ID.IconRight = null;
             this.txtpd_ID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtpd_ID.Lines = new string[0];
-            this.txtpd_ID.Location = new System.Drawing.Point(390, 145);
+            this.txtpd_ID.Location = new System.Drawing.Point(390, 87);
             this.txtpd_ID.Margin = new System.Windows.Forms.Padding(2);
-            this.txtpd_ID.MaximumSize = new System.Drawing.Size(196, 25);
-            this.txtpd_ID.MaxLength = 32767;
+            this.txtpd_ID.MaximumSize = new System.Drawing.Size(235, 30);
+            this.txtpd_ID.MaxLength = 1000;
             this.txtpd_ID.MinimumSize = new System.Drawing.Size(2, 2);
             this.txtpd_ID.Modified = false;
             this.txtpd_ID.Multiline = false;
@@ -833,7 +901,7 @@
             this.txtpd_ID.SelectionLength = 0;
             this.txtpd_ID.SelectionStart = 0;
             this.txtpd_ID.ShortcutsEnabled = true;
-            this.txtpd_ID.Size = new System.Drawing.Size(196, 25);
+            this.txtpd_ID.Size = new System.Drawing.Size(235, 30);
             this.txtpd_ID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtpd_ID.TabIndex = 0;
             this.txtpd_ID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -845,26 +913,13 @@
             this.txtpd_ID.Visible = false;
             this.txtpd_ID.WordWrap = true;
             // 
-            // cbpd_recetalab
-            // 
-            this.cbpd_recetalab.AutoSize = true;
-            this.cbpd_recetalab.BackColor = System.Drawing.Color.Transparent;
-            this.cbpd_recetalab.ForeColor = System.Drawing.Color.White;
-            this.cbpd_recetalab.Location = new System.Drawing.Point(632, 193);
-            this.cbpd_recetalab.Margin = new System.Windows.Forms.Padding(2);
-            this.cbpd_recetalab.Name = "cbpd_recetalab";
-            this.cbpd_recetalab.Size = new System.Drawing.Size(117, 17);
-            this.cbpd_recetalab.TabIndex = 7;
-            this.cbpd_recetalab.Text = "Receta Laboratorio";
-            this.cbpd_recetalab.UseVisualStyleBackColor = false;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(184, 368);
+            this.label7.Location = new System.Drawing.Point(184, 431);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(161, 21);
@@ -877,7 +932,7 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(184, 329);
+            this.label13.Location = new System.Drawing.Point(184, 377);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(141, 21);
@@ -890,7 +945,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(184, 289);
+            this.label12.Location = new System.Drawing.Point(184, 318);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(130, 21);
@@ -903,7 +958,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(184, 253);
+            this.label11.Location = new System.Drawing.Point(184, 265);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(171, 21);
@@ -916,7 +971,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(184, 217);
+            this.label10.Location = new System.Drawing.Point(184, 205);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(111, 21);
@@ -929,7 +984,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(184, 179);
+            this.label9.Location = new System.Drawing.Point(184, 148);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(96, 21);
@@ -942,7 +997,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(184, 146);
+            this.label8.Location = new System.Drawing.Point(184, 91);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(140, 21);
@@ -981,12 +1036,13 @@
         public Bunifu.UI.WinForms.BunifuDropdown cbart_codigo;
         public Bunifu.UI.WinForms.BunifuTextBox txtpd_obser;
         public Bunifu.UI.WinForms.BunifuTextBox txtart_cant;
-        public Bunifu.UI.WinForms.BunifuDatePicker DTPpd_fprogramada;
-        public Bunifu.UI.WinForms.BunifuDatePicker DTPpd_fpedido;
         public Bunifu.UI.WinForms.BunifuTextBox txtpd_ID;
-        public System.Windows.Forms.CheckBox cbpd_recetalab;
         public Bunifu.UI.WinForms.BunifuDropdown cbcon_ID;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnBuscar;
         public Bunifu.UI.WinForms.BunifuTextBox txtBuscar;
+        public Bunifu.UI.WinForms.BunifuDatePicker DTPpd_fprogramada;
+        public Bunifu.UI.WinForms.BunifuDatePicker DTPpd_fpedido;
+        public Bunifu.UI.WinForms.BunifuCheckBox cbpd_recetalab;
+        private System.Windows.Forms.Label label2;
     }
 }
